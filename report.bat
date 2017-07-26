@@ -20,3 +20,8 @@ call ..\report-branch.bat ..\develop
 
 cd ..
 rd /s/q temp
+
+git add master
+git add develop
+git commit -m "Update report"
+git push
