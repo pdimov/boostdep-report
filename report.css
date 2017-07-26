@@ -4,15 +4,15 @@
 A { color: #06C; text-decoration: none; }
 A:hover { text-decoration: underline; }
 
-body { max-width: 60em; margin-left: auto; margin-right: auto; color: #4A6484; font-family: sans-serif; }
+body { max-width: 60em; margin-left: auto; margin-right: auto; color: #4A6484; font-family: Calibri Light, Helvetics Neue, sans-serif; }
 
 .logo { font-family: sans-serif; font-style: italic; }
 .logo .upper { font-size: 48pt; font-weight: 800; }
 .logo .lower { font-size: 17pt; }
-.logo .description { font-size: small; margin-top: 2em; }
+.logo .description { margin-top: 2em; }
 
-.primary-list { font-size: small; }
-.secondary-list { font-size: small; }
+.primary-list {}
+.secondary-list {}
 
 #module-overview .primary-list { margin-left: 1em; }
 
@@ -22,3 +22,6 @@ body { max-width: 60em; margin-left: auto; margin-right: auto; color: #4A6484; f
 #module-weights h3 { margin-left: 1em; }
 #module-weights .primary-list { margin-left: 2em; }
 #module-weights .secondary-list { margin-left: 2em; padding-left: 1em; border-left: 1px dotted; }
+
+#index h1 { margin-top: 2em; margin-bottom: 1em; }
+#index h2 { margin-left: 2em; }
