@@ -7,13 +7,16 @@ FOR /f %%i IN ('git rev-parse HEAD') DO @SET REV=%%i
 FOR /f %%i IN ('git rev-parse --short HEAD') DO @SET SHREV=%%i
 FOR /f %%i IN ('git rev-parse --abbrev-ref HEAD') DO @SET BRANCH=%%i
 
-SET PREFIX="<div class='logo'><div class='upper'>boost</div><div class='lower'>Dependency Report</div><div class='description'>%BRANCH%-%SHREV%, %DATE% %TIME%</div></div><hr />"
-
-SET OPTIONS=--html-stylesheet ../report.css --html-prefix %PREFIX%
-
 SET OUTDIR=%1
-
 mkdir %OUTDIR%
+
+ECHO @import '../report.css';> %OUTDIR%\report-branch.css
+ECHO .report-revision::after { content: '%BRANCH%-%SHREV%'; }>> %OUTDIR%\report-branch.css
+ECHO .report-timestamp::after { content: '%DATE% %TIME%'; }>> %OUTDIR%\report-branch.css
+
+SET PREFIX="<div class='logo'><div class='upper'>boost</div><div class='lower'>Dependency Report</div><div class='description'><span class='report-revision'></span>, <span class='report-timestamp'></span></div></div><hr />"
+
+SET OPTIONS=--html-stylesheet report-branch.css --html-prefix %PREFIX%
 
 %BOOSTDEP% --list-modules > %OUTDIR%\list-modules.txt
 
