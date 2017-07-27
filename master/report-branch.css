@@ -1,0 +1,3 @@
+@import '../report.css';
+.report-revision::after { content: 'master-1b717f84e'; }
+.report-timestamp::after { content: '27.07.2017 15:41:00.31'; }
