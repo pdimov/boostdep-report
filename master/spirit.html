@@ -60,6 +60,7 @@
       <li>from <code>&lt;boost/spirit/home/support/iterators/detail/split_functor_input_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/iterators/detail/split_std_deque_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/utree/utree.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/core/parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/string/detail/tst.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/numeric_utils/extract_int.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/numeric_utils/extract_real.hpp&gt;</code></li>
@@ -221,6 +222,10 @@
       <li>from <code>&lt;boost/spirit/home/support/detail/sign.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
+    <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/x3/core/parser.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/nonterminal/detail/rule.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/detail/iterator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/classic/core/scanner/scanner.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/classic/iterator/impl/position_iterator.ipp&gt;</code></li>
@@ -799,6 +804,12 @@
     <h3><code>&lt;boost/math/special_functions/sign.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/detail/sign.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/numeric_utils/sign.hpp&gt;</code></li>
+    </ul>
+  <h2 id="move"><a href="move.html"><em>move</em></a></h2>
+    <h3><code>&lt;boost/move/unique_ptr.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/classic/core/non_terminal/impl/grammar.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/classic/symbols/impl/tst.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/detail/lexer/generator.hpp&gt;</code></li>
     </ul>
   <h2 id="mpl"><a href="mpl.html"><em>mpl</em></a></h2>
     <h3><code>&lt;boost/mpl/accumulate.hpp&gt;</code></h3><ul>
@@ -1963,7 +1974,6 @@
   </ul>
   <h2><a href="function.html"><em>function</em></a></h2><ul>
     <li><a href="function.html#bind">adds <em>bind</em></a></li>
-    <li><a href="function.html#move">adds <em>move</em></a></li>
     <li><a href="function.html#type_index">adds <em>type_index</em></a></li>
   </ul>
   <h2><a href="function_types.html"><em>function_types</em></a></h2><ul>
@@ -1994,7 +2004,6 @@
   </ul>
   <h2><a href="optional.html"><em>optional</em></a></h2><ul>
     <li><a href="optional.html#detail">adds <em>detail</em></a></li>
-    <li><a href="optional.html#move">adds <em>move</em></a></li>
   </ul>
   <h2><a href="phoenix.html"><em>phoenix</em></a></h2><ul>
     <li><a href="phoenix.html#bind">adds <em>bind</em></a></li>
@@ -2010,10 +2019,6 @@
   </ul>
   <h2><a href="serialization.html"><em>serialization</em></a></h2><ul>
     <li><a href="serialization.html#detail">adds <em>detail</em></a></li>
-    <li><a href="serialization.html#move">adds <em>move</em></a></li>
-  </ul>
-  <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
-    <li><a href="smart_ptr.html#move">adds <em>move</em></a></li>
   </ul>
   <h2><a href="thread.html"><em>thread</em></a></h2><ul>
     <li><a href="thread.html#atomic">adds <em>atomic</em></a></li>
@@ -2024,7 +2029,6 @@
     <li><a href="thread.html#exception">adds <em>exception</em></a></li>
     <li><a href="thread.html#functional">adds <em>functional</em></a></li>
     <li><a href="thread.html#intrusive">adds <em>intrusive</em></a></li>
-    <li><a href="thread.html#move">adds <em>move</em></a></li>
     <li><a href="thread.html#system">adds <em>system</em></a></li>
     <li><a href="thread.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="thread.html#winapi">adds <em>winapi</em></a></li>
@@ -2033,14 +2037,12 @@
     <li><a href="unordered.html#container">adds <em>container</em></a></li>
     <li><a href="unordered.html#detail">adds <em>detail</em></a></li>
     <li><a href="unordered.html#functional">adds <em>functional</em></a></li>
-    <li><a href="unordered.html#move">adds <em>move</em></a></li>
     <li><a href="unordered.html#tuple">adds <em>tuple</em></a></li>
   </ul>
   <h2><a href="variant.html"><em>variant</em></a></h2><ul>
     <li><a href="variant.html#bind">adds <em>bind</em></a></li>
     <li><a href="variant.html#detail">adds <em>detail</em></a></li>
     <li><a href="variant.html#functional">adds <em>functional</em></a></li>
-    <li><a href="variant.html#move">adds <em>move</em></a></li>
     <li><a href="variant.html#type_index">adds <em>type_index</em></a></li>
   </ul>
   <h2><a href="chrono.html"><em>chrono</em></a></h2><ul>

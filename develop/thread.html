@@ -442,6 +442,11 @@
       <li>from <code>&lt;boost/thread/caller_context.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/thread.hpp&gt;</code></li>
     </ul>
+  <h2 id="iterator"><a href="iterator.html"><em>iterator</em></a></h2>
+    <h3><code>&lt;boost/next_prior.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/future.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/thread/futures/wait_for_any.hpp&gt;</code></li>
+    </ul>
   <h2 id="move"><a href="move.html"><em>move</em></a></h2>
     <h3><code>&lt;boost/move/detail/move_helpers.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/csbl/devector.hpp&gt;</code></li>
@@ -634,10 +639,6 @@
       <li>from <code>&lt;boost/thread/synchronized_value.hpp&gt;</code></li>
     </ul>
   <h2 id="utility"><a href="utility.html"><em>utility</em></a></h2>
-    <h3><code>&lt;boost/next_prior.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/thread/future.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/thread/futures/wait_for_any.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/utility/result_of.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/barrier.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/invoker.hpp&gt;</code></li>
@@ -653,7 +654,49 @@
       <li>from <code>&lt;boost/thread/win32/shared_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/detail/winapi/access_rights.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/detail/winapi/config.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/detail/winapi/dll.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/detail/winapi/event.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/detail/winapi/get_current_process.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/detail/winapi/get_current_process_id.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/detail/winapi/get_current_thread.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/detail/winapi/get_current_thread_id.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/detail/winapi/handles.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/detail/winapi/heap_memory.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/win32/thread_heap_alloc.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/detail/winapi/semaphore.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/detail/winapi/system.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/detail/winapi/thread.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/detail/winapi/time.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/detail/winapi/wait.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
     </ul>
 
@@ -680,23 +723,21 @@
     <li><a href="functional.html#detail">adds <em>detail</em></a></li>
     <li><a href="functional.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="functional.html#integer">adds <em>integer</em></a></li>
-    <li><a href="functional.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="functional.html#typeof">adds <em>typeof</em></a></li>
+  </ul>
+  <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
+    <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
+    <li><a href="iterator.html#detail">adds <em>detail</em></a></li>
+    <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
+    <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
   </ul>
   <h2><a href="optional.html"><em>optional</em></a></h2><ul>
     <li><a href="optional.html#detail">adds <em>detail</em></a></li>
-  </ul>
-  <h2><a href="utility.html"><em>utility</em></a></h2><ul>
-    <li><a href="utility.html#iterator">adds <em>iterator</em></a></li>
   </ul>
   <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
     <li><a href="algorithm.html#array">adds <em>array</em></a></li>
     <li><a href="algorithm.html#regex">adds <em>regex</em></a></li>
     <li><a href="algorithm.html#unordered">adds <em>unordered</em></a></li>
-  </ul>
-  <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
-    <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
-    <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
   </ul>
   <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
     <li><a href="lexical_cast.html#array">adds <em>array</em></a></li>

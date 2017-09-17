@@ -7,8 +7,10 @@ asio
 assert
 assign
 atomic
+beast
 bimap
 bind
+callable_traits
 chrono
 chrono~stopwatches
 circular_buffer
@@ -63,6 +65,7 @@ logic
 math
 metaparse
 move
+mp11
 mpi
 mpl
 msm

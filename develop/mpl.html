@@ -886,6 +886,9 @@
     <h3><code>&lt;boost/mpl/has_xxx.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/compute/lambda/placeholders.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/compute/types/size_t.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mpl/int.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/compute/algorithm/fill.hpp&gt;</code></li>
       <li>from <code>&lt;boost/compute/functional/bind.hpp&gt;</code></li>
@@ -1829,6 +1832,7 @@
       <li>from <code>&lt;boost/geometry/extensions/gis/io/shapelib/shp_read_object.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/vertex_latitude.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/vertex_longitude.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/geometries/helper_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/predicates.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/rtree/utilities/gl_draw.hpp&gt;</code></li>
@@ -1844,9 +1848,11 @@
       <li>from <code>&lt;boost/geometry/iterators/point_reverse_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/segment_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/robustness/get_rescale_policy.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/agnostic/point_in_poly_winding.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/area.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/azimuth.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/centroid.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/compare.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/concepts/distance_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/covered_by.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/disjoint.hpp&gt;</code></li>
@@ -1944,9 +1950,9 @@
       <li>from <code>&lt;boost/geometry/strategies/cartesian/centroid_bashein_detmer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/distance_projected_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/side_by_triangle.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/strategies/compare.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/azimuth.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/azimuth.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/compare.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track_point_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/add_const_if_c.hpp&gt;</code></li>
@@ -1985,6 +1991,10 @@
     </ul>
     <h3><code>&lt;boost/mpl/list.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/util/promote_integral.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/min.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/strategies/compare.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/compare.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/next.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/result.hpp&gt;</code></li>
@@ -3006,13 +3016,13 @@
       <li>from <code>&lt;boost/metaparse/v1/unless_error.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/fold.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/metaparse/v1/impl/nth_of_c_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/metaparse/v1/cpp98/impl/nth_of_c_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/metaparse/v1/impl/one_of.hpp&gt;</code></li>
       <li>from <code>&lt;boost/metaparse/v1/impl/sequence_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/front.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/metaparse/v1/cpp98/impl/nth_of_c_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/metaparse/v1/grammar.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/metaparse/v1/impl/nth_of_c_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/metaparse/v1/keyword.hpp&gt;</code></li>
       <li>from <code>&lt;boost/metaparse/v1/one_char.hpp&gt;</code></li>
     </ul>
@@ -3062,7 +3072,7 @@
       <li>from <code>&lt;boost/metaparse/v1/util/in_range.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/list.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/metaparse/v1/impl/nth_of_c.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/metaparse/v1/cpp98/impl/nth_of_c.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/map.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/metaparse/v1/grammar.hpp&gt;</code></li>
@@ -3071,7 +3081,7 @@
       <li>from <code>&lt;boost/metaparse/v1/grammar.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/pop_front.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/metaparse/v1/impl/nth_of_c_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/metaparse/v1/cpp98/impl/nth_of_c_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/metaparse/v1/keyword.hpp&gt;</code></li>
       <li>from <code>&lt;boost/metaparse/v1/one_char.hpp&gt;</code></li>
     </ul>
