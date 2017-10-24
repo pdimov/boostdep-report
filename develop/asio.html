@@ -17,24 +17,16 @@
       <li>from <code>&lt;boost/asio/detail/assert.hpp&gt;</code></li>
     </ul>
   <h2 id="bind"><a href="bind.html"><em>bind</em></a></h2>
-    <h3><code>&lt;boost/bind.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/asio/ssl/old/detail/openssl_operation.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/ssl/old/detail/openssl_stream_service.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/bind/arg.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/asio/placeholders.hpp&gt;</code></li>
     </ul>
   <h2 id="chrono"><a href="chrono.html"><em>chrono</em></a></h2>
     <h3><code>&lt;boost/chrono/system_clocks.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/asio/detail/impl/handler_tracking.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/high_resolution_timer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/steady_timer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/system_timer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/asio/detail/chrono.hpp&gt;</code></li>
     </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/asio/detail/config.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/ssl/old/detail/openssl_stream_service.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/asio/detail/cstdint.hpp&gt;</code></li>
@@ -49,15 +41,8 @@
       <li>from <code>&lt;boost/asio/detail/config.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
-    <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/asio/ssl/old/basic_context.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/ssl/old/context_service.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/ssl/old/detail/openssl_stream_service.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/ssl/old/stream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/ssl/old/stream_service.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/asio/detail/addressof.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/asio/detail/memory.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/asio/detail/type_traits.hpp&gt;</code></li>
@@ -73,10 +58,7 @@
     </ul>
   <h2 id="function"><a href="function.html"><em>function</em></a></h2>
     <h3><code>&lt;boost/function.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/asio/detail/function.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/ssl/old/detail/openssl_context_service.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/ssl/old/detail/openssl_operation.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/ssl/old/detail/openssl_stream_service.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/asio/detail/functional.hpp&gt;</code></li>
     </ul>
   <h2 id="regex"><a href="regex.html"><em>regex</em></a></h2>
     <h3><code>&lt;boost/regex/v4/match_flags.hpp&gt;</code></h3><ul>
@@ -90,10 +72,10 @@
       <li>from <code>&lt;boost/asio/detail/atomic_count.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/shared_ptr.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/asio/detail/shared_ptr.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/asio/detail/memory.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/weak_ptr.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/asio/detail/weak_ptr.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/asio/detail/memory.hpp&gt;</code></li>
     </ul>
   <h2 id="system"><a href="system.html"><em>system</em></a></h2>
     <h3><code>&lt;boost/cerrno.hpp&gt;</code></h3><ul>
@@ -102,20 +84,22 @@
     <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/asio/detail/descriptor_ops.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/detail/handler_tracking.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/asio/detail/scheduler.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/asio/detail/scheduler_operation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/detail/socket_ops.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/detail/task_io_service.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/detail/task_io_service_operation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/detail/throw_error.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/detail/win_iocp_operation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/detail/winrt_utils.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/error.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/impl/use_future.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/io_service.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/asio/io_context.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/ip/address.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/ip/address_v4.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/ip/address_v6.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/ip/detail/endpoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/ip/host_name.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/asio/ip/network_v4.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/asio/ip/network_v6.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/ip/resolver_service.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/serial_port_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/ssl/error.hpp&gt;</code></li>
@@ -123,10 +107,9 @@
     <h3><code>&lt;boost/system/system_error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/asio/detail/impl/throw_error.ipp&gt;</code></li>
       <li>from <code>&lt;boost/asio/error.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/asio/impl/spawn.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/impl/use_future.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/ip/impl/address.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/ssl/old/detail/openssl_operation.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/ssl/old/detail/openssl_stream_service.hpp&gt;</code></li>
     </ul>
   <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
     <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
@@ -134,6 +117,21 @@
     </ul>
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
     <h3><code>&lt;boost/type_traits/add_const.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/asio/detail/type_traits.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/conditional.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/asio/detail/type_traits.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/decay.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/asio/detail/type_traits.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/asio/detail/type_traits.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_base_of.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/asio/detail/type_traits.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_class.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/asio/detail/type_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_const.hpp&gt;</code></h3><ul>
@@ -154,6 +152,10 @@
     <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/asio/detail/type_traits.hpp&gt;</code></li>
     </ul>
+  <h2 id="utility"><a href="utility.html"><em>utility</em></a></h2>
+    <h3><code>&lt;boost/utility/result_of.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/asio/detail/type_traits.hpp&gt;</code></li>
+    </ul>
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>asio</em></h1>
@@ -168,7 +170,6 @@
     <li><a href="chrono.html#ratio">adds <em>ratio</em></a></li>
     <li><a href="chrono.html#static_assert">adds <em>static_assert</em></a></li>
     <li><a href="chrono.html#typeof">adds <em>typeof</em></a></li>
-    <li><a href="chrono.html#utility">adds <em>utility</em></a></li>
     <li><a href="chrono.html#winapi">adds <em>winapi</em></a></li>
   </ul>
   <h2><a href="coroutine.html"><em>coroutine</em></a></h2><ul>
@@ -176,7 +177,6 @@
     <li><a href="coroutine.html#exception">adds <em>exception</em></a></li>
     <li><a href="coroutine.html#move">adds <em>move</em></a></li>
     <li><a href="coroutine.html#range">adds <em>range</em></a></li>
-    <li><a href="coroutine.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
     <li><a href="date_time.html#algorithm">adds <em>algorithm</em></a></li>
@@ -187,7 +187,6 @@
     <li><a href="date_time.html#serialization">adds <em>serialization</em></a></li>
     <li><a href="date_time.html#static_assert">adds <em>static_assert</em></a></li>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
-    <li><a href="date_time.html#utility">adds <em>utility</em></a></li>
     <li><a href="date_time.html#winapi">adds <em>winapi</em></a></li>
   </ul>
   <h2><a href="function.html"><em>function</em></a></h2><ul>
@@ -218,6 +217,12 @@
   </ul>
   <h2><a href="type_traits.html"><em>type_traits</em></a></h2><ul>
     <li><a href="type_traits.html#static_assert">adds <em>static_assert</em></a></li>
+  </ul>
+  <h2><a href="utility.html"><em>utility</em></a></h2><ul>
+    <li><a href="utility.html#iterator">adds <em>iterator</em></a></li>
+    <li><a href="utility.html#mpl">adds <em>mpl</em></a></li>
+    <li><a href="utility.html#preprocessor">adds <em>preprocessor</em></a></li>
+    <li><a href="utility.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
   <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
     <li><a href="algorithm.html#tuple">adds <em>tuple</em></a></li>
@@ -291,23 +296,58 @@
 
 <h1 id="reverse-dependencies">Reverse dependencies for <em>asio</em></h1>
   <h2 id="reverse-beast"><a href="beast.html"><em>beast</em></a></h2>
+    <h3><code>&lt;boost/asio/associated_allocator.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/handler_ptr.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/read.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/write.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/detail/pausation.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/accept.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/close.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/handshake.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/ping.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/read.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/teardown.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/write.ipp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/associated_executor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/read.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/write.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/accept.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/close.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/handshake.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/ping.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/read.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/teardown.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/write.ipp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/async_result.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/async_result.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/buffered_read_stream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/read.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/write.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/basic_stream_socket.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/buffer.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/buffer_prefix.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/buffered_read_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/buffers_adapter.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/consuming_buffers.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/buffers_prefix.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/buffers_suffix.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/buffers_to_string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/ostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/type_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/flat_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/flat_static_buffer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/impl/buffer_cat.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/buffers_adapter.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/buffers_cat.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/flat_static_buffer.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/static_buffer.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/multi_buffer.hpp&gt;</code></li>
@@ -339,26 +379,9 @@
     <h3><code>&lt;boost/asio/error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/websocket/stream.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/asio/handler_alloc_hook.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/handler_alloc.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/impl/handler_ptr.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/http/impl/read.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/http/impl/write.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/accept.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/close.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/handshake.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/ping.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/read.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/teardown.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/write.ipp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/asio/handler_continuation_hook.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/impl/handler_ptr.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/read.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/write.ipp&gt;</code></li>
@@ -370,31 +393,23 @@
       <li>from <code>&lt;boost/beast/websocket/impl/teardown.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/write.ipp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/asio/handler_invoke_hook.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/impl/handler_ptr.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/http/impl/read.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/http/impl/write.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/accept.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/close.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/handshake.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/ping.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/read.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/teardown.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/write.ipp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/asio/handler_type.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/async_result.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/asio/io_service.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/asio/io_context.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/buffered_read_stream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/detail/type_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ip/tcp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/websocket/ssl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/teardown.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/post.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/read.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/write.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/accept.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/close.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/ping.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/read.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/teardown.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ssl/stream.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/websocket/ssl.hpp&gt;</code></li>

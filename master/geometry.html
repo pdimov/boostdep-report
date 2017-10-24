@@ -204,7 +204,6 @@
       <li>from <code>&lt;boost/geometry/geometries/concepts/point_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/buffer_distance_asymmetric.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/buffer_distance_symmetric.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/strategies/agnostic/point_in_poly_winding.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/side_of_intersection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/concepts/distance_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/concepts/simplify_concept.hpp&gt;</code></li>
@@ -334,11 +333,10 @@
       <li>from <code>&lt;boost/geometry/formulas/thomas_inverse.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/vincenty_direct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/vincenty_inverse.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/strategies/spherical/compare_circular.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/math.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/math/special_functions/atanh.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/strategies/geographic/area.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/formulas/authalic_radius_sqr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/math/special_functions/fpclassify.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/buffer_side_straight.hpp&gt;</code></li>
@@ -412,6 +410,7 @@
       <li>from <code>&lt;boost/geometry/core/ring_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/vertex_latitude.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/vertex_longitude.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/geometries/helper_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/predicates.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/rtree/utilities/gl_draw.hpp&gt;</code></li>
@@ -427,9 +426,11 @@
       <li>from <code>&lt;boost/geometry/iterators/point_reverse_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/segment_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/robustness/get_rescale_policy.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/agnostic/point_in_poly_winding.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/area.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/azimuth.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/centroid.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/compare.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/concepts/distance_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/covered_by.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/disjoint.hpp&gt;</code></li>
@@ -523,9 +524,9 @@
       <li>from <code>&lt;boost/geometry/strategies/cartesian/centroid_bashein_detmer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/distance_projected_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/side_by_triangle.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/strategies/compare.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/azimuth.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/azimuth.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/compare.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track_point_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/add_const_if_c.hpp&gt;</code></li>
@@ -564,6 +565,10 @@
     </ul>
     <h3><code>&lt;boost/mpl/list.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/util/promote_integral.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/min.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/strategies/compare.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/compare.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/next.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/result.hpp&gt;</code></li>
@@ -689,6 +694,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/centroid.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/convert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/correct.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/correct_closure.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffer_inserter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffer_policies.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffered_piece_collection.hpp&gt;</code></li>
@@ -751,6 +757,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/handle_self_turns.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/less_by_segment_ratio.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/linear_linear.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/needs_self_turns.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/overlay.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/pointlike_linear.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/pointlike_pointlike.hpp&gt;</code></li>
@@ -1090,6 +1097,7 @@
       <li>from <code>&lt;boost/geometry/strategies/concepts/distance_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/disjoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/relate.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/compare.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_unsigned.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/index/detail/rtree/linear/redistribute_elements.hpp&gt;</code></li>
@@ -1167,6 +1175,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/convert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/convex_hull.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/correct.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/correct_closure.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/crosses.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/covered_by/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/interface.hpp&gt;</code></li>
@@ -1210,6 +1219,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/convert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/convex_hull.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/correct.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/correct_closure.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/crosses.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/covered_by/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/interface.hpp&gt;</code></li>
@@ -1252,6 +1262,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/convert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/convex_hull.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/correct.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/correct_closure.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/crosses.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/covered_by/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/interface.hpp&gt;</code></li>

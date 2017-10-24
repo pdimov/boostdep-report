@@ -20,6 +20,7 @@ concept_check
 config
 container
 context
+contract
 conversion
 convert
 core

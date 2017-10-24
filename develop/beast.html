@@ -9,23 +9,58 @@
 
 <h1 id="primary-dependencies">Primary dependencies for <em>beast</em></h1>
   <h2 id="asio"><a href="asio.html"><em>asio</em></a></h2>
+    <h3><code>&lt;boost/asio/associated_allocator.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/handler_ptr.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/read.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/write.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/detail/pausation.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/accept.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/close.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/handshake.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/ping.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/read.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/teardown.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/write.ipp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/associated_executor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/read.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/write.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/accept.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/close.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/handshake.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/ping.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/read.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/teardown.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/write.ipp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/async_result.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/async_result.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/buffered_read_stream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/read.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/write.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/basic_stream_socket.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/buffer.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/buffer_prefix.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/buffered_read_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/buffers_adapter.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/consuming_buffers.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/buffers_prefix.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/buffers_suffix.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/buffers_to_string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/ostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/type_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/flat_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/flat_static_buffer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/impl/buffer_cat.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/buffers_adapter.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/buffers_cat.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/flat_static_buffer.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/static_buffer.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/multi_buffer.hpp&gt;</code></li>
@@ -57,26 +92,9 @@
     <h3><code>&lt;boost/asio/error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/websocket/stream.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/asio/handler_alloc_hook.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/handler_alloc.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/impl/handler_ptr.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/http/impl/read.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/http/impl/write.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/accept.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/close.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/handshake.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/ping.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/read.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/teardown.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/write.ipp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/asio/handler_continuation_hook.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/impl/handler_ptr.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/read.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/write.ipp&gt;</code></li>
@@ -88,31 +106,23 @@
       <li>from <code>&lt;boost/beast/websocket/impl/teardown.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/write.ipp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/asio/handler_invoke_hook.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/impl/handler_ptr.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/http/impl/read.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/http/impl/write.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/accept.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/close.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/handshake.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/ping.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/read.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/teardown.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/write.ipp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/asio/handler_type.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/async_result.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/asio/io_service.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/asio/io_context.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/buffered_read_stream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/detail/type_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ip/tcp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/websocket/ssl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/teardown.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/post.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/read.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/write.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/accept.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/close.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/ping.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/read.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/teardown.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ssl/stream.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/websocket/ssl.hpp&gt;</code></li>
@@ -153,7 +163,6 @@
     </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/cpu_info.hpp&gt;</code></li>
@@ -161,7 +170,6 @@
       <li>from <code>&lt;boost/beast/core/file.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/file_posix.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/file_win32.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/handler_alloc.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/detail/basic_parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/read.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/version.hpp&gt;</code></li>
@@ -181,8 +189,8 @@
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/config.hpp&gt;</code></li>
     </ul>
   <h2 id="endian"><a href="endian.html"><em>endian</em></a></h2>
     <h3><code>&lt;boost/endian/buffers.hpp&gt;</code></h3><ul>
@@ -199,7 +207,7 @@
     </ul>
   <h2 id="optional"><a href="optional.html"><em>optional</em></a></h2>
     <h3><code>&lt;boost/optional.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/consuming_buffers.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/buffers_suffix.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/string_param.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/basic_dynamic_body.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/basic_file_body.hpp&gt;</code></li>
@@ -237,7 +245,7 @@
     </ul>
   <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
     <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/config.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/varint.hpp&gt;</code></li>
     </ul>
   <h2 id="system"><a href="system.html"><em>system</em></a></h2>
@@ -249,9 +257,9 @@
     </ul>
   <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
     <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/impl/buffer_cat.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/buffers_adapter.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/buffers_cat.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/flat_buffer.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/flat_static_buffer.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/multi_buffer.ipp&gt;</code></li>
