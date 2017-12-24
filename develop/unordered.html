@@ -35,7 +35,7 @@
       <li>from <code>&lt;boost/unordered/unordered_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_set.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/no_exceptions_support.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/swap.hpp&gt;</code></h3><ul>
@@ -60,10 +60,6 @@
       <li>from <code>&lt;boost/unordered/unordered_map_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_set_fwd.hpp&gt;</code></li>
     </ul>
-  <h2 id="iterator"><a href="iterator.html"><em>iterator</em></a></h2>
-    <h3><code>&lt;boost/iterator/iterator_categories.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
-    </ul>
   <h2 id="move"><a href="move.html"><em>move</em></a></h2>
     <h3><code>&lt;boost/move/move.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
@@ -72,7 +68,7 @@
     </ul>
   <h2 id="predef"><a href="predef.html"><em>predef</em></a></h2>
     <h3><code>&lt;boost/predef.h&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/fwd.hpp&gt;</code></li>
     </ul>
   <h2 id="preprocessor"><a href="preprocessor.html"><em>preprocessor</em></a></h2>
     <h3><code>&lt;boost/preprocessor/arithmetic/inc.hpp&gt;</code></h3><ul>
@@ -121,14 +117,14 @@
     <h3><code>&lt;boost/type_traits/alignment_of.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/is_base_of.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/is_class.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_constructible.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/unordered_map.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/is_convertible.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_empty.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
@@ -160,21 +156,12 @@
     <li><a href="functional.html#function">adds <em>function</em></a></li>
     <li><a href="functional.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="functional.html#integer">adds <em>integer</em></a></li>
+    <li><a href="functional.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="functional.html#mpl">adds <em>mpl</em></a></li>
     <li><a href="functional.html#optional">adds <em>optional</em></a></li>
     <li><a href="functional.html#static_assert">adds <em>static_assert</em></a></li>
     <li><a href="functional.html#typeof">adds <em>typeof</em></a></li>
     <li><a href="functional.html#utility">adds <em>utility</em></a></li>
-  </ul>
-  <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
-    <li><a href="iterator.html#concept_check">adds <em>concept_check</em></a></li>
-    <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
-    <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
-    <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
-    <li><a href="iterator.html#mpl">adds <em>mpl</em></a></li>
-    <li><a href="iterator.html#optional">adds <em>optional</em></a></li>
-    <li><a href="iterator.html#static_assert">adds <em>static_assert</em></a></li>
-    <li><a href="iterator.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="move.html"><em>move</em></a></h2><ul>
     <li><a href="move.html#static_assert">adds <em>static_assert</em></a></li>
@@ -191,6 +178,11 @@
   <h2><a href="function.html"><em>function</em></a></h2><ul>
     <li><a href="function.html#bind">adds <em>bind</em></a></li>
     <li><a href="function.html#type_index">adds <em>type_index</em></a></li>
+  </ul>
+  <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
+    <li><a href="iterator.html#concept_check">adds <em>concept_check</em></a></li>
+    <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
+    <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
   </ul>
 
 

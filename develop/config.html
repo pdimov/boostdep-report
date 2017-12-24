@@ -401,6 +401,7 @@
       <li>from <code>&lt;boost/container/detail/transform_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/tree.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/type_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container/detail/value_functors.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/value_init.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/variadic_templates_tools.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/version_type.hpp&gt;</code></li>
@@ -479,6 +480,7 @@
       <li>from <code>&lt;boost/contract/detail/condition/cond_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/contract/detail/condition/cond_subcontracting.hpp&gt;</code></li>
       <li>from <code>&lt;boost/contract/detail/declspec.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/contract/detail/inlined/core/exception.hpp&gt;</code></li>
       <li>from <code>&lt;boost/contract/detail/operation/constructor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/contract/detail/operation/destructor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/contract/detail/operation/function.hpp&gt;</code></li>
@@ -941,7 +943,6 @@
       <li>from <code>&lt;boost/functional/hash/detail/hash_float.hpp&gt;</code></li>
       <li>from <code>&lt;boost/functional/hash/detail/limits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/functional/hash/extensions.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/functional/hash/hash_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/functional/hash_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/functional/lightweight_forward_adapter.hpp&gt;</code></li>
     </ul>
@@ -949,14 +950,14 @@
       <li>from <code>&lt;boost/functional/hash/detail/float_functions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/functional/hash/detail/hash_float.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/functional/hash/detail/hash_float.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/functional/hash/hash.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/detail/workaround.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/functional/forward_adapter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/functional/hash/hash_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/functional/lightweight_forward_adapter.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/functional/hash/detail/hash_float.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/functional/hash/hash.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/limits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/functional/hash/detail/hash_float.hpp&gt;</code></li>
@@ -2359,6 +2360,7 @@
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/ptr_container/detail/is_convertible.hpp&gt;</code></li>
       <li>from <code>&lt;boost/ptr_container/detail/map_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/ptr_container/detail/ptr_container_disable_deprecated.hpp&gt;</code></li>
       <li>from <code>&lt;boost/ptr_container/detail/reversible_ptr_container.hpp&gt;</code></li>
       <li>from <code>&lt;boost/ptr_container/detail/static_move_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/ptr_container/detail/throw_exception.hpp&gt;</code></li>
@@ -3659,6 +3661,9 @@
       <li>from <code>&lt;boost/utility/string_view_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/utility/value_init.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/utility/detail/minstd_rand.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/detail/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/detail/call_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/operators.hpp&gt;</code></li>
@@ -3673,13 +3678,21 @@
       <li>from <code>&lt;boost/uuid/basic_name_generator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/uuid/detail/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/uuid/detail/md5.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/uuid/detail/seed_rng.hpp&gt;</code></li>
       <li>from <code>&lt;boost/uuid/name_generator.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/config/auto_link.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/uuid/detail/random_provider_bcrypt.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/uuid/detail/random_provider_wincrypt.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/uuid/basic_name_generator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/uuid/detail/md5.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/uuid/detail/random_provider.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/uuid/entropy_error.hpp&gt;</code></li>
       <li>from <code>&lt;boost/uuid/uuid.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/limits.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/uuid/detail/random_provider.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-variant"><a href="variant.html"><em>variant</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
