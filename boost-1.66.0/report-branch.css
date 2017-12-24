@@ -1,0 +1,3 @@
+@import '../report.css';
+.report-revision::after { content: 'HEAD-b143a5b'; }
+.report-timestamp::after { content: '24.12.2017 16:16:05.41'; }
