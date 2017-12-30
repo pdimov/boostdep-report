@@ -80,6 +80,10 @@
       <li>from <code>&lt;boost/fusion/support/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/iterator_range/detail/segmented_iterator_range.hpp&gt;</code></li>
     </ul>
+  <h2 id="container_hash"><a href="container_hash.html"><em>container_hash</em></a></h2>
+    <h3><code>&lt;boost/functional/hash.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/fusion/sequence/hash.hpp&gt;</code></li>
+    </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/fold.hpp&gt;</code></li>
@@ -176,10 +180,6 @@
     </ul>
     <h3><code>&lt;boost/function_types/result_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/functional/invocation/invoke.hpp&gt;</code></li>
-    </ul>
-  <h2 id="functional"><a href="functional.html"><em>functional</em></a></h2>
-    <h3><code>&lt;boost/functional/hash.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/fusion/sequence/hash.hpp&gt;</code></li>
     </ul>
   <h2 id="mpl"><a href="mpl.html"><em>mpl</em></a></h2>
     <h3><code>&lt;boost/mpl/advance.hpp&gt;</code></h3><ul>
@@ -1505,38 +1505,22 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>fusion</em></h1>
+  <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
+    <li><a href="container_hash.html#assert">adds <em>assert</em></a></li>
+    <li><a href="container_hash.html#detail">adds <em>detail</em></a></li>
+    <li><a href="container_hash.html#integer">adds <em>integer</em></a></li>
+  </ul>
   <h2><a href="core.html"><em>core</em></a></h2><ul>
     <li><a href="core.html#assert">adds <em>assert</em></a></li>
   </ul>
   <h2><a href="function_types.html"><em>function_types</em></a></h2><ul>
     <li><a href="function_types.html#detail">adds <em>detail</em></a></li>
   </ul>
-  <h2><a href="functional.html"><em>functional</em></a></h2><ul>
-    <li><a href="functional.html#assert">adds <em>assert</em></a></li>
-    <li><a href="functional.html#detail">adds <em>detail</em></a></li>
-    <li><a href="functional.html#function">adds <em>function</em></a></li>
-    <li><a href="functional.html#integer">adds <em>integer</em></a></li>
-    <li><a href="functional.html#iterator">adds <em>iterator</em></a></li>
-    <li><a href="functional.html#optional">adds <em>optional</em></a></li>
-  </ul>
   <h2><a href="mpl.html"><em>mpl</em></a></h2><ul>
     <li><a href="mpl.html#predef">adds <em>predef</em></a></li>
   </ul>
   <h2><a href="utility.html"><em>utility</em></a></h2><ul>
     <li><a href="utility.html#throw_exception">adds <em>throw_exception</em></a></li>
-  </ul>
-  <h2><a href="function.html"><em>function</em></a></h2><ul>
-    <li><a href="function.html#bind">adds <em>bind</em></a></li>
-    <li><a href="function.html#move">adds <em>move</em></a></li>
-    <li><a href="function.html#type_index">adds <em>type_index</em></a></li>
-  </ul>
-  <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
-    <li><a href="iterator.html#concept_check">adds <em>concept_check</em></a></li>
-    <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
-    <li><a href="iterator.html#smart_ptr">adds <em>smart_ptr</em></a></li>
-  </ul>
-  <h2><a href="optional.html"><em>optional</em></a></h2><ul>
-    <li><a href="optional.html#move">adds <em>move</em></a></li>
   </ul>
 
 
@@ -2183,6 +2167,7 @@
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/empty.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
@@ -2238,6 +2223,7 @@
     </ul>
     <h3><code>&lt;boost/fusion/include/is_view.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/attributes.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/support/traits/tuple_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/iter_fold.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/repository/home/qi/operator/keywords.hpp&gt;</code></li>
