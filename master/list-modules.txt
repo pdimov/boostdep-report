@@ -19,7 +19,9 @@ compute
 concept_check
 config
 container
+container_hash
 context
+contract
 conversion
 convert
 core

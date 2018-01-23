@@ -1889,6 +1889,10 @@
       <li>from <code>&lt;boost/geometry/iterators/point_reverse_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/segment_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/robustness/get_rescale_policy.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/impl/base_static.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/par4.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/transformation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/point_in_poly_winding.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/area.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/azimuth.hpp&gt;</code></li>
@@ -1896,6 +1900,7 @@
       <li>from <code>&lt;boost/geometry/strategies/compare.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/concepts/distance_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/covered_by.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/densify.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/disjoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/distance.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/envelope.hpp&gt;</code></li>
@@ -1911,6 +1916,7 @@
     <h3><code>&lt;boost/mpl/at.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/result.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/parameter_type_of.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/util/select_sequence_element.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/aux_/has_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/index/detail/meta.hpp&gt;</code></li>
@@ -1958,7 +1964,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/not_implemented.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/algorithms/area.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/assign.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/assign_values.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/segment_to_box.hpp&gt;</code></li>
@@ -1987,15 +1992,23 @@
       <li>from <code>&lt;boost/geometry/iterators/detail/point_iterator/inner_range_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/detail/point_iterator/value_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/detail/segment_iterator/value_type.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/strategies/cartesian/area_surveyor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/impl/projects.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/par4.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/transformation.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/area_result.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/cartesian/area.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/centroid_bashein_detmer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/distance_projected_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/side_by_triangle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/azimuth.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/distance_cross_track.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/geographic/distance_cross_track_box_box.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/geographic/distance_cross_track_point_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/azimuth.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/compare.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track_box_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track_point_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/add_const_if_c.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/calculation_type.hpp&gt;</code></li>
@@ -2005,6 +2018,7 @@
       <li>from <code>&lt;boost/geometry/util/promote_integral.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/select_calculation_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/select_most_precise.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/util/select_sequence_element.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/boundary_view/implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/normalized_view.hpp&gt;</code></li>
     </ul>
@@ -2022,6 +2036,7 @@
       <li>from <code>&lt;boost/geometry/index/detail/varray_detail.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/compress_variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/parameter_type_of.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/util/select_sequence_element.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/two_dimensional_view.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/integral_c.hpp&gt;</code></h3><ul>
@@ -2068,6 +2083,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/length.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/adapted/boost_fusion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/compress_variant.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/util/select_sequence_element.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/size_t.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/num_points.hpp&gt;</code></li>

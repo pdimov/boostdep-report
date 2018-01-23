@@ -459,7 +459,7 @@
     <li><a href="conversion.html#typeof">adds <em>typeof</em></a></li>
   </ul>
   <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
-    <li><a href="fusion.html#functional">adds <em>functional</em></a></li>
+    <li><a href="fusion.html#container_hash">adds <em>container_hash</em></a></li>
     <li><a href="fusion.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
   </ul>
@@ -469,13 +469,8 @@
   <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
     <li><a href="smart_ptr.html#move">adds <em>move</em></a></li>
   </ul>
-  <h2><a href="functional.html"><em>functional</em></a></h2><ul>
-    <li><a href="functional.html#function">adds <em>function</em></a></li>
-    <li><a href="functional.html#integer">adds <em>integer</em></a></li>
-  </ul>
-  <h2><a href="function.html"><em>function</em></a></h2><ul>
-    <li><a href="function.html#bind">adds <em>bind</em></a></li>
-    <li><a href="function.html#type_index">adds <em>type_index</em></a></li>
+  <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
+    <li><a href="container_hash.html#integer">adds <em>integer</em></a></li>
   </ul>
 
 
@@ -930,6 +925,79 @@
       <li>from <code>&lt;boost/concept/detail/msvc.hpp&gt;</code></li>
       <li>from <code>&lt;boost/concept_check/general.hpp&gt;</code></li>
       <li>from <code>&lt;boost/concept_check/msvc.hpp&gt;</code></li>
+    </ul>
+  <h2 id="reverse-contract"><a href="contract.html"><em>contract</em></a></h2>
+    <h3><code>&lt;boost/mpl/and.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_inv.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/contract/detail/type_traits/member_function_types.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/back.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/type_traits/member_function_types.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/type_traits/mirror.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/contains.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_subcontracting.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/copy_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_inv.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/empty.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_subcontracting.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/eval_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_inv.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_subcontracting.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/fold.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_subcontracting.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/for_each.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_inv.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_subcontracting.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/front.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_subcontracting.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/identity.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_subcontracting.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/contract/detail/type_traits/member_function_types.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_post.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/contract/detail/type_traits/member_function_types.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/not.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_inv.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_subcontracting.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/or.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_subcontracting.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/placeholders.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_inv.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_subcontracting.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/pop_front.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_subcontracting.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/contract/detail/type_traits/member_function_types.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/push_back.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_subcontracting.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/contract/detail/type_traits/member_function_types.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/push_front.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/type_traits/mirror.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/transform.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_inv.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/vector.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/contract/base_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/contract/core/access.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_inv.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/contract/detail/condition/cond_subcontracting.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-convert"><a href="convert.html"><em>convert</em></a></h2>
     <h3><code>&lt;boost/mpl/find.hpp&gt;</code></h3><ul>

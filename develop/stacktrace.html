@@ -35,6 +35,10 @@
       <li>from <code>&lt;boost/stacktrace/safe_dump_to.hpp&gt;</code></li>
       <li>from <code>&lt;boost/stacktrace/stacktrace.hpp&gt;</code></li>
     </ul>
+  <h2 id="container_hash"><a href="container_hash.html"><em>container_hash</em></a></h2>
+    <h3><code>&lt;boost/container_hash/hash_fwd.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/stacktrace/stacktrace.hpp&gt;</code></li>
+    </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/demangle.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/detail/addr2line_impls.hpp&gt;</code></li>
@@ -72,26 +76,25 @@
       <li>from <code>&lt;boost/stacktrace/detail/to_hex_array.hpp&gt;</code></li>
     </ul>
   <h2 id="winapi"><a href="winapi.html"><em>winapi</em></a></h2>
-    <h3><code>&lt;boost/detail/winapi/access_rights.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/access_rights.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/detail/safe_dump_win.ipp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/winapi/config.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/safe_dump_to.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/winapi/dll.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/dll.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/detail/location_from_symbol.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/winapi/file_management.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/file_management.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/detail/safe_dump_win.ipp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/winapi/get_current_process.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/stacktrace/detail/frame_msvc.ipp&gt;</code></li>
+    <h3><code>&lt;boost/winapi/get_current_process.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/detail/safe_dump_win.ipp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/winapi/handles.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/handles.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/detail/safe_dump_win.ipp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/winapi/stack_backtrace.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/stack_backtrace.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/detail/collect_msvc.ipp&gt;</code></li>
     </ul>
 
@@ -100,6 +103,11 @@
   <h2><a href="array.html"><em>array</em></a></h2><ul>
     <li><a href="array.html#assert">adds <em>assert</em></a></li>
     <li><a href="array.html#throw_exception">adds <em>throw_exception</em></a></li>
+  </ul>
+  <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
+    <li><a href="container_hash.html#assert">adds <em>assert</em></a></li>
+    <li><a href="container_hash.html#detail">adds <em>detail</em></a></li>
+    <li><a href="container_hash.html#integer">adds <em>integer</em></a></li>
   </ul>
   <h2><a href="core.html"><em>core</em></a></h2><ul>
     <li><a href="core.html#assert">adds <em>assert</em></a></li>
@@ -118,14 +126,15 @@
     <li><a href="winapi.html#predef">adds <em>predef</em></a></li>
   </ul>
   <h2><a href="container.html"><em>container</em></a></h2><ul>
-    <li><a href="container.html#container_hash">adds <em>container_hash</em></a></li>
     <li><a href="container.html#intrusive">adds <em>intrusive</em></a></li>
     <li><a href="container.html#move">adds <em>move</em></a></li>
+  </ul>
+  <h2><a href="detail.html"><em>detail</em></a></h2><ul>
+    <li><a href="detail.html#preprocessor">adds <em>preprocessor</em></a></li>
   </ul>
   <h2><a href="math.html"><em>math</em></a></h2><ul>
     <li><a href="math.html#atomic">adds <em>atomic</em></a></li>
     <li><a href="math.html#concept_check">adds <em>concept_check</em></a></li>
-    <li><a href="math.html#detail">adds <em>detail</em></a></li>
     <li><a href="math.html#fusion">adds <em>fusion</em></a></li>
     <li><a href="math.html#lambda">adds <em>lambda</em></a></li>
     <li><a href="math.html#smart_ptr">adds <em>smart_ptr</em></a></li>
@@ -143,8 +152,6 @@
   <h2><a href="range.html"><em>range</em></a></h2><ul>
     <li><a href="range.html#algorithm">adds <em>algorithm</em></a></li>
     <li><a href="range.html#concept_check">adds <em>concept_check</em></a></li>
-    <li><a href="range.html#container_hash">adds <em>container_hash</em></a></li>
-    <li><a href="range.html#detail">adds <em>detail</em></a></li>
     <li><a href="range.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="range.html#optional">adds <em>optional</em></a></li>
     <li><a href="range.html#preprocessor">adds <em>preprocessor</em></a></li>

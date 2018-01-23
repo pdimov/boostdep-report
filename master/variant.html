@@ -45,6 +45,10 @@
       <li>from <code>&lt;boost/variant/polymorphic_get.hpp&gt;</code></li>
       <li>from <code>&lt;boost/variant/static_visitor.hpp&gt;</code></li>
     </ul>
+  <h2 id="container_hash"><a href="container_hash.html"><em>container_hash</em></a></h2>
+    <h3><code>&lt;boost/functional/hash_fwd.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/variant/detail/hash_variant.hpp&gt;</code></li>
+    </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/checked_delete.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/variant/recursive_wrapper.hpp&gt;</code></li>
@@ -78,10 +82,6 @@
     </ul>
     <h3><code>&lt;boost/detail/templated_streams.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/variant/detail/variant_io.hpp&gt;</code></li>
-    </ul>
-  <h2 id="functional"><a href="functional.html"><em>functional</em></a></h2>
-    <h3><code>&lt;boost/functional/hash_fwd.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/variant/detail/hash_variant.hpp&gt;</code></li>
     </ul>
   <h2 id="math"><a href="math.html"><em>math</em></a></h2>
     <h3><code>&lt;boost/math/common_factor_ct.hpp&gt;</code></h3><ul>
@@ -479,13 +479,8 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>variant</em></h1>
-  <h2><a href="functional.html"><em>functional</em></a></h2><ul>
-    <li><a href="functional.html#function">adds <em>function</em></a></li>
-    <li><a href="functional.html#function_types">adds <em>function_types</em></a></li>
-    <li><a href="functional.html#integer">adds <em>integer</em></a></li>
-    <li><a href="functional.html#iterator">adds <em>iterator</em></a></li>
-    <li><a href="functional.html#optional">adds <em>optional</em></a></li>
-    <li><a href="functional.html#typeof">adds <em>typeof</em></a></li>
+  <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
+    <li><a href="container_hash.html#integer">adds <em>integer</em></a></li>
   </ul>
   <h2><a href="math.html"><em>math</em></a></h2><ul>
     <li><a href="math.html#array">adds <em>array</em></a></li>
@@ -509,8 +504,14 @@
   <h2><a href="utility.html"><em>utility</em></a></h2><ul>
     <li><a href="utility.html#iterator">adds <em>iterator</em></a></li>
   </ul>
+  <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
+    <li><a href="fusion.html#function_types">adds <em>function_types</em></a></li>
+    <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
+  </ul>
   <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
     <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
+    <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
+    <li><a href="iterator.html#optional">adds <em>optional</em></a></li>
   </ul>
   <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
     <li><a href="lexical_cast.html#container">adds <em>container</em></a></li>
@@ -518,6 +519,7 @@
   </ul>
   <h2><a href="range.html"><em>range</em></a></h2><ul>
     <li><a href="range.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
+    <li><a href="range.html#optional">adds <em>optional</em></a></li>
     <li><a href="range.html#regex">adds <em>regex</em></a></li>
   </ul>
   <h2><a href="container.html"><em>container</em></a></h2><ul>
