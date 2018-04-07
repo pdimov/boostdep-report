@@ -201,6 +201,7 @@
       <li>from <code>&lt;boost/fusion/sequence/comparison/enable_comparison.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/sequence/intrinsic/swap.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/detail/is_mpl_sequence.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/support/is_sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/equal_to_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/apply.hpp&gt;</code></h3><ul>
@@ -1295,6 +1296,10 @@
       <li>from <code>&lt;boost/fusion/view/reverse_view/reverse_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/reverse_view/reverse_view_iterator.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/is_complete.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/fusion/support/detail/is_mpl_sequence.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/support/is_sequence.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/is_const.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/adapted/adt/adapt_adt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/adt/adapt_assoc_adt.hpp&gt;</code></li>
@@ -1520,20 +1525,7 @@
     <li><a href="mpl.html#predef">adds <em>predef</em></a></li>
   </ul>
   <h2><a href="utility.html"><em>utility</em></a></h2><ul>
-    <li><a href="utility.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="utility.html#throw_exception">adds <em>throw_exception</em></a></li>
-  </ul>
-  <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
-    <li><a href="iterator.html#concept_check">adds <em>concept_check</em></a></li>
-    <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
-    <li><a href="iterator.html#optional">adds <em>optional</em></a></li>
-    <li><a href="iterator.html#smart_ptr">adds <em>smart_ptr</em></a></li>
-  </ul>
-  <h2><a href="optional.html"><em>optional</em></a></h2><ul>
-    <li><a href="optional.html#move">adds <em>move</em></a></li>
-  </ul>
-  <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
-    <li><a href="smart_ptr.html#move">adds <em>move</em></a></li>
   </ul>
 
 
@@ -2056,6 +2048,7 @@
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/qi/operator/keywords.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/as_deque.hpp&gt;</code></h3><ul>
@@ -2138,6 +2131,7 @@
       <li>from <code>&lt;boost/spirit/home/karma/directive/duplicate.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/at_key.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/x3/core/detail/parse_into_container.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/karma/nonterminal/subrule.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/qi/nonterminal/subrule.hpp&gt;</code></li>
     </ul>
@@ -2148,6 +2142,7 @@
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/as_variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
     </ul>
@@ -2176,6 +2171,8 @@
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/empty.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
@@ -2184,12 +2181,14 @@
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/equal_to.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/filter_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/attributes.hpp&gt;</code></li>
@@ -2229,6 +2228,7 @@
     </ul>
     <h3><code>&lt;boost/fusion/include/is_view.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/attributes.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/support/traits/tuple_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/iter_fold.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/repository/home/qi/operator/keywords.hpp&gt;</code></li>
@@ -2271,6 +2271,7 @@
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/as_variant.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/nview.hpp&gt;</code></h3><ul>

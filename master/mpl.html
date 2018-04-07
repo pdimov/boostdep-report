@@ -443,34 +443,7 @@
     <li><a href="core.html#assert">adds <em>assert</em></a></li>
   </ul>
   <h2><a href="utility.html"><em>utility</em></a></h2><ul>
-    <li><a href="utility.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="utility.html#throw_exception">adds <em>throw_exception</em></a></li>
-  </ul>
-  <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
-    <li><a href="iterator.html#concept_check">adds <em>concept_check</em></a></li>
-    <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
-    <li><a href="iterator.html#detail">adds <em>detail</em></a></li>
-    <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
-    <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
-    <li><a href="iterator.html#optional">adds <em>optional</em></a></li>
-    <li><a href="iterator.html#smart_ptr">adds <em>smart_ptr</em></a></li>
-  </ul>
-  <h2><a href="conversion.html"><em>conversion</em></a></h2><ul>
-    <li><a href="conversion.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
-  <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
-    <li><a href="fusion.html#container_hash">adds <em>container_hash</em></a></li>
-    <li><a href="fusion.html#tuple">adds <em>tuple</em></a></li>
-    <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
-  <h2><a href="optional.html"><em>optional</em></a></h2><ul>
-    <li><a href="optional.html#move">adds <em>move</em></a></li>
-  </ul>
-  <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
-    <li><a href="smart_ptr.html#move">adds <em>move</em></a></li>
-  </ul>
-  <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
-    <li><a href="container_hash.html#integer">adds <em>integer</em></a></li>
   </ul>
 
 
@@ -1281,6 +1254,7 @@
       <li>from <code>&lt;boost/fusion/sequence/comparison/enable_comparison.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/sequence/intrinsic/swap.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/detail/is_mpl_sequence.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/support/is_sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/equal_to_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/apply.hpp&gt;</code></h3><ul>
@@ -1904,6 +1878,10 @@
       <li>from <code>&lt;boost/geometry/iterators/point_reverse_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/segment_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/robustness/get_rescale_policy.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/impl/base_static.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/par4.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/transformation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/point_in_poly_winding.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/area.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/azimuth.hpp&gt;</code></li>
@@ -1911,6 +1889,7 @@
       <li>from <code>&lt;boost/geometry/strategies/compare.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/concepts/distance_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/covered_by.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/densify.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/disjoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/distance.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/envelope.hpp&gt;</code></li>
@@ -1926,6 +1905,7 @@
     <h3><code>&lt;boost/mpl/at.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/result.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/parameter_type_of.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/util/select_sequence_element.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/aux_/has_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/index/detail/meta.hpp&gt;</code></li>
@@ -1973,7 +1953,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/not_implemented.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/algorithms/area.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/assign.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/assign_values.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/segment_to_box.hpp&gt;</code></li>
@@ -1998,15 +1977,23 @@
       <li>from <code>&lt;boost/geometry/iterators/detail/point_iterator/inner_range_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/detail/point_iterator/value_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/detail/segment_iterator/value_type.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/strategies/cartesian/area_surveyor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/impl/projects.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/par4.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/transformation.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/area_result.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/cartesian/area.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/centroid_bashein_detmer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/distance_projected_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/side_by_triangle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/azimuth.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/distance_cross_track.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/geographic/distance_cross_track_box_box.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/geographic/distance_cross_track_point_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/azimuth.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/compare.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track_box_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track_point_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/add_const_if_c.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/calculation_type.hpp&gt;</code></li>
@@ -2016,6 +2003,7 @@
       <li>from <code>&lt;boost/geometry/util/promote_integral.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/select_calculation_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/select_most_precise.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/util/select_sequence_element.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/boundary_view/implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/normalized_view.hpp&gt;</code></li>
     </ul>
@@ -2033,6 +2021,7 @@
       <li>from <code>&lt;boost/geometry/index/detail/varray_detail.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/compress_variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/parameter_type_of.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/util/select_sequence_element.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/two_dimensional_view.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/integral_c.hpp&gt;</code></h3><ul>
@@ -2079,6 +2068,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/length.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/adapted/boost_fusion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/compress_variant.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/util/select_sequence_element.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/size_t.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/num_points.hpp&gt;</code></li>
@@ -2716,7 +2706,6 @@
       <li>from <code>&lt;boost/log/utility/exception_handler.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/log/detail/attachable_sstream_buf.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/detail/attr_output_terminal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/detail/custom_terminal_spec.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/detail/sink_init_helpers.hpp&gt;</code></li>
@@ -4728,6 +4717,7 @@
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/char_class.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/container.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/hold_any.hpp&gt;</code></li>
@@ -4747,6 +4737,7 @@
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/handles_container.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/has_attribute.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/is_parser.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/support/traits/is_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/is_variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/numeric_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/string_traits.hpp&gt;</code></li>
@@ -4813,6 +4804,9 @@
       <li>from <code>&lt;boost/spirit/home/karma/auto/meta_create.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/auto/meta_create.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/as_variant.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/greater.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/repository/home/qi/operator/keywords.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/has_xxx.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/karma/generator.hpp&gt;</code></li>
@@ -5231,6 +5225,7 @@
       <li>from <code>&lt;boost/type_erasure/binding.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/detail/check_call.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/detail/const.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/type_erasure/is_subconcept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/require_match.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/assert.hpp&gt;</code></h3><ul>
@@ -5303,7 +5298,6 @@
       <li>from <code>&lt;boost/type_erasure/relaxed.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/fold.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_erasure/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/detail/check_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/detail/normalize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/dynamic_any_cast.hpp&gt;</code></li>
@@ -5338,6 +5332,7 @@
     <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/type_erasure/detail/adapt_to_vtable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/detail/const.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/type_erasure/detail/member11.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/is_subconcept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/param.hpp&gt;</code></li>
@@ -5403,6 +5398,9 @@
     </ul>
     <h3><code>&lt;boost/mpl/remove_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/type_erasure/register_binding.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/reverse_fold.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/type_erasure/any.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/set.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/type_erasure/deduced.hpp&gt;</code></li>
@@ -5620,25 +5618,6 @@
       <li>from <code>&lt;boost/units/detail/heterogeneous_conversion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/units/detail/unscale.hpp&gt;</code></li>
       <li>from <code>&lt;boost/units/heterogeneous_system.hpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-utility"><a href="utility.html"><em>utility</em></a></h2>
-    <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/utility/result_of.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/eval_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/utility/result_of.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/has_xxx.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/utility/result_of.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/identity.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/utility/result_of.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/utility/result_of.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/or.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/utility/result_of.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-variant"><a href="variant.html"><em>variant</em></a></h2>
     <h3><code>&lt;boost/mpl/O1_size.hpp&gt;</code></h3><ul>

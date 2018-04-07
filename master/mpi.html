@@ -10,18 +10,19 @@
 <h1 id="primary-dependencies">Primary dependencies for <em>mpi</em></h1>
   <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mpi/cartesian_communicator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mpi/collectives/all_gather.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mpi/collectives/all_gatherv.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/collectives/all_to_all.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/collectives/gather.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/collectives/gatherv.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/collectives/reduce.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/collectives/scan.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/collectives/scatter.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mpi/collectives/scatterv.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/communicator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/detail/binary_buffer_iprimitive.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/detail/binary_buffer_oprimitive.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/detail/mpi_datatype_primitive.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mpi/detail/packed_iprimitive.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/detail/packed_oprimitive.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/graph_communicator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/packed_iarchive.hpp&gt;</code></li>
@@ -57,6 +58,10 @@
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mpi/detail/mpi_datatype_cache.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/operations.hpp&gt;</code></li>
+    </ul>
+  <h2 id="foreach"><a href="foreach.html"><em>foreach</em></a></h2>
+    <h3><code>&lt;boost/foreach.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mpi/cartesian_communicator.hpp&gt;</code></li>
     </ul>
   <h2 id="function"><a href="function.html"><em>function</em></a></h2>
     <h3><code>&lt;boost/function/function1.hpp&gt;</code></h3><ul>
@@ -234,14 +239,15 @@
       <li>from <code>&lt;boost/mpi/packed_iarchive.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/packed_oarchive.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/serialization/vector.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mpi/collectives/all_gather.hpp&gt;</code></li>
-    </ul>
   <h2 id="smart_ptr"><a href="smart_ptr.html"><em>smart_ptr</em></a></h2>
     <h3><code>&lt;boost/scoped_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mpi/collectives/all_gatherv.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mpi/collectives/gatherv.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/collectives/reduce.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mpi/collectives/scatterv.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/shared_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mpi/cartesian_communicator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/graph_communicator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/shared_ptr.hpp&gt;</code></h3><ul>
@@ -249,6 +255,9 @@
       <li>from <code>&lt;boost/mpi/group.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/request.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/skeleton_and_content.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/smart_ptr/scoped_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mpi/python/serialize.hpp&gt;</code></li>
     </ul>
   <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
     <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
@@ -273,6 +282,9 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>mpi</em></h1>
+  <h2><a href="foreach.html"><em>foreach</em></a></h2><ul>
+    <li><a href="foreach.html#range">adds <em>range</em></a></li>
+  </ul>
   <h2><a href="function.html"><em>function</em></a></h2><ul>
     <li><a href="function.html#bind">adds <em>bind</em></a></li>
     <li><a href="function.html#move">adds <em>move</em></a></li>
@@ -291,7 +303,6 @@
     <li><a href="graph.html#conversion">adds <em>conversion</em></a></li>
     <li><a href="graph.html#detail">adds <em>detail</em></a></li>
     <li><a href="graph.html#disjoint_sets">adds <em>disjoint_sets</em></a></li>
-    <li><a href="graph.html#foreach">adds <em>foreach</em></a></li>
     <li><a href="graph.html#graph_parallel">adds <em>graph_parallel</em></a></li>
     <li><a href="graph.html#lexical_cast">adds <em>lexical_cast</em></a></li>
     <li><a href="graph.html#math">adds <em>math</em></a></li>
@@ -341,7 +352,6 @@
     <li><a href="python.html#bind">adds <em>bind</em></a></li>
     <li><a href="python.html#conversion">adds <em>conversion</em></a></li>
     <li><a href="python.html#detail">adds <em>detail</em></a></li>
-    <li><a href="python.html#foreach">adds <em>foreach</em></a></li>
     <li><a href="python.html#lexical_cast">adds <em>lexical_cast</em></a></li>
     <li><a href="python.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
     <li><a href="python.html#preprocessor">adds <em>preprocessor</em></a></li>

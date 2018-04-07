@@ -44,7 +44,6 @@
       <li>from <code>&lt;boost/spirit/home/qi/nonterminal/rule.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/numeric/detail/real_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/numeric/numeric_utils.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/qi/string/detail/tst.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/char_encoding/ascii.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/char_encoding/iso8859_1.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/char_set/range_run_impl.hpp&gt;</code></li>
@@ -68,8 +67,6 @@
   <h2 id="concept_check"><a href="concept_check.html"><em>concept_check</em></a></h2>
     <h3><code>&lt;boost/concept_check.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/classic/iterator/position_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/qi/parse.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/core/parse.hpp&gt;</code></li>
     </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
@@ -135,6 +132,7 @@
       <li>from <code>&lt;boost/spirit/home/support/terminal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/unused.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/binary/binary.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/support/ast/variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/numeric_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/no_tr1/cmath.hpp&gt;</code></h3><ul>
@@ -223,6 +221,8 @@
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/classic/core/composite/actions.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/classic/dynamic/impl/switch.ipp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/core/parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/nonterminal/detail/rule.hpp&gt;</code></li>
     </ul>
@@ -256,10 +256,6 @@
     </ul>
     <h3><code>&lt;boost/detail/sp_typeinfo.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/detail/hold_any.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/iterator.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/spirit/home/classic/iterator/multi_pass.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/support/iterators/detail/multi_pass.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/classic/core/non_terminal/impl/static.hpp&gt;</code></li>
@@ -356,13 +352,10 @@
   <h2 id="foreach"><a href="foreach.html"><em>foreach</em></a></h2>
     <h3><code>&lt;boost/foreach.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/lex/lexer/lexertl/lexer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/qi/operator/permutation.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/qi/string/detail/tst.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/support/attributes.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/qi/string/tst_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/char_encoding/unicode/create_tables.cpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/info.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/utf8.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/repository/home/qi/directive/kwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/qi/operator/keywords.hpp&gt;</code></li>
     </ul>
   <h2 id="function"><a href="function.html"><em>function</em></a></h2>
@@ -376,15 +369,11 @@
       <li>from <code>&lt;boost/spirit/home/qi/nonterminal/success_handler.hpp&gt;</code></li>
     </ul>
   <h2 id="function_types"><a href="function_types.html"><em>function_types</em></a></h2>
-    <h3><code>&lt;boost/function_types/function_type.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/spirit/home/x3/directive/repeat.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/function_types/is_function.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/nonterminal/extract_param.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/function_types/parameter_types.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/nonterminal/extract_param.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/directive/repeat.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/function_types/result_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/nonterminal/extract_param.hpp&gt;</code></li>
@@ -412,6 +401,7 @@
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/qi/operator/keywords.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/as_deque.hpp&gt;</code></h3><ul>
@@ -494,6 +484,7 @@
       <li>from <code>&lt;boost/spirit/home/karma/directive/duplicate.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/at_key.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/x3/core/detail/parse_into_container.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/karma/nonterminal/subrule.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/qi/nonterminal/subrule.hpp&gt;</code></li>
     </ul>
@@ -504,6 +495,7 @@
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/as_variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
     </ul>
@@ -532,6 +524,8 @@
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/empty.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
@@ -540,12 +534,14 @@
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/equal_to.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/filter_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/attributes.hpp&gt;</code></li>
@@ -585,6 +581,7 @@
     </ul>
     <h3><code>&lt;boost/fusion/include/is_view.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/attributes.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/support/traits/tuple_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/iter_fold.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/repository/home/qi/operator/keywords.hpp&gt;</code></li>
@@ -627,6 +624,7 @@
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/as_variant.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/nview.hpp&gt;</code></h3><ul>
@@ -765,6 +763,10 @@
   <h2 id="iterator"><a href="iterator.html"><em>iterator</em></a></h2>
     <h3><code>&lt;boost/iterator/iterator_adaptor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/iterators/line_pos_iterator.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/iterator/iterator_concepts.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/qi/parse.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/core/parse.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/iterator/iterator_facade.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/karma/detail/indirect_iterator.hpp&gt;</code></li>
@@ -918,6 +920,7 @@
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/char_class.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/container.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/hold_any.hpp&gt;</code></li>
@@ -937,6 +940,7 @@
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/handles_container.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/has_attribute.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/is_parser.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/support/traits/is_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/is_variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/numeric_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/string_traits.hpp&gt;</code></li>
@@ -1003,6 +1007,9 @@
       <li>from <code>&lt;boost/spirit/home/karma/auto/meta_create.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/auto/meta_create.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/as_variant.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/greater.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/repository/home/qi/operator/keywords.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/has_xxx.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/karma/generator.hpp&gt;</code></li>
@@ -1523,7 +1530,7 @@
       <li>from <code>&lt;boost/spirit/home/x3/core/action.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/core/call.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/directive/raw.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/support/traits/move_to.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/support/traits/is_range.hpp&gt;</code></li>
     </ul>
   <h2 id="regex"><a href="regex.html"><em>regex</em></a></h2>
     <h3><code>&lt;boost/regex.hpp&gt;</code></h3><ul>
@@ -1615,9 +1622,6 @@
       <li>from <code>&lt;boost/spirit/home/x3/directive/expect.hpp&gt;</code></li>
     </ul>
   <h2 id="tti"><a href="tti.html"><em>tti</em></a></h2>
-    <h3><code>&lt;boost/tti/has_member_function.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/spirit/home/x3/support/traits/container_traits.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/tti/has_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/container_traits.hpp&gt;</code></li>
     </ul>
@@ -1641,6 +1645,7 @@
       <li>from <code>&lt;boost/spirit/home/classic/core/non_terminal/impl/static.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/add_reference.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/classic/core/match.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/karma/nonterminal/rule.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/lex/lexer/string_token_def.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/auxiliary/attr.hpp&gt;</code></li>
@@ -1660,8 +1665,14 @@
       <li>from <code>&lt;boost/spirit/home/classic/core/non_terminal/impl/static.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/utree/detail/utree_detail1.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/conditional.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/classic/core/match.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/extent.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/x3/char/any_char.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/integral_promotion.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/lex/lexer/lexertl/token.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_abstract.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/detail/make_cons.hpp&gt;</code></li>
@@ -1679,7 +1690,6 @@
       <li>from <code>&lt;boost/spirit/home/support/modify.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/core/parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/ast/position_tagged.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/support/ast/variant.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_const.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/classic/phoenix/binders.hpp&gt;</code></li>
@@ -1845,6 +1855,7 @@
     </ul>
     <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/classic/core/parser.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/classic/phoenix/actor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/classic/phoenix/tuples.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/karma/auxiliary/lazy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/karma/meta_compiler.hpp&gt;</code></li>

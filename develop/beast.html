@@ -88,12 +88,27 @@
       <li>from <code>&lt;boost/beast/websocket/impl/handshake.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/ping.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/read.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/teardown.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/write.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/websocket/stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/handler_continuation_hook.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/read.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/write.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/accept.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/close.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/handshake.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/ping.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/read.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/teardown.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/write.ipp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/handler_invoke_hook.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
@@ -161,6 +176,10 @@
       <li>from <code>&lt;boost/beast/zlib/detail/deflate_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/zlib/detail/window.hpp&gt;</code></li>
     </ul>
+  <h2 id="bind"><a href="bind.html"><em>bind</em></a></h2>
+    <h3><code>&lt;boost/is_placeholder.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
+    </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/allocator.hpp&gt;</code></li>
@@ -179,7 +198,6 @@
     </ul>
     <h3><code>&lt;boost/version.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/config.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/detail/in_place_init.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/detail/basic_parser.hpp&gt;</code></li>
     </ul>
@@ -230,7 +248,7 @@
       <li>from <code>&lt;boost/beast/zlib/detail/deflate_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/optional/optional.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/detail/in_place_init.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/buffers_prefix.hpp&gt;</code></li>
     </ul>
   <h2 id="smart_ptr"><a href="smart_ptr.html"><em>smart_ptr</em></a></h2>
     <h3><code>&lt;boost/make_unique.hpp&gt;</code></h3><ul>
@@ -287,6 +305,10 @@
       <li>from <code>&lt;boost/beast/zlib/detail/inflate_stream.hpp&gt;</code></li>
     </ul>
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
+    <h3><code>&lt;boost/type_traits.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/detail/type_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/buffers_suffix.ipp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/is_final.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/empty_base_optimization.hpp&gt;</code></li>
     </ul>
@@ -310,6 +332,7 @@
     </ul>
     <h3><code>&lt;boost/winapi/get_last_error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/impl/file_win32.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/handles.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/file_win32.hpp&gt;</code></li>
@@ -319,7 +342,6 @@
 <h1 id="secondary-dependencies">Secondary dependencies for <em>beast</em></h1>
   <h2><a href="asio.html"><em>asio</em></a></h2><ul>
     <li><a href="asio.html#array">adds <em>array</em></a></li>
-    <li><a href="asio.html#bind">adds <em>bind</em></a></li>
     <li><a href="asio.html#chrono">adds <em>chrono</em></a></li>
     <li><a href="asio.html#coroutine">adds <em>coroutine</em></a></li>
     <li><a href="asio.html#date_time">adds <em>date_time</em></a></li>
@@ -407,7 +429,6 @@
   </ul>
   <h2><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2><ul>
     <li><a href="numeric~conversion.html#conversion">adds <em>conversion</em></a></li>
-    <li><a href="numeric~conversion.html#functional">adds <em>functional</em></a></li>
   </ul>
   <h2><a href="range.html"><em>range</em></a></h2><ul>
     <li><a href="range.html#tuple">adds <em>tuple</em></a></li>

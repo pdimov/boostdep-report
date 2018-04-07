@@ -1264,6 +1264,7 @@
       <li>from <code>&lt;boost/fusion/sequence/comparison/enable_comparison.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/sequence/intrinsic/swap.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/detail/is_mpl_sequence.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/support/is_sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/equal_to_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/apply.hpp&gt;</code></h3><ul>
@@ -2120,17 +2121,17 @@
     </ul>
     <h3><code>&lt;boost/mpl/and.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/algorithm.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/detail/get_read_device.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/detail/get_write_device.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/detail/read_and_convert_image.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/detail/read_and_convert_view.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/detail/read_image.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/detail/read_image_info.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/detail/read_view.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/detail/write_view.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/formats/bmp/read.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/formats/png/write.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/bmp/detail/read.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/png/detail/write.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/gil_concept.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/get_read_device.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/get_write_device.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/read_and_convert_image.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/read_and_convert_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/read_image.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/read_image_info.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/read_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/write_view.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/arithmetic.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/image.hpp&gt;</code></li>
@@ -2140,10 +2141,10 @@
       <li>from <code>&lt;boost/gil/color_base_algorithm.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/dynamic_at_c.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/detail/dynamic_io_new.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/dynamic_images.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/channel_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/is_homogeneous.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/dynamic_io_new.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/back.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
@@ -2162,11 +2163,11 @@
       <li>from <code>&lt;boost/gil/pixel.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/bool_fwd.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/io/detail/path_spec.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/path_spec.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/contains.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/color_base_algorithm.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/formats/tiff/writer_backend.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/tiff/detail/writer_backend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/color_spaces/gray_alpha.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/rgba.hpp&gt;</code></li>
     </ul>
@@ -2180,7 +2181,7 @@
       <li>from <code>&lt;boost/gil/extension/toolbox/image_types/subchroma_image.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/equal_to.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/io/formats/png/write.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/png/detail/write.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/image_types/subchroma_image.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/find.hpp&gt;</code></h3><ul>
@@ -2190,8 +2191,8 @@
       <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/for_each.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/io/formats/png/is_allowed.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/formats/tiff/is_allowed.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/png/detail/is_allowed.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/tiff/detail/is_allowed.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/front.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/packed_pixel.hpp&gt;</code></li>
@@ -2220,12 +2221,12 @@
     </ul>
     <h3><code>&lt;boost/mpl/integral_c.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/channel_algorithm.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/pnm_tags.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/tiff_tags.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/pnm/tags.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/tiff/tags.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/less.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/channel_algorithm.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/formats/png/write.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/png/detail/write.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/logical.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
@@ -2240,13 +2241,13 @@
       <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/not.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/io/formats/bmp/supported_types.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/formats/jpeg/supported_types.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/formats/png/write.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/formats/pnm/supported_types.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/formats/raw/supported_types.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/formats/targa/supported_types.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/formats/tiff/supported_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/bmp/detail/supported_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/jpeg/detail/supported_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/png/detail/write.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/pnm/detail/supported_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/raw/detail/supported_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/targa/detail/supported_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/tiff/detail/supported_types.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/or.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/algorithm.hpp&gt;</code></li>
@@ -2281,10 +2282,10 @@
       <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/dynamic_at_c.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/detail/dynamic_io_new.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/formats/tiff/device.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/tiff/detail/device.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/dynamic_images.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/gil_concept.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/dynamic_io_new.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/utilities.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/sizeof.hpp&gt;</code></h3><ul>
@@ -2298,7 +2299,7 @@
     <h3><code>&lt;boost/mpl/vector.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/bit_aligned_pixel_reference.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/tiff_tags.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/tiff/tags.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/metafunctions.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/vector_c.hpp&gt;</code></h3><ul>
@@ -2788,7 +2789,6 @@
       <li>from <code>&lt;boost/log/utility/exception_handler.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/log/detail/attachable_sstream_buf.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/detail/attr_output_terminal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/detail/custom_terminal_spec.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/detail/sink_init_helpers.hpp&gt;</code></li>
@@ -5324,6 +5324,7 @@
       <li>from <code>&lt;boost/type_erasure/binding.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/detail/check_call.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/detail/const.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/type_erasure/is_subconcept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/require_match.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/assert.hpp&gt;</code></h3><ul>
@@ -5396,7 +5397,6 @@
       <li>from <code>&lt;boost/type_erasure/relaxed.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/fold.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_erasure/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/detail/check_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/detail/normalize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/dynamic_any_cast.hpp&gt;</code></li>
@@ -5431,6 +5431,7 @@
     <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/type_erasure/detail/adapt_to_vtable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/detail/const.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/type_erasure/detail/member11.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/is_subconcept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/param.hpp&gt;</code></li>
@@ -5497,6 +5498,9 @@
     <h3><code>&lt;boost/mpl/remove_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/type_erasure/register_binding.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mpl/reverse_fold.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/type_erasure/any.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mpl/set.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/type_erasure/deduced.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/detail/check_map.hpp&gt;</code></li>
@@ -5526,19 +5530,6 @@
       <li>from <code>&lt;boost/type_erasure/iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/register_binding.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/relaxed.hpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-type_index"><a href="type_index.html"><em>type_index</em></a></h2>
-    <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/detail/compile_time_type_info.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/identity.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/or.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-typeof"><a href="typeof.html"><em>typeof</em></a></h2>
     <h3><code>&lt;boost/mpl/deref.hpp&gt;</code></h3><ul>

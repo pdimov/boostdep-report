@@ -29,7 +29,6 @@
       <li>from <code>&lt;boost/thread/pthread/pthread_mutex_scoped_lock.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/recursive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/shared_mutex.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/thread/pthread/shared_mutex_assert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/thread_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/testable_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/win32/basic_timed_mutex.hpp&gt;</code></li>
@@ -52,10 +51,14 @@
     </ul>
   <h2 id="bind"><a href="bind.html"><em>bind</em></a></h2>
     <h3><code>&lt;boost/bind.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/concurrent_queues/detail/sync_deque_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/thread/concurrent_queues/detail/sync_queue_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/thread.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/future.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/once.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/once_atomic.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/thread/pthread/shared_mutex.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/thread/v2/shared_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/win32/once.hpp&gt;</code></li>
     </ul>
   <h2 id="chrono"><a href="chrono.html"><em>chrono</em></a></h2>
@@ -63,14 +66,13 @@
       <li>from <code>&lt;boost/thread/v2/shared_mutex.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/chrono/ceil.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/detail/platform_time.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/thread.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/condition_variable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/condition_variable_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/recursive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/shared_mutex.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/thread/pthread/shared_mutex_assert.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/thread/v2/thread.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/win32/basic_recursive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/win32/basic_timed_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/win32/condition_variable.hpp&gt;</code></li>
@@ -92,13 +94,14 @@
       <li>from <code>&lt;boost/thread/concurrent_queues/sync_priority_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/concurrent_queues/sync_timed_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/counter.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/thread/detail/platform_time.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/executors/scheduler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/latch.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/lock_types.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/thread/pthread/timespec.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/chrono/system_clocks.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/concurrent_queues/sync_timed_queue.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/thread/detail/platform_time.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/thread.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/executors/scheduler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/future.hpp&gt;</code></li>
@@ -107,9 +110,7 @@
       <li>from <code>&lt;boost/thread/pthread/mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/recursive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/shared_mutex.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/thread/pthread/shared_mutex_assert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/thread_data.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/thread/v2/thread.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/win32/basic_recursive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/win32/basic_timed_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/win32/condition_variable.hpp&gt;</code></li>
@@ -175,6 +176,7 @@
       <li>from <code>&lt;boost/thread/detail/counter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/lockable_wrapper.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/move.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/thread/detail/platform_time.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/thread.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/thread_group.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/tss_hooks.hpp&gt;</code></li>
@@ -211,13 +213,12 @@
       <li>from <code>&lt;boost/thread/pthread/mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/once.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/once_atomic.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/thread/pthread/pthread_helpers.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/pthread_mutex_scoped_lock.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/recursive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/shared_mutex.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/thread/pthread/shared_mutex_assert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/thread_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/thread_heap_alloc.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/thread/pthread/timespec.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/scoped_thread.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/strict_lock.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/synchronized_value.hpp&gt;</code></li>
@@ -261,6 +262,7 @@
       <li>from <code>&lt;boost/thread/detail/counter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/lockable_wrapper.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/move.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/thread/detail/platform_time.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/thread.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/thread_group.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/detail/tss_hooks.hpp&gt;</code></li>
@@ -297,13 +299,12 @@
       <li>from <code>&lt;boost/thread/pthread/mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/once.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/once_atomic.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/thread/pthread/pthread_helpers.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/pthread_mutex_scoped_lock.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/recursive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/shared_mutex.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/thread/pthread/shared_mutex_assert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/thread_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/thread_heap_alloc.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/thread/pthread/timespec.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/scoped_thread.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/strict_lock.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/synchronized_value.hpp&gt;</code></li>
@@ -403,8 +404,8 @@
       <li>from <code>&lt;boost/thread/thread_time.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/date_time/posix_time/conversion.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/detail/platform_time.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/recursive_mutex.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/thread/pthread/timespec.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/xtime.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/date_time/posix_time/posix_time_duration.hpp&gt;</code></h3><ul>
@@ -524,7 +525,6 @@
       <li>from <code>&lt;boost/thread/externally_locked.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/lock_concepts.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/shared_mutex.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/thread/pthread/shared_mutex_assert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/win32/once.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/win32/shared_mutex.hpp&gt;</code></li>
     </ul>
@@ -650,13 +650,19 @@
       <li>from <code>&lt;boost/thread/win32/shared_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/detail/winapi/time.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/detail/platform_time.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/detail/winapi/timers.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/detail/platform_time.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/winapi/access_rights.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/basic_types.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/winapi/dll.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/event.hpp&gt;</code></h3><ul>
@@ -689,9 +695,6 @@
     <h3><code>&lt;boost/winapi/thread.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/winapi/time.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/winapi/wait.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
     </ul>
@@ -710,6 +713,7 @@
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
     <li><a href="date_time.html#algorithm">adds <em>algorithm</em></a></li>
     <li><a href="date_time.html#lexical_cast">adds <em>lexical_cast</em></a></li>
+    <li><a href="date_time.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
     <li><a href="date_time.html#range">adds <em>range</em></a></li>
     <li><a href="date_time.html#serialization">adds <em>serialization</em></a></li>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
@@ -736,11 +740,9 @@
   <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
     <li><a href="lexical_cast.html#array">adds <em>array</em></a></li>
     <li><a href="lexical_cast.html#math">adds <em>math</em></a></li>
-    <li><a href="lexical_cast.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
   </ul>
   <h2><a href="range.html"><em>range</em></a></h2><ul>
     <li><a href="range.html#array">adds <em>array</em></a></li>
-    <li><a href="range.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
     <li><a href="range.html#regex">adds <em>regex</em></a></li>
   </ul>
   <h2><a href="ratio.html"><em>ratio</em></a></h2><ul>

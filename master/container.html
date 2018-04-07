@@ -77,6 +77,7 @@
       <li>from <code>&lt;boost/container/detail/transform_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/tree.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/type_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container/detail/value_functors.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/value_init.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/variadic_templates_tools.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/version_type.hpp&gt;</code></li>
@@ -247,6 +248,12 @@
     <h3><code>&lt;boost/move/algo/adaptive_sort.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/container/detail/flat_tree.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/move/algo/detail/pdqsort.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/container/detail/flat_tree.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/move/algo/detail/set_difference.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/container/vector.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/move/algo/predicate.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/container/vector.hpp&gt;</code></li>
     </ul>
@@ -356,6 +363,7 @@
       <li>from <code>&lt;boost/container/detail/copy_move_algo.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/dispatch_uses_allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/flat_tree.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container/detail/iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/iterators.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/multiallocation_chain.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/node_alloc_holder.hpp&gt;</code></li>
@@ -384,6 +392,7 @@
       <li>from <code>&lt;boost/container/allocator_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/iterators.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/math_functions.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container/detail/next_capacity.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/node_allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/node_handle.hpp&gt;</code></li>
@@ -409,23 +418,7 @@
     <li><a href="mpl.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="utility.html"><em>utility</em></a></h2><ul>
-    <li><a href="utility.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="utility.html#throw_exception">adds <em>throw_exception</em></a></li>
-  </ul>
-  <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
-    <li><a href="iterator.html#concept_check">adds <em>concept_check</em></a></li>
-    <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
-    <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
-    <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
-    <li><a href="iterator.html#optional">adds <em>optional</em></a></li>
-    <li><a href="iterator.html#smart_ptr">adds <em>smart_ptr</em></a></li>
-  </ul>
-  <h2><a href="conversion.html"><em>conversion</em></a></h2><ul>
-    <li><a href="conversion.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
-  <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
-    <li><a href="fusion.html#tuple">adds <em>tuple</em></a></li>
-    <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
   </ul>
 
 
@@ -448,6 +441,9 @@
     </ul>
     <h3><code>&lt;boost/container/detail/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/index/detail/varray.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/container/new_allocator.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/index/rtree.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/container/vector.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/index/detail/rtree/node/node.hpp&gt;</code></li>
@@ -479,9 +475,6 @@
     </ul>
     <h3><code>&lt;boost/container/detail/allocation_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/containers/allocation_type.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/container/detail/iterator.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/detail/transform_iterator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/container/detail/minimal_char_traits_header.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/detail/segment_manager_helper.hpp&gt;</code></li>
@@ -516,6 +509,9 @@
       <li>from <code>&lt;boost/interprocess/segment_manager.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/smart_ptr/detail/shared_count.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/sync/shm/named_creation_functor.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/container/detail/transform_iterator.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/transform_iterator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/container/detail/type_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/detail/in_place_interface.hpp&gt;</code></li>

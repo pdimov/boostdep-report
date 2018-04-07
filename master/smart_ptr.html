@@ -195,6 +195,7 @@
       <li>from <code>&lt;boost/context/continuation_fcontext.hpp&gt;</code></li>
       <li>from <code>&lt;boost/context/execution_context_v1.hpp&gt;</code></li>
       <li>from <code>&lt;boost/context/execution_context_v2.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/context/fiber_fcontext.hpp&gt;</code></li>
       <li>from <code>&lt;boost/context/pooled_fixedsize_stack.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-contract"><a href="contract.html"><em>contract</em></a></h2>
@@ -263,6 +264,15 @@
     <h3><code>&lt;boost/scoped_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/index/detail/rtree/query_iterators.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/svg/svg_mapper.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/shared_ptr.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/srs/projections/factory.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/igh.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/ob_tran.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/smart_ptr/shared_ptr.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/srs/projection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/transformation.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-gil"><a href="gil.html"><em>gil</em></a></h2>
     <h3><code>&lt;boost/shared_ptr.hpp&gt;</code></h3><ul>
@@ -380,9 +390,13 @@
     </ul>
   <h2 id="reverse-mpi"><a href="mpi.html"><em>mpi</em></a></h2>
     <h3><code>&lt;boost/scoped_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mpi/collectives/all_gatherv.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mpi/collectives/gatherv.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/collectives/reduce.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mpi/collectives/scatterv.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/shared_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mpi/cartesian_communicator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/graph_communicator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/shared_ptr.hpp&gt;</code></h3><ul>
@@ -390,6 +404,9 @@
       <li>from <code>&lt;boost/mpi/group.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/request.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mpi/skeleton_and_content.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/smart_ptr/scoped_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mpi/python/serialize.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-multi_index"><a href="multi_index.html"><em>multi_index</em></a></h2>
     <h3><code>&lt;boost/detail/lightweight_mutex.hpp&gt;</code></h3><ul>

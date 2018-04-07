@@ -10,6 +10,7 @@
 <h1 id="primary-dependencies">Primary dependencies for <em>math</em></h1>
   <h2 id="array"><a href="array.html"><em>array</em></a></h2>
     <h3><code>&lt;boost/array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/math/special_functions/detail/unchecked_bernoulli.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/detail/unchecked_factorial.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/factorials.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/prime.hpp&gt;</code></li>
@@ -42,6 +43,7 @@
     </ul>
   <h2 id="atomic"><a href="atomic.html"><em>atomic</em></a></h2>
     <h3><code>&lt;boost/atomic.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/math/quadrature/naive_monte_carlo.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/atomic.hpp&gt;</code></li>
     </ul>
   <h2 id="concept_check"><a href="concept_check.html"><em>concept_check</em></a></h2>
@@ -79,6 +81,10 @@
     <h3><code>&lt;boost/config/auto_link.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/tr1.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/config/header_deprecated.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/math/common_factor_ct.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/common_factor_rt.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/config/no_tr1/cmath.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/bindings/rr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/complex/details.hpp&gt;</code></li>
@@ -94,7 +100,6 @@
       <li>from <code>&lt;boost/math/special_functions/atanh.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/beta.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/cos_pi.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/math/special_functions/detail/unchecked_factorial.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/expm1.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/factorials.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/fpclassify.hpp&gt;</code></li>
@@ -133,7 +138,6 @@
       <li>from <code>&lt;boost/math/tools/series.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/stats.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/toms748_solve.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/math_fwd.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/detail/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/complex/details.hpp&gt;</code></li>
@@ -193,6 +197,7 @@
     </ul>
     <h3><code>&lt;boost/integer/common_factor_rt.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/common_factor_rt.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/tools/polynomial_gcd.hpp&gt;</code></li>
     </ul>
   <h2 id="lambda"><a href="lambda.html"><em>lambda</em></a></h2>
     <h3><code>&lt;boost/lambda/lambda.hpp&gt;</code></h3><ul>
@@ -488,6 +493,9 @@
       <li>from <code>&lt;boost/geometry/formulas/thomas_inverse.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/vincenty_direct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/vincenty_inverse.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/impl/adjlon.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/impl/pj_fwd.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/impl/projects.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/math.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/math/special_functions/atanh.hpp&gt;</code></h3><ul>
@@ -505,6 +513,24 @@
     <h3><code>&lt;boost/math/special_functions/hypot.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/formulas/area_formulas.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/vertex_longitude.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/aea.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/aeqd.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/bipc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/bonne.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/eqdc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/etmerc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/geos.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/gnom.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/laea.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/lcc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/mod_ster.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/nsper.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/oea.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/ortho.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/sconics.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/stere.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/sterea.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj/tpeqd.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-graph"><a href="graph.html"><em>graph</em></a></h2>
     <h3><code>&lt;boost/math/constants/constants.hpp&gt;</code></h3><ul>
@@ -612,13 +638,6 @@
     </ul>
     <h3><code>&lt;boost/math/special_functions/sign.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/units/cmath.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/math_fwd.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/units/pow.hpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-variant"><a href="variant.html"><em>variant</em></a></h2>
-    <h3><code>&lt;boost/math/common_factor_ct.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/variant/variant.hpp&gt;</code></li>
     </ul>
 <hr />
 <p class="footer"></p>

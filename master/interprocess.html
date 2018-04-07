@@ -272,9 +272,6 @@
     <h3><code>&lt;boost/container/detail/allocation_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/containers/allocation_type.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/container/detail/iterator.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/detail/transform_iterator.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/container/detail/minimal_char_traits_header.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/detail/segment_manager_helper.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/indexes/iset_index.hpp&gt;</code></li>
@@ -308,6 +305,9 @@
       <li>from <code>&lt;boost/interprocess/segment_manager.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/smart_ptr/detail/shared_count.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/sync/shm/named_creation_functor.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/container/detail/transform_iterator.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/transform_iterator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/container/detail/type_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/detail/in_place_interface.hpp&gt;</code></li>
@@ -460,6 +460,9 @@
       <li>from <code>&lt;boost/interprocess/smart_ptr/scoped_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/smart_ptr/weak_ptr.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/move/core.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/smart_ptr/intrusive_ptr.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/move/detail/fwd_macros.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/detail/named_proxy.hpp&gt;</code></li>
     </ul>
@@ -553,6 +556,7 @@
     <li><a href="date_time.html#io">adds <em>io</em></a></li>
     <li><a href="date_time.html#lexical_cast">adds <em>lexical_cast</em></a></li>
     <li><a href="date_time.html#mpl">adds <em>mpl</em></a></li>
+    <li><a href="date_time.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
     <li><a href="date_time.html#range">adds <em>range</em></a></li>
     <li><a href="date_time.html#serialization">adds <em>serialization</em></a></li>
     <li><a href="date_time.html#smart_ptr">adds <em>smart_ptr</em></a></li>
@@ -566,7 +570,6 @@
   <h2><a href="unordered.html"><em>unordered</em></a></h2><ul>
     <li><a href="unordered.html#container_hash">adds <em>container_hash</em></a></li>
     <li><a href="unordered.html#detail">adds <em>detail</em></a></li>
-    <li><a href="unordered.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="unordered.html#predef">adds <em>predef</em></a></li>
     <li><a href="unordered.html#preprocessor">adds <em>preprocessor</em></a></li>
     <li><a href="unordered.html#smart_ptr">adds <em>smart_ptr</em></a></li>
@@ -582,32 +585,32 @@
     <li><a href="algorithm.html#concept_check">adds <em>concept_check</em></a></li>
     <li><a href="algorithm.html#exception">adds <em>exception</em></a></li>
     <li><a href="algorithm.html#function">adds <em>function</em></a></li>
+    <li><a href="algorithm.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="algorithm.html#regex">adds <em>regex</em></a></li>
-  </ul>
-  <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
-    <li><a href="iterator.html#concept_check">adds <em>concept_check</em></a></li>
-    <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
-    <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
-    <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
-    <li><a href="iterator.html#optional">adds <em>optional</em></a></li>
   </ul>
   <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
     <li><a href="lexical_cast.html#array">adds <em>array</em></a></li>
     <li><a href="lexical_cast.html#math">adds <em>math</em></a></li>
-    <li><a href="lexical_cast.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
+  </ul>
+  <h2><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2><ul>
+    <li><a href="numeric~conversion.html#conversion">adds <em>conversion</em></a></li>
   </ul>
   <h2><a href="range.html"><em>range</em></a></h2><ul>
     <li><a href="range.html#array">adds <em>array</em></a></li>
     <li><a href="range.html#concept_check">adds <em>concept_check</em></a></li>
-    <li><a href="range.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
+    <li><a href="range.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="range.html#optional">adds <em>optional</em></a></li>
     <li><a href="range.html#regex">adds <em>regex</em></a></li>
   </ul>
   <h2><a href="serialization.html"><em>serialization</em></a></h2><ul>
     <li><a href="serialization.html#array">adds <em>array</em></a></li>
+    <li><a href="serialization.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="serialization.html#optional">adds <em>optional</em></a></li>
     <li><a href="serialization.html#spirit">adds <em>spirit</em></a></li>
     <li><a href="serialization.html#variant">adds <em>variant</em></a></li>
+  </ul>
+  <h2><a href="tokenizer.html"><em>tokenizer</em></a></h2><ul>
+    <li><a href="tokenizer.html#iterator">adds <em>iterator</em></a></li>
   </ul>
   <h2><a href="conversion.html"><em>conversion</em></a></h2><ul>
     <li><a href="conversion.html#typeof">adds <em>typeof</em></a></li>
@@ -616,17 +619,21 @@
     <li><a href="function.html#type_index">adds <em>type_index</em></a></li>
     <li><a href="function.html#typeof">adds <em>typeof</em></a></li>
   </ul>
-  <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
-    <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
+  <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
+    <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
+    <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
   </ul>
   <h2><a href="math.html"><em>math</em></a></h2><ul>
     <li><a href="math.html#atomic">adds <em>atomic</em></a></li>
+    <li><a href="math.html#fusion">adds <em>fusion</em></a></li>
     <li><a href="math.html#lambda">adds <em>lambda</em></a></li>
   </ul>
   <h2><a href="spirit.html"><em>spirit</em></a></h2><ul>
     <li><a href="spirit.html#endian">adds <em>endian</em></a></li>
     <li><a href="spirit.html#filesystem">adds <em>filesystem</em></a></li>
     <li><a href="spirit.html#foreach">adds <em>foreach</em></a></li>
+    <li><a href="spirit.html#function_types">adds <em>function_types</em></a></li>
+    <li><a href="spirit.html#fusion">adds <em>fusion</em></a></li>
     <li><a href="spirit.html#iostreams">adds <em>iostreams</em></a></li>
     <li><a href="spirit.html#locale">adds <em>locale</em></a></li>
     <li><a href="spirit.html#phoenix">adds <em>phoenix</em></a></li>

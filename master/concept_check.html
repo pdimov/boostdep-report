@@ -22,10 +22,6 @@
       <li>from <code>&lt;boost/concept/usage.hpp&gt;</code></li>
       <li>from <code>&lt;boost/concept_check.hpp&gt;</code></li>
     </ul>
-  <h2 id="core"><a href="core.html"><em>core</em></a></h2>
-    <h3><code>&lt;boost/iterator.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/concept_archetype.hpp&gt;</code></li>
-    </ul>
   <h2 id="mpl"><a href="mpl.html"><em>mpl</em></a></h2>
     <h3><code>&lt;boost/mpl/assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/concept_check.hpp&gt;</code></li>
@@ -75,45 +71,21 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>concept_check</em></h1>
-  <h2><a href="core.html"><em>core</em></a></h2><ul>
-    <li><a href="core.html#assert">adds <em>assert</em></a></li>
-  </ul>
   <h2><a href="mpl.html"><em>mpl</em></a></h2><ul>
+    <li><a href="mpl.html#core">adds <em>core</em></a></li>
     <li><a href="mpl.html#predef">adds <em>predef</em></a></li>
     <li><a href="mpl.html#static_assert">adds <em>static_assert</em></a></li>
     <li><a href="mpl.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="type_traits.html"><em>type_traits</em></a></h2><ul>
+    <li><a href="type_traits.html#core">adds <em>core</em></a></li>
     <li><a href="type_traits.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
+  <h2><a href="core.html"><em>core</em></a></h2><ul>
+    <li><a href="core.html#assert">adds <em>assert</em></a></li>
+  </ul>
   <h2><a href="utility.html"><em>utility</em></a></h2><ul>
-    <li><a href="utility.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="utility.html#throw_exception">adds <em>throw_exception</em></a></li>
-  </ul>
-  <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
-    <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
-    <li><a href="iterator.html#detail">adds <em>detail</em></a></li>
-    <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
-    <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
-    <li><a href="iterator.html#optional">adds <em>optional</em></a></li>
-    <li><a href="iterator.html#smart_ptr">adds <em>smart_ptr</em></a></li>
-  </ul>
-  <h2><a href="conversion.html"><em>conversion</em></a></h2><ul>
-    <li><a href="conversion.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
-  <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
-    <li><a href="fusion.html#container_hash">adds <em>container_hash</em></a></li>
-    <li><a href="fusion.html#tuple">adds <em>tuple</em></a></li>
-    <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
-  <h2><a href="optional.html"><em>optional</em></a></h2><ul>
-    <li><a href="optional.html#move">adds <em>move</em></a></li>
-  </ul>
-  <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
-    <li><a href="smart_ptr.html#move">adds <em>move</em></a></li>
-  </ul>
-  <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
-    <li><a href="container_hash.html#integer">adds <em>integer</em></a></li>
   </ul>
 
 
@@ -199,7 +171,10 @@
       <li>from <code>&lt;boost/geometry/strategies/concepts/simplify_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/concepts/within_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/distance_cross_track.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/geographic/distance_cross_track_box_box.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/geographic/distance_cross_track_point_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track_box_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track_point_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
     </ul>
@@ -419,8 +394,6 @@
   <h2 id="reverse-spirit"><a href="spirit.html"><em>spirit</em></a></h2>
     <h3><code>&lt;boost/concept_check.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/classic/iterator/position_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/qi/parse.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/core/parse.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-thread"><a href="thread.html"><em>thread</em></a></h2>
     <h3><code>&lt;boost/concept_check.hpp&gt;</code></h3><ul>

@@ -50,6 +50,7 @@ graph
 graph_parallel
 hana
 heap
+hof
 icl
 integer
 interprocess

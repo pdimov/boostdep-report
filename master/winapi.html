@@ -46,6 +46,7 @@
     </ul>
     <h3><code>&lt;boost/winapi/get_last_error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/impl/file_win32.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/handles.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/file_win32.hpp&gt;</code></li>
@@ -236,26 +237,25 @@
       <li>from <code>&lt;boost/process/detail/windows/wait_group.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-stacktrace"><a href="stacktrace.html"><em>stacktrace</em></a></h2>
-    <h3><code>&lt;boost/detail/winapi/access_rights.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/access_rights.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/detail/safe_dump_win.ipp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/winapi/config.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/safe_dump_to.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/winapi/dll.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/dll.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/detail/location_from_symbol.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/winapi/file_management.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/file_management.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/detail/safe_dump_win.ipp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/winapi/get_current_process.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/stacktrace/detail/frame_msvc.ipp&gt;</code></li>
+    <h3><code>&lt;boost/winapi/get_current_process.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/detail/safe_dump_win.ipp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/winapi/handles.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/handles.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/detail/safe_dump_win.ipp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/winapi/stack_backtrace.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/stack_backtrace.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/detail/collect_msvc.ipp&gt;</code></li>
     </ul>
   <h2 id="reverse-system"><a href="system.html"><em>system</em></a></h2>
@@ -280,13 +280,19 @@
       <li>from <code>&lt;boost/thread/win32/shared_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/detail/winapi/time.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/detail/platform_time.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/detail/winapi/timers.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/detail/platform_time.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/winapi/access_rights.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/basic_types.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/winapi/dll.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/event.hpp&gt;</code></h3><ul>
@@ -319,24 +325,22 @@
     <h3><code>&lt;boost/winapi/thread.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/winapi/time.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/winapi/wait.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-uuid"><a href="uuid.html"><em>uuid</em></a></h2>
+    <h3><code>&lt;boost/winapi/bcrypt.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/uuid/detail/random_provider_bcrypt.ipp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/uuid/detail/random_provider_detect_platform.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/winapi/crypt.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/uuid/detail/seed_rng.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/uuid/detail/random_provider_wincrypt.ipp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/winapi/get_current_process_id.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/uuid/detail/seed_rng.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/winapi/get_current_thread_id.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/uuid/detail/seed_rng.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/winapi/timers.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/uuid/detail/seed_rng.hpp&gt;</code></li>
+    <h3><code>&lt;boost/winapi/get_last_error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/uuid/detail/random_provider_bcrypt.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/uuid/detail/random_provider_wincrypt.ipp&gt;</code></li>
     </ul>
 <hr />
 <p class="footer"></p>
