@@ -57,6 +57,10 @@
     <h3><code>&lt;boost/mpl/not.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/optional/detail/old_optional_implementation.hpp&gt;</code></li>
     </ul>
+  <h2 id="predef"><a href="predef.html"><em>predef</em></a></h2>
+    <h3><code>&lt;boost/predef.h&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/optional/detail/experimental_traits.hpp&gt;</code></li>
+    </ul>
   <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
     <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/optional/optional.hpp&gt;</code></li>
@@ -131,6 +135,9 @@
     <h3><code>&lt;boost/utility/compare_pointees.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/optional/optional.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/utility/result_of.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/optional/optional.hpp&gt;</code></li>
+    </ul>
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>optional</em></h1>
@@ -138,19 +145,24 @@
     <li><a href="detail.html#preprocessor">adds <em>preprocessor</em></a></li>
   </ul>
   <h2><a href="mpl.html"><em>mpl</em></a></h2><ul>
-    <li><a href="mpl.html#predef">adds <em>predef</em></a></li>
     <li><a href="mpl.html#preprocessor">adds <em>preprocessor</em></a></li>
   </ul>
   <h2><a href="utility.html"><em>utility</em></a></h2><ul>
+    <li><a href="utility.html#container_hash">adds <em>container_hash</em></a></li>
     <li><a href="utility.html#preprocessor">adds <em>preprocessor</em></a></li>
+  </ul>
+  <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
+    <li><a href="container_hash.html#integer">adds <em>integer</em></a></li>
   </ul>
 
 
 <h1 id="reverse-dependencies">Reverse dependencies for <em>optional</em></h1>
   <h2 id="reverse-beast"><a href="beast.html"><em>beast</em></a></h2>
     <h3><code>&lt;boost/optional.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/buffers_adapter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/buffers_suffix.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/string_param.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/experimental/test/stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/basic_dynamic_body.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/basic_file_body.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/basic_parser.hpp&gt;</code></li>

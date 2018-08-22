@@ -8,6 +8,11 @@
 
 
 <h1 id="primary-dependencies">Primary dependencies for <em>range</em></h1>
+  <h2 id="algorithm"><a href="algorithm.html"><em>algorithm</em></a></h2>
+    <h3><code>&lt;boost/algorithm/minmax_element.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/range/algorithm/max_element.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/range/algorithm/min_element.hpp&gt;</code></li>
+    </ul>
   <h2 id="array"><a href="array.html"><em>array</em></a></h2>
     <h3><code>&lt;boost/array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/range/detail/any_iterator_buffer.hpp&gt;</code></li>
@@ -166,6 +171,9 @@
     <h3><code>&lt;boost/iterator/counting_iterator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/range/counting_range.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/iterator/distance.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/range/distance.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/iterator/filter_iterator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/range/adaptor/filtered.hpp&gt;</code></li>
     </ul>
@@ -255,7 +263,6 @@
       <li>from <code>&lt;boost/range/difference_type.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/range/detail/common.hpp&gt;</code></li>
       <li>from <code>&lt;boost/range/detail/has_member_size.hpp&gt;</code></li>
       <li>from <code>&lt;boost/range/has_range_iterator.hpp&gt;</code></li>
     </ul>
@@ -297,7 +304,6 @@
     </ul>
     <h3><code>&lt;boost/mpl/or.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/range/detail/any_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/range/detail/common.hpp&gt;</code></li>
       <li>from <code>&lt;boost/range/iterator_range_core.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/transform.hpp&gt;</code></h3><ul>
@@ -509,6 +515,13 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>range</em></h1>
+  <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
+    <li><a href="algorithm.html#bind">adds <em>bind</em></a></li>
+    <li><a href="algorithm.html#exception">adds <em>exception</em></a></li>
+    <li><a href="algorithm.html#function">adds <em>function</em></a></li>
+    <li><a href="algorithm.html#throw_exception">adds <em>throw_exception</em></a></li>
+    <li><a href="algorithm.html#unordered">adds <em>unordered</em></a></li>
+  </ul>
   <h2><a href="array.html"><em>array</em></a></h2><ul>
     <li><a href="array.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
@@ -530,6 +543,7 @@
   </ul>
   <h2><a href="optional.html"><em>optional</em></a></h2><ul>
     <li><a href="optional.html#move">adds <em>move</em></a></li>
+    <li><a href="optional.html#predef">adds <em>predef</em></a></li>
     <li><a href="optional.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
   <h2><a href="regex.html"><em>regex</em></a></h2><ul>
@@ -544,8 +558,18 @@
   <h2><a href="conversion.html"><em>conversion</em></a></h2><ul>
     <li><a href="conversion.html#typeof">adds <em>typeof</em></a></li>
   </ul>
+  <h2><a href="function.html"><em>function</em></a></h2><ul>
+    <li><a href="function.html#type_index">adds <em>type_index</em></a></li>
+    <li><a href="function.html#typeof">adds <em>typeof</em></a></li>
+  </ul>
   <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
     <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
+  </ul>
+  <h2><a href="unordered.html"><em>unordered</em></a></h2><ul>
+    <li><a href="unordered.html#container">adds <em>container</em></a></li>
+  </ul>
+  <h2><a href="container.html"><em>container</em></a></h2><ul>
+    <li><a href="container.html#intrusive">adds <em>intrusive</em></a></li>
   </ul>
 
 
@@ -601,6 +625,7 @@
       <li>from <code>&lt;boost/algorithm/string/trim.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/begin.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/algorithm/apply_permutation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/clamp.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/cxx11/all_of.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/cxx11/any_of.hpp&gt;</code></li>
@@ -620,6 +645,8 @@
       <li>from <code>&lt;boost/algorithm/cxx17/transform_exclusive_scan.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/cxx17/transform_inclusive_scan.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/cxx17/transform_reduce.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/algorithm/find_backward.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/algorithm/find_not.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/gather.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/hex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/is_palindrome.hpp&gt;</code></li>
@@ -661,6 +688,7 @@
       <li>from <code>&lt;boost/algorithm/string/detail/finder.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/end.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/algorithm/apply_permutation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/clamp.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/cxx11/all_of.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/cxx11/any_of.hpp&gt;</code></li>
@@ -680,6 +708,8 @@
       <li>from <code>&lt;boost/algorithm/cxx17/transform_exclusive_scan.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/cxx17/transform_inclusive_scan.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/cxx17/transform_reduce.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/algorithm/find_backward.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/algorithm/find_not.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/gather.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/hex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/algorithm/is_palindrome.hpp&gt;</code></li>
@@ -1086,6 +1116,10 @@
     </ul>
     <h3><code>&lt;boost/range/iterator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/hawick_circuits.hpp&gt;</code></li>
+    </ul>
+  <h2 id="reverse-icl"><a href="icl.html"><em>icl</em></a></h2>
+    <h3><code>&lt;boost/range/iterator_range.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/icl/concept/interval_associator.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-iostreams"><a href="iostreams.html"><em>iostreams</em></a></h2>
     <h3><code>&lt;boost/range/iterator_range.hpp&gt;</code></h3><ul>

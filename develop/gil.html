@@ -9,15 +9,8 @@
 
 <h1 id="primary-dependencies">Primary dependencies for <em>gil</em></h1>
   <h2 id="(unknown)"><a href="(unknown).html"><em>(unknown)</em></a></h2>
-    <h3><code>&lt;boost/gil/extension/io/raw/detail/base.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/io/raw/tags.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/gil/extension/io/targa/detail//write.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/io/targa/write.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/gil/io/io_device.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/io/raw/detail/device.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/raw/detail/read.hpp&gt;</code></li>
     </ul>
   <h2 id="algorithm"><a href="algorithm.html"><em>algorithm</em></a></h2>
     <h3><code>&lt;boost/algorithm/clamp.hpp&gt;</code></h3><ul>
@@ -25,11 +18,6 @@
     </ul>
     <h3><code>&lt;boost/algorithm/string.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/io/read_image.hpp&gt;</code></li>
-    </ul>
-  <h2 id="array"><a href="array.html"><em>array</em></a></h2>
-    <h3><code>&lt;boost/array.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/numeric/kernel.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/base.hpp&gt;</code></li>
     </ul>
   <h2 id="bind"><a href="bind.html"><em>bind</em></a></h2>
     <h3><code>&lt;boost/bind.hpp&gt;</code></h3><ul>
@@ -60,6 +48,9 @@
     </ul>
     <h3><code>&lt;boost/config/no_tr1/cmath.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/utilities.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/config/pragma_message.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/gil_config.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
@@ -110,9 +101,6 @@
     <h3><code>&lt;boost/integer/integer_mask.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/channel.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/integer_traits.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/channel_algorithm.hpp&gt;</code></li>
-    </ul>
   <h2 id="iterator"><a href="iterator.html"><em>iterator</em></a></h2>
     <h3><code>&lt;boost/iterator/iterator_adaptor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/utilities.hpp&gt;</code></li>
@@ -137,10 +125,6 @@
     </ul>
     <h3><code>&lt;boost/lambda/lambda.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/numeric/resample.hpp&gt;</code></li>
-    </ul>
-  <h2 id="lexical_cast"><a href="lexical_cast.html"><em>lexical_cast</em></a></h2>
-    <h3><code>&lt;boost/lexical_cast.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/io/pnm/detail/write.hpp&gt;</code></li>
     </ul>
   <h2 id="mpl"><a href="mpl.html"><em>mpl</em></a></h2>
     <h3><code>&lt;boost/mpl/accumulate.hpp&gt;</code></h3><ul>
@@ -181,6 +165,7 @@
     </ul>
     <h3><code>&lt;boost/mpl/begin.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/utilities.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
@@ -202,12 +187,16 @@
     </ul>
     <h3><code>&lt;boost/mpl/deref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/distance.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/utilities.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/divides.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/toolbox/image_types/subchroma_image.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/end.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/equal_to.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/io/png/detail/write.hpp&gt;</code></li>
@@ -257,6 +246,9 @@
       <li>from <code>&lt;boost/gil/channel_algorithm.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/io/png/detail/write.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mpl/list.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mpl/logical.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
     </ul>
@@ -268,6 +260,7 @@
     </ul>
     <h3><code>&lt;boost/mpl/next.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/not.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/io/bmp/detail/supported_types.hpp&gt;</code></li>
@@ -350,17 +343,6 @@
     <h3><code>&lt;boost/preprocessor/repeat.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
     </ul>
-  <h2 id="smart_ptr"><a href="smart_ptr.html"><em>smart_ptr</em></a></h2>
-    <h3><code>&lt;boost/make_shared.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/io/scanline_read_iterator.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/shared_ptr.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/io/raw/detail/device.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/tiff/detail/device.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/tiff/detail/write.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/device.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/scanline_read_iterator.hpp&gt;</code></li>
-    </ul>
   <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
     <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/io/tiff/detail/read.hpp&gt;</code></li>
@@ -415,6 +397,7 @@
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>gil</em></h1>
   <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
+    <li><a href="algorithm.html#array">adds <em>array</em></a></li>
     <li><a href="algorithm.html#assert">adds <em>assert</em></a></li>
     <li><a href="algorithm.html#exception">adds <em>exception</em></a></li>
     <li><a href="algorithm.html#range">adds <em>range</em></a></li>
@@ -422,10 +405,6 @@
     <li><a href="algorithm.html#throw_exception">adds <em>throw_exception</em></a></li>
     <li><a href="algorithm.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="algorithm.html#unordered">adds <em>unordered</em></a></li>
-  </ul>
-  <h2><a href="array.html"><em>array</em></a></h2><ul>
-    <li><a href="array.html#assert">adds <em>assert</em></a></li>
-    <li><a href="array.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
   <h2><a href="core.html"><em>core</em></a></h2><ul>
     <li><a href="core.html#assert">adds <em>assert</em></a></li>
@@ -436,6 +415,7 @@
     <li><a href="filesystem.html#detail">adds <em>detail</em></a></li>
     <li><a href="filesystem.html#io">adds <em>io</em></a></li>
     <li><a href="filesystem.html#range">adds <em>range</em></a></li>
+    <li><a href="filesystem.html#smart_ptr">adds <em>smart_ptr</em></a></li>
     <li><a href="filesystem.html#system">adds <em>system</em></a></li>
   </ul>
   <h2><a href="function.html"><em>function</em></a></h2><ul>
@@ -455,19 +435,13 @@
     <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
     <li><a href="iterator.html#optional">adds <em>optional</em></a></li>
+    <li><a href="iterator.html#smart_ptr">adds <em>smart_ptr</em></a></li>
     <li><a href="iterator.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="lambda.html"><em>lambda</em></a></h2><ul>
     <li><a href="lambda.html#detail">adds <em>detail</em></a></li>
     <li><a href="lambda.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="lambda.html#utility">adds <em>utility</em></a></li>
-  </ul>
-  <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
-    <li><a href="lexical_cast.html#assert">adds <em>assert</em></a></li>
-    <li><a href="lexical_cast.html#container">adds <em>container</em></a></li>
-    <li><a href="lexical_cast.html#math">adds <em>math</em></a></li>
-    <li><a href="lexical_cast.html#range">adds <em>range</em></a></li>
-    <li><a href="lexical_cast.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
   <h2><a href="mpl.html"><em>mpl</em></a></h2><ul>
     <li><a href="mpl.html#predef">adds <em>predef</em></a></li>
@@ -477,20 +451,14 @@
     <li><a href="numeric~conversion.html#conversion">adds <em>conversion</em></a></li>
     <li><a href="numeric~conversion.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
-  <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
-    <li><a href="smart_ptr.html#assert">adds <em>assert</em></a></li>
-    <li><a href="smart_ptr.html#move">adds <em>move</em></a></li>
-    <li><a href="smart_ptr.html#predef">adds <em>predef</em></a></li>
-    <li><a href="smart_ptr.html#throw_exception">adds <em>throw_exception</em></a></li>
+  <h2><a href="system.html"><em>system</em></a></h2><ul>
+    <li><a href="system.html#winapi">adds <em>winapi</em></a></li>
+  </ul>
+  <h2><a href="unordered.html"><em>unordered</em></a></h2><ul>
+    <li><a href="unordered.html#container">adds <em>container</em></a></li>
   </ul>
   <h2><a href="container.html"><em>container</em></a></h2><ul>
     <li><a href="container.html#intrusive">adds <em>intrusive</em></a></li>
-  </ul>
-  <h2><a href="math.html"><em>math</em></a></h2><ul>
-    <li><a href="math.html#atomic">adds <em>atomic</em></a></li>
-  </ul>
-  <h2><a href="system.html"><em>system</em></a></h2><ul>
-    <li><a href="system.html#winapi">adds <em>winapi</em></a></li>
   </ul>
 
 

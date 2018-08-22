@@ -21,6 +21,7 @@
       <li>from <code>&lt;boost/core/addressof.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/demangle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/enable_if.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/exchange.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/ignore_unused.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/is_same.hpp&gt;</code></li>
@@ -40,6 +41,7 @@
     </ul>
     <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/core/addressof.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/exchange.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/ref.hpp&gt;</code></li>
     </ul>
@@ -111,6 +113,15 @@
       <li>from <code>&lt;boost/asio/detail/type_traits.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-beast"><a href="beast.html"><em>beast</em></a></h2>
+    <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/impl/file_posix.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/file_stdio.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/file_win32.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/flat_buffer.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/multi_buffer.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/fields.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/detail/stream_base.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/config.hpp&gt;</code></li>
@@ -399,9 +410,12 @@
   <h2 id="reverse-fusion"><a href="fusion.html"><em>fusion</em></a></h2>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/fold.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/algorithm/iteration/for_each.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/algorithm/iteration/for_each_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/iter_fold.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/reverse_fold.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/reverse_iter_fold.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/container/deque/detail/keyed_element.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/list/detail/cpp03/list.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/map/detail/cpp03/map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/set/detail/cpp03/set.hpp&gt;</code></li>
@@ -430,8 +444,6 @@
       <li>from <code>&lt;boost/fusion/adapted/struct/detail/define_struct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/auxiliary/copy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/auxiliary/move.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/algorithm/iteration/for_each.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/algorithm/iteration/for_each_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/query/count.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/query/count_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/query/find.hpp&gt;</code></li>
@@ -494,6 +506,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/box_to_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/point_to_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/segment_to_box.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/has_duplicates.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/has_spikes.hpp&gt;</code></li>
@@ -518,11 +531,6 @@
       <li>from <code>&lt;boost/geometry/srs/projections/proj/aitoff.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/eck3.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/isea.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/srs/projections/proj/lcca.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/srs/projections/proj/putp3.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/srs/projections/proj/putp4p.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/srs/projections/proj/putp5.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/srs/projections/proj/putp6.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/qsc.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/buffer_distance_asymmetric.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/buffer_distance_symmetric.hpp&gt;</code></li>
@@ -553,10 +561,37 @@
       <li>from <code>&lt;boost/geometry/index/detail/varray.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-gil"><a href="gil.html"><em>gil</em></a></h2>
+    <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/packed_pixel.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/pixel.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/algorithm.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/color_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/color_base_algorithm.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/bmp/detail/read.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/raw/detail/device.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/tiff/detail/device.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/toolbox/image_types/indexed_image.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/channel_type.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/get_num_bits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/gil_concept.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/device.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/get_read_device.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/get_write_device.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_backend.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_dynamic_image_reader.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_dynamic_image_writer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_reader.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_scanline_reader.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_writer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/read_and_convert_image.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/read_and_convert_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/read_image.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/read_image_info.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/read_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/write_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/packed_pixel.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/pixel.hpp&gt;</code></li>
     </ul>
@@ -777,7 +812,7 @@
       <li>from <code>&lt;boost/math/special_functions/math_fwd.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-move"><a href="move.html"><em>move</em></a></h2>
-    <h3><code>&lt;boost/detail/no_exceptions_support.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/move/algo/move.hpp&gt;</code></li>
       <li>from <code>&lt;boost/move/algorithm.hpp&gt;</code></li>
     </ul>
@@ -1277,6 +1312,9 @@
       <li>from <code>&lt;boost/sort/spreadsort/detail/string_sort.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-spirit"><a href="spirit.html"><em>spirit</em></a></h2>
+    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/x3/support/ast/position_tagged.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/classic/core/composite/actions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/classic/dynamic/impl/switch.ipp&gt;</code></li>
@@ -1432,9 +1470,11 @@
       <li>from <code>&lt;boost/test/tree/test_case_template.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/test/data/monomorphic/initializer_list.hpp&gt;</code></li>
       <li>from <code>&lt;boost/test/impl/execution_monitor.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/test/data/monomorphic/delayed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/test/data/monomorphic/generate.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type.hpp&gt;</code></h3><ul>
@@ -1592,12 +1632,6 @@
       <li>from <code>&lt;boost/uuid/detail/random_provider_bcrypt.ipp&gt;</code></li>
       <li>from <code>&lt;boost/uuid/detail/random_provider_posix.ipp&gt;</code></li>
       <li>from <code>&lt;boost/uuid/detail/random_provider_wincrypt.ipp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/noncopyable.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/uuid/detail/random_provider.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/null_deleter.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/uuid/random_generator.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-variant"><a href="variant.html"><em>variant</em></a></h2>
     <h3><code>&lt;boost/checked_delete.hpp&gt;</code></h3><ul>

@@ -33,7 +33,6 @@
       <li>from <code>&lt;boost/fusion/container/map/map_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/set/set_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/vector/detail/config.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/container/vector/detail/value_at_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/vector/vector.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/vector/vector10.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/vector/vector20.hpp&gt;</code></li>
@@ -56,7 +55,6 @@
       <li>from <code>&lt;boost/fusion/support/iterator_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/pair.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/sequence_base.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/support/unused.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/tuple/tuple_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/detail/strictest_traversal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/iterator_range/iterator_range.hpp&gt;</code></li>
@@ -73,6 +71,9 @@
       <li>from <code>&lt;boost/fusion/support/tag_of.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/tuple/detail/tuple.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/fusion/support/detail/and.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/detail/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/adapted/struct/detail/define_struct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/vector/detail/config.hpp&gt;</code></li>
@@ -87,9 +88,13 @@
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/fold.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/algorithm/iteration/for_each.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/algorithm/iteration/for_each_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/iter_fold.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/reverse_fold.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/reverse_iter_fold.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/algorithm/query/detail/find_if.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/container/deque/detail/keyed_element.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/list/detail/cpp03/list.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/map/detail/cpp03/map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/set/detail/cpp03/set.hpp&gt;</code></li>
@@ -118,8 +123,6 @@
       <li>from <code>&lt;boost/fusion/adapted/struct/detail/define_struct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/auxiliary/copy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/auxiliary/move.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/algorithm/iteration/for_each.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/algorithm/iteration/for_each_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/query/count.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/query/count_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/query/find.hpp&gt;</code></li>
@@ -201,16 +204,12 @@
       <li>from <code>&lt;boost/fusion/sequence/comparison/enable_comparison.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/sequence/intrinsic/swap.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/detail/is_mpl_sequence.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/support/is_sequence.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/support/detail/is_native_fusion_sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/equal_to_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/apply.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/adapted/boost_tuple/boost_tuple_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/query/detail/find_if.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/view/transform_view/detail/at_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/view/transform_view/detail/deref_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/view/transform_view/detail/value_at_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/view/transform_view/detail/value_of_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/adapted/boost_array/array_iterator.hpp&gt;</code></li>
@@ -243,7 +242,6 @@
       <li>from <code>&lt;boost/fusion/container/map/detail/cpp03/at_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/map/detail/cpp03/value_at_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/map/detail/value_at_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/container/map/detail/value_at_key_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/vector/detail/cpp03/value_at_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/vector/detail/cpp03/vector.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/vector/detail/cpp03/vector10.hpp&gt;</code></li>
@@ -277,7 +275,6 @@
     </ul>
     <h3><code>&lt;boost/mpl/bind.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/algorithm/query/find_if.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/view/filter_view/detail/next_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/filter_view/filter_view_iterator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
@@ -472,11 +469,12 @@
       <li>from <code>&lt;boost/fusion/container/map/detail/at_key_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/map/detail/cpp03/map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/map/detail/map_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/container/map/detail/value_at_key_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/set/detail/cpp03/set.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/container/vector/detail/value_at_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/functional/invocation/invoke.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/iterator/detail/advance.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/iterator/detail/distance.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/support/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/detail/segmented_fold_until_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/tag_of.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/filter_view/detail/next_impl.hpp&gt;</code></li>
@@ -604,9 +602,7 @@
       <li>from <code>&lt;boost/fusion/iterator/mpl/fusion_iterator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/lambda.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/fusion/algorithm/query/detail/find_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/query/find_if.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/view/filter_view/detail/next_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/filter_view/filter_view_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/equal_to_impl.hpp&gt;</code></li>
     </ul>
@@ -662,7 +658,6 @@
       <li>from <code>&lt;boost/fusion/sequence/intrinsic/value_at.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/sequence/intrinsic/value_at_key.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/sequence/io/out.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/support/is_sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/detail/strictest_traversal.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/placeholders.hpp&gt;</code></h3><ul>
@@ -670,7 +665,6 @@
       <li>from <code>&lt;boost/fusion/algorithm/query/find_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/transformation/zip.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/sequence/intrinsic/detail/segmented_size.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/view/filter_view/detail/next_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/filter_view/filter_view_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/distance_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/value_of_impl.hpp&gt;</code></li>
@@ -701,7 +695,6 @@
     </ul>
     <h3><code>&lt;boost/mpl/quote.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/algorithm/query/find_if.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/view/filter_view/detail/next_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/filter_view/filter_view_iterator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/single_view.hpp&gt;</code></h3><ul>
@@ -1221,12 +1214,8 @@
     </ul>
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
     <h3><code>&lt;boost/type_traits/add_const.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/fusion/adapted/adt/adapt_adt.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/adapted/adt/detail/adapt_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/boost_tuple/boost_tuple_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/mpl/detail/end_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/adapted/struct/adapt_assoc_struct.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/adapted/struct/adapt_struct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/struct/detail/adapt_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/struct/detail/define_struct_inline.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/deque/deque_iterator.hpp&gt;</code></li>
@@ -1250,12 +1239,9 @@
       <li>from <code>&lt;boost/fusion/view/single_view/detail/equal_to_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/add_reference.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/fusion/adapted/adt/adapt_adt.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/adapted/adt/adapt_assoc_adt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/array/at_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/array/deref_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/adapted/struct/adapt_assoc_struct.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/adapted/struct/adapt_struct.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/adapted/struct/detail/adapt_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/fold.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/iter_fold.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/reverse_fold.hpp&gt;</code></li>
@@ -1297,12 +1283,9 @@
       <li>from <code>&lt;boost/fusion/view/reverse_view/reverse_view_iterator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_complete.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/fusion/support/detail/is_mpl_sequence.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/support/is_sequence.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/support/detail/is_native_fusion_sequence.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_const.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/fusion/adapted/adt/adapt_adt.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/adapted/adt/adapt_assoc_adt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/adt/detail/adapt_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/boost_array/array_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/boost_array/detail/at_impl.hpp&gt;</code></li>
@@ -1311,8 +1294,7 @@
       <li>from <code>&lt;boost/fusion/adapted/std_array/detail/at_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/std_array/std_array_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/std_tuple/std_tuple_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/adapted/struct/adapt_assoc_struct.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/adapted/struct/adapt_struct.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/adapted/struct/detail/adapt_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/struct/detail/define_struct_inline.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/query/find.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/query/find_fwd.hpp&gt;</code></li>
@@ -1332,7 +1314,6 @@
       <li>from <code>&lt;boost/fusion/container/map/detail/cpp03/deref_data_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/map/detail/cpp03/deref_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/map/detail/cpp03/value_of_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/container/map/detail/value_at_key_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/map/map_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/set/detail/deref_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/vector/detail/deref_impl.hpp&gt;</code></li>
@@ -1359,7 +1340,7 @@
       <li>from <code>&lt;boost/fusion/container/vector/detail/cpp03/vector50.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/vector/vector.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/functional/invocation/invoke.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/support/detail/is_mpl_sequence.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/support/detail/is_native_fusion_sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/is_sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/pair.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/tuple/tuple.hpp&gt;</code></li>
@@ -1379,9 +1360,9 @@
       <li>from <code>&lt;boost/fusion/algorithm/transformation/erase_key.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/transformation/filter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/transformation/remove.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/algorithm/transformation/remove_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/transformation/replace_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/deque/detail/cpp03/deque.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/container/deque/detail/keyed_element.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/list/detail/equal_to_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/map/detail/cpp03/map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/vector/detail/equal_to_impl.hpp&gt;</code></li>
@@ -1390,7 +1371,6 @@
       <li>from <code>&lt;boost/fusion/iterator/distance.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/iterator/equal_to.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/iterator/iterator_facade.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/support/is_sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/single_view/detail/equal_to_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/at_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/begin_impl.hpp&gt;</code></li>
@@ -1408,8 +1388,6 @@
       <li>from <code>&lt;boost/fusion/adapted/array/size_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_const.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/fusion/adapted/adt/adapt_adt.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/adapted/adt/adapt_assoc_adt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/adt/detail/adapt_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/adt/detail/extension.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/mpl/detail/begin_impl.hpp&gt;</code></li>
@@ -1420,8 +1398,6 @@
       <li>from <code>&lt;boost/fusion/adapted/std_tuple/detail/end_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/std_tuple/detail/size_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/std_tuple/std_tuple_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/adapted/struct/adapt_assoc_struct.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/adapted/struct/adapt_struct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/struct/detail/define_struct_inline.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/generation/make_set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/generation/make_vector.hpp&gt;</code></li>
@@ -1448,6 +1424,7 @@
       <li>from <code>&lt;boost/fusion/adapted/array/value_of_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/fusion/adapted/adt/detail/adapt_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/adapted/adt/detail/extension.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/transformation/detail/replace.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/transformation/detail/replace_if.hpp&gt;</code></li>
@@ -1505,7 +1482,10 @@
       <li>from <code>&lt;boost/fusion/functional/invocation/invoke.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/functional/invocation/invoke_function_object.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/detail/segmented_fold_until_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/view/transform_view/detail/apply_transform_result.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/at_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/deref_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/value_at_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/value_of_impl.hpp&gt;</code></li>
     </ul>
 
 

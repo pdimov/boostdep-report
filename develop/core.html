@@ -21,6 +21,7 @@
       <li>from <code>&lt;boost/core/addressof.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/demangle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/enable_if.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/exchange.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/ignore_unused.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/is_same.hpp&gt;</code></li>
@@ -40,6 +41,8 @@
     </ul>
     <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/core/addressof.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/exchange.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/ref.hpp&gt;</code></li>
     </ul>
@@ -111,6 +114,15 @@
       <li>from <code>&lt;boost/asio/detail/type_traits.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-beast"><a href="beast.html"><em>beast</em></a></h2>
+    <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/impl/file_posix.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/file_stdio.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/file_win32.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/flat_buffer.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/multi_buffer.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/http/impl/fields.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/detail/stream_base.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/config.hpp&gt;</code></li>
@@ -399,9 +411,13 @@
   <h2 id="reverse-fusion"><a href="fusion.html"><em>fusion</em></a></h2>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/fold.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/algorithm/iteration/for_each.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/algorithm/iteration/for_each_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/iter_fold.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/reverse_fold.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/iteration/reverse_iter_fold.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/algorithm/query/detail/find_if.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/container/deque/detail/keyed_element.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/list/detail/cpp03/list.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/map/detail/cpp03/map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/set/detail/cpp03/set.hpp&gt;</code></li>
@@ -430,8 +446,6 @@
       <li>from <code>&lt;boost/fusion/adapted/struct/detail/define_struct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/auxiliary/copy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/auxiliary/move.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/algorithm/iteration/for_each.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/algorithm/iteration/for_each_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/query/count.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/query/count_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/query/find.hpp&gt;</code></li>
@@ -494,6 +508,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/box_to_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/point_to_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/segment_to_box.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/has_duplicates.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/has_spikes.hpp&gt;</code></li>
@@ -801,7 +816,7 @@
       <li>from <code>&lt;boost/math/special_functions/math_fwd.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-move"><a href="move.html"><em>move</em></a></h2>
-    <h3><code>&lt;boost/detail/no_exceptions_support.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/move/algo/move.hpp&gt;</code></li>
       <li>from <code>&lt;boost/move/algorithm.hpp&gt;</code></li>
     </ul>
@@ -1164,6 +1179,9 @@
     <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/regex/v4/regex_format.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/regex/v4/regex_traits_defaults.hpp&gt;</code></li>
+    </ul>
   <h2 id="reverse-scope_exit"><a href="scope_exit.html"><em>scope_exit</em></a></h2>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/scope_exit.hpp&gt;</code></li>
@@ -1495,9 +1513,11 @@
       <li>from <code>&lt;boost/test/tree/test_case_template.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/test/data/monomorphic/initializer_list.hpp&gt;</code></li>
       <li>from <code>&lt;boost/test/impl/execution_monitor.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/test/data/monomorphic/delayed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/test/data/monomorphic/generate.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type.hpp&gt;</code></h3><ul>
@@ -1655,12 +1675,6 @@
       <li>from <code>&lt;boost/uuid/detail/random_provider_bcrypt.ipp&gt;</code></li>
       <li>from <code>&lt;boost/uuid/detail/random_provider_posix.ipp&gt;</code></li>
       <li>from <code>&lt;boost/uuid/detail/random_provider_wincrypt.ipp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/noncopyable.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/uuid/detail/random_provider.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/null_deleter.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/uuid/random_generator.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-variant"><a href="variant.html"><em>variant</em></a></h2>
     <h3><code>&lt;boost/checked_delete.hpp&gt;</code></h3><ul>

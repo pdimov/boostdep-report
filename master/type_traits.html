@@ -70,6 +70,7 @@
     <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/type_traits/detail/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/is_complete.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/type_traits/is_function.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/is_list_constructible.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/is_nothrow_swappable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/remove_pointer.hpp&gt;</code></li>
@@ -86,7 +87,6 @@
       <li>from <code>&lt;boost/type_traits/is_copy_constructible.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/is_default_constructible.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/is_destructible.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/type_traits/is_member_function_pointer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/is_member_pointer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/is_nothrow_move_constructible.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/is_polymorphic.hpp&gt;</code></li>
@@ -963,8 +963,7 @@
       <li>from <code>&lt;boost/fusion/view/reverse_view/reverse_view_iterator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_complete.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/fusion/support/detail/is_mpl_sequence.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/support/is_sequence.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/support/detail/is_native_fusion_sequence.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_const.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/adapted/adt/adapt_adt.hpp&gt;</code></li>
@@ -998,7 +997,6 @@
       <li>from <code>&lt;boost/fusion/container/map/detail/cpp03/deref_data_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/map/detail/cpp03/deref_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/map/detail/cpp03/value_of_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/container/map/detail/value_at_key_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/map/map_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/set/detail/deref_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/vector/detail/deref_impl.hpp&gt;</code></li>
@@ -1025,7 +1023,7 @@
       <li>from <code>&lt;boost/fusion/container/vector/detail/cpp03/vector50.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/vector/vector.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/functional/invocation/invoke.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/support/detail/is_mpl_sequence.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/support/detail/is_native_fusion_sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/is_sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/pair.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/tuple/tuple.hpp&gt;</code></li>
@@ -1048,6 +1046,7 @@
       <li>from <code>&lt;boost/fusion/algorithm/transformation/remove_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/algorithm/transformation/replace_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/deque/detail/cpp03/deque.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/container/deque/detail/keyed_element.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/list/detail/equal_to_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/map/detail/cpp03/map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/container/vector/detail/equal_to_impl.hpp&gt;</code></li>
@@ -1056,7 +1055,6 @@
       <li>from <code>&lt;boost/fusion/iterator/distance.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/iterator/equal_to.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/iterator/iterator_facade.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/fusion/support/is_sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/single_view/detail/equal_to_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/at_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/begin_impl.hpp&gt;</code></li>
@@ -1245,6 +1243,8 @@
     </ul>
     <h3><code>&lt;boost/type_traits/is_integral.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/srs/projection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/impl/pj_param.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/str_cast.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/transformation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/side_by_triangle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/side_of_intersection.hpp&gt;</code></li>
@@ -1293,6 +1293,9 @@
       <li>from <code>&lt;boost/geometry/strategies/relate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/compare.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/select_sequence_element.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_signed.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/srs/projections/str_cast.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_unsigned.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/index/detail/rtree/linear/redistribute_elements.hpp&gt;</code></li>
@@ -1371,6 +1374,37 @@
       <li>from <code>&lt;boost/gil/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/pixel.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/utilities.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_base_and_derived.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/io/read_and_convert_image.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/read_and_convert_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/read_image.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/read_image_info.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/read_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/write_view.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_base_of.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/io/base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/typedefs.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_class.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/get_num_bits.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_integral.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/extension/toolbox/image_types/indexed_image.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/get_num_bits.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/extension/io/bmp/detail/read.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/bmp/detail/supported_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/jpeg/detail/supported_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/pnm/detail/supported_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/raw/detail/supported_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/targa/detail/supported_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/io/tiff/detail/supported_types.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/channel.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-graph"><a href="graph.html"><em>graph</em></a></h2>
     <h3><code>&lt;boost/type_traits.hpp&gt;</code></h3><ul>
@@ -1507,6 +1541,7 @@
     <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/icl/type_traits/is_combinable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/icl/type_traits/is_container.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/icl/type_traits/rep_type_of.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_signed.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/icl/type_traits/has_inverse.hpp&gt;</code></li>
@@ -1591,6 +1626,7 @@
       <li>from <code>&lt;boost/iostreams/filter/lzma.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iostreams/filter/test.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iostreams/filter/zlib.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iostreams/filter/zstd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iostreams/tee.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
@@ -2199,6 +2235,10 @@
     </ul>
     <h3><code>&lt;boost/type_traits/decay.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/detail/number_base.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_complex.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multiprecision/complex_adaptor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multiprecision/number.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_constructible.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/detail/number_base.hpp&gt;</code></li>
@@ -3689,7 +3729,11 @@
     <h3><code>&lt;boost/type_traits/add_reference.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/type_index/runtime_cast/reference_cast.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/conditional.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/type_index/detail/compile_time_type_info.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_index/runtime_cast/detail/runtime_cast_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_base_and_derived.hpp&gt;</code></h3><ul>
@@ -3723,6 +3767,9 @@
     <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/type_index/ctti_type_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_index/runtime_cast/reference_cast.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/type_identity.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-typeof"><a href="typeof.html"><em>typeof</em></a></h2>
