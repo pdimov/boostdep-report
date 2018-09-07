@@ -618,9 +618,7 @@
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>accumulators</em></h1>
   <h2><a href="circular_buffer.html"><em>circular_buffer</em></a></h2><ul>
-    <li><a href="circular_buffer.html#container">adds <em>container</em></a></li>
     <li><a href="circular_buffer.html#move">adds <em>move</em></a></li>
-    <li><a href="circular_buffer.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
     <li><a href="fusion.html#container_hash">adds <em>container_hash</em></a></li>
@@ -668,9 +666,6 @@
     <li><a href="algorithm.html#function">adds <em>function</em></a></li>
     <li><a href="algorithm.html#unordered">adds <em>unordered</em></a></li>
   </ul>
-  <h2><a href="container.html"><em>container</em></a></h2><ul>
-    <li><a href="container.html#intrusive">adds <em>intrusive</em></a></li>
-  </ul>
   <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
     <li><a href="container_hash.html#integer">adds <em>integer</em></a></li>
   </ul>
@@ -697,6 +692,7 @@
     <li><a href="function.html#type_index">adds <em>type_index</em></a></li>
   </ul>
   <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
+    <li><a href="lexical_cast.html#container">adds <em>container</em></a></li>
     <li><a href="lexical_cast.html#math">adds <em>math</em></a></li>
   </ul>
   <h2><a href="spirit.html"><em>spirit</em></a></h2><ul>
@@ -711,8 +707,14 @@
     <li><a href="spirit.html#thread">adds <em>thread</em></a></li>
     <li><a href="spirit.html#tti">adds <em>tti</em></a></li>
   </ul>
+  <h2><a href="unordered.html"><em>unordered</em></a></h2><ul>
+    <li><a href="unordered.html#container">adds <em>container</em></a></li>
+  </ul>
   <h2><a href="variant.html"><em>variant</em></a></h2><ul>
     <li><a href="variant.html#type_index">adds <em>type_index</em></a></li>
+  </ul>
+  <h2><a href="container.html"><em>container</em></a></h2><ul>
+    <li><a href="container.html#intrusive">adds <em>intrusive</em></a></li>
   </ul>
   <h2><a href="endian.html"><em>endian</em></a></h2><ul>
     <li><a href="endian.html#system">adds <em>system</em></a></li>
@@ -734,6 +736,7 @@
     <li><a href="thread.html#atomic">adds <em>atomic</em></a></li>
     <li><a href="thread.html#chrono">adds <em>chrono</em></a></li>
     <li><a href="thread.html#date_time">adds <em>date_time</em></a></li>
+    <li><a href="thread.html#intrusive">adds <em>intrusive</em></a></li>
     <li><a href="thread.html#system">adds <em>system</em></a></li>
     <li><a href="thread.html#winapi">adds <em>winapi</em></a></li>
   </ul>
@@ -756,38 +759,6 @@
 
 
 <h1 id="reverse-dependencies">Reverse dependencies for <em>accumulators</em></h1>
-  <h2 id="reverse-chrono~stopwatches"><a href="chrono~stopwatches.html"><em>chrono~stopwatches</em></a></h2>
-    <h3><code>&lt;boost/accumulators/accumulators.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/chrono/stopwatches/collectors/laps_accumulator_set.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/chrono/stopwatches/formatters/accumulator_set_formatter.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/accumulators/framework/accumulator_set.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/chrono/stopwatches/collectors/laps_accumulator_set.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/chrono/stopwatches/formatters/accumulator_set_formatter.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/accumulators/framework/features.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/chrono/stopwatches/collectors/laps_accumulator_set.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/accumulators/statistics/count.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/chrono/stopwatches/collectors/laps_accumulator_set.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/chrono/stopwatches/formatters/accumulator_set_formatter.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/accumulators/statistics/max.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/chrono/stopwatches/collectors/laps_accumulator_set.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/chrono/stopwatches/formatters/accumulator_set_formatter.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/accumulators/statistics/mean.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/chrono/stopwatches/collectors/laps_accumulator_set.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/chrono/stopwatches/formatters/accumulator_set_formatter.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/accumulators/statistics/min.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/chrono/stopwatches/collectors/laps_accumulator_set.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/chrono/stopwatches/formatters/accumulator_set_formatter.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/accumulators/statistics/sum.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/chrono/stopwatches/collectors/laps_accumulator_set.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/chrono/stopwatches/formatters/accumulator_set_formatter.hpp&gt;</code></li>
-    </ul>
 <hr />
 <p class="footer"></p>
 </body>

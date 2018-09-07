@@ -9,9 +9,6 @@
 
 <h1 id="primary-dependencies">Primary dependencies for <em>core</em></h1>
   <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
-    <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/core/lightweight_test.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/current_function.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/core/lightweight_test.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/typeinfo.hpp&gt;</code></li>
@@ -30,6 +27,7 @@
       <li>from <code>&lt;boost/core/noncopyable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/null_deleter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/pointer_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/quick_exit.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/ref.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/scoped_enum.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/swap.hpp&gt;</code></li>
@@ -175,17 +173,13 @@
       <li>from <code>&lt;boost/chrono/io_v1/chrono_io.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-circular_buffer"><a href="circular_buffer.html"><em>circular_buffer</em></a></h2>
-    <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/circular_buffer/details.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/detail/iterator.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/circular_buffer.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/detail/no_exceptions_support.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/circular_buffer/details.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/circular_buffer/base.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/circular_buffer/details.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/circular_buffer/details.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-compute"><a href="compute.html"><em>compute</em></a></h2>
@@ -567,6 +561,7 @@
     </ul>
   <h2 id="reverse-gil"><a href="gil.html"><em>gil</em></a></h2>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/gil_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/device.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/packed_pixel.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/pixel.hpp&gt;</code></li>
@@ -859,6 +854,9 @@
       <li>from <code>&lt;boost/msm/front/euml/operator.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-multi_array"><a href="multi_array.html"><em>multi_array</em></a></h2>
+    <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multi_array.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/iterator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_array/algorithm.hpp&gt;</code></li>
     </ul>
