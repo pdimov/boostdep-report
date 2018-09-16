@@ -12,7 +12,6 @@ bimap
 bind
 callable_traits
 chrono
-chrono~stopwatches
 circular_buffer
 compatibility
 compute

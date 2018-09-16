@@ -964,16 +964,6 @@
     <h3><code>&lt;boost/mpl/vector.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/convert/printf.hpp&gt;</code></li>
     </ul>
-  <h2 id="reverse-crc"><a href="crc.html"><em>crc</em></a></h2>
-    <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/crc.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/crc.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/integral_c.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/crc.hpp&gt;</code></li>
-    </ul>
   <h2 id="reverse-date_time"><a href="date_time.html"><em>date_time</em></a></h2>
     <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/date_time/constrained_value.hpp&gt;</code></li>
@@ -1802,6 +1792,8 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/range_by_section.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/sectionalize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/point_in_geometry.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/discrete_frechet_distance.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/discrete_hausdorff_distance.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/not_implemented.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/arithmetic/cross_product.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/access.hpp&gt;</code></li>
@@ -1838,9 +1830,10 @@
       <li>from <code>&lt;boost/geometry/iterators/segment_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/robustness/get_rescale_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/impl/base_static.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/impl/pj_param.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/srs/projections/par4.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/transformation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/point_in_poly_winding.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/area.hpp&gt;</code></li>
@@ -1896,6 +1889,9 @@
     <h3><code>&lt;boost/mpl/equal_to.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/util/compress_variant.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mpl/find.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/srs/projections/impl/pj_init.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mpl/fold.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/length.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/combine_if.hpp&gt;</code></li>
@@ -1942,8 +1938,10 @@
       <li>from <code>&lt;boost/geometry/iterators/detail/point_iterator/value_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/detail/segment_iterator/value_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/impl/pj_init.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/impl/projects.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/srs/projections/par4.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/transformation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/area_result.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/area.hpp&gt;</code></li>
@@ -2006,9 +2004,13 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/result.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/promote_integral.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mpl/not.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mpl/or.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/relate_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/varray_detail.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/placeholders.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/geometries/adapted/boost_fusion.hpp&gt;</code></li>
@@ -3927,22 +3929,6 @@
     </ul>
     <h3><code>&lt;boost/mpl/vector/vector10.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/poly_collection/detail/any_model.hpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-polygon"><a href="polygon.html"><em>polygon</em></a></h2>
-    <h3><code>&lt;boost/mpl/and.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/polygon/isotropy.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/polygon/isotropy.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/or.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/polygon/isotropy.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/protect.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/polygon/isotropy.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/size_t.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/polygon/isotropy.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-property_map"><a href="property_map.html"><em>property_map</em></a></h2>
     <h3><code>&lt;boost/mpl/and.hpp&gt;</code></h3><ul>

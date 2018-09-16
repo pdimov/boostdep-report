@@ -9,9 +9,6 @@
 
 <h1 id="primary-dependencies">Primary dependencies for <em>core</em></h1>
   <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
-    <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/core/lightweight_test.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/current_function.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/core/lightweight_test.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/typeinfo.hpp&gt;</code></li>
@@ -30,6 +27,7 @@
       <li>from <code>&lt;boost/core/noncopyable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/null_deleter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/pointer_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/quick_exit.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/ref.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/scoped_enum.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/swap.hpp&gt;</code></li>
@@ -1173,6 +1171,9 @@
     <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/regex/v4/regex_format.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/regex/v4/regex_traits_defaults.hpp&gt;</code></li>
+    </ul>
   <h2 id="reverse-scope_exit"><a href="scope_exit.html"><em>scope_exit</em></a></h2>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/scope_exit.hpp&gt;</code></li>
@@ -1555,18 +1556,6 @@
     </ul>
     <h3><code>&lt;boost/core/demangle.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
-    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_traits/detail/is_likely_lambda.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_traits/is_copy_assignable.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/type_traits/is_copy_constructible.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_traits/is_nothrow_move_assignable.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/type_traits/is_nothrow_move_constructible.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-typeof"><a href="typeof.html"><em>typeof</em></a></h2>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
