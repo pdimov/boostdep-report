@@ -11,52 +11,34 @@
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/system/config.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/config/abi_prefix.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/system/detail/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/system/error_code.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/config/abi_suffix.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/system/error_code.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/config/auto_link.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/system/config.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/config/warning_disable.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/system/detail/error_code.ipp&gt;</code></li>
+    <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/system/detail/config.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/system/error_code.hpp&gt;</code></li>
     </ul>
-  <h2 id="core"><a href="core.html"><em>core</em></a></h2>
-    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/system/error_code.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/noncopyable.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/system/error_code.hpp&gt;</code></li>
-    </ul>
-  <h2 id="predef"><a href="predef.html"><em>predef</em></a></h2>
-    <h3><code>&lt;boost/predef/platform.h&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/system/config.hpp&gt;</code></li>
-    </ul>
   <h2 id="winapi"><a href="winapi.html"><em>winapi</em></a></h2>
     <h3><code>&lt;boost/winapi/character_code_conversion.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/system/detail/error_code.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/system/detail/system_category_win32.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/error_codes.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/system/detail/error_code.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/system/detail/system_category_win32.hpp&gt;</code></li>
       <li>from <code>&lt;boost/system/windows_error.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/error_handling.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/system/detail/error_code.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/system/detail/system_category_win32.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/local_memory.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/system/detail/local_free_on_destruction.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/system/detail/system_category_win32.hpp&gt;</code></li>
     </ul>
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>system</em></h1>
-  <h2><a href="core.html"><em>core</em></a></h2><ul>
-    <li><a href="core.html#assert">adds <em>assert</em></a></li>
+  <h2><a href="winapi.html"><em>winapi</em></a></h2><ul>
+    <li><a href="winapi.html#predef">adds <em>predef</em></a></li>
   </ul>
 
 
