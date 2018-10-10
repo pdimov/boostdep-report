@@ -201,6 +201,9 @@
       <li>from <code>&lt;boost/pending/fibonacci_heap.hpp&gt;</code></li>
       <li>from <code>&lt;boost/pending/indirect_cmp.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/config/header_deprecated.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/pending/relaxed_heap.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/config/no_tr1/cmath.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/circle_layout.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/erdos_renyi_generator.hpp&gt;</code></li>
@@ -299,46 +302,6 @@
   <h2 id="function"><a href="function.html"><em>function</em></a></h2>
     <h3><code>&lt;boost/function/function2.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/detail/read_graphviz_spirit.hpp&gt;</code></li>
-    </ul>
-  <h2 id="graph_parallel"><a href="graph_parallel.html"><em>graph_parallel</em></a></h2>
-    <h3><code>&lt;boost/graph/distributed/breadth_first_search.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/breadth_first_search.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/graph/distributed/concepts.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/breadth_first_search.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/graph/distributed/connected_components.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/connected_components.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/graph/distributed/depth_first_search.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/depth_first_search.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/graph/distributed/dijkstra_shortest_paths.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/dijkstra_shortest_paths.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/graph/distributed/fruchterman_reingold.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/fruchterman_reingold.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/graph/distributed/graphviz.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/graphviz.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/graph/distributed/one_bit_color_map.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/one_bit_color_map.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/graph/distributed/page_rank.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/page_rank.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/graph/distributed/rmat_graph_generator.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/rmat_graph_generator.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/graph/distributed/strong_components.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/strong_components.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/graph/distributed/two_bit_color_map.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/two_bit_color_map.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/pending/property_serialize.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/adj_list_serialize.hpp&gt;</code></li>
     </ul>
   <h2 id="integer"><a href="integer.html"><em>integer</em></a></h2>
     <h3><code>&lt;boost/integer.hpp&gt;</code></h3><ul>
@@ -734,11 +697,20 @@
       <li>from <code>&lt;boost/graph/hawick_circuits.hpp&gt;</code></li>
     </ul>
   <h2 id="serialization"><a href="serialization.html"><em>serialization</em></a></h2>
+    <h3><code>&lt;boost/serialization/base_object.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/pending/property_serialize.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/serialization/collections_load_imp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/adj_list_serialize.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/collections_save_imp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/adj_list_serialize.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/serialization/is_bitwise_serializable.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/pending/property_serialize.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/serialization/nvp.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/pending/property_serialize.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/split_free.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/adj_list_serialize.hpp&gt;</code></li>
@@ -998,12 +970,6 @@
   <h2><a href="function.html"><em>function</em></a></h2><ul>
     <li><a href="function.html#type_index">adds <em>type_index</em></a></li>
   </ul>
-  <h2><a href="graph_parallel.html"><em>graph_parallel</em></a></h2><ul>
-    <li><a href="graph_parallel.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
-    <li><a href="graph_parallel.html#filesystem">adds <em>filesystem</em></a></li>
-    <li><a href="graph_parallel.html#mpi">adds <em>mpi</em></a></li>
-    <li><a href="graph_parallel.html#variant">adds <em>variant</em></a></li>
-  </ul>
   <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
     <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
@@ -1253,8 +1219,8 @@
       <li>from <code>&lt;boost/graph/distributed/crauser_et_al_shortest_paths.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/distributed/eager_dijkstra_shortest_paths.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/pending/property.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/pending/property_serialize.hpp&gt;</code></li>
+    <h3><code>&lt;boost/pending/property_serialize.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/graph/distributed/adjacency_list.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/pending/queue.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/distributed/breadth_first_search.hpp&gt;</code></li>

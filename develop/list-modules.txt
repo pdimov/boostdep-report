@@ -99,6 +99,7 @@ range
 ratio
 rational
 regex
+safe_numerics
 scope_exit
 serialization
 signals
