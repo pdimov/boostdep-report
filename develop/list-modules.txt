@@ -80,6 +80,7 @@ numeric~odeint
 numeric~ublas
 optional
 parameter
+parameter_python
 phoenix
 poly_collection
 polygon
