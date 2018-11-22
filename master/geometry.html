@@ -44,6 +44,9 @@
     <h3><code>&lt;boost/algorithm/string/split.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/io/svg/svg_mapper.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/algorithm/string/trim.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/srs/projections/proj4.hpp&gt;</code></li>
+    </ul>
   <h2 id="array"><a href="array.html"><em>array</em></a></h2>
     <h3><code>&lt;boost/array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/convex_hull.hpp&gt;</code></li>
@@ -52,6 +55,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/get_turns.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/stream_info.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/turn_info.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/formulas/karney_direct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/adapted/boost_array.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/wkt/write.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/point_in_box_by_side.hpp&gt;</code></li>
@@ -148,6 +152,7 @@
       <li>from <code>&lt;boost/geometry/policies/robustness/segment_ratio.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/impl/dms_parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/impl/projects.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/par_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/aeqd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/gnom.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/laea.hpp&gt;</code></li>
@@ -203,12 +208,15 @@
       <li>from <code>&lt;boost/geometry/geometries/adapted/boost_fusion.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/algorithms/area.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/centroid.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffer_inserter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffered_piece_collection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/get_piece_turns.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/turn_in_original_visitor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/turn_in_piece_visitor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/check_iterator_range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/covered_by/implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/box_to_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/point_to_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/segment_to_box.hpp&gt;</code></li>
@@ -223,16 +231,33 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/ring.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/get_turn_info.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/get_turn_info_for_endpoint.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/get_turns.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/handle_colocations.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/relate/boundary_checker.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/relate/follow_helpers.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/linear_areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/linear_linear.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/sections/sectionalize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sweep.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/throw_on_empty_input.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/within/implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/point_in_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/length.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/simplify.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/access.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/geometries/concepts/box_concept.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/geometries/concepts/check.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/concepts/point_concept.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/geometries/concepts/polygon_concept.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/geometries/concepts/segment_concept.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/linear/redistribute_elements.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/pack_create.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/quadratic/redistribute_elements.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/rstar/choose_next_node.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/rstar/insert.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/rstar/redistribute_elements.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/varray.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/aea.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/aitoff.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/eck3.hpp&gt;</code></li>
@@ -240,9 +265,15 @@
       <li>from <code>&lt;boost/geometry/srs/projections/proj/qsc.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/buffer_distance_asymmetric.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/buffer_distance_symmetric.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/agnostic/point_in_box_by_side.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/cartesian/distance_projected_point.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/cartesian/distance_projected_point_ax.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/side_of_intersection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/concepts/area_concept.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/concepts/centroid_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/concepts/distance_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/concepts/simplify_concept.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/concepts/within_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/mapping_ssf.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/math.hpp&gt;</code></li>
     </ul>
@@ -353,6 +384,7 @@
     </ul>
     <h3><code>&lt;boost/math/constants/constants.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/formulas/andoyer_inverse.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/formulas/karney_direct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/meridian_direct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/meridian_inverse.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/meridian_segment.hpp&gt;</code></li>
@@ -380,6 +412,7 @@
     </ul>
     <h3><code>&lt;boost/math/special_functions/hypot.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/formulas/area_formulas.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/formulas/karney_direct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/vertex_longitude.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/aea.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/aeqd.hpp&gt;</code></li>
@@ -442,6 +475,8 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/range_by_section.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/sectionalize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/point_in_geometry.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/discrete_frechet_distance.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/discrete_hausdorff_distance.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/not_implemented.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/arithmetic/cross_product.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/access.hpp&gt;</code></li>
@@ -476,9 +511,10 @@
       <li>from <code>&lt;boost/geometry/iterators/segment_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/robustness/get_rescale_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/impl/base_static.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/impl/pj_param.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/srs/projections/par4.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/transformation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/point_in_poly_winding.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/area.hpp&gt;</code></li>
@@ -534,6 +570,9 @@
     <h3><code>&lt;boost/mpl/equal_to.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/util/compress_variant.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mpl/find.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/srs/projections/impl/pj_init.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mpl/fold.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/length.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/combine_if.hpp&gt;</code></li>
@@ -576,8 +615,10 @@
       <li>from <code>&lt;boost/geometry/iterators/detail/point_iterator/value_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/detail/segment_iterator/value_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/impl/pj_init.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/impl/projects.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/srs/projections/par4.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/transformation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/area_result.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/area.hpp&gt;</code></li>
@@ -640,9 +681,13 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/result.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/promote_integral.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mpl/not.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mpl/or.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/relate_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/varray_detail.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/placeholders.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/geometries/adapted/boost_fusion.hpp&gt;</code></li>
@@ -843,6 +888,8 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/multi_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/point_in_geometry.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/discrete_frechet_distance.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/discrete_hausdorff_distance.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/for_each.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/is_empty.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/num_geometries.hpp&gt;</code></li>
@@ -1060,8 +1107,8 @@
       <li>from <code>&lt;boost/geometry/index/indexable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/rtree.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/relate/tupled.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/srs/projections/par4.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/srs/projections/proj4.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/distance_cross_track.hpp&gt;</code></li>
     </ul>
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
@@ -1095,7 +1142,8 @@
       <li>from <code>&lt;boost/geometry/core/cs.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/is_areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/reverse_dispatch.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/srs/projections/par4.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/promote_integral.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_arithmetic.hpp&gt;</code></h3><ul>
@@ -1197,9 +1245,11 @@
       <li>from <code>&lt;boost/geometry/io/wkt/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/robustness/get_rescale_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/impl/pj_init.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/srs/projections/par4.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/impl/pj_param.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/aeqd.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/transformation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/area_result.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/concepts/distance_concept.hpp&gt;</code></li>
@@ -1217,7 +1267,8 @@
       <li>from <code>&lt;boost/geometry/util/promote_integral.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_void.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/srs/projections/par4.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/centroid_bashein_detmer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/distance_projected_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/side_by_triangle.hpp&gt;</code></li>
@@ -1368,6 +1419,8 @@
     </ul>
     <h3><code>&lt;boost/variant/variant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/index/detail/rtree/node/variant_visitor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/variant/variant_fwd.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/append.hpp&gt;</code></li>

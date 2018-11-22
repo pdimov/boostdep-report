@@ -80,6 +80,7 @@ numeric~odeint
 numeric~ublas
 optional
 parameter
+parameter_python
 phoenix
 poly_collection
 polygon
@@ -99,9 +100,9 @@ range
 ratio
 rational
 regex
+safe_numerics
 scope_exit
 serialization
-signals
 signals2
 smart_ptr
 sort

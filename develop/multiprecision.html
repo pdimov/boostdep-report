@@ -22,6 +22,7 @@
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/cpp_dec_float.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/float128.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multiprecision/traits/explicit_conversion.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/complex_adaptor.hpp&gt;</code></li>
@@ -207,12 +208,17 @@
       <li>from <code>&lt;boost/multiprecision/cpp_int.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/conditional.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multiprecision/traits/explicit_conversion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/traits/is_backend.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/decay.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/detail/number_base.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/declval.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multiprecision/traits/explicit_conversion.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multiprecision/traits/explicit_conversion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/traits/is_variable_precision.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_complex.hpp&gt;</code></h3><ul>
@@ -250,17 +256,20 @@
       <li>from <code>&lt;boost/multiprecision/detail/default_ops.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/number.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multiprecision/traits/is_byte_container.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/remove_pointer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/number.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/declval.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multiprecision/traits/explicit_conversion.hpp&gt;</code></li>
     </ul>
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>multiprecision</em></h1>
   <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
     <li><a href="container_hash.html#detail">adds <em>detail</em></a></li>
+  </ul>
+  <h2><a href="integer.html"><em>integer</em></a></h2><ul>
+    <li><a href="integer.html#optional">adds <em>optional</em></a></li>
   </ul>
   <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
     <li><a href="lexical_cast.html#container">adds <em>container</em></a></li>
@@ -313,7 +322,6 @@
   <h2><a href="range.html"><em>range</em></a></h2><ul>
     <li><a href="range.html#algorithm">adds <em>algorithm</em></a></li>
     <li><a href="range.html#iterator">adds <em>iterator</em></a></li>
-    <li><a href="range.html#optional">adds <em>optional</em></a></li>
     <li><a href="range.html#regex">adds <em>regex</em></a></li>
   </ul>
   <h2><a href="system.html"><em>system</em></a></h2><ul>

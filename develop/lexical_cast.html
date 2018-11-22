@@ -73,29 +73,6 @@
     <h3><code>&lt;boost/math/special_functions/sign.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/lexical_cast/detail/inf_nan.hpp&gt;</code></li>
     </ul>
-  <h2 id="mpl"><a href="mpl.html"><em>mpl</em></a></h2>
-    <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/lexical_cast/detail/is_character.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/lexical_cast/try_lexical_convert.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/eval_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/lexical_cast/detail/converter_numeric.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/identity.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/lexical_cast/detail/converter_numeric.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/lexical_cast/try_lexical_convert.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/detail/lcast_precision.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical_streams.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/lexical_cast/detail/converter_numeric.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/lexical_cast/detail/lcast_unsigned_converters.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/lexical_cast/lexical_cast_old.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/lexical_cast/try_lexical_convert.hpp&gt;</code></li>
-    </ul>
   <h2 id="numeric~conversion"><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2>
     <h3><code>&lt;boost/numeric/conversion/cast.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/lexical_cast/detail/converter_numeric.hpp&gt;</code></li>
@@ -120,11 +97,24 @@
       <li>from <code>&lt;boost/lexical_cast/bad_lexical_cast.hpp&gt;</code></li>
     </ul>
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
+    <h3><code>&lt;boost/type_traits/conditional.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/detail/lcast_precision.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical_streams.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/lexical_cast/detail/converter_numeric.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/lexical_cast/detail/lcast_unsigned_converters.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/lexical_cast/detail/widest_char.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/lexical_cast/try_lexical_convert.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/has_left_shift.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/has_right_shift.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/lexical_cast/detail/is_character.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_abstract.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/detail/lcast_precision.hpp&gt;</code></li>
@@ -145,6 +135,7 @@
       <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical.hpp&gt;</code></li>
       <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical_streams.hpp&gt;</code></li>
       <li>from <code>&lt;boost/lexical_cast/detail/converter_numeric.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/lexical_cast/try_lexical_convert.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_pointer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical_streams.hpp&gt;</code></li>
@@ -163,6 +154,11 @@
       <li>from <code>&lt;boost/lexical_cast/detail/converter_numeric.hpp&gt;</code></li>
       <li>from <code>&lt;boost/lexical_cast/detail/lcast_unsigned_converters.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/type_identity.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/lexical_cast/detail/converter_numeric.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/lexical_cast/try_lexical_convert.hpp&gt;</code></li>
+    </ul>
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>lexical_cast</em></h1>
@@ -171,23 +167,23 @@
     <li><a href="container.html#intrusive">adds <em>intrusive</em></a></li>
     <li><a href="container.html#move">adds <em>move</em></a></li>
   </ul>
+  <h2><a href="integer.html"><em>integer</em></a></h2><ul>
+    <li><a href="integer.html#optional">adds <em>optional</em></a></li>
+  </ul>
   <h2><a href="math.html"><em>math</em></a></h2><ul>
     <li><a href="math.html#atomic">adds <em>atomic</em></a></li>
     <li><a href="math.html#concept_check">adds <em>concept_check</em></a></li>
     <li><a href="math.html#detail">adds <em>detail</em></a></li>
     <li><a href="math.html#fusion">adds <em>fusion</em></a></li>
     <li><a href="math.html#lambda">adds <em>lambda</em></a></li>
+    <li><a href="math.html#mpl">adds <em>mpl</em></a></li>
     <li><a href="math.html#predef">adds <em>predef</em></a></li>
     <li><a href="math.html#smart_ptr">adds <em>smart_ptr</em></a></li>
     <li><a href="math.html#tuple">adds <em>tuple</em></a></li>
   </ul>
-  <h2><a href="mpl.html"><em>mpl</em></a></h2><ul>
-    <li><a href="mpl.html#predef">adds <em>predef</em></a></li>
-    <li><a href="mpl.html#preprocessor">adds <em>preprocessor</em></a></li>
-    <li><a href="mpl.html#utility">adds <em>utility</em></a></li>
-  </ul>
   <h2><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2><ul>
     <li><a href="numeric~conversion.html#conversion">adds <em>conversion</em></a></li>
+    <li><a href="numeric~conversion.html#mpl">adds <em>mpl</em></a></li>
     <li><a href="numeric~conversion.html#preprocessor">adds <em>preprocessor</em></a></li>
   </ul>
   <h2><a href="range.html"><em>range</em></a></h2><ul>
@@ -196,6 +192,7 @@
     <li><a href="range.html#container_hash">adds <em>container_hash</em></a></li>
     <li><a href="range.html#detail">adds <em>detail</em></a></li>
     <li><a href="range.html#iterator">adds <em>iterator</em></a></li>
+    <li><a href="range.html#mpl">adds <em>mpl</em></a></li>
     <li><a href="range.html#optional">adds <em>optional</em></a></li>
     <li><a href="range.html#preprocessor">adds <em>preprocessor</em></a></li>
     <li><a href="range.html#regex">adds <em>regex</em></a></li>

@@ -103,7 +103,6 @@ regex
 safe_numerics
 scope_exit
 serialization
-signals
 signals2
 smart_ptr
 sort
