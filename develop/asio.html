@@ -237,9 +237,6 @@
   <h2><a href="exception.html"><em>exception</em></a></h2><ul>
     <li><a href="exception.html#tuple">adds <em>tuple</em></a></li>
   </ul>
-  <h2><a href="integer.html"><em>integer</em></a></h2><ul>
-    <li><a href="integer.html#optional">adds <em>optional</em></a></li>
-  </ul>
   <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
     <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
     <li><a href="iterator.html#detail">adds <em>detail</em></a></li>
@@ -348,9 +345,6 @@
       <li>from <code>&lt;boost/beast/_experimental/core/timeout_socket.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/file_body_win32.ipp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/asio/bind_executor.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/_experimental/core/detail/timeout_service.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/asio/buffer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/_experimental/core/detail/flat_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/_experimental/core/impl/flat_stream.ipp&gt;</code></li>
@@ -392,6 +386,9 @@
     <h3><code>&lt;boost/asio/buffers_iterator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/_experimental/http/impl/icy_stream.ipp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/connect.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/_experimental/core/timeout_socket.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/coroutine.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/_experimental/core/impl/flat_stream.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/_experimental/http/impl/icy_stream.ipp&gt;</code></li>
@@ -405,12 +402,17 @@
       <li>from <code>&lt;boost/beast/websocket/impl/teardown.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/write.ipp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/dispatch.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/_experimental/core/detail/saved_handler.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/_experimental/test/stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/read.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/execution_context.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/_experimental/core/detail/service_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/_experimental/core/impl/timeout_service.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/_experimental/core/detail/timeout_service.hpp&gt;</code></li>
@@ -497,9 +499,6 @@
       <li>from <code>&lt;boost/beast/websocket/ssl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/steady_timer.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/_experimental/core/detail/timeout_service.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/asio/strand.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/_experimental/core/detail/timeout_service.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/windows/overlapped_ptr.hpp&gt;</code></h3><ul>
