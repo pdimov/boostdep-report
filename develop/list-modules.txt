@@ -79,6 +79,7 @@ numeric~interval
 numeric~odeint
 numeric~ublas
 optional
+outcome
 parameter
 parameter_python
 phoenix

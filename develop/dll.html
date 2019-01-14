@@ -8,36 +8,22 @@
 
 
 <h1 id="primary-dependencies">Primary dependencies for <em>dll</em></h1>
+  <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
+    <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/dll/detail/pe_info.hpp&gt;</code></li>
+    </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dll.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/alias.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/aggressive_ptr_cast.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/ctor_dtor.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/demangling/demangle_symbol.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/elf_info.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/macho_info.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/pe_info.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/posix/path_from_handle.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/posix/program_location_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/posix/shared_library_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/system_error.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/type_info.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/windows/path_from_handle.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/windows/shared_library_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/x_info_interface.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/import.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/import_mangled.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/library_info.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/runtime_symbol_info.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/shared_library.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/shared_library_load_mode.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/dll/config.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/dll/detail/elf_info.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/dll/detail/macho_info.hpp&gt;</code></li>
       <li>from <code>&lt;boost/dll/detail/pe_info.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/dll/detail/aggressive_ptr_cast.hpp&gt;</code></li>
       <li>from <code>&lt;boost/dll/import.hpp&gt;</code></li>
       <li>from <code>&lt;boost/dll/import_mangled.hpp&gt;</code></li>
     </ul>
@@ -61,22 +47,11 @@
       <li>from <code>&lt;boost/dll/detail/windows/shared_library_impl.hpp&gt;</code></li>
     </ul>
   <h2 id="filesystem"><a href="filesystem.html"><em>filesystem</em></a></h2>
-    <h3><code>&lt;boost/filesystem/fstream.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dll/detail/elf_info.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/macho_info.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/pe_info.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/filesystem/operations.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dll/detail/posix/program_location_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/posix/shared_library_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/windows/shared_library_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/dll/config.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/filesystem/path.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dll/detail/posix/path_from_handle.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/posix/program_location_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/posix/shared_library_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/windows/path_from_handle.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/windows/shared_library_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/dll/config.hpp&gt;</code></li>
     </ul>
   <h2 id="function"><a href="function.html"><em>function</em></a></h2>
     <h3><code>&lt;boost/function.hpp&gt;</code></h3><ul>
@@ -99,12 +74,14 @@
       <li>from <code>&lt;boost/dll/library_info.hpp&gt;</code></li>
     </ul>
   <h2 id="predef"><a href="predef.html"><em>predef</em></a></h2>
+    <h3><code>&lt;boost/predef.h&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/dll/smart_library.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/predef/architecture.h&gt;</code></h3><ul>
       <li>from <code>&lt;boost/dll/library_info.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/predef/compiler.h&gt;</code></h3><ul>
       <li>from <code>&lt;boost/dll/alias.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/smart_library.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/predef/compiler/visualc.h&gt;</code></h3><ul>
       <li>from <code>&lt;boost/dll/runtime_symbol_info.hpp&gt;</code></li>
@@ -139,10 +116,7 @@
     </ul>
   <h2 id="system"><a href="system.html"><em>system</em></a></h2>
     <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dll/detail/system_error.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/system/system_error.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dll/detail/system_error.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/dll/config.hpp&gt;</code></li>
     </ul>
   <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
     <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
@@ -240,38 +214,26 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>dll</em></h1>
-  <h2><a href="core.html"><em>core</em></a></h2><ul>
-    <li><a href="core.html#assert">adds <em>assert</em></a></li>
-  </ul>
   <h2><a href="filesystem.html"><em>filesystem</em></a></h2><ul>
-    <li><a href="filesystem.html#assert">adds <em>assert</em></a></li>
     <li><a href="filesystem.html#container_hash">adds <em>container_hash</em></a></li>
     <li><a href="filesystem.html#detail">adds <em>detail</em></a></li>
     <li><a href="filesystem.html#io">adds <em>io</em></a></li>
     <li><a href="filesystem.html#iterator">adds <em>iterator</em></a></li>
   </ul>
   <h2><a href="function.html"><em>function</em></a></h2><ul>
-    <li><a href="function.html#assert">adds <em>assert</em></a></li>
     <li><a href="function.html#bind">adds <em>bind</em></a></li>
     <li><a href="function.html#integer">adds <em>integer</em></a></li>
     <li><a href="function.html#preprocessor">adds <em>preprocessor</em></a></li>
     <li><a href="function.html#typeof">adds <em>typeof</em></a></li>
   </ul>
-  <h2><a href="move.html"><em>move</em></a></h2><ul>
-    <li><a href="move.html#assert">adds <em>assert</em></a></li>
-  </ul>
   <h2><a href="mpl.html"><em>mpl</em></a></h2><ul>
     <li><a href="mpl.html#preprocessor">adds <em>preprocessor</em></a></li>
     <li><a href="mpl.html#utility">adds <em>utility</em></a></li>
-  </ul>
-  <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
-    <li><a href="smart_ptr.html#assert">adds <em>assert</em></a></li>
   </ul>
   <h2><a href="spirit.html"><em>spirit</em></a></h2><ul>
     <li><a href="spirit.html#(unknown)">adds <em>(unknown)</em></a></li>
     <li><a href="spirit.html#algorithm">adds <em>algorithm</em></a></li>
     <li><a href="spirit.html#array">adds <em>array</em></a></li>
-    <li><a href="spirit.html#assert">adds <em>assert</em></a></li>
     <li><a href="spirit.html#concept_check">adds <em>concept_check</em></a></li>
     <li><a href="spirit.html#endian">adds <em>endian</em></a></li>
     <li><a href="spirit.html#foreach">adds <em>foreach</em></a></li>
@@ -291,16 +253,12 @@
     <li><a href="spirit.html#proto">adds <em>proto</em></a></li>
     <li><a href="spirit.html#range">adds <em>range</em></a></li>
     <li><a href="spirit.html#regex">adds <em>regex</em></a></li>
-    <li><a href="spirit.html#serialization">adds <em>serialization</em></a></li>
     <li><a href="spirit.html#thread">adds <em>thread</em></a></li>
     <li><a href="spirit.html#tti">adds <em>tti</em></a></li>
     <li><a href="spirit.html#typeof">adds <em>typeof</em></a></li>
     <li><a href="spirit.html#unordered">adds <em>unordered</em></a></li>
     <li><a href="spirit.html#utility">adds <em>utility</em></a></li>
     <li><a href="spirit.html#variant">adds <em>variant</em></a></li>
-  </ul>
-  <h2><a href="throw_exception.html"><em>throw_exception</em></a></h2><ul>
-    <li><a href="throw_exception.html#assert">adds <em>assert</em></a></li>
   </ul>
   <h2><a href="type_index.html"><em>type_index</em></a></h2><ul>
     <li><a href="type_index.html#container_hash">adds <em>container_hash</em></a></li>
@@ -349,6 +307,7 @@
     <li><a href="chrono.html#ratio">adds <em>ratio</em></a></li>
   </ul>
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
+    <li><a href="date_time.html#serialization">adds <em>serialization</em></a></li>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
   </ul>
   <h2><a href="random.html"><em>random</em></a></h2><ul>

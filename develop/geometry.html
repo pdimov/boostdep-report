@@ -41,7 +41,7 @@
       <li>from <code>&lt;boost/geometry/strategies/geographic/distance_cross_track.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/algorithm/minmax_element.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/multipoint.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/envelope_multipoint.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/algorithm/string.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/io/wkt/read.hpp&gt;</code></li>
@@ -254,7 +254,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/box_to_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/point_to_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/segment_to_box.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/segment.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/has_duplicates.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/has_spikes.hpp&gt;</code></li>
@@ -320,6 +320,7 @@
       <li>from <code>&lt;boost/geometry/strategies/concepts/simplify_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/concepts/within_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/mapping_ssf.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/envelope_segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/math.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
@@ -513,9 +514,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/assign_values.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/direction_code.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/multipoint_geometry.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/box.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/point.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/for_each_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/convert_ring.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/copy_segment_point.hpp&gt;</code></li>
@@ -582,9 +580,11 @@
       <li>from <code>&lt;boost/geometry/strategies/disjoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/distance.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/envelope.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/expand.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/parameters.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/intersection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/relate.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/expand_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/transform.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/within.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/boundary_view/implementation.hpp&gt;</code></li>
@@ -693,6 +693,7 @@
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track_box_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track_point_box.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/envelope_segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/add_const_if_c.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/calculation_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/combine_if.hpp&gt;</code></li>
@@ -821,9 +822,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/convert_indexed_to_indexed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/convert_point_to_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/segment_to_box.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/equals/collect_vectors.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/normalize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/recalculate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/arithmetic/determinant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/radian_access.hpp&gt;</code></li>
@@ -836,7 +835,9 @@
       <li>from <code>&lt;boost/geometry/strategies/cartesian/centroid_weighted_length.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/disjoint_segment_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/disjoint_segment_box.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/normalize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/disjoint_segment_box.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/envelope_segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/strategy_transform.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/math.hpp&gt;</code></li>
     </ul>
@@ -891,8 +892,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/geometry_to_segment_or_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/multipoint_to_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/point_to_geometry.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/multipoint.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/range_of_boxes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/equals/implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/extreme_points.hpp&gt;</code></li>
@@ -917,7 +916,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/num_distinct_consecutive_points.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/occupation_info.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/add_rings.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/append_no_duplicates.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/append_no_dups_or_spikes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/assign_parents.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/backtrack_check_si.hpp&gt;</code></li>
@@ -1008,6 +1006,7 @@
       <li>from <code>&lt;boost/geometry/strategies/agnostic/simplify_douglas_peucker.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/buffer_point_circle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/buffer_point_square.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/envelope_multipoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/box_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/closeable_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/boundary_view/implementation.hpp&gt;</code></li>
@@ -1039,9 +1038,11 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/convert_ring.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/begin.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/recalculate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/length.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/wkt/read.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/cartesian/envelope.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/normalized_view.hpp&gt;</code></li>
     </ul>
@@ -1062,9 +1063,11 @@
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/end.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/recalculate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/length.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/wkt/read.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/cartesian/envelope.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/normalized_view.hpp&gt;</code></li>
     </ul>
@@ -1154,6 +1157,7 @@
     </ul>
   <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
     <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/append_no_dups_or_spikes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/point_on_border.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/de9im.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/result.hpp&gt;</code></li>
@@ -1244,7 +1248,6 @@
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/copy_segments.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/result.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/core/cs.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/is_areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/reverse_dispatch.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
@@ -1337,13 +1340,9 @@
       <li>from <code>&lt;boost/geometry/iterators/detail/segment_iterator/value_type.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/point_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/is_comparable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/point_to_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/segment_to_box.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/box.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/point.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/has_spikes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/sectionalize.hpp&gt;</code></li>
@@ -1372,6 +1371,8 @@
       <li>from <code>&lt;boost/geometry/strategies/disjoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/relate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/compare.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/envelope_segment.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/expand_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/select_sequence_element.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_signed.hpp&gt;</code></h3><ul>

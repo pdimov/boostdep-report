@@ -36,8 +36,15 @@
     <h3><code>&lt;boost/atomic.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/sync/detail/atomic.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/atomic/detail/interlocked.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/sync/detail/interlocked.hpp&gt;</code></li>
+    <h3><code>&lt;boost/atomic/atomic.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/sync/detail/condition_variables/basic_condition_variable_windows.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/sync/detail/mutexes/basic_mutex_windows.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/sync/detail/mutexes/timed_mutex_windows.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/memory_order.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/sync/detail/condition_variables/basic_condition_variable_windows.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/sync/detail/mutexes/basic_mutex_windows.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/sync/detail/mutexes/timed_mutex_windows.hpp&gt;</code></li>
     </ul>
   <h2 id="chrono"><a href="chrono.html"><em>chrono</em></a></h2>
     <h3><code>&lt;boost/chrono/duration.hpp&gt;</code></h3><ul>
@@ -65,6 +72,7 @@
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/sync/detail/events/auto_reset_event_semaphore.hpp&gt;</code></li>
       <li>from <code>&lt;boost/sync/detail/events/manual_reset_event_mach.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/sync/detail/mutexes/basic_mutex_windows.hpp&gt;</code></li>
       <li>from <code>&lt;boost/sync/detail/mutexes/shared_spin_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/sync/detail/mutexes/timed_mutex_windows.hpp&gt;</code></li>
       <li>from <code>&lt;boost/sync/detail/semaphore/basic_semaphore_mach.hpp&gt;</code></li>
@@ -162,6 +170,9 @@
       <li>from <code>&lt;boost/sync/detail/throw_exception.hpp&gt;</code></li>
     </ul>
   <h2 id="winapi"><a href="winapi.html"><em>winapi</em></a></h2>
+    <h3><code>&lt;boost/detail/interlocked.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/sync/detail/waitable_timer.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/sync/detail/config.hpp&gt;</code></li>
     </ul>

@@ -1769,9 +1769,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/assign_values.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/direction_code.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/multipoint_geometry.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/box.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/point.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/for_each_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/convert_ring.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/copy_segment_point.hpp&gt;</code></li>
@@ -1838,9 +1835,11 @@
       <li>from <code>&lt;boost/geometry/strategies/disjoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/distance.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/envelope.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/expand.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/parameters.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/intersection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/relate.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/expand_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/transform.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/within.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/boundary_view/implementation.hpp&gt;</code></li>
@@ -1949,6 +1948,7 @@
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track_box_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track_point_box.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/envelope_segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/add_const_if_c.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/calculation_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/combine_if.hpp&gt;</code></li>
@@ -2106,7 +2106,6 @@
       <li>from <code>&lt;boost/gil/concepts/pixel_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/image.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/bit_operations.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/path_spec.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/packed_pixel.hpp&gt;</code></li>
@@ -2303,6 +2302,7 @@
       <li>from <code>&lt;boost/graph/graph_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/graphml.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/labeled_graph.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/named_function_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/planar_detail/face_iterators.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/visitors.hpp&gt;</code></li>
       <li>from <code>&lt;boost/pending/property.hpp&gt;</code></li>
@@ -2315,6 +2315,9 @@
     </ul>
     <h3><code>&lt;boost/mpl/for_each.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/graphml.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/has_key.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/graph/named_function_params.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/has_xxx.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/graph_traits.hpp&gt;</code></li>
@@ -2354,7 +2357,6 @@
       <li>from <code>&lt;boost/graph/detail/adjacency_list.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/graph_concepts.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/graph_traits.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/graph/named_function_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/properties.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/or.hpp&gt;</code></h3><ul>
@@ -5900,8 +5902,6 @@
       <li>from <code>&lt;boost/variant/variant.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/not.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/variant/detail/apply_visitor_binary.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/variant/detail/apply_visitor_unary.hpp&gt;</code></li>
       <li>from <code>&lt;boost/variant/variant.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/or.hpp&gt;</code></h3><ul>
