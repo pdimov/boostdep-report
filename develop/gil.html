@@ -45,9 +45,9 @@
       <li>from <code>&lt;boost/gil/channel.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/color_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/color_base_algorithm.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/concepts/basic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/device_n.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/any_image.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/color_spaces/ycbcr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/point.hpp&gt;</code></li>
     </ul>
@@ -62,35 +62,7 @@
       <li>from <code>&lt;boost/gil/premultiply.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/algorithm.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/color_base.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/color_base_algorithm.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/concepts/color_base.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/bmp/detail/read.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/raw/detail/device.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/tiff/detail/device.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/toolbox/image_types/indexed_image.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/channel_type.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/get_num_bits.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/device.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/get_read_device.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/get_write_device.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/make_backend.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/make_dynamic_image_reader.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/make_dynamic_image_writer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/make_reader.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/make_scanline_reader.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/make_writer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/read_and_convert_image.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/read_and_convert_view.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/read_image.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/read_image_info.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/read_view.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/row_buffer_helper.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/write_view.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/packed_pixel.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/pixel.hpp&gt;</code></li>
     </ul>
   <h2 id="filesystem"><a href="filesystem.html"><em>filesystem</em></a></h2>
     <h3><code>&lt;boost/filesystem/path.hpp&gt;</code></h3><ul>
@@ -127,11 +99,18 @@
     <h3><code>&lt;boost/mpl/and.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/algorithm.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/concepts/pixel.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/bmp/detail/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/io/png/detail/write.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/is_homogeneous.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/get_read_device.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/get_reader.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/get_write_device.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/get_writer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_backend.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_dynamic_image_reader.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_dynamic_image_writer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_reader.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_scanline_reader.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_writer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/read_and_convert_image.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/read_and_convert_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/read_image.hpp&gt;</code></li>
@@ -147,7 +126,6 @@
       <li>from <code>&lt;boost/gil/bit_aligned_pixel_reference.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/color_base_algorithm.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/dynamic_at_c.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/dynamic_images.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/image_types/subchroma_image.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/channel_type.hpp&gt;</code></li>
@@ -159,7 +137,6 @@
       <li>from <code>&lt;boost/gil/metafunctions.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/begin.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/utilities.hpp&gt;</code></li>
     </ul>
@@ -167,7 +144,6 @@
       <li>from <code>&lt;boost/gil/bit_aligned_pixel_reference.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/concepts/pixel.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/concepts/pixel_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/image.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/path_spec.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/metafunctions.hpp&gt;</code></li>
@@ -186,7 +162,6 @@
       <li>from <code>&lt;boost/gil/rgba.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/deref.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/distance.hpp&gt;</code></h3><ul>
@@ -204,9 +179,6 @@
     </ul>
     <h3><code>&lt;boost/mpl/find.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/utilities.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/fold.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/for_each.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/io/png/detail/is_allowed.hpp&gt;</code></li>
@@ -259,11 +231,7 @@
     <h3><code>&lt;boost/mpl/long.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/mpl/max.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/mpl/next.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/not.hpp&gt;</code></h3><ul>
@@ -305,9 +273,7 @@
     <h3><code>&lt;boost/mpl/size.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/color_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/concepts/image.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/dynamic_at_c.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/io/tiff/detail/device.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/dynamic_images.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/dynamic_io_new.hpp&gt;</code></li>
@@ -316,12 +282,8 @@
     <h3><code>&lt;boost/mpl/size_t.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/get_num_bits.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/mpl/sizeof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/mpl/transform.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/metafunctions.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/vector.hpp&gt;</code></h3><ul>
@@ -350,10 +312,6 @@
   <h2 id="numeric~conversion"><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2>
     <h3><code>&lt;boost/numeric/conversion/cast.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/toolbox/color_spaces/hsv.hpp&gt;</code></li>
-    </ul>
-  <h2 id="preprocessor"><a href="preprocessor.html"><em>preprocessor</em></a></h2>
-    <h3><code>&lt;boost/preprocessor/repeat.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
     </ul>
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
     <h3><code>&lt;boost/type_traits.hpp&gt;</code></h3><ul>
@@ -402,10 +360,18 @@
     <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/channel.hpp&gt;</code></li>
     </ul>
+  <h2 id="variant"><a href="variant.html"><em>variant</em></a></h2>
+    <h3><code>&lt;boost/variant.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/extension/dynamic_image/any_image_view.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/variant/apply_visitor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation.hpp&gt;</code></li>
+    </ul>
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>gil</em></h1>
   <h2><a href="concept_check.html"><em>concept_check</em></a></h2><ul>
+    <li><a href="concept_check.html#preprocessor">adds <em>preprocessor</em></a></li>
     <li><a href="concept_check.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
   <h2><a href="filesystem.html"><em>filesystem</em></a></h2><ul>
@@ -431,15 +397,28 @@
   </ul>
   <h2><a href="mpl.html"><em>mpl</em></a></h2><ul>
     <li><a href="mpl.html#predef">adds <em>predef</em></a></li>
+    <li><a href="mpl.html#preprocessor">adds <em>preprocessor</em></a></li>
     <li><a href="mpl.html#static_assert">adds <em>static_assert</em></a></li>
     <li><a href="mpl.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2><ul>
     <li><a href="numeric~conversion.html#conversion">adds <em>conversion</em></a></li>
+    <li><a href="numeric~conversion.html#preprocessor">adds <em>preprocessor</em></a></li>
     <li><a href="numeric~conversion.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
   <h2><a href="type_traits.html"><em>type_traits</em></a></h2><ul>
     <li><a href="type_traits.html#static_assert">adds <em>static_assert</em></a></li>
+  </ul>
+  <h2><a href="variant.html"><em>variant</em></a></h2><ul>
+    <li><a href="variant.html#bind">adds <em>bind</em></a></li>
+    <li><a href="variant.html#container_hash">adds <em>container_hash</em></a></li>
+    <li><a href="variant.html#detail">adds <em>detail</em></a></li>
+    <li><a href="variant.html#move">adds <em>move</em></a></li>
+    <li><a href="variant.html#preprocessor">adds <em>preprocessor</em></a></li>
+    <li><a href="variant.html#static_assert">adds <em>static_assert</em></a></li>
+    <li><a href="variant.html#throw_exception">adds <em>throw_exception</em></a></li>
+    <li><a href="variant.html#type_index">adds <em>type_index</em></a></li>
+    <li><a href="variant.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="conversion.html"><em>conversion</em></a></h2><ul>
     <li><a href="conversion.html#typeof">adds <em>typeof</em></a></li>
@@ -447,12 +426,6 @@
   <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
     <li><a href="fusion.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
-  <h2><a href="optional.html"><em>optional</em></a></h2><ul>
-    <li><a href="optional.html#move">adds <em>move</em></a></li>
-  </ul>
-  <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
-    <li><a href="smart_ptr.html#move">adds <em>move</em></a></li>
   </ul>
   <h2><a href="system.html"><em>system</em></a></h2><ul>
     <li><a href="system.html#winapi">adds <em>winapi</em></a></li>

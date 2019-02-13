@@ -49,6 +49,7 @@ graph
 graph_parallel
 hana
 heap
+histogram
 hof
 icl
 integer

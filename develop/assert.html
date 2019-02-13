@@ -66,15 +66,15 @@
       <li>from <code>&lt;boost/beast/_experimental/unit_test/suite_list.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/buffers_pair.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/static_string.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/detail/stream_algorithm.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/detail/stream_socket_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/stream_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/handler_ptr.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/impl/basic_stream_socket.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/basic_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/flat_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/handler_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/multi_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/read_size.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/saved_handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/static_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/basic_file_body.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/basic_parser.hpp&gt;</code></li>
@@ -85,13 +85,13 @@
       <li>from <code>&lt;boost/beast/http/message.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/detail/frame.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/detail/hybi13.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/detail/saved_handler.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/detail/soft_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/detail/utf8_checker.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/accept.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/handshake.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/read.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/stream.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/write.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/accept.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/handshake.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/read.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/stream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/impl/write.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/zlib/detail/bitstream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/zlib/detail/deflate_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/zlib/detail/window.hpp&gt;</code></li>
@@ -376,6 +376,18 @@
       <li>from <code>&lt;boost/heap/priority_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/heap/skew_heap.hpp&gt;</code></li>
     </ul>
+  <h2 id="reverse-histogram"><a href="histogram.html"><em>histogram</em></a></h2>
+    <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/algorithm/reduce.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/axis/ostream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/axis/regular.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/axis/variable.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/linearize.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/storage_adaptor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
+    </ul>
   <h2 id="reverse-icl"><a href="icl.html"><em>icl</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/icl/concept/interval.hpp&gt;</code></li>
@@ -490,6 +502,7 @@
       <li>from <code>&lt;boost/math/complex/acos.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/complex/asin.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/complex/atanh.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/differentiation/lanczos_smoothing.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/distributions/skew_normal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/policies/policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/detail/bessel_i0.hpp&gt;</code></li>
@@ -506,9 +519,13 @@
       <li>from <code>&lt;boost/math/special_functions/log1p.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/owens_t.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/powm1.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/tools/bivariate_statistics.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/tools/norms.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/polynomial.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/precision.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/roots.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/tools/signal_statistics.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/tools/univariate_statistics.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-move"><a href="move.html"><em>move</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
