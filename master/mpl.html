@@ -1769,9 +1769,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/assign_values.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/direction_code.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/multipoint_geometry.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/box.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/point.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/for_each_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/convert_ring.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/copy_segment_point.hpp&gt;</code></li>
@@ -1784,8 +1781,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/range_by_section.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/sectionalize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/point_in_geometry.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/discrete_frechet_distance.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/discrete_hausdorff_distance.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/not_implemented.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/arithmetic/cross_product.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/access.hpp&gt;</code></li>
@@ -1836,9 +1831,13 @@
       <li>from <code>&lt;boost/geometry/strategies/disjoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/distance.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/envelope.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/expand.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/parameters.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/intersection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/line_interpolate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/relate.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/side.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/expand_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/transform.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/within.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/boundary_view/implementation.hpp&gt;</code></li>
@@ -1943,6 +1942,7 @@
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track_box_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/distance_cross_track_point_box.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/envelope_segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/add_const_if_c.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/calculation_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/combine_if.hpp&gt;</code></li>
@@ -1998,6 +1998,9 @@
       <li>from <code>&lt;boost/geometry/index/detail/varray_detail.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mpl/pair.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/util/combine_if.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mpl/placeholders.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/geometries/adapted/boost_fusion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/combine_if.hpp&gt;</code></li>
@@ -2017,6 +2020,7 @@
       <li>from <code>&lt;boost/geometry/util/compress_variant.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/size.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/relate/result.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/length.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/adapted/boost_fusion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/compress_variant.hpp&gt;</code></li>
@@ -2057,12 +2061,19 @@
     </ul>
     <h3><code>&lt;boost/mpl/and.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/algorithm.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/concepts.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/bmp/detail/read.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/concepts/pixel.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/io/png/detail/write.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/is_homogeneous.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/get_read_device.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/get_reader.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/get_write_device.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/get_writer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_backend.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_dynamic_image_reader.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_dynamic_image_writer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_reader.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_scanline_reader.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/io/make_writer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/read_and_convert_image.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/read_and_convert_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/read_image.hpp&gt;</code></li>
@@ -2078,8 +2089,8 @@
       <li>from <code>&lt;boost/gil/bit_aligned_pixel_reference.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/color_base_algorithm.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/dynamic_at_c.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/dynamic_images.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/extension/toolbox/image_types/subchroma_image.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/channel_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/is_homogeneous.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/dynamic_io_new.hpp&gt;</code></li>
@@ -2089,15 +2100,14 @@
       <li>from <code>&lt;boost/gil/metafunctions.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/begin.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/utilities.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/bit_aligned_pixel_reference.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/concepts/pixel.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/concepts/pixel_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/image.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/bit_operations.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/path_spec.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/packed_pixel.hpp&gt;</code></li>
@@ -2113,9 +2123,9 @@
       <li>from <code>&lt;boost/gil/extension/io/tiff/detail/writer_backend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/color_spaces/gray_alpha.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/rgba.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/utilities.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/deref.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/distance.hpp&gt;</code></h3><ul>
@@ -2133,9 +2143,6 @@
     </ul>
     <h3><code>&lt;boost/mpl/find.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/utilities.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/fold.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/for_each.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/io/png/detail/is_allowed.hpp&gt;</code></li>
@@ -2188,11 +2195,7 @@
     <h3><code>&lt;boost/mpl/long.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/mpl/max.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/mpl/next.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/not.hpp&gt;</code></h3><ul>
@@ -2233,10 +2236,9 @@
     </ul>
     <h3><code>&lt;boost/mpl/size.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/color_base.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/concepts.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/color_base_algorithm.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/concepts/image.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/dynamic_at_c.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/io/tiff/detail/device.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/toolbox/dynamic_images.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/io/dynamic_io_new.hpp&gt;</code></li>
@@ -2245,12 +2247,8 @@
     <h3><code>&lt;boost/mpl/size_t.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/get_num_bits.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/mpl/sizeof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/mpl/transform.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/metafunctions.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/vector.hpp&gt;</code></h3><ul>
@@ -3664,6 +3662,7 @@
     <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/numeric/ublas/detail/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/numeric/ublas/operation/size.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/numeric/ublas/traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/or.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/numeric/ublas/detail/returntype_deduction.hpp&gt;</code></li>
@@ -4781,6 +4780,10 @@
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/is_substitute.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/qi/operator/keywords.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mpl/find.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/x3/support/traits/variant_find_substitute.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/support/traits/variant_has_substitute.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mpl/find_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/attributes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/handles_container.hpp&gt;</code></li>
@@ -4825,7 +4828,6 @@
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/optional_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/string_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/transform_attribute.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/support/unused.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/karma/nonterminal/subrule.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/qi/nonterminal/subrule.hpp&gt;</code></li>
     </ul>
@@ -4859,7 +4861,6 @@
       <li>from <code>&lt;boost/spirit/home/support/string_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/operator/detail/alternative.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/support/traits/make_attribute.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/print_token.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/insert.hpp&gt;</code></h3><ul>

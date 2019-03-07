@@ -359,10 +359,11 @@
       <li>from <code>&lt;boost/beast/core/detail/tuple.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/make_void.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/buffer_size.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/buffer_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/stream_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/type_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/file_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/detail/decorator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/tuple.hpp&gt;</code></li>
@@ -3307,6 +3308,10 @@
       <li>from <code>&lt;boost/smart_ptr/detail/quick_allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/make_shared_object.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/make_unique.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/has_trivial_assign.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
     </ul>
@@ -3319,8 +3324,31 @@
     <h3><code>&lt;boost/type_traits/has_virtual_destructor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/pointer_cast.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/is_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/make_unique.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_bounded_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_unbounded_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/make_unique.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/remove_all_extents.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/remove_const.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/make_local_shared_object.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/remove_extent.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/make_unique.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/make_unique.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/type_with_alignment.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
@@ -3362,7 +3390,6 @@
       <li>from <code>&lt;boost/spirit/home/support/detail/make_cons.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/string/literal_string.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/support/traits/make_attribute.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/karma/nonterminal/subrule.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/qi/nonterminal/subrule.hpp&gt;</code></li>
     </ul>
@@ -3544,7 +3571,6 @@
       <li>from <code>&lt;boost/spirit/home/qi/reference.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/auto/meta_create.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/make_cons.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/support/traits/make_attribute.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/qi/operator/keywords.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
@@ -3632,6 +3658,9 @@
     <h3><code>&lt;boost/type_traits/is_abstract.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/test/tools/detail/print_helper.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/is_arithmetic.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/test/tools/fpc_op.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/is_array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/test/data/monomorphic/fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/test/tools/detail/print_helper.hpp&gt;</code></li>
@@ -3651,6 +3680,12 @@
     <h3><code>&lt;boost/type_traits/is_function.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/test/tools/detail/print_helper.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/is_lvalue_reference.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/test/tree/test_case_template.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_rvalue_reference.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/test/tree/test_case_template.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/test/utils/is_cstring.hpp&gt;</code></li>
       <li>from <code>&lt;boost/test/utils/is_forward_iterable.hpp&gt;</code></li>
@@ -3658,6 +3693,9 @@
     </ul>
     <h3><code>&lt;boost/type_traits/is_unsigned.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/test/data/monomorphic/generators/xrange.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_volatile.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/test/tree/test_case_template.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_const.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/test/data/monomorphic/fwd.hpp&gt;</code></li>
@@ -3677,6 +3715,7 @@
       <li>from <code>&lt;boost/test/data/monomorphic/fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/test/parameterized_test.hpp&gt;</code></li>
       <li>from <code>&lt;boost/test/tools/assertion.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/test/tree/test_case_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/test/utils/is_forward_iterable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/test/utils/named_params.hpp&gt;</code></li>
     </ul>

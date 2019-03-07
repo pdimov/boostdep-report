@@ -8,10 +8,6 @@
 
 
 <h1 id="primary-dependencies">Primary dependencies for <em>histogram</em></h1>
-  <h2 id="accumulators"><a href="accumulators.html"><em>accumulators</em></a></h2>
-    <h3><code>&lt;boost/accumulators/accumulators.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/linearize.hpp&gt;</code></li>
-    </ul>
   <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/algorithm/reduce.hpp&gt;</code></li>
@@ -48,19 +44,23 @@
       <li>from <code>&lt;boost/histogram/axis/traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/axis/variant.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/use_default.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/fwd.hpp&gt;</code></li>
+    </ul>
   <h2 id="iterator"><a href="iterator.html"><em>iterator</em></a></h2>
     <h3><code>&lt;boost/iterator/iterator_adaptor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/axis/iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/indexed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/storage_adaptor.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/iterator/iterator_facade.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/iterator/reverse_iterator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/axis/iterator.hpp&gt;</code></li>
     </ul>
   <h2 id="mp11"><a href="mp11.html"><em>mp11</em></a></h2>
+    <h3><code>&lt;boost/mp11.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/axis/option.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mp11/algorithm.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/algorithm/project.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
@@ -102,14 +102,11 @@
     </ul>
     <h3><code>&lt;boost/mp11/utility.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/algorithm/sum.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/axis/regular.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/common_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/meta.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/make_histogram.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/storage_adaptor.hpp&gt;</code></li>
-    </ul>
-  <h2 id="multiprecision"><a href="multiprecision.html"><em>multiprecision</em></a></h2>
-    <h3><code>&lt;boost/multiprecision/cpp_int.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
     </ul>
   <h2 id="serialization"><a href="serialization.html"><em>serialization</em></a></h2>
     <h3><code>&lt;boost/serialization/array.hpp&gt;</code></h3><ul>
@@ -162,22 +159,6 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>histogram</em></h1>
-  <h2><a href="accumulators.html"><em>accumulators</em></a></h2><ul>
-    <li><a href="accumulators.html#array">adds <em>array</em></a></li>
-    <li><a href="accumulators.html#circular_buffer">adds <em>circular_buffer</em></a></li>
-    <li><a href="accumulators.html#concept_check">adds <em>concept_check</em></a></li>
-    <li><a href="accumulators.html#fusion">adds <em>fusion</em></a></li>
-    <li><a href="accumulators.html#mpl">adds <em>mpl</em></a></li>
-    <li><a href="accumulators.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
-    <li><a href="accumulators.html#numeric~ublas">adds <em>numeric~ublas</em></a></li>
-    <li><a href="accumulators.html#parameter">adds <em>parameter</em></a></li>
-    <li><a href="accumulators.html#preprocessor">adds <em>preprocessor</em></a></li>
-    <li><a href="accumulators.html#range">adds <em>range</em></a></li>
-    <li><a href="accumulators.html#static_assert">adds <em>static_assert</em></a></li>
-    <li><a href="accumulators.html#tuple">adds <em>tuple</em></a></li>
-    <li><a href="accumulators.html#type_traits">adds <em>type_traits</em></a></li>
-    <li><a href="accumulators.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
   <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
     <li><a href="iterator.html#concept_check">adds <em>concept_check</em></a></li>
     <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
@@ -190,20 +171,6 @@
     <li><a href="iterator.html#static_assert">adds <em>static_assert</em></a></li>
     <li><a href="iterator.html#type_traits">adds <em>type_traits</em></a></li>
     <li><a href="iterator.html#utility">adds <em>utility</em></a></li>
-  </ul>
-  <h2><a href="multiprecision.html"><em>multiprecision</em></a></h2><ul>
-    <li><a href="multiprecision.html#array">adds <em>array</em></a></li>
-    <li><a href="multiprecision.html#container_hash">adds <em>container_hash</em></a></li>
-    <li><a href="multiprecision.html#integer">adds <em>integer</em></a></li>
-    <li><a href="multiprecision.html#lexical_cast">adds <em>lexical_cast</em></a></li>
-    <li><a href="multiprecision.html#math">adds <em>math</em></a></li>
-    <li><a href="multiprecision.html#mpl">adds <em>mpl</em></a></li>
-    <li><a href="multiprecision.html#predef">adds <em>predef</em></a></li>
-    <li><a href="multiprecision.html#random">adds <em>random</em></a></li>
-    <li><a href="multiprecision.html#rational">adds <em>rational</em></a></li>
-    <li><a href="multiprecision.html#smart_ptr">adds <em>smart_ptr</em></a></li>
-    <li><a href="multiprecision.html#static_assert">adds <em>static_assert</em></a></li>
-    <li><a href="multiprecision.html#type_traits">adds <em>type_traits</em></a></li>
   </ul>
   <h2><a href="serialization.html"><em>serialization</em></a></h2><ul>
     <li><a href="serialization.html#array">adds <em>array</em></a></li>
@@ -235,28 +202,12 @@
     <li><a href="variant.html#type_traits">adds <em>type_traits</em></a></li>
     <li><a href="variant.html#utility">adds <em>utility</em></a></li>
   </ul>
-  <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
-    <li><a href="lexical_cast.html#container">adds <em>container</em></a></li>
+  <h2><a href="conversion.html"><em>conversion</em></a></h2><ul>
+    <li><a href="conversion.html#typeof">adds <em>typeof</em></a></li>
   </ul>
-  <h2><a href="math.html"><em>math</em></a></h2><ul>
-    <li><a href="math.html#atomic">adds <em>atomic</em></a></li>
-    <li><a href="math.html#lambda">adds <em>lambda</em></a></li>
-  </ul>
-  <h2><a href="numeric~ublas.html"><em>numeric~ublas</em></a></h2><ul>
-    <li><a href="numeric~ublas.html#(unknown)">adds <em>(unknown)</em></a></li>
-    <li><a href="numeric~ublas.html#compute">adds <em>compute</em></a></li>
-    <li><a href="numeric~ublas.html#numeric~interval">adds <em>numeric~interval</em></a></li>
-  </ul>
-  <h2><a href="parameter.html"><em>parameter</em></a></h2><ul>
-    <li><a href="parameter.html#function">adds <em>function</em></a></li>
-  </ul>
-  <h2><a href="random.html"><em>random</em></a></h2><ul>
-    <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
-    <li><a href="random.html#system">adds <em>system</em></a></li>
-  </ul>
-  <h2><a href="range.html"><em>range</em></a></h2><ul>
-    <li><a href="range.html#algorithm">adds <em>algorithm</em></a></li>
-    <li><a href="range.html#regex">adds <em>regex</em></a></li>
+  <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
+    <li><a href="fusion.html#tuple">adds <em>tuple</em></a></li>
+    <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
   </ul>
   <h2><a href="spirit.html"><em>spirit</em></a></h2><ul>
     <li><a href="spirit.html#(unknown)">adds <em>(unknown)</em></a></li>
@@ -266,42 +217,55 @@
     <li><a href="spirit.html#foreach">adds <em>foreach</em></a></li>
     <li><a href="spirit.html#function">adds <em>function</em></a></li>
     <li><a href="spirit.html#iostreams">adds <em>iostreams</em></a></li>
+    <li><a href="spirit.html#lexical_cast">adds <em>lexical_cast</em></a></li>
     <li><a href="spirit.html#locale">adds <em>locale</em></a></li>
+    <li><a href="spirit.html#math">adds <em>math</em></a></li>
     <li><a href="spirit.html#phoenix">adds <em>phoenix</em></a></li>
     <li><a href="spirit.html#pool">adds <em>pool</em></a></li>
     <li><a href="spirit.html#proto">adds <em>proto</em></a></li>
+    <li><a href="spirit.html#range">adds <em>range</em></a></li>
     <li><a href="spirit.html#regex">adds <em>regex</em></a></li>
     <li><a href="spirit.html#thread">adds <em>thread</em></a></li>
     <li><a href="spirit.html#tti">adds <em>tti</em></a></li>
+    <li><a href="spirit.html#typeof">adds <em>typeof</em></a></li>
   </ul>
   <h2><a href="unordered.html"><em>unordered</em></a></h2><ul>
     <li><a href="unordered.html#container">adds <em>container</em></a></li>
+    <li><a href="unordered.html#tuple">adds <em>tuple</em></a></li>
   </ul>
   <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
     <li><a href="algorithm.html#exception">adds <em>exception</em></a></li>
   </ul>
-  <h2><a href="compute.html"><em>compute</em></a></h2><ul>
-    <li><a href="compute.html#chrono">adds <em>chrono</em></a></li>
-    <li><a href="compute.html#property_tree">adds <em>property_tree</em></a></li>
-    <li><a href="compute.html#uuid">adds <em>uuid</em></a></li>
-  </ul>
   <h2><a href="container.html"><em>container</em></a></h2><ul>
     <li><a href="container.html#intrusive">adds <em>intrusive</em></a></li>
   </ul>
-  <h2><a href="numeric~interval.html"><em>numeric~interval</em></a></h2><ul>
-    <li><a href="numeric~interval.html#logic">adds <em>logic</em></a></li>
+  <h2><a href="filesystem.html"><em>filesystem</em></a></h2><ul>
+    <li><a href="filesystem.html#system">adds <em>system</em></a></li>
+  </ul>
+  <h2><a href="iostreams.html"><em>iostreams</em></a></h2><ul>
+    <li><a href="iostreams.html#random">adds <em>random</em></a></li>
+  </ul>
+  <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
+    <li><a href="lexical_cast.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
+  </ul>
+  <h2><a href="math.html"><em>math</em></a></h2><ul>
+    <li><a href="math.html#atomic">adds <em>atomic</em></a></li>
+    <li><a href="math.html#lambda">adds <em>lambda</em></a></li>
+    <li><a href="math.html#multiprecision">adds <em>multiprecision</em></a></li>
   </ul>
   <h2><a href="pool.html"><em>pool</em></a></h2><ul>
     <li><a href="pool.html#winapi">adds <em>winapi</em></a></li>
   </ul>
-  <h2><a href="system.html"><em>system</em></a></h2><ul>
-    <li><a href="system.html#winapi">adds <em>winapi</em></a></li>
+  <h2><a href="range.html"><em>range</em></a></h2><ul>
+    <li><a href="range.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
   </ul>
   <h2><a href="thread.html"><em>thread</em></a></h2><ul>
+    <li><a href="thread.html#atomic">adds <em>atomic</em></a></li>
     <li><a href="thread.html#chrono">adds <em>chrono</em></a></li>
     <li><a href="thread.html#date_time">adds <em>date_time</em></a></li>
     <li><a href="thread.html#exception">adds <em>exception</em></a></li>
     <li><a href="thread.html#intrusive">adds <em>intrusive</em></a></li>
+    <li><a href="thread.html#system">adds <em>system</em></a></li>
     <li><a href="thread.html#winapi">adds <em>winapi</em></a></li>
   </ul>
   <h2><a href="chrono.html"><em>chrono</em></a></h2><ul>
@@ -310,10 +274,11 @@
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
   </ul>
-  <h2><a href="property_tree.html"><em>property_tree</em></a></h2><ul>
-    <li><a href="property_tree.html#any">adds <em>any</em></a></li>
-    <li><a href="property_tree.html#format">adds <em>format</em></a></li>
-    <li><a href="property_tree.html#multi_index">adds <em>multi_index</em></a></li>
+  <h2><a href="multiprecision.html"><em>multiprecision</em></a></h2><ul>
+    <li><a href="multiprecision.html#rational">adds <em>rational</em></a></li>
+  </ul>
+  <h2><a href="random.html"><em>random</em></a></h2><ul>
+    <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
   </ul>
 
 

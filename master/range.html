@@ -865,8 +865,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/geometry_to_segment_or_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/multipoint_to_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/point_to_geometry.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/multipoint.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/range_of_boxes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/equals/implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/extreme_points.hpp&gt;</code></li>
@@ -891,13 +889,10 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/num_distinct_consecutive_points.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/occupation_info.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/add_rings.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/append_no_duplicates.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/append_no_dups_or_spikes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/assign_parents.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/backtrack_check_si.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/check_enrich.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/clip_linestring.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/convert_ring.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/copy_segment_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/copy_segments.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/enrich_intersection_points.hpp&gt;</code></li>
@@ -929,8 +924,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/multi_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/point_in_geometry.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/discrete_frechet_distance.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/discrete_hausdorff_distance.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/for_each.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/is_empty.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/num_geometries.hpp&gt;</code></li>
@@ -943,7 +936,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/simplify.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/transform.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/unique.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/geometries/adapted/boost_polygon/ring_proxy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/linestring.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/meta.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/dsv/write.hpp&gt;</code></li>
@@ -960,13 +952,11 @@
       <li>from <code>&lt;boost/geometry/policies/disjoint_interrupt_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/predicate_based_interrupt_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/impl/pj_init.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/strategies/agnostic/hull_graham_andrew.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/simplify_douglas_peucker.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/strategies/cartesian/buffer_point_circle.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/strategies/cartesian/buffer_point_square.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/geographic/buffer_point_circle.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/envelope_multipoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/box_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/closeable_view.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/views/detail/boundary_view/implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/points_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/identity_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/reversible_view.hpp&gt;</code></li>
@@ -995,9 +985,15 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/convert_ring.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/begin.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/check_enrich.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/recalculate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/length.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/line_interpolate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/wkt/read.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/agnostic/hull_graham_andrew.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/cartesian/envelope.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/normalized_view.hpp&gt;</code></li>
     </ul>
@@ -1010,6 +1006,9 @@
       <li>from <code>&lt;boost/geometry/geometries/concepts/ring_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/range/const_iterator.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/geometries/adapted/boost_polygon/ring_proxy.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/range/difference_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
     </ul>
@@ -1018,9 +1017,15 @@
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/end.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/check_enrich.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/recalculate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/length.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/line_interpolate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/wkt/read.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/agnostic/hull_graham_andrew.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/cartesian/envelope.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/normalized_view.hpp&gt;</code></li>
     </ul>
@@ -1031,6 +1036,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/interior_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/recalculate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/length.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/line_interpolate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/normalized_view.hpp&gt;</code></li>
     </ul>
@@ -1042,6 +1048,9 @@
       <li>from <code>&lt;boost/geometry/geometries/concepts/multi_linestring_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/concepts/multi_point_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/concepts/multi_polygon_concept.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/range/mutable_iterator.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/geometries/adapted/boost_polygon/ring_proxy.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/rbegin.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
@@ -1055,12 +1064,15 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/linear_areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/linear_linear.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/wkt/read.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/value_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/densify.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/interior_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/check_enrich.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/length.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/line_interpolate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/closure.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/interior_rings.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/mutable_range.hpp&gt;</code></li>
@@ -1068,6 +1080,9 @@
       <li>from <code>&lt;boost/geometry/core/point_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/ring_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/wkt/read.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/cartesian/buffer_point_circle.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/cartesian/buffer_point_square.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/range_type.hpp&gt;</code></li>
     </ul>
@@ -1300,12 +1315,16 @@
     </ul>
   <h2 id="reverse-spirit"><a href="spirit.html"><em>spirit</em></a></h2>
     <h3><code>&lt;boost/range.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/spirit/home/qi/string/symbols.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/string/symbols.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/ast/position_tagged.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/range/begin.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/qi/string/symbols.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/const_iterator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/karma/detail/string_generate.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/range/end.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/qi/string/symbols.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/iterator_range.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/karma/detail/pass_container.hpp&gt;</code></li>

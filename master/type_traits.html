@@ -354,10 +354,11 @@
       <li>from <code>&lt;boost/beast/core/detail/tuple.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/make_void.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/buffer_size.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/buffer_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/stream_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/type_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/file_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/detail/decorator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/tuple.hpp&gt;</code></li>
@@ -1195,7 +1196,6 @@
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/copy_segments.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/result.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/core/cs.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/is_areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/reverse_dispatch.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
@@ -1215,6 +1215,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/relate_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/turns.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/single_geometry.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/sub_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/tag_cast.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_const.hpp&gt;</code></h3><ul>
@@ -1238,6 +1239,7 @@
       <li>from <code>&lt;boost/geometry/iterators/point_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/point_reverse_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/segment_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/boundary_view/implementation.hpp&gt;</code></li>
     </ul>
@@ -1278,16 +1280,13 @@
       <li>from <code>&lt;boost/geometry/core/radius.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_reference.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/index/indexable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/detail/segment_iterator/value_type.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/point_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/is_comparable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/point_to_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/segment_to_box.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/box.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/point.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/has_spikes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/sectionalize.hpp&gt;</code></li>
@@ -1297,6 +1296,7 @@
       <li>from <code>&lt;boost/geometry/index/detail/rtree/visitors/insert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/tuples.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/varray_detail.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/indexable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/svg/svg_mapper.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/wkt/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/robustness/get_rescale_policy.hpp&gt;</code></li>
@@ -1312,6 +1312,8 @@
       <li>from <code>&lt;boost/geometry/strategies/disjoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/relate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/compare.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/envelope_segment.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/expand_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/select_sequence_element.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_signed.hpp&gt;</code></h3><ul>
@@ -1357,6 +1359,7 @@
       <li>from <code>&lt;boost/geometry/geometries/concepts/linestring_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/concepts/ring_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/varray_detail.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/indexable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/svg/svg_mapper.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/bare_type.hpp&gt;</code></li>
     </ul>
@@ -1379,6 +1382,7 @@
       <li>from <code>&lt;boost/geometry/core/ring_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/adapted/boost_fusion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/varray_detail.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/indexable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/wkt/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/bare_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/parameter_type_of.hpp&gt;</code></li>
@@ -1389,7 +1393,11 @@
       <li>from <code>&lt;boost/gil/channel_algorithm.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/color_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/color_base_algorithm.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/concepts.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/concepts/color.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/concepts/color_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/concepts/detail/type_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/concepts/pixel.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/concepts/pixel_dereference.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/device_n.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/gray.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/metafunctions.hpp&gt;</code></li>
@@ -2065,6 +2073,10 @@
     </ul>
     <h3><code>&lt;boost/type_traits/is_complex.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/tools/complex.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/tools/norms.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/tools/roots.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/tools/signal_statistics.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/tools/univariate_statistics.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_constructible.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/quadrature/detail/tanh_sinh_constants.hpp&gt;</code></li>
@@ -2080,8 +2092,12 @@
       <li>from <code>&lt;boost/math/special_functions/detail/unchecked_bernoulli.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/gamma.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/big_constant.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/tools/polynomial.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/promotion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/test_value.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_detected.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/math/tools/detail/is_const_iterable.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_floating_point.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/distributions/geometric.hpp&gt;</code></li>
@@ -2296,12 +2312,17 @@
       <li>from <code>&lt;boost/multiprecision/cpp_int.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/conditional.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multiprecision/traits/explicit_conversion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/traits/is_backend.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/decay.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/detail/number_base.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/declval.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multiprecision/traits/explicit_conversion.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multiprecision/traits/explicit_conversion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/traits/is_variable_precision.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_complex.hpp&gt;</code></h3><ul>
@@ -2339,11 +2360,11 @@
       <li>from <code>&lt;boost/multiprecision/detail/default_ops.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/number.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multiprecision/traits/is_byte_container.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/remove_pointer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/number.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/declval.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multiprecision/traits/explicit_conversion.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-numeric~conversion"><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2>
     <h3><code>&lt;boost/type_traits/is_arithmetic.hpp&gt;</code></h3><ul>
@@ -3208,6 +3229,10 @@
       <li>from <code>&lt;boost/smart_ptr/detail/quick_allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/make_shared_object.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/make_unique.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/has_trivial_assign.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
     </ul>
@@ -3220,8 +3245,31 @@
     <h3><code>&lt;boost/type_traits/has_virtual_destructor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/pointer_cast.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/is_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/make_unique.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_bounded_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_unbounded_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/make_unique.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/remove_all_extents.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/remove_const.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/make_local_shared_object.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/remove_extent.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/make_unique.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/make_unique.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/type_with_alignment.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
@@ -3259,13 +3307,10 @@
       <li>from <code>&lt;boost/spirit/home/qi/auxiliary/attr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/nonterminal/rule.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/string/lit.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/qi/string/symbols.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/auto/meta_create.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/make_cons.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/string/literal_string.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/string/symbols.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/support/traits/make_attribute.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/karma/nonterminal/subrule.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/qi/nonterminal/subrule.hpp&gt;</code></li>
     </ul>
@@ -3310,6 +3355,7 @@
       <li>from <code>&lt;boost/spirit/home/karma/operator/optional.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/auxiliary/eps.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/detail/pass_container.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/qi/nonterminal/rule.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/nonterminal/simple_trace.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/attributes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/print_token.hpp&gt;</code></li>
@@ -3404,7 +3450,6 @@
       <li>from <code>&lt;boost/spirit/home/x3/operator/detail/alternative.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/string/literal_string.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/string/symbols.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/numeric_utils/extract_real.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/has_attribute.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/is_substitute.hpp&gt;</code></li>
@@ -3447,7 +3492,6 @@
       <li>from <code>&lt;boost/spirit/home/qi/reference.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/auto/meta_create.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/make_cons.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/support/traits/make_attribute.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/qi/operator/keywords.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
@@ -3534,6 +3578,9 @@
     </ul>
     <h3><code>&lt;boost/type_traits/is_abstract.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/test/tools/detail/print_helper.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_arithmetic.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/test/tools/fpc_op.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/test/data/monomorphic/fwd.hpp&gt;</code></li>
