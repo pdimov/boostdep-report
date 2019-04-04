@@ -68,7 +68,6 @@
       <li>from <code>&lt;boost/beast/core/detail/ostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/stream_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/type_traits.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/dynamic_buffer_ref.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/flat_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/flat_static_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/buffers_adaptor.hpp&gt;</code></li>
@@ -93,11 +92,7 @@
       <li>from <code>&lt;boost/beast/websocket/detail/frame.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/detail/impl_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/detail/mask.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/detail/pmd_extension.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/detail/utf8_checker.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/asio/buffers_iterator.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/_experimental/http/impl/icy_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/connect.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/basic_stream.hpp&gt;</code></li>
@@ -171,7 +166,6 @@
       <li>from <code>&lt;boost/beast/core/detail/remap_post_to_defer.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/post.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/_experimental/http/impl/icy_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/_experimental/test/stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.hpp&gt;</code></li>
@@ -181,12 +175,6 @@
       <li>from <code>&lt;boost/beast/websocket/impl/ping.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/teardown.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/asio/read.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/_experimental/http/impl/icy_stream.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/asio/read_until.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/_experimental/http/impl/icy_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ssl/error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/ssl/ssl_stream.hpp&gt;</code></li>
@@ -243,9 +231,9 @@
       <li>from <code>&lt;boost/beast/http/impl/serializer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/message.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/detail/frame.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/detail/hybi13.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/detail/hybi13.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/detail/soft_mutex.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/detail/utf8_checker.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/websocket/detail/utf8_checker.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/accept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/handshake.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/read.hpp&gt;</code></li>
@@ -263,7 +251,7 @@
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/_experimental/unit_test/dstream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/_experimental/unit_test/main.cpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/_experimental/unit_test/main.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/cpu_info.hpp&gt;</code></li>
@@ -349,6 +337,7 @@
     </ul>
   <h2 id="logic"><a href="logic.html"><em>logic</em></a></h2>
     <h3><code>&lt;boost/logic/tribool.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/_experimental/http/icy_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detect_ssl.hpp&gt;</code></li>
     </ul>
   <h2 id="mp11"><a href="mp11.html"><em>mp11</em></a></h2>
@@ -409,10 +398,7 @@
     </ul>
     <h3><code>&lt;boost/make_unique.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/http/impl/basic_parser.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/http/impl/basic_parser.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/file_body_win32.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/stream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/zlib/detail/deflate_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/zlib/detail/deflate_stream.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/zlib/detail/window.hpp&gt;</code></li>
     </ul>
