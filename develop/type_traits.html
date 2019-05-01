@@ -769,21 +769,34 @@
       <li>from <code>&lt;boost/dll/detail/demangling/msvc.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-endian"><a href="endian.html"><em>endian</em></a></h2>
-    <h3><code>&lt;boost/type_traits/conditional.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/endian/buffers.hpp&gt;</code></li>
+    <h3><code>&lt;boost/type_traits/has_trivial_assign.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/endian/detail/is_trivially_copyable.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/has_trivial_copy.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/endian/detail/is_trivially_copyable.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/endian/conversion.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_class.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/endian/conversion.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_enum.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/endian/detail/endian_load.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/endian/detail/endian_store.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_integral.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/endian/buffers.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/endian/conversion.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/endian/detail/endian_load.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/endian/detail/endian_reverse.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/endian/detail/endian_store.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/endian/conversion.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/endian/detail/endian_reverse.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_signed.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/endian/arithmetic.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/endian/buffers.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/make_unsigned.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/endian/buffers.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/type_identity.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/endian/buffers.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/endian/detail/endian_load.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-exception"><a href="exception.html"><em>exception</em></a></h2>
     <h3><code>&lt;boost/type_traits/is_nothrow_move_constructible.hpp&gt;</code></h3><ul>
@@ -2064,6 +2077,7 @@
     </ul>
     <h3><code>&lt;boost/type_traits/is_convertible.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/constants/constants.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/cstdfloat/cstdfloat_cmath.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/quaternion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/cbrt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/detail/iconv.hpp&gt;</code></li>
@@ -2099,6 +2113,7 @@
       <li>from <code>&lt;boost/math/tools/polynomial_gcd.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/math/cstdfloat/cstdfloat_cmath.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/distributions/detail/derived_accessors.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/distributions/geometric.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/distributions/negative_binomial.hpp&gt;</code></li>
@@ -3270,15 +3285,6 @@
       <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/make_unique.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/type_traits/has_trivial_assign.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/has_trivial_constructor.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/has_trivial_destructor.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/type_traits/has_virtual_destructor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/pointer_cast.hpp&gt;</code></li>
     </ul>
@@ -3413,6 +3419,7 @@
     <h3><code>&lt;boost/type_traits/is_floating_point.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/karma/binary/binary.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/binary/binary.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/qi/numeric/real_policies.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/binary/binary.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_function.hpp&gt;</code></h3><ul>
@@ -4133,6 +4140,9 @@
     </ul>
     <h3><code>&lt;boost/type_traits/alignment_of.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/variant/variant.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/copy_cv_ref.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/variant/detail/apply_visitor_unary.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/has_nothrow_constructor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/variant/variant.hpp&gt;</code></li>
