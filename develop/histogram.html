@@ -24,9 +24,6 @@
     <h3><code>&lt;boost/callable_traits/args.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/detail/meta.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/callable_traits/return_type.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/meta.hpp&gt;</code></li>
-    </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/detail/cat.hpp&gt;</code></li>
@@ -34,12 +31,15 @@
     <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/detail/meta.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
+  <h2 id="core"><a href="core.html"><em>core</em></a></h2>
+    <h3><code>&lt;boost/core/alloc_construct.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
     </ul>
-  <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/demangle.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/detail/try_cast.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/typeinfo.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/detail/type_name.hpp&gt;</code></li>
@@ -53,17 +53,14 @@
   <h2 id="mp11"><a href="mp11.html"><em>mp11</em></a></h2>
     <h3><code>&lt;boost/mp11.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/axis/option.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/variant.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/algorithm.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/linearize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/meta.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/variant_serialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/variant.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mp11/bind.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/axis/variant.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/function.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/axis/variant.hpp&gt;</code></li>
@@ -84,6 +81,7 @@
       <li>from <code>&lt;boost/histogram/detail/common_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/linearize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/meta.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/histogram.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
     </ul>
@@ -100,6 +98,7 @@
       <li>from <code>&lt;boost/histogram/algorithm/project.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/algorithm/sum.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/axis/regular.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/axis/variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/common_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/meta.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/safe_comparison.hpp&gt;</code></li>
@@ -109,7 +108,7 @@
     </ul>
   <h2 id="serialization"><a href="serialization.html"><em>serialization</em></a></h2>
     <h3><code>&lt;boost/archive/archive_exception.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/variant_serialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
@@ -118,23 +117,19 @@
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/nvp.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/variant_serialization.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/serialization.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/variant_serialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/serialization/split_free.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/variant_serialization.hpp&gt;</code></li>
+    <h3><code>&lt;boost/serialization/split_member.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/string.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/throw_exception.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/variant_serialization.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/serialization/tracking.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/variant_serialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/vector.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>

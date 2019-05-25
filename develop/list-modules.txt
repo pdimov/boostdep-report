@@ -130,6 +130,7 @@ unordered
 utility
 uuid
 variant
+variant2
 vmd
 wave
 winapi

@@ -531,6 +531,27 @@
       <li>from <code>&lt;boost/accumulators/statistics/weighted_extended_p_square.hpp&gt;</code></li>
       <li>from <code>&lt;boost/accumulators/statistics/weighted_median.hpp&gt;</code></li>
     </ul>
+  <h2 id="serialization"><a href="serialization.html"><em>serialization</em></a></h2>
+    <h3><code>&lt;boost/serialization/boost_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/statistics/p_square_quantile.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/serialization/split_free.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/statistics/rolling_window.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/serialization/utility.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/statistics/density.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/p_square_cumul_dist.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/weighted_density.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/serialization/vector.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/statistics/density.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/extended_p_square.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/p_square_cumul_dist.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/tail_variate.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/tail_variate_means.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/weighted_density.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/weighted_extended_p_square.hpp&gt;</code></li>
+    </ul>
   <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
     <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/accumulators/numeric/functional.hpp&gt;</code></li>
@@ -670,7 +691,6 @@
     <li><a href="numeric~ublas.html#(unknown)">adds <em>(unknown)</em></a></li>
     <li><a href="numeric~ublas.html#compute">adds <em>compute</em></a></li>
     <li><a href="numeric~ublas.html#numeric~interval">adds <em>numeric~interval</em></a></li>
-    <li><a href="numeric~ublas.html#serialization">adds <em>serialization</em></a></li>
     <li><a href="numeric~ublas.html#smart_ptr">adds <em>smart_ptr</em></a></li>
   </ul>
   <h2><a href="parameter.html"><em>parameter</em></a></h2><ul>
@@ -686,8 +706,22 @@
     <li><a href="range.html#regex">adds <em>regex</em></a></li>
     <li><a href="range.html#utility">adds <em>utility</em></a></li>
   </ul>
+  <h2><a href="serialization.html"><em>serialization</em></a></h2><ul>
+    <li><a href="serialization.html#detail">adds <em>detail</em></a></li>
+    <li><a href="serialization.html#integer">adds <em>integer</em></a></li>
+    <li><a href="serialization.html#io">adds <em>io</em></a></li>
+    <li><a href="serialization.html#move">adds <em>move</em></a></li>
+    <li><a href="serialization.html#optional">adds <em>optional</em></a></li>
+    <li><a href="serialization.html#predef">adds <em>predef</em></a></li>
+    <li><a href="serialization.html#smart_ptr">adds <em>smart_ptr</em></a></li>
+    <li><a href="serialization.html#spirit">adds <em>spirit</em></a></li>
+    <li><a href="serialization.html#unordered">adds <em>unordered</em></a></li>
+    <li><a href="serialization.html#utility">adds <em>utility</em></a></li>
+    <li><a href="serialization.html#variant">adds <em>variant</em></a></li>
+  </ul>
   <h2><a href="compute.html"><em>compute</em></a></h2><ul>
     <li><a href="compute.html#algorithm">adds <em>algorithm</em></a></li>
+    <li><a href="compute.html#atomic">adds <em>atomic</em></a></li>
     <li><a href="compute.html#chrono">adds <em>chrono</em></a></li>
     <li><a href="compute.html#filesystem">adds <em>filesystem</em></a></li>
     <li><a href="compute.html#lexical_cast">adds <em>lexical_cast</em></a></li>
@@ -696,26 +730,34 @@
     <li><a href="compute.html#thread">adds <em>thread</em></a></li>
     <li><a href="compute.html#uuid">adds <em>uuid</em></a></li>
   </ul>
-  <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
-    <li><a href="container_hash.html#integer">adds <em>integer</em></a></li>
-  </ul>
   <h2><a href="function.html"><em>function</em></a></h2><ul>
     <li><a href="function.html#bind">adds <em>bind</em></a></li>
-    <li><a href="function.html#integer">adds <em>integer</em></a></li>
     <li><a href="function.html#type_index">adds <em>type_index</em></a></li>
   </ul>
   <h2><a href="numeric~interval.html"><em>numeric~interval</em></a></h2><ul>
     <li><a href="numeric~interval.html#logic">adds <em>logic</em></a></li>
   </ul>
-  <h2><a href="regex.html"><em>regex</em></a></h2><ul>
-    <li><a href="regex.html#integer">adds <em>integer</em></a></li>
+  <h2><a href="spirit.html"><em>spirit</em></a></h2><ul>
+    <li><a href="spirit.html#algorithm">adds <em>algorithm</em></a></li>
+    <li><a href="spirit.html#endian">adds <em>endian</em></a></li>
+    <li><a href="spirit.html#filesystem">adds <em>filesystem</em></a></li>
+    <li><a href="spirit.html#foreach">adds <em>foreach</em></a></li>
+    <li><a href="spirit.html#iostreams">adds <em>iostreams</em></a></li>
+    <li><a href="spirit.html#lexical_cast">adds <em>lexical_cast</em></a></li>
+    <li><a href="spirit.html#locale">adds <em>locale</em></a></li>
+    <li><a href="spirit.html#math">adds <em>math</em></a></li>
+    <li><a href="spirit.html#phoenix">adds <em>phoenix</em></a></li>
+    <li><a href="spirit.html#pool">adds <em>pool</em></a></li>
+    <li><a href="spirit.html#proto">adds <em>proto</em></a></li>
+    <li><a href="spirit.html#thread">adds <em>thread</em></a></li>
+    <li><a href="spirit.html#tti">adds <em>tti</em></a></li>
   </ul>
-  <h2><a href="serialization.html"><em>serialization</em></a></h2><ul>
-    <li><a href="serialization.html#integer">adds <em>integer</em></a></li>
-    <li><a href="serialization.html#io">adds <em>io</em></a></li>
-    <li><a href="serialization.html#spirit">adds <em>spirit</em></a></li>
-    <li><a href="serialization.html#unordered">adds <em>unordered</em></a></li>
-    <li><a href="serialization.html#variant">adds <em>variant</em></a></li>
+  <h2><a href="unordered.html"><em>unordered</em></a></h2><ul>
+    <li><a href="unordered.html#container">adds <em>container</em></a></li>
+  </ul>
+  <h2><a href="variant.html"><em>variant</em></a></h2><ul>
+    <li><a href="variant.html#bind">adds <em>bind</em></a></li>
+    <li><a href="variant.html#type_index">adds <em>type_index</em></a></li>
   </ul>
   <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
     <li><a href="algorithm.html#exception">adds <em>exception</em></a></li>
@@ -725,55 +767,46 @@
     <li><a href="chrono.html#system">adds <em>system</em></a></li>
     <li><a href="chrono.html#winapi">adds <em>winapi</em></a></li>
   </ul>
+  <h2><a href="container.html"><em>container</em></a></h2><ul>
+    <li><a href="container.html#intrusive">adds <em>intrusive</em></a></li>
+  </ul>
   <h2><a href="filesystem.html"><em>filesystem</em></a></h2><ul>
     <li><a href="filesystem.html#system">adds <em>system</em></a></li>
   </ul>
-  <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
-    <li><a href="lexical_cast.html#container">adds <em>container</em></a></li>
-    <li><a href="lexical_cast.html#math">adds <em>math</em></a></li>
+  <h2><a href="iostreams.html"><em>iostreams</em></a></h2><ul>
+    <li><a href="iostreams.html#random">adds <em>random</em></a></li>
+  </ul>
+  <h2><a href="math.html"><em>math</em></a></h2><ul>
+    <li><a href="math.html#lambda">adds <em>lambda</em></a></li>
+    <li><a href="math.html#multiprecision">adds <em>multiprecision</em></a></li>
+  </ul>
+  <h2><a href="pool.html"><em>pool</em></a></h2><ul>
+    <li><a href="pool.html#winapi">adds <em>winapi</em></a></li>
   </ul>
   <h2><a href="property_tree.html"><em>property_tree</em></a></h2><ul>
     <li><a href="property_tree.html#any">adds <em>any</em></a></li>
     <li><a href="property_tree.html#format">adds <em>format</em></a></li>
     <li><a href="property_tree.html#multi_index">adds <em>multi_index</em></a></li>
   </ul>
-  <h2><a href="spirit.html"><em>spirit</em></a></h2><ul>
-    <li><a href="spirit.html#endian">adds <em>endian</em></a></li>
-    <li><a href="spirit.html#foreach">adds <em>foreach</em></a></li>
-    <li><a href="spirit.html#iostreams">adds <em>iostreams</em></a></li>
-    <li><a href="spirit.html#locale">adds <em>locale</em></a></li>
-    <li><a href="spirit.html#math">adds <em>math</em></a></li>
-    <li><a href="spirit.html#phoenix">adds <em>phoenix</em></a></li>
-    <li><a href="spirit.html#pool">adds <em>pool</em></a></li>
-    <li><a href="spirit.html#tti">adds <em>tti</em></a></li>
-  </ul>
   <h2><a href="thread.html"><em>thread</em></a></h2><ul>
-    <li><a href="thread.html#atomic">adds <em>atomic</em></a></li>
-    <li><a href="thread.html#container">adds <em>container</em></a></li>
     <li><a href="thread.html#date_time">adds <em>date_time</em></a></li>
     <li><a href="thread.html#exception">adds <em>exception</em></a></li>
     <li><a href="thread.html#intrusive">adds <em>intrusive</em></a></li>
     <li><a href="thread.html#system">adds <em>system</em></a></li>
     <li><a href="thread.html#winapi">adds <em>winapi</em></a></li>
   </ul>
-  <h2><a href="unordered.html"><em>unordered</em></a></h2><ul>
-    <li><a href="unordered.html#container">adds <em>container</em></a></li>
-  </ul>
   <h2><a href="uuid.html"><em>uuid</em></a></h2><ul>
     <li><a href="uuid.html#random">adds <em>random</em></a></li>
-    <li><a href="uuid.html#tti">adds <em>tti</em></a></li>
     <li><a href="uuid.html#winapi">adds <em>winapi</em></a></li>
   </ul>
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
   </ul>
-  <h2><a href="math.html"><em>math</em></a></h2><ul>
-    <li><a href="math.html#lambda">adds <em>lambda</em></a></li>
-    <li><a href="math.html#multiprecision">adds <em>multiprecision</em></a></li>
+  <h2><a href="multiprecision.html"><em>multiprecision</em></a></h2><ul>
+    <li><a href="multiprecision.html#rational">adds <em>rational</em></a></li>
   </ul>
   <h2><a href="random.html"><em>random</em></a></h2><ul>
     <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
-    <li><a href="random.html#multiprecision">adds <em>multiprecision</em></a></li>
   </ul>
   <h2><a href="ratio.html"><em>ratio</em></a></h2><ul>
     <li><a href="ratio.html#rational">adds <em>rational</em></a></li>

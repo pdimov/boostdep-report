@@ -23,6 +23,7 @@
       <li>from <code>&lt;boost/core/enable_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/exchange.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/first_scalar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/ignore_unused.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/is_same.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/lightweight_test.hpp&gt;</code></li>
@@ -94,9 +95,6 @@
       <li>from <code>&lt;boost/algorithm/searching/knuth_morris_pratt.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-align"><a href="align.html"><em>align</em></a></h2>
-    <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/align/detail/addressof.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/align/aligned_allocator_adaptor.hpp&gt;</code></li>
     </ul>
@@ -351,13 +349,10 @@
       <li>from <code>&lt;boost/dynamic_bitset/dynamic_bitset.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-endian"><a href="endian.html"><em>endian</em></a></h2>
-    <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/endian/detail/lightweight_test.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/core/scoped_enum.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/endian/arithmetic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/endian/buffers.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/endian/conversion.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/endian/detail/order.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-exception"><a href="exception.html"><em>exception</em></a></h2>
     <h3><code>&lt;boost/core/demangle.hpp&gt;</code></h3><ul>
@@ -921,6 +916,9 @@
       <li>from <code>&lt;boost/msm/front/euml/operator.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-multi_array"><a href="multi_array.html"><em>multi_array</em></a></h2>
+    <h3><code>&lt;boost/core/alloc_construct.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multi_array.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_array.hpp&gt;</code></li>
     </ul>
@@ -1350,26 +1348,18 @@
       <li>from <code>&lt;boost/smart_ptr/detail/shared_count.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_impl.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/sp_typeinfo.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_acc_ia64.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_aix.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_clang.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_cw_ppc.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_cw_x86.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_ia64.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_mips.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_ppc.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_sparc.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_x86.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_nt.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_pt.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_snc_ps3.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_solaris.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_spin.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_std_atomic.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_sync.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_vacpp_ppc.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_w32.hpp&gt;</code></li>
+    <h3><code>&lt;boost/core/alloc_construct.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/default_allocator.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/make_local_shared_array.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/make_shared_array.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/first_scalar.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/typeinfo.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_typeinfo_.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-sort"><a href="sort.html"><em>sort</em></a></h2>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>

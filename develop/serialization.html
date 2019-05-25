@@ -869,6 +869,27 @@
 
 
 <h1 id="reverse-dependencies">Reverse dependencies for <em>serialization</em></h1>
+  <h2 id="reverse-accumulators"><a href="accumulators.html"><em>accumulators</em></a></h2>
+    <h3><code>&lt;boost/serialization/boost_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/statistics/p_square_quantile.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/serialization/split_free.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/statistics/rolling_window.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/serialization/utility.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/statistics/density.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/p_square_cumul_dist.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/weighted_density.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/serialization/vector.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/statistics/density.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/extended_p_square.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/p_square_cumul_dist.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/tail_variate.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/tail_variate_means.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/weighted_density.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/weighted_extended_p_square.hpp&gt;</code></li>
+    </ul>
   <h2 id="reverse-bimap"><a href="bimap.html"><em>bimap</em></a></h2>
     <h3><code>&lt;boost/serialization/nvp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/bimap/bimap.hpp&gt;</code></li>
@@ -941,7 +962,7 @@
     </ul>
   <h2 id="reverse-histogram"><a href="histogram.html"><em>histogram</em></a></h2>
     <h3><code>&lt;boost/archive/archive_exception.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/variant_serialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
@@ -950,23 +971,19 @@
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/nvp.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/variant_serialization.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/serialization.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/variant_serialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/serialization/split_free.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/variant_serialization.hpp&gt;</code></li>
+    <h3><code>&lt;boost/serialization/split_member.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/string.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/throw_exception.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/variant_serialization.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/serialization/tracking.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/variant_serialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/vector.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
