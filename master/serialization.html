@@ -827,6 +827,7 @@
   <h2><a href="math.html"><em>math</em></a></h2><ul>
     <li><a href="math.html#atomic">adds <em>atomic</em></a></li>
     <li><a href="math.html#lambda">adds <em>lambda</em></a></li>
+    <li><a href="math.html#mp11">adds <em>mp11</em></a></li>
     <li><a href="math.html#multiprecision">adds <em>multiprecision</em></a></li>
   </ul>
   <h2><a href="pool.html"><em>pool</em></a></h2><ul>
@@ -859,6 +860,27 @@
 
 
 <h1 id="reverse-dependencies">Reverse dependencies for <em>serialization</em></h1>
+  <h2 id="reverse-accumulators"><a href="accumulators.html"><em>accumulators</em></a></h2>
+    <h3><code>&lt;boost/serialization/boost_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/statistics/p_square_quantile.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/serialization/split_free.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/statistics/rolling_window.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/serialization/utility.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/statistics/density.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/p_square_cumul_dist.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/weighted_density.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/serialization/vector.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/statistics/density.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/extended_p_square.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/p_square_cumul_dist.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/tail_variate.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/tail_variate_means.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/weighted_density.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/statistics/weighted_extended_p_square.hpp&gt;</code></li>
+    </ul>
   <h2 id="reverse-bimap"><a href="bimap.html"><em>bimap</em></a></h2>
     <h3><code>&lt;boost/serialization/nvp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/bimap/bimap.hpp&gt;</code></li>

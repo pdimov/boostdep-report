@@ -62,11 +62,14 @@
 
 <h1 id="reverse-dependencies">Reverse dependencies for <em>core</em></h1>
   <h2 id="reverse-accumulators"><a href="accumulators.html"><em>accumulators</em></a></h2>
+    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/accumulators_fwd.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/framework/accumulator_set.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/accumulators/framework/accumulators/reference_accumulator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/accumulators/accumulators_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/accumulators/numeric/functional.hpp&gt;</code></li>
       <li>from <code>&lt;boost/accumulators/numeric/functional/complex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/accumulators/numeric/functional/valarray.hpp&gt;</code></li>
@@ -142,6 +145,7 @@
       <li>from <code>&lt;boost/beast/_experimental/test/handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/async_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/impl/temporary_buffer.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/stream_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/async_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/basic_stream.hpp&gt;</code></li>
@@ -868,6 +872,8 @@
       <li>from <code>&lt;boost/math/interpolators/detail/barycentric_rational_detail.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/math/cstdfloat/cstdfloat_cmath.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/special_functions/trunc.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/polynomial.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/non_type.hpp&gt;</code></h3><ul>
@@ -1125,7 +1131,10 @@
       <li>from <code>&lt;boost/property_tree/detail/ptree_implementation.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-proto"><a href="proto.html"><em>proto</em></a></h2>
-    <h3><code>&lt;boost/detail/sp_typeinfo.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/proto/debug.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/typeinfo.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/proto/debug.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/get_pointer.hpp&gt;</code></h3><ul>
@@ -1136,7 +1145,6 @@
       <li>from <code>&lt;boost/proto/detail/is_noncopyable.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/proto/debug.hpp&gt;</code></li>
       <li>from <code>&lt;boost/proto/detail/poly_function.hpp&gt;</code></li>
       <li>from <code>&lt;boost/proto/domain.hpp&gt;</code></li>
       <li>from <code>&lt;boost/proto/make_expr.hpp&gt;</code></li>
@@ -1389,11 +1397,11 @@
       <li>from <code>&lt;boost/spirit/home/x3/core/parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/nonterminal/detail/rule.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/typeinfo.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/support/detail/hold_any.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/detail/scoped_enum_emulation.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/detail/scoped_enum_emulation.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/detail/sp_typeinfo.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/spirit/home/support/detail/hold_any.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/classic/core/non_terminal/impl/static.hpp&gt;</code></li>

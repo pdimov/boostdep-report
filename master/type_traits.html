@@ -141,8 +141,10 @@
       <li>from <code>&lt;boost/accumulators/statistics/rolling_variance.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_base_and_derived.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/accumulators/framework/accumulator_set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/accumulators/framework/depends_on.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_base_of.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/framework/accumulator_set.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_const.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/accumulators/accumulators_fwd.hpp&gt;</code></li>
@@ -185,11 +187,14 @@
       <li>from <code>&lt;boost/accumulators/statistics/weighted_covariance.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_const.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/framework/accumulator_set.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/accumulators/framework/extractor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/accumulators/numeric/functional.hpp&gt;</code></li>
       <li>from <code>&lt;boost/accumulators/numeric/functional/valarray.hpp&gt;</code></li>
       <li>from <code>&lt;boost/accumulators/numeric/functional/vector.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/accumulators/framework/accumulator_set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/accumulators/framework/extractor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/accumulators/numeric/detail/function1.hpp&gt;</code></li>
       <li>from <code>&lt;boost/accumulators/numeric/detail/function_n.hpp&gt;</code></li>
@@ -362,6 +367,9 @@
     </ul>
     <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/tuple.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/type_with_alignment.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/multi_buffer.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-bimap"><a href="bimap.html"><em>bimap</em></a></h2>
     <h3><code>&lt;boost/type_traits/add_const.hpp&gt;</code></h3><ul>
@@ -1979,6 +1987,9 @@
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/attachable_sstream_buf.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/is_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/log/detail/sink_init_helpers.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/is_base_and_derived.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/setup/filter_parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/setup/formatter_parser.hpp&gt;</code></li>
@@ -2024,6 +2035,7 @@
       <li>from <code>&lt;boost/log/attributes/function.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/attributes/mutable_constant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/detail/sink_init_helpers.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/setup/console.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/setup/file.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/value_ref.hpp&gt;</code></li>
     </ul>
@@ -2095,11 +2107,13 @@
     </ul>
     <h3><code>&lt;boost/type_traits/is_constructible.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/quadrature/detail/tanh_sinh_constants.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/special_functions/trunc.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/convert_from_string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/test_value.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_convertible.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/constants/constants.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/cstdfloat/cstdfloat_cmath.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/quaternion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/cbrt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/detail/iconv.hpp&gt;</code></li>
@@ -2135,6 +2149,7 @@
       <li>from <code>&lt;boost/math/tools/polynomial_gcd.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/math/cstdfloat/cstdfloat_cmath.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/distributions/detail/derived_accessors.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/distributions/geometric.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/distributions/negative_binomial.hpp&gt;</code></li>
@@ -2864,6 +2879,7 @@
     <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/ptr_container/detail/is_convertible.hpp&gt;</code></li>
       <li>from <code>&lt;boost/ptr_container/ptr_sequence_adapter.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/ptr_container/ptr_vector.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_void.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/ptr_container/indirect_fun.hpp&gt;</code></li>
@@ -3441,6 +3457,7 @@
     <h3><code>&lt;boost/type_traits/is_floating_point.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/karma/binary/binary.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/binary/binary.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/qi/numeric/real_policies.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/binary/binary.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_function.hpp&gt;</code></h3><ul>
@@ -3670,6 +3687,9 @@
     <h3><code>&lt;boost/type_traits/is_lvalue_reference.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/test/tree/test_case_template.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/is_reference.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/test/tools/floating_point_comparison.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/is_rvalue_reference.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/test/tree/test_case_template.hpp&gt;</code></li>
     </ul>
@@ -3680,6 +3700,9 @@
     </ul>
     <h3><code>&lt;boost/type_traits/is_unsigned.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/test/data/monomorphic/generators/xrange.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_void.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/test/tools/floating_point_comparison.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_volatile.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/test/tree/test_case_template.hpp&gt;</code></li>

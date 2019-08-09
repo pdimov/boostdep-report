@@ -10,6 +10,9 @@
 <h1 id="primary-dependencies">Primary dependencies for <em>math</em></h1>
   <h2 id="array"><a href="array.html"><em>array</em></a></h2>
     <h3><code>&lt;boost/array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/math/special_functions/detail/hypergeometric_1F1_scaled_series.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/special_functions/detail/hypergeometric_pFq_checked_series.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/special_functions/detail/hypergeometric_rational.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/detail/unchecked_bernoulli.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/detail/unchecked_factorial.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/factorials.hpp&gt;</code></li>
@@ -25,6 +28,7 @@
       <li>from <code>&lt;boost/math/distributions/skew_normal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/interpolators/detail/barycentric_rational_detail.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/interpolators/detail/vector_barycentric_rational_detail.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/interpolators/detail/whittaker_shannon_detail.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/policies/policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/detail/bessel_i0.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/detail/bessel_i1.hpp&gt;</code></li>
@@ -53,6 +57,10 @@
       <li>from <code>&lt;boost/math/quadrature/naive_monte_carlo.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/atomic.hpp&gt;</code></li>
     </ul>
+  <h2 id="chrono"><a href="chrono.html"><em>chrono</em></a></h2>
+    <h3><code>&lt;boost/chrono.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/math/special_functions/hypergeometric_pFq.hpp&gt;</code></li>
+    </ul>
   <h2 id="concept_check"><a href="concept_check.html"><em>concept_check</em></a></h2>
     <h3><code>&lt;boost/concept_check.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/concepts/distributions.hpp&gt;</code></li>
@@ -68,8 +76,8 @@
       <li>from <code>&lt;boost/math/concepts/real_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/concepts/real_type_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/concepts/std_real_concept.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/math/differentiation/autodiff.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/distributions/hyperexponential.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/interpolators/catmull_rom.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/quaternion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/acosh.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/asinh.hpp&gt;</code></li>
@@ -77,6 +85,8 @@
       <li>from <code>&lt;boost/math/special_functions/detail/bernoulli_details.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/detail/round_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/gamma.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/special_functions/hypergeometric_1F1.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/special_functions/hypergeometric_pFq.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/lanczos.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/sinc.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/sinhc.hpp&gt;</code></li>
@@ -229,6 +239,10 @@
       <li>from <code>&lt;boost/math/tools/convert_from_string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/test_value.hpp&gt;</code></li>
     </ul>
+  <h2 id="mp11"><a href="mp11.html"><em>mp11</em></a></h2>
+    <h3><code>&lt;boost/mp11/integer_sequence.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/math/differentiation/autodiff_cpp11.hpp&gt;</code></li>
+    </ul>
   <h2 id="mpl"><a href="mpl.html"><em>mpl</em></a></h2>
     <h3><code>&lt;boost/mpl/and.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/constants/constants.hpp&gt;</code></li>
@@ -323,6 +337,9 @@
       <li>from <code>&lt;boost/math/tools/roots.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/signal_statistics.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/univariate_statistics.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/multiprecision/rational_adaptor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/math/differentiation/autodiff.hpp&gt;</code></li>
     </ul>
   <h2 id="predef"><a href="predef.html"><em>predef</em></a></h2>
     <h3><code>&lt;boost/predef/architecture/x86.h&gt;</code></h3><ul>
@@ -433,6 +450,7 @@
       <li>from <code>&lt;boost/math/special_functions/detail/bessel_jy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/detail/fp_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/fpclassify.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/tools/big_constant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/promotion.hpp&gt;</code></li>
     </ul>
@@ -464,6 +482,14 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>math</em></h1>
+  <h2><a href="chrono.html"><em>chrono</em></a></h2><ul>
+    <li><a href="chrono.html#move">adds <em>move</em></a></li>
+    <li><a href="chrono.html#ratio">adds <em>ratio</em></a></li>
+    <li><a href="chrono.html#system">adds <em>system</em></a></li>
+    <li><a href="chrono.html#typeof">adds <em>typeof</em></a></li>
+    <li><a href="chrono.html#utility">adds <em>utility</em></a></li>
+    <li><a href="chrono.html#winapi">adds <em>winapi</em></a></li>
+  </ul>
   <h2><a href="concept_check.html"><em>concept_check</em></a></h2><ul>
     <li><a href="concept_check.html#preprocessor">adds <em>preprocessor</em></a></li>
   </ul>
@@ -520,13 +546,9 @@
   <h2><a href="random.html"><em>random</em></a></h2><ul>
     <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
     <li><a href="random.html#io">adds <em>io</em></a></li>
-    <li><a href="random.html#system">adds <em>system</em></a></li>
   </ul>
   <h2><a href="dynamic_bitset.html"><em>dynamic_bitset</em></a></h2><ul>
     <li><a href="dynamic_bitset.html#serialization">adds <em>serialization</em></a></li>
-  </ul>
-  <h2><a href="system.html"><em>system</em></a></h2><ul>
-    <li><a href="system.html#winapi">adds <em>winapi</em></a></li>
   </ul>
   <h2><a href="serialization.html"><em>serialization</em></a></h2><ul>
     <li><a href="serialization.html#spirit">adds <em>spirit</em></a></li>
@@ -555,12 +577,8 @@
     <li><a href="algorithm.html#exception">adds <em>exception</em></a></li>
   </ul>
   <h2><a href="thread.html"><em>thread</em></a></h2><ul>
-    <li><a href="thread.html#chrono">adds <em>chrono</em></a></li>
     <li><a href="thread.html#date_time">adds <em>date_time</em></a></li>
     <li><a href="thread.html#exception">adds <em>exception</em></a></li>
-  </ul>
-  <h2><a href="chrono.html"><em>chrono</em></a></h2><ul>
-    <li><a href="chrono.html#ratio">adds <em>ratio</em></a></li>
   </ul>
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>

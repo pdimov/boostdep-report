@@ -8,10 +8,6 @@
 
 
 <h1 id="primary-dependencies">Primary dependencies for <em>beast</em></h1>
-  <h2 id="align"><a href="align.html"><em>align</em></a></h2>
-    <h3><code>&lt;boost/align/aligned_alloc.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/websocket/detail/prng.ipp&gt;</code></li>
-    </ul>
   <h2 id="asio"><a href="asio.html"><em>asio</em></a></h2>
     <h3><code>&lt;boost/asio/associated_allocator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
@@ -51,9 +47,6 @@
     <h3><code>&lt;boost/asio/bind_executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/bind_continuation.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/detail/remap_post_to_defer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/stream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/impl/stream_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/buffer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/_experimental/http/icy_stream.hpp&gt;</code></li>
@@ -447,7 +440,6 @@
       <li>from <code>&lt;boost/beast/http/impl/write.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/message.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/parser.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/websocket/detail/prng.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/accept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/close.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/handshake.hpp&gt;</code></li>
@@ -477,6 +469,9 @@
     </ul>
     <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/tuple.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/type_with_alignment.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/multi_buffer.hpp&gt;</code></li>
     </ul>
   <h2 id="utility"><a href="utility.html"><em>utility</em></a></h2>
     <h3><code>&lt;boost/utility/string_view.hpp&gt;</code></h3><ul>
