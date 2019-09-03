@@ -193,6 +193,7 @@
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/extensions/gis/io/shapefile/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/extensions/gis/io/wkb/detail/endian.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/extensions/gis/io/wkb/detail/ogc.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/extensions/gis/io/wkb/detail/parser.hpp&gt;</code></li>
@@ -338,6 +339,10 @@
     <h3><code>&lt;boost/swap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/index/detail/utilities.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/varray.hpp&gt;</code></li>
+    </ul>
+  <h2 id="endian"><a href="endian.html"><em>endian</em></a></h2>
+    <h3><code>&lt;boost/endian/conversion.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/extensions/gis/io/shapefile/read.hpp&gt;</code></li>
     </ul>
   <h2 id="function_types"><a href="function_types.html"><em>function_types</em></a></h2>
     <h3><code>&lt;boost/function_types/function_arity.hpp&gt;</code></h3><ul>
@@ -506,6 +511,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/assign.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/correct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/assign_values.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/calculate_point_order.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/direction_code.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/multipoint_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/for_each_range.hpp&gt;</code></li>
@@ -580,7 +586,9 @@
       <li>from <code>&lt;boost/geometry/strategies/expand.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/parameters.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/intersection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/io.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/line_interpolate.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/point_order.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/relate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/side.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/expand_point.hpp&gt;</code></li>
@@ -1211,6 +1219,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/get_turn_info_ll.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/result.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/throw_on_empty_input.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/extensions/gis/io/shapefile/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/exception.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/wkt/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projection.hpp&gt;</code></li>
@@ -1396,6 +1405,7 @@
       <li>from <code>&lt;boost/geometry/strategies/spherical/compare.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/envelope_segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/expand_point.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/point_order.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/select_sequence_element.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_signed.hpp&gt;</code></h3><ul>
@@ -1726,7 +1736,6 @@
     <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
   </ul>
   <h2><a href="spirit.html"><em>spirit</em></a></h2><ul>
-    <li><a href="spirit.html#endian">adds <em>endian</em></a></li>
     <li><a href="spirit.html#filesystem">adds <em>filesystem</em></a></li>
     <li><a href="spirit.html#foreach">adds <em>foreach</em></a></li>
     <li><a href="spirit.html#iostreams">adds <em>iostreams</em></a></li>
