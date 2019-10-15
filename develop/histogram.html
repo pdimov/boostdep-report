@@ -10,11 +10,12 @@
 <h1 id="primary-dependencies">Primary dependencies for <em>histogram</em></h1>
   <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/accumulators/mean.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/accumulators/weighted_mean.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/algorithm/reduce.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/axis/ostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/axis/regular.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/axis/variable.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/at.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/fill.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/fill_n.hpp&gt;</code></li>
@@ -39,7 +40,9 @@
     <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/detail/args_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/fill.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/linearize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/fwd.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/alloc_construct.hpp&gt;</code></h3><ul>
@@ -50,6 +53,9 @@
     </ul>
     <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/axis/traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/typeinfo.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/detail/type_name.hpp&gt;</code></li>
@@ -152,6 +158,9 @@
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/vector.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/serialization/version.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
   <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
@@ -261,7 +270,6 @@
     <li><a href="math.html#atomic">adds <em>atomic</em></a></li>
     <li><a href="math.html#chrono">adds <em>chrono</em></a></li>
     <li><a href="math.html#lambda">adds <em>lambda</em></a></li>
-    <li><a href="math.html#multiprecision">adds <em>multiprecision</em></a></li>
   </ul>
   <h2><a href="pool.html"><em>pool</em></a></h2><ul>
     <li><a href="pool.html#winapi">adds <em>winapi</em></a></li>
@@ -284,11 +292,15 @@
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
   </ul>
+  <h2><a href="random.html"><em>random</em></a></h2><ul>
+    <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
+    <li><a href="random.html#multiprecision">adds <em>multiprecision</em></a></li>
+  </ul>
   <h2><a href="multiprecision.html"><em>multiprecision</em></a></h2><ul>
     <li><a href="multiprecision.html#rational">adds <em>rational</em></a></li>
   </ul>
-  <h2><a href="random.html"><em>random</em></a></h2><ul>
-    <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
+  <h2><a href="ratio.html"><em>ratio</em></a></h2><ul>
+    <li><a href="ratio.html#rational">adds <em>rational</em></a></li>
   </ul>
 
 

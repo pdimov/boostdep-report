@@ -162,7 +162,6 @@
       <li>from <code>&lt;boost/serialization/detail/is_default_constructible.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/detail/shared_count_132.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/detail/shared_ptr_132.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/serialization/ephemeral.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/export.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/extended_type_info.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/extended_type_info_no_rtti.hpp&gt;</code></li>
@@ -176,7 +175,6 @@
       <li>from <code>&lt;boost/serialization/level.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/list.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/map.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/serialization/nvp.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/optional.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/priority_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/queue.hpp&gt;</code></li>
@@ -264,9 +262,7 @@
       <li>from <code>&lt;boost/serialization/collections_load_imp.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/detail/shared_ptr_132.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/serialization/ephemeral.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/level.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/serialization/nvp.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/shared_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/type_info_implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/unordered_collections_load_imp.hpp&gt;</code></li>
@@ -285,7 +281,6 @@
       <li>from <code>&lt;boost/archive/detail/iserializer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/archive/detail/oserializer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/collections_save_imp.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/serialization/nvp.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/valarray.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
@@ -299,6 +294,9 @@
       <li>from <code>&lt;boost/archive/impl/xml_iarchive_impl.ipp&gt;</code></li>
       <li>from <code>&lt;boost/archive/impl/xml_wiarchive_impl.ipp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/state_saver.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/nvp.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/serialization/nvp.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/uncaught_exceptions.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/archive/impl/basic_text_oprimitive.ipp&gt;</code></li>
@@ -516,13 +514,11 @@
       <li>from <code>&lt;boost/serialization/version.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/integral_c.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/serialization/ephemeral.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/level.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/shared_ptr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/integral_c_tag.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/serialization/collection_traits.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/serialization/ephemeral.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/level.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/shared_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/tracking.hpp&gt;</code></li>
@@ -839,7 +835,6 @@
     <li><a href="math.html#chrono">adds <em>chrono</em></a></li>
     <li><a href="math.html#lambda">adds <em>lambda</em></a></li>
     <li><a href="math.html#mp11">adds <em>mp11</em></a></li>
-    <li><a href="math.html#multiprecision">adds <em>multiprecision</em></a></li>
   </ul>
   <h2><a href="pool.html"><em>pool</em></a></h2><ul>
     <li><a href="pool.html#winapi">adds <em>winapi</em></a></li>
@@ -862,11 +857,15 @@
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
   </ul>
+  <h2><a href="random.html"><em>random</em></a></h2><ul>
+    <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
+    <li><a href="random.html#multiprecision">adds <em>multiprecision</em></a></li>
+  </ul>
   <h2><a href="multiprecision.html"><em>multiprecision</em></a></h2><ul>
     <li><a href="multiprecision.html#rational">adds <em>rational</em></a></li>
   </ul>
-  <h2><a href="random.html"><em>random</em></a></h2><ul>
-    <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
+  <h2><a href="ratio.html"><em>ratio</em></a></h2><ul>
+    <li><a href="ratio.html#rational">adds <em>rational</em></a></li>
   </ul>
 
 
@@ -910,10 +909,6 @@
     </ul>
     <h3><code>&lt;boost/serialization/version.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/date_time/posix_time/time_serialize.hpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-dynamic_bitset"><a href="dynamic_bitset.html"><em>dynamic_bitset</em></a></h2>
-    <h3><code>&lt;boost/serialization/vector.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dynamic_bitset/serialization.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-flyweight"><a href="flyweight.html"><em>flyweight</em></a></h2>
     <h3><code>&lt;boost/serialization/extended_type_info.hpp&gt;</code></h3><ul>
@@ -988,6 +983,9 @@
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/vector.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/serialization/version.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-mpi"><a href="mpi.html"><em>mpi</em></a></h2>
