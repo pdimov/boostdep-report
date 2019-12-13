@@ -183,6 +183,7 @@
       <li>from <code>&lt;boost/geometry/srs/projections/proj/ortho.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/stere.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/str_cast.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/shared_grids_std.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/distance_cross_track.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/distance_cross_track_box_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/distance_cross_track_point_box.hpp&gt;</code></li>
@@ -307,6 +308,7 @@
       <li>from <code>&lt;boost/geometry/strategies/agnostic/buffer_distance_asymmetric.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/buffer_distance_symmetric.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/point_in_box_by_side.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/cartesian/buffer_end_round.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/distance_projected_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/distance_projected_point_ax.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/side_of_intersection.hpp&gt;</code></li>
@@ -439,6 +441,7 @@
       <li>from <code>&lt;boost/geometry/extensions/nsphere/algorithms/area.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/andoyer_inverse.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/karney_direct.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/formulas/karney_inverse.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/meridian_direct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/meridian_inverse.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/meridian_segment.hpp&gt;</code></li>
@@ -467,6 +470,7 @@
     <h3><code>&lt;boost/math/special_functions/hypot.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/formulas/area_formulas.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/karney_direct.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/formulas/karney_inverse.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/formulas/vertex_longitude.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/aea.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/aeqd.hpp&gt;</code></li>
@@ -869,6 +873,12 @@
       <li>from <code>&lt;boost/geometry/extensions/gis/io/wkb/detail/endian.hpp&gt;</code></li>
     </ul>
   <h2 id="qvm"><a href="qvm.html"><em>qvm</em></a></h2>
+    <h3><code>&lt;boost/qvm/map_mat_mat.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/strategies/transform/matrix_transformers.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/qvm/map_mat_vec.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/strategies/transform/matrix_transformers.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/qvm/mat.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/strategies/transform/inverse_transformer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/transform/matrix_transformers.hpp&gt;</code></li>
@@ -878,6 +888,15 @@
     </ul>
     <h3><code>&lt;boost/qvm/mat_operations.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/strategies/transform/inverse_transformer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/transform/matrix_transformers.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/qvm/vec.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/strategies/transform/matrix_transformers.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/qvm/vec_access.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/strategies/transform/matrix_transformers.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/qvm/vec_mat_operations.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/strategies/transform/matrix_transformers.hpp&gt;</code></li>
     </ul>
   <h2 id="range"><a href="range.html"><em>range</em></a></h2>
@@ -1191,6 +1210,7 @@
       <li>from <code>&lt;boost/geometry/core/radius.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/extensions/algebra/algorithms/detail.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/extensions/algorithms/distance_info.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/extensions/gis/io/shapefile/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/extensions/gis/io/wkb/detail/endian.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/extensions/gis/io/wkb/detail/parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/extensions/gis/io/wkb/detail/writer.hpp&gt;</code></li>
@@ -1207,7 +1227,7 @@
     </ul>
   <h2 id="thread"><a href="thread.html"><em>thread</em></a></h2>
     <h3><code>&lt;boost/thread.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/srs/projections/shared_grids.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/srs/shared_grids_boost.hpp&gt;</code></li>
     </ul>
   <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
     <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
@@ -1329,7 +1349,6 @@
       <li>from <code>&lt;boost/geometry/views/detail/boundary_view/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_floating_point.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand_by_epsilon.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/has_invalid_coordinate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/robustness/get_rescale_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/robustness/robust_type.hpp&gt;</code></li>
@@ -1347,6 +1366,8 @@
       <li>from <code>&lt;boost/geometry/util/select_most_precise.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_integral.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/expand_by_epsilon.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/partition.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/extensions/gis/io/wkb/detail/parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/extensions/gis/io/wkb/detail/writer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/extensions/multi/gis/io/wkb/detail/writer.hpp&gt;</code></li>
@@ -1745,7 +1766,6 @@
     <li><a href="spirit.html#phoenix">adds <em>phoenix</em></a></li>
     <li><a href="spirit.html#pool">adds <em>pool</em></a></li>
     <li><a href="spirit.html#proto">adds <em>proto</em></a></li>
-    <li><a href="spirit.html#tti">adds <em>tti</em></a></li>
   </ul>
 
 

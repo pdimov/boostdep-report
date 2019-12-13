@@ -632,6 +632,9 @@
     <h3><code>&lt;boost/aligned_storage.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/serialization/detail/stack_constructor.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/aligned_storage.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/serialization/void_cast.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/has_new_operator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/archive/detail/iserializer.hpp&gt;</code></li>
     </ul>
@@ -777,7 +780,6 @@
   </ul>
   <h2><a href="spirit.html"><em>spirit</em></a></h2><ul>
     <li><a href="spirit.html#(unknown)">adds <em>(unknown)</em></a></li>
-    <li><a href="spirit.html#algorithm">adds <em>algorithm</em></a></li>
     <li><a href="spirit.html#concept_check">adds <em>concept_check</em></a></li>
     <li><a href="spirit.html#endian">adds <em>endian</em></a></li>
     <li><a href="spirit.html#filesystem">adds <em>filesystem</em></a></li>
@@ -786,7 +788,6 @@
     <li><a href="spirit.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="spirit.html#fusion">adds <em>fusion</em></a></li>
     <li><a href="spirit.html#iostreams">adds <em>iostreams</em></a></li>
-    <li><a href="spirit.html#lexical_cast">adds <em>lexical_cast</em></a></li>
     <li><a href="spirit.html#locale">adds <em>locale</em></a></li>
     <li><a href="spirit.html#math">adds <em>math</em></a></li>
     <li><a href="spirit.html#phoenix">adds <em>phoenix</em></a></li>
@@ -796,7 +797,6 @@
     <li><a href="spirit.html#regex">adds <em>regex</em></a></li>
     <li><a href="spirit.html#thread">adds <em>thread</em></a></li>
     <li><a href="spirit.html#throw_exception">adds <em>throw_exception</em></a></li>
-    <li><a href="spirit.html#tti">adds <em>tti</em></a></li>
     <li><a href="spirit.html#typeof">adds <em>typeof</em></a></li>
   </ul>
   <h2><a href="unordered.html"><em>unordered</em></a></h2><ul>
@@ -815,9 +815,6 @@
     <li><a href="variant.html#throw_exception">adds <em>throw_exception</em></a></li>
     <li><a href="variant.html#type_index">adds <em>type_index</em></a></li>
   </ul>
-  <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
-    <li><a href="algorithm.html#exception">adds <em>exception</em></a></li>
-  </ul>
   <h2><a href="container.html"><em>container</em></a></h2><ul>
     <li><a href="container.html#intrusive">adds <em>intrusive</em></a></li>
   </ul>
@@ -827,13 +824,11 @@
   <h2><a href="iostreams.html"><em>iostreams</em></a></h2><ul>
     <li><a href="iostreams.html#random">adds <em>random</em></a></li>
   </ul>
-  <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
-    <li><a href="lexical_cast.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
-  </ul>
   <h2><a href="math.html"><em>math</em></a></h2><ul>
     <li><a href="math.html#atomic">adds <em>atomic</em></a></li>
     <li><a href="math.html#chrono">adds <em>chrono</em></a></li>
     <li><a href="math.html#lambda">adds <em>lambda</em></a></li>
+    <li><a href="math.html#lexical_cast">adds <em>lexical_cast</em></a></li>
     <li><a href="math.html#mp11">adds <em>mp11</em></a></li>
   </ul>
   <h2><a href="pool.html"><em>pool</em></a></h2><ul>
@@ -855,6 +850,7 @@
     <li><a href="chrono.html#ratio">adds <em>ratio</em></a></li>
   </ul>
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
+    <li><a href="date_time.html#algorithm">adds <em>algorithm</em></a></li>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
   </ul>
   <h2><a href="random.html"><em>random</em></a></h2><ul>
@@ -958,34 +954,16 @@
       <li>from <code>&lt;boost/graph/distributed/mpi_process_group.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-histogram"><a href="histogram.html"><em>histogram</em></a></h2>
-    <h3><code>&lt;boost/archive/archive_exception.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/serialization/array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/map.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/serialization/nvp.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/serialization/serialization.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/serialization/split_member.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/serialization/string.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/serialization/throw_exception.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/serialization/vector.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/serialization/version.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-mpi"><a href="mpi.html"><em>mpi</em></a></h2>

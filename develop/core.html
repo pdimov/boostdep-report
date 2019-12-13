@@ -604,6 +604,7 @@
       <li>from <code>&lt;boost/geometry/strategies/agnostic/buffer_distance_asymmetric.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/buffer_distance_symmetric.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/point_in_box_by_side.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/cartesian/buffer_end_round.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/distance_projected_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/distance_projected_point_ax.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/side_of_intersection.hpp&gt;</code></li>
@@ -687,17 +688,38 @@
     <h3><code>&lt;boost/core/demangle.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/detail/try_cast.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/axis/metadata_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/mutex_base.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/axis/traits.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/nvp.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/accumulators/mean.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/accumulators/sum.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/accumulators/thread_safe.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/accumulators/weighted_mean.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/accumulators/weighted_sum.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/axis/category.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/axis/integer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/axis/regular.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/axis/variable.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/axis/variant.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/array_wrapper.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/variant_proxy.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/storage_adaptor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/typeinfo.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/detail/type_name.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/use_default.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/replace_default.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/replace_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/fwd.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type.hpp&gt;</code></h3><ul>
@@ -1113,9 +1135,6 @@
       <li>from <code>&lt;boost/phoenix/bind/detail/cpp03/bind_member_function.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/core/environment.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/visit_each.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/phoenix/core/visit_each.hpp&gt;</code></li>
-    </ul>
   <h2 id="reverse-poly_collection"><a href="poly_collection.html"><em>poly_collection</em></a></h2>
     <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/poly_collection/detail/any_model.hpp&gt;</code></li>
@@ -1124,6 +1143,9 @@
       <li>from <code>&lt;boost/poly_collection/detail/value_holder.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-process"><a href="process.html"><em>process</em></a></h2>
+    <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/process/detail/windows/file_descriptor.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/process/detail/windows/locale.hpp&gt;</code></li>
     </ul>
@@ -1432,6 +1454,8 @@
     </ul>
   <h2 id="reverse-spirit"><a href="spirit.html"><em>spirit</em></a></h2>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/support/auxiliary/attr_cast.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/meta_compiler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/ast/position_tagged.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
@@ -1503,9 +1527,7 @@
       <li>from <code>&lt;boost/spirit/home/support/adapt_adt_attributes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/attributes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/attributes_fwd.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/support/auxiliary/attr_cast.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/make_cons.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/support/meta_compiler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/sequence_base_id.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/utree/detail/utree_detail2.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/utree/utree.hpp&gt;</code></li>

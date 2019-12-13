@@ -27,43 +27,55 @@
       <li>from <code>&lt;boost/beast/core/detail/tuple.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/message.hpp&gt;</code></li>
     </ul>
-  <h2 id="reverse-histogram"><a href="histogram.html"><em>histogram</em></a></h2>
+  <h2 id="reverse-gil"><a href="gil.html"><em>gil</em></a></h2>
     <h3><code>&lt;boost/mp11.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/axis/option.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/gil/detail/mp11.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mp11/mpl.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/detail/mp11.hpp&gt;</code></li>
+    </ul>
+  <h2 id="reverse-histogram"><a href="histogram.html"><em>histogram</em></a></h2>
     <h3><code>&lt;boost/mp11/algorithm.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/axis/traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/axis/variant.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/argument_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/at.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/detect.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/fill.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/fill_n.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/large_int.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/linearize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/operators.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/variant_proxy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mp11/bind.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/detail/fill_n.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mp11/function.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/axis/variant.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/array_wrapper.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/detect.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/large_int.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/linearize.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/integer_sequence.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/detail/tuple_slice.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/integral.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/linearize.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/argument_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/fill.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/try_cast.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/histogram.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/list.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/algorithm/project.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/axis/traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/axis/variant.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/args_type.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/argument_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/common_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/large_int.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/linearize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/operators.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/variant_proxy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/histogram.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
     </ul>
@@ -72,8 +84,8 @@
     </ul>
     <h3><code>&lt;boost/mp11/tuple.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/linearize.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/serialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/fill.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/histogram.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/utility.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/accumulators/thread_safe.hpp&gt;</code></li>
@@ -81,11 +93,14 @@
       <li>from <code>&lt;boost/histogram/algorithm/sum.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/axis/regular.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/axis/traits.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/axis/variant.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/array_wrapper.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/common_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/detect.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/fill.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/fill_n.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/large_int.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/mutex_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/operators.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/safe_comparison.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/make_histogram.hpp&gt;</code></li>

@@ -285,6 +285,9 @@
     <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/asio/detail/type_traits.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/utility/declval.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/asio/detail/type_traits.hpp&gt;</code></li>
+    </ul>
   <h2 id="reverse-assign"><a href="assign.html"><em>assign</em></a></h2>
     <h3><code>&lt;boost/type_traits/decay.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/assign/list_of.hpp&gt;</code></li>
@@ -609,6 +612,9 @@
       <li>from <code>&lt;boost/crc.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-date_time"><a href="date_time.html"><em>date_time</em></a></h2>
+    <h3><code>&lt;boost/type_traits/conditional.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/date_time/constrained_value.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/is_base_of.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/date_time/constrained_value.hpp&gt;</code></li>
     </ul>
@@ -1262,7 +1268,6 @@
       <li>from <code>&lt;boost/geometry/views/detail/boundary_view/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_floating_point.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand_by_epsilon.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/has_invalid_coordinate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/robustness/get_rescale_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/robustness/robust_type.hpp&gt;</code></li>
@@ -1280,6 +1285,8 @@
       <li>from <code>&lt;boost/geometry/util/select_most_precise.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_integral.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/expand_by_epsilon.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/partition.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/impl/pj_param.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/str_cast.hpp&gt;</code></li>
@@ -1333,6 +1340,7 @@
       <li>from <code>&lt;boost/geometry/strategies/spherical/compare.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/envelope_segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/expand_point.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/spherical/point_order.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/select_sequence_element.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_signed.hpp&gt;</code></h3><ul>
@@ -1406,53 +1414,6 @@
       <li>from <code>&lt;boost/geometry/util/bare_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/parameter_type_of.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/boundary_view/implementation.hpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-gil"><a href="gil.html"><em>gil</em></a></h2>
-    <h3><code>&lt;boost/type_traits.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/channel_algorithm.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/color_base.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/color_base_algorithm.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/concepts/color.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/concepts/color_base.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/concepts/detail/type_traits.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/concepts/pixel.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/concepts/pixel_dereference.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/device_n.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/gray.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/metafunctions.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/pixel.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/utilities.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/is_base_and_derived.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/io/read_and_convert_image.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/read_and_convert_view.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/read_image.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/read_image_info.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/read_view.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/write_view.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/is_base_of.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/io/base.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/io/typedefs.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/is_class.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/get_num_bits.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/is_integral.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/toolbox/image_types/indexed_image.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/toolbox/metafunctions/get_num_bits.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/io/bmp/detail/read.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/bmp/detail/supported_types.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/jpeg/detail/supported_types.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/pnm/detail/supported_types.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/raw/detail/supported_types.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/targa/detail/supported_types.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/gil/extension/io/tiff/detail/supported_types.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/channel.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-graph"><a href="graph.html"><em>graph</em></a></h2>
     <h3><code>&lt;boost/type_traits.hpp&gt;</code></h3><ul>
@@ -2096,14 +2057,11 @@
     </ul>
     <h3><code>&lt;boost/type_traits/is_complex.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/tools/complex.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/math/tools/norms.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/math/tools/roots.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/math/tools/signal_statistics.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/math/tools/univariate_statistics.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_constructible.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/quadrature/detail/tanh_sinh_constants.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/trunc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/tools/big_constant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/convert_from_string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/test_value.hpp&gt;</code></li>
     </ul>
@@ -2130,6 +2088,7 @@
       <li>from <code>&lt;boost/math/special_functions/detail/bessel_jy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/detail/fp_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/fpclassify.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/tools/big_constant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/promotion.hpp&gt;</code></li>
     </ul>
@@ -2361,6 +2320,7 @@
     </ul>
     <h3><code>&lt;boost/type_traits/is_convertible.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/detail/number_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multiprecision/number.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/traits/explicit_conversion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/traits/is_backend.hpp&gt;</code></li>
     </ul>

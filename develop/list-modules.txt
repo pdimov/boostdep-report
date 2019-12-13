@@ -75,6 +75,7 @@ msm
 multi_array
 multi_index
 multiprecision
+nowide
 numeric~conversion
 numeric~interval
 numeric~odeint
