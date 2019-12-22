@@ -20,8 +20,8 @@ SET OPTIONS=--html-stylesheet report-branch.css --html-prefix %PREFIX%
 
 %BOOSTDEP% --list-modules > %OUTDIR%\list-modules.txt
 
-%BOOSTDEP% %OPTIONS% --html-title "Boost Module Overview" --html --module-overview > %OUTDIR%\module-overview.html
-%BOOSTDEP% %OPTIONS% --html-title "Boost Module Levels" --html --module-levels > %OUTDIR%\module-levels.html
-%BOOSTDEP% %OPTIONS% --html-title "Boost Module Weights" --html --module-weights > %OUTDIR%\module-weights.html
+%BOOSTDEP% %OPTIONS% --html-title "Boost Module Overview" --html --track-sources --module-overview > %OUTDIR%\module-overview.html
+%BOOSTDEP% %OPTIONS% --html-title "Boost Module Levels" --html --track-sources --module-levels > %OUTDIR%\module-levels.html
+%BOOSTDEP% %OPTIONS% --html-title "Boost Module Weights" --html --track-sources --module-weights > %OUTDIR%\module-weights.html
 
-FOR /f %%i IN (%OUTDIR%\list-modules.txt) DO %BOOSTDEP% --html-title "Boost Dependency Report for %%i" %OPTIONS% --html --primary %%i --secondary %%i --reverse %%i > %OUTDIR%\%%i.html
+FOR /f %%i IN (%OUTDIR%\list-modules.txt) DO %BOOSTDEP% --html-title "Boost Dependency Report for %%i" %OPTIONS% --html --track-sources --primary %%i --secondary %%i --reverse %%i > %OUTDIR%\%%i.html
