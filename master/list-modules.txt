@@ -29,7 +29,6 @@ coroutine2
 crc
 date_time
 detail
-disjoint_sets
 dll
 dynamic_bitset
 endian
@@ -75,6 +74,7 @@ msm
 multi_array
 multi_index
 multiprecision
+nowide
 numeric~conversion
 numeric~interval
 numeric~odeint

@@ -29,7 +29,6 @@ coroutine2
 crc
 date_time
 detail
-disjoint_sets
 dll
 dynamic_bitset
 endian
