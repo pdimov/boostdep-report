@@ -307,6 +307,7 @@
     <h3><code>&lt;boost/shared_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/exception/detail/exception_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/exception/detail/shared_ptr.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/exception/src/clone_current_exception_non_intrusive.cpp&gt;</code></li>
     </ul>
   <h2 id="reverse-fiber"><a href="fiber.html"><em>fiber</em></a></h2>
     <h3><code>&lt;boost/intrusive_ptr.hpp&gt;</code></h3><ul>
@@ -322,13 +323,21 @@
       <li>from <code>&lt;boost/fiber/type.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-filesystem"><a href="filesystem.html"><em>filesystem</em></a></h2>
+    <h3><code>&lt;boost/scoped_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/path.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/path_traits.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/smart_ptr/intrusive_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/directory.hpp&gt;</code></li>
       <li>from <code>&lt;boost/filesystem/exception.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/directory.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/smart_ptr/intrusive_ref_counter.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/directory.hpp&gt;</code></li>
       <li>from <code>&lt;boost/filesystem/exception.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/smart_ptr/scoped_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
     </ul>
   <h2 id="reverse-flyweight"><a href="flyweight.html"><em>flyweight</em></a></h2>
     <h3><code>&lt;boost/detail/atomic_count.hpp&gt;</code></h3><ul>
@@ -418,10 +427,25 @@
   <h2 id="reverse-locale"><a href="locale.html"><em>locale</em></a></h2>
     <h3><code>&lt;boost/shared_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/locale/boundary/index.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/posix/all_generator.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/posix/codecvt.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/posix/converter.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/posix/numeric.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/shared/generator.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/shared/localization_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/shared/message.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/shared/mo_lambda.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/win32/numeric.cpp&gt;</code></li>
     </ul>
   <h2 id="reverse-log"><a href="log.html"><em>log</em></a></h2>
     <h3><code>&lt;boost/detail/atomic_count.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/core/record_view.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/enable_shared_from_this.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/scoped_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/windows/event_log_backend.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/smart_ptr/intrusive_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/attribute.hpp&gt;</code></li>
@@ -444,6 +468,11 @@
       <li>from <code>&lt;boost/log/utility/setup/filter_parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/setup/formatter_parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/dynamic_type_dispatcher.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_name.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/smart_ptr/shared_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/core/core.hpp&gt;</code></li>
@@ -460,6 +489,14 @@
       <li>from <code>&lt;boost/log/utility/setup/formatter_parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/setup/from_settings.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/dynamic_type_dispatcher.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_name.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/default_attribute_names.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/smart_ptr/weak_ptr.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
     </ul>
   <h2 id="reverse-math"><a href="math.html"><em>math</em></a></h2>
     <h3><code>&lt;boost/detail/lightweight_mutex.hpp&gt;</code></h3><ul>
@@ -541,6 +578,9 @@
       <li>from <code>&lt;boost/ptr_container/detail/scoped_deleter.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-python"><a href="python.html"><em>python</em></a></h2>
+    <h3><code>&lt;boost/scoped_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/python/src/numpy/ndarray.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/scoped_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/python/suite/indexing/detail/indexing_suite_detail.hpp&gt;</code></li>
     </ul>

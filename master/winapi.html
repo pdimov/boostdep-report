@@ -153,6 +153,25 @@
     <h3><code>&lt;boost/winapi/get_last_error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/dll/detail/windows/path_from_handle.hpp&gt;</code></li>
     </ul>
+  <h2 id="reverse-filesystem"><a href="filesystem.html"><em>filesystem</em></a></h2>
+    <h3><code>&lt;boost/winapi/basic_types.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/error_handling.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/directory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/path.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/windows_file_codecvt.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/dll.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/error_codes.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/error_handling.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/get_last_error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/error_handling.hpp&gt;</code></li>
+    </ul>
   <h2 id="reverse-interprocess"><a href="interprocess.html"><em>interprocess</em></a></h2>
     <h3><code>&lt;boost/detail/interlocked.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
@@ -160,18 +179,88 @@
   <h2 id="reverse-log"><a href="log.html"><em>log</em></a></h2>
     <h3><code>&lt;boost/detail/interlocked.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/adaptive_mutex.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/event.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/access_rights.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/basic_types.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/timestamp.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/light_rw_mutex.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/character_code_conversion.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/code_conversion.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/condition_variable.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/config.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/winapi/dll.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/dump.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/light_rw_mutex.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/event.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/file_mapping.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/get_last_error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/code_conversion.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/object_name.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/handles.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/auto_handle.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/page_protection_flags.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/semaphore.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/winapi/srw_lock.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/light_rw_mutex.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/thread.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/adaptive_mutex.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/thread_pool.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/time.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/wait.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-pool"><a href="pool.html"><em>pool</em></a></h2>
     <h3><code>&lt;boost/winapi/critical_section.hpp&gt;</code></h3><ul>
@@ -366,9 +455,17 @@
     </ul>
     <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/thread/src/win32/thread.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/thread/src/win32/thread_primitives.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/thread/src/win32/tss_dll.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/thread/src/win32/tss_pe.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/dll.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/thread/src/win32/thread_primitives.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/event.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/thread/src/win32/thread_primitives.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/get_current_process.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
@@ -384,6 +481,7 @@
     </ul>
     <h3><code>&lt;boost/winapi/handles.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/thread/src/win32/thread_primitives.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/heap_memory.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_heap_alloc.hpp&gt;</code></li>
@@ -396,6 +494,12 @@
     </ul>
     <h3><code>&lt;boost/winapi/thread.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/thread_pool.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/thread/src/win32/thread_primitives.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/time.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/thread/src/win32/thread_primitives.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/wait.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/win32/thread_primitives.hpp&gt;</code></li>

@@ -8,9 +8,43 @@
 
 
 <h1 id="primary-dependencies">Primary dependencies for <em>log</em></h1>
+  <h2 id="align"><a href="align.html"><em>align</em></a></h2>
+    <h3><code>&lt;boost/align/align_up.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/align/aligned_alloc.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/threadsafe_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/light_rw_mutex.cpp&gt;</code></li>
+    </ul>
   <h2 id="array"><a href="array.html"><em>array</em></a></h2>
     <h3><code>&lt;boost/array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/type_dispatch/static_type_dispatcher.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_set_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_value_set.cpp&gt;</code></li>
+    </ul>
+  <h2 id="asio"><a href="asio.html"><em>asio</em></a></h2>
+    <h3><code>&lt;boost/asio/buffer.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/io_context.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/ip/address.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/ip/host_name.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/ip/resolver_base.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/ip/udp.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/socket_base.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
     </ul>
   <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
@@ -25,6 +59,26 @@
       <li>from <code>&lt;boost/log/sources/record_ostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/setup/settings.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/value_ref.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_name.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_set.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_set_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/event.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/ipc_sync_wrappers.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/filter_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/formatter_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/threadsafe_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/timer.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/auto_handle.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/light_rw_mutex.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/assert/source_location.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/adaptive_mutex.hpp&gt;</code></li>
@@ -38,21 +92,44 @@
       <li>from <code>&lt;boost/log/detail/event.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/async_frontend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/unbounded_fifo_queue.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/object_name.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/atomic/atomic_flag.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/event.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/atomic/capabilities.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/event.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/atomic/fences.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/event.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/memory_order.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/counter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/async_frontend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/unbounded_fifo_queue.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/event.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/object_name.cpp&gt;</code></li>
     </ul>
   <h2 id="bind"><a href="bind.html"><em>bind</em></a></h2>
     <h3><code>&lt;boost/bind.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/sinks/async_frontend.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/formatter_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/severity_level.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
     </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
@@ -81,15 +158,43 @@
       <li>from <code>&lt;boost/log/sources/severity_feature.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/support/date_time.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/ipc/reliable_message_queue.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/bit_tools.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/dump.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/dump_avx2.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/dump_ssse3.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/event.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/murmur3.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/named_scope_format_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/process_name.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/severity_level.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/thread_specific.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/timer.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/limits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/sinks/text_file_backend.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/global_logger_storage.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/version.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/windows/event_log_registry.hpp&gt;</code></li>
     </ul>
   <h2 id="container"><a href="container.html"><em>container</em></a></h2>
     <h3><code>&lt;boost/container/allocator_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/allocator_traits.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
+    <h3><code>&lt;boost/checked_delete.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/severity_level.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/scoped_attribute.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/expressions/formatters/char_decorator.hpp&gt;</code></li>
@@ -132,9 +237,14 @@
       <li>from <code>&lt;boost/log/utility/setup/settings.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/type_dispatcher.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/value_ref.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/ipc_sync_wrappers.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/null_deleter.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/setup/console.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/uncaught_exceptions.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/format.hpp&gt;</code></li>
@@ -144,13 +254,21 @@
       <li>from <code>&lt;boost/log/expressions/formatter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/expressions/keyword.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/dynamic_type_dispatcher.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
     </ul>
   <h2 id="date_time"><a href="date_time.html"><em>date_time</em></a></h2>
+    <h3><code>&lt;boost/date_time/c_time.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/date_time/date.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/support/date_time.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/date_time/date_defs.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/sinks/text_file_backend.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/date_time/gregorian/greg_day.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/sinks/text_file_backend.hpp&gt;</code></li>
@@ -158,10 +276,20 @@
     <h3><code>&lt;boost/date_time/gregorian/gregorian_types.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/support/date_time.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/date_time_types.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/default_sink.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/default_formatter_factory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/date_time/local_time/local_time_types.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/support/date_time.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/date_time_types.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/default_formatter_factory.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/date_time/microsec_time_clock.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/default_sink.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/date_time/posix_time/posix_time.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/date_time/posix_time/posix_time_types.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/time_traits.hpp&gt;</code></li>
@@ -170,25 +298,60 @@
       <li>from <code>&lt;boost/log/sinks/unbounded_ordering_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/support/date_time.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/date_time_types.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/default_formatter_factory.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/date_time/special_defs.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/sinks/text_file_backend.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/default_formatter_factory.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/date_time/time.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/support/date_time.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/date_time/time_resolution_traits.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/default_sink.cpp&gt;</code></li>
+    </ul>
   <h2 id="exception"><a href="exception.html"><em>exception</em></a></h2>
+    <h3><code>&lt;boost/exception/enable_error_info.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/exception/errinfo_at_line.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/exceptions.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/settings_parser.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/exception/info.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/support/exception.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/exceptions.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/settings_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
     </ul>
   <h2 id="filesystem"><a href="filesystem.html"><em>filesystem</em></a></h2>
     <h3><code>&lt;boost/filesystem/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/config.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/filesystem/convenience.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/filesystem/fstream.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_multifile_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/filesystem/operations.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/process_name.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_multifile_backend.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/filesystem/path.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/sinks/event_log_backend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/text_file_backend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/text_multifile_backend.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/process_name.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_multifile_backend.cpp&gt;</code></li>
     </ul>
   <h2 id="function_types"><a href="function_types.html"><em>function_types</em></a></h2>
     <h3><code>&lt;boost/function_types/function_arity.hpp&gt;</code></h3><ul>
@@ -201,6 +364,14 @@
       <li>from <code>&lt;boost/log/detail/function_traits.hpp&gt;</code></li>
     </ul>
   <h2 id="fusion"><a href="fusion.html"><em>fusion</em></a></h2>
+    <h3><code>&lt;boost/fusion/algorithm/iteration/for_each.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/setup/default_filter_factory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/matches_relation_factory.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/fusion/container/set.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/setup/default_filter_factory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/matches_relation_factory.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/fusion/sequence/intrinsic/at.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/attr_output_terminal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/expressions/keyword.hpp&gt;</code></li>
@@ -217,15 +388,80 @@
       <li>from <code>&lt;boost/log/expressions/formatters/wrap_formatter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/expressions/predicates/channel_severity_filter.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/fusion/sequence/intrinsic/at_key.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/setup/default_filter_factory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/matches_relation_factory.cpp&gt;</code></li>
+    </ul>
+  <h2 id="interprocess"><a href="interprocess.html"><em>interprocess</em></a></h2>
+    <h3><code>&lt;boost/interprocess/creation_tags.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/interprocess/detail/workaround.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/posix/ipc_sync_wrappers.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/interprocess/exceptions.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/interprocess/mapped_region.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/interprocess/permissions.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/permissions.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/interprocess/shared_memory_object.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/interprocess/sync/interprocess_condition.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/posix/ipc_sync_wrappers.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/interprocess/sync/interprocess_mutex.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/posix/ipc_sync_wrappers.hpp&gt;</code></li>
+    </ul>
   <h2 id="intrusive"><a href="intrusive.html"><em>intrusive</em></a></h2>
+    <h3><code>&lt;boost/intrusive/derivation_value_traits.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/attribute_set.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_set_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_value_set.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/intrusive/link_mode.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/attribute_set.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_set_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_value_set.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/intrusive/list.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/sinks/block_on_overflow.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_set.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_set_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_value_set.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/intrusive/list_hook.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/sinks/block_on_overflow.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/intrusive/options.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/sinks/block_on_overflow.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_name.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_set.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_set_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_value_set.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/intrusive/set.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/attribute_name.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/intrusive/set_hook.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/attribute_name.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+    </ul>
+  <h2 id="io"><a href="io.html"><em>io</em></a></h2>
+    <h3><code>&lt;boost/io/ios_state.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/setup/settings_parser.cpp&gt;</code></li>
     </ul>
   <h2 id="iterator"><a href="iterator.html"><em>iterator</em></a></h2>
     <h3><code>&lt;boost/iterator/iterator_adaptor.hpp&gt;</code></h3><ul>
@@ -234,6 +470,7 @@
   <h2 id="lexical_cast"><a href="lexical_cast.html"><em>lexical_cast</em></a></h2>
     <h3><code>&lt;boost/lexical_cast.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/setup/filter_parser.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/process_name.cpp&gt;</code></li>
     </ul>
   <h2 id="locale"><a href="locale.html"><em>locale</em></a></h2>
     <h3><code>&lt;boost/locale/utf.hpp&gt;</code></h3><ul>
@@ -275,6 +512,15 @@
       <li>from <code>&lt;boost/log/utility/ipc/object_name.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/ipc/reliable_message_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/setup/settings.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/format_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/named_scope_format_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/filter_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/formatter_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/settings_parser.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/move/unique_ptr.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/unique_ptr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/move/utility_core.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/attribute_value_impl.hpp&gt;</code></li>
@@ -299,6 +545,14 @@
       <li>from <code>&lt;boost/log/sources/record_ostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sources/severity_feature.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/support/date_time.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/format_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/named_scope_format_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/object_name.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/filter_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/formatter_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/settings_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/object_name.cpp&gt;</code></li>
     </ul>
   <h2 id="mpl"><a href="mpl.html"><em>mpl</em></a></h2>
     <h3><code>&lt;boost/mpl/advance.hpp&gt;</code></h3><ul>
@@ -387,6 +641,9 @@
       <li>from <code>&lt;boost/log/utility/setup/settings.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/static_type_dispatcher.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/value_ref.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/thread_specific.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/index_of.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/value_ref.hpp&gt;</code></li>
@@ -450,13 +707,27 @@
       <li>from <code>&lt;boost/log/utility/exception_handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/date_time_types.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/standard_types.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/default_filter_factory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/default_formatter_factory.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/vector/vector30.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/type_dispatch/standard_types.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mpl/vector/vector40.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/setup/default_formatter_factory.cpp&gt;</code></li>
+    </ul>
   <h2 id="optional"><a href="optional.html"><em>optional</em></a></h2>
+    <h3><code>&lt;boost/none.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/setup/filter_parser.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/optional/optional.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/setup/settings.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/default_sink.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/named_scope.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/filter_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/formatter_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/event_log_registry.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/optional/optional_fwd.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/value_ref.hpp&gt;</code></li>
@@ -511,6 +782,12 @@
       <li>from <code>&lt;boost/log/utility/setup/file.hpp&gt;</code></li>
     </ul>
   <h2 id="phoenix"><a href="phoenix.html"><em>phoenix</em></a></h2>
+    <h3><code>&lt;boost/phoenix/bind/bind_function_object.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/setup/filter_parser.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/phoenix/core.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/setup/filter_parser.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/phoenix/core/actor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/attr_output_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/detail/attr_output_terminal.hpp&gt;</code></li>
@@ -599,6 +876,9 @@
     <h3><code>&lt;boost/phoenix/operator/comparison.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/setup/filter_parser.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/phoenix/operator/logical.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/setup/filter_parser.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/phoenix/support/vector.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/expressions/formatters/char_decorator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/expressions/formatters/max_size_decorator.hpp&gt;</code></li>
@@ -606,6 +886,9 @@
   <h2 id="predef"><a href="predef.html"><em>predef</em></a></h2>
     <h3><code>&lt;boost/predef/os.h&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/config.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/predef/other/endian.h&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/thread_id.cpp&gt;</code></li>
     </ul>
   <h2 id="preprocessor"><a href="preprocessor.html"><em>preprocessor</em></a></h2>
     <h3><code>&lt;boost/preprocessor/arithmetic/dec.hpp&gt;</code></h3><ul>
@@ -625,6 +908,7 @@
       <li>from <code>&lt;boost/log/utility/strictest_lock.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/standard_types.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/unique_identifier_name.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/default_formatter_factory.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/comparison/equal.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/parameter_tools.hpp&gt;</code></li>
@@ -712,19 +996,29 @@
       <li>from <code>&lt;boost/log/sources/global_logger_storage.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/date_time_types.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/standard_types.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/default_filter_factory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/default_formatter_factory.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/preprocessor/seq/for_each.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/spirit_encoding.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/spirit_encoding.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/seq/size.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/type_dispatch/standard_types.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/default_formatter_factory.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/stringize.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/config.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/tuple/elem.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/parameter_tools.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/spirit_encoding.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/spirit_encoding.hpp&gt;</code></li>
     </ul>
   <h2 id="property_tree"><a href="property_tree.html"><em>property_tree</em></a></h2>
     <h3><code>&lt;boost/property_tree/ptree.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/setup/settings.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
     </ul>
   <h2 id="proto"><a href="proto.html"><em>proto</em></a></h2>
     <h3><code>&lt;boost/proto/extends.hpp&gt;</code></h3><ul>
@@ -732,6 +1026,10 @@
     </ul>
     <h3><code>&lt;boost/proto/make_expr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/expressions/keyword.hpp&gt;</code></li>
+    </ul>
+  <h2 id="random"><a href="random.html"><em>random</em></a></h2>
+    <h3><code>&lt;boost/random/taus88.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
     </ul>
   <h2 id="range"><a href="range.html"><em>range</em></a></h2>
     <h3><code>&lt;boost/range/as_literal.hpp&gt;</code></h3><ul>
@@ -752,6 +1050,8 @@
       <li>from <code>&lt;boost/log/expressions/formatters/c_decorator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/expressions/formatters/csv_decorator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/expressions/formatters/xml_decorator.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/date_time_format_parser.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/size.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/expressions/formatters/char_decorator.hpp&gt;</code></li>
@@ -762,10 +1062,17 @@
   <h2 id="regex"><a href="regex.html"><em>regex</em></a></h2>
     <h3><code>&lt;boost/regex.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/support/regex.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/matches_relation_factory.cpp&gt;</code></li>
     </ul>
   <h2 id="smart_ptr"><a href="smart_ptr.html"><em>smart_ptr</em></a></h2>
     <h3><code>&lt;boost/detail/atomic_count.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/core/record_view.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/enable_shared_from_this.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/scoped_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/windows/event_log_backend.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/smart_ptr/intrusive_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/attribute.hpp&gt;</code></li>
@@ -788,6 +1095,11 @@
       <li>from <code>&lt;boost/log/utility/setup/filter_parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/setup/formatter_parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/dynamic_type_dispatcher.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_name.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/smart_ptr/shared_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/core/core.hpp&gt;</code></li>
@@ -804,10 +1116,25 @@
       <li>from <code>&lt;boost/log/utility/setup/formatter_parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/setup/from_settings.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/dynamic_type_dispatcher.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_name.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/default_attribute_names.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/smart_ptr/weak_ptr.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
     </ul>
   <h2 id="spirit"><a href="spirit.html"><em>spirit</em></a></h2>
     <h3><code>&lt;boost/spirit/home/qi/nonterminal/nonterminal_fwd.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/support/spirit_qi.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/spirit/home/qi/numeric/numeric_utils.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/spirit/home/support/common_terminals.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/spirit_encoding.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/spirit/home/support/meta_compiler.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/support/spirit_qi.hpp&gt;</code></li>
@@ -815,11 +1142,34 @@
     <h3><code>&lt;boost/spirit/include/classic_parser.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/support/spirit_classic.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/spirit/include/karma_generate.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/date_time_format_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/named_scope_format_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/object_name.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/spirit/include/karma_uint.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/date_time_format_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/named_scope_format_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/object_name.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/spirit/include/qi_core.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/setup/default_filter_factory.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/spirit/include/qi_domain.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/support/spirit_qi.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/spirit/include/qi_parse.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/support/spirit_qi.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/format_parser.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/spirit/include/qi_uint.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/format_parser.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/spirit/include/support_standard.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/spirit_encoding.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/spirit/include/support_standard_wide.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/spirit_encoding.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/spirit/include/support_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/support/spirit_qi.hpp&gt;</code></li>
@@ -838,6 +1188,8 @@
       <li>from <code>&lt;boost/log/sources/severity_feature.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/static_type_dispatcher.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/type_dispatcher.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
     </ul>
   <h2 id="system"><a href="system.html"><em>system</em></a></h2>
     <h3><code>&lt;boost/system/config.hpp&gt;</code></h3><ul>
@@ -845,9 +1197,17 @@
     </ul>
     <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/exceptions.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/thread_specific.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/system/system_error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/exceptions.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/system/windows_error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/windows/event_log_backend.cpp&gt;</code></li>
     </ul>
   <h2 id="thread"><a href="thread.html"><em>thread</em></a></h2>
     <h3><code>&lt;boost/thread/condition_variable.hpp&gt;</code></h3><ul>
@@ -857,6 +1217,7 @@
       <li>from <code>&lt;boost/log/sinks/bounded_fifo_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/bounded_ordering_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/unbounded_ordering_queue.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/thread/detail/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/config.hpp&gt;</code></li>
@@ -865,6 +1226,7 @@
       <li>from <code>&lt;boost/log/detail/adaptive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/basic_sink_frontend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sources/exception_handler_feature.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/thread/lock_options.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/locking_ptr.hpp&gt;</code></li>
@@ -874,19 +1236,35 @@
       <li>from <code>&lt;boost/log/sinks/bounded_fifo_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/bounded_ordering_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/unbounded_ordering_queue.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/default_sink.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/event.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/thread/mutex.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/event.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/bounded_fifo_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/bounded_ordering_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/unbounded_ordering_queue.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/default_sink.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/global_logger_storage.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/timer.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/thread/recursive_mutex.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/sinks/async_frontend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/sync_frontend.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/thread/shared_mutex.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/windows/light_rw_mutex.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/thread/thread.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/sinks/async_frontend.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/severity_level.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/thread_id.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/thread/thread_time.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/sinks/bounded_ordering_queue.hpp&gt;</code></li>
@@ -894,11 +1272,35 @@
     </ul>
     <h3><code>&lt;boost/thread/tss.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/sinks/basic_sink_frontend.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/named_scope.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/record_ostream.cpp&gt;</code></li>
     </ul>
   <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
+    <h3><code>&lt;boost/exception/exception.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/exceptions.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/format_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/settings_parser.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/adaptive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/string_literal.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/attribute_name.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/event.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/exceptions.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/format_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/permissions.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/ipc_sync_wrappers.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/settings_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/thread_id.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/threadsafe_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
     </ul>
   <h2 id="type_index"><a href="type_index.html"><em>type_index</em></a></h2>
     <h3><code>&lt;boost/type_index.hpp&gt;</code></h3><ul>
@@ -911,13 +1313,19 @@
       <li>from <code>&lt;boost/log/utility/type_dispatch/dynamic_type_dispatcher.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/static_type_dispatcher.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/type_dispatcher.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/global_logger_storage.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/named_scope.cpp&gt;</code></li>
     </ul>
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
     <h3><code>&lt;boost/aligned_storage.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/threadsafe_queue.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/thread_id.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/alignment_of.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/threadsafe_queue.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/alignment_gap_between.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/thread_id.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/threadsafe_queue.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/has_left_shift.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/is_ostream.hpp&gt;</code></li>
@@ -945,6 +1353,7 @@
     <h3><code>&lt;boost/type_traits/is_integral.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/counter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/functional/logical.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/thread_specific.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_pod.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/thread_specific.hpp&gt;</code></li>
@@ -960,14 +1369,19 @@
       <li>from <code>&lt;boost/log/sources/exception_handler_feature.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/record_ordering.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/string_literal.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_scalar.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/sources/record_ostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/formatting_ostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/add_value.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/is_signed.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/thread_specific.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/is_unsigned.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/functional/logical.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_void.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/function.hpp&gt;</code></li>
@@ -976,6 +1390,9 @@
       <li>from <code>&lt;boost/log/utility/setup/console.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/setup/file.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/value_ref.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/make_unsigned.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/posix/object_name.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/attribute_value_impl.hpp&gt;</code></li>
@@ -1025,6 +1442,10 @@
       <li>from <code>&lt;boost/log/utility/setup/settings.hpp&gt;</code></li>
     </ul>
   <h2 id="utility"><a href="utility.html"><em>utility</em></a></h2>
+    <h3><code>&lt;boost/utility/in_place_factory.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/setup/filter_parser.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/formatter_parser.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/utility/result_of.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/function.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/detail/attribute_predicate.hpp&gt;</code></li>
@@ -1042,18 +1463,88 @@
   <h2 id="winapi"><a href="winapi.html"><em>winapi</em></a></h2>
     <h3><code>&lt;boost/detail/interlocked.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/adaptive_mutex.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/event.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/access_rights.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/basic_types.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/timestamp.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/light_rw_mutex.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/character_code_conversion.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/code_conversion.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/condition_variable.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/config.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/winapi/dll.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/dump.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/light_rw_mutex.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/event.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/file_mapping.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/get_last_error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/code_conversion.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/object_name.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/handles.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/auto_handle.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/page_protection_flags.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/semaphore.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/winapi/srw_lock.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/light_rw_mutex.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/thread.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/adaptive_mutex.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/thread_pool.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/time.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/wait.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
     </ul>
   <h2 id="xpressive"><a href="xpressive.html"><em>xpressive</em></a></h2>
     <h3><code>&lt;boost/xpressive/basic_regex.hpp&gt;</code></h3><ul>
@@ -1065,15 +1556,22 @@
     <h3><code>&lt;boost/xpressive/regex_constants.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/support/xpressive.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/xpressive/xpressive_dynamic.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/setup/matches_relation_factory.cpp&gt;</code></li>
+    </ul>
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>log</em></h1>
+  <h2><a href="asio.html"><em>asio</em></a></h2><ul>
+    <li><a href="asio.html#chrono">adds <em>chrono</em></a></li>
+    <li><a href="asio.html#coroutine">adds <em>coroutine</em></a></li>
+    <li><a href="asio.html#function">adds <em>function</em></a></li>
+  </ul>
   <h2><a href="container.html"><em>container</em></a></h2><ul>
     <li><a href="container.html#container_hash">adds <em>container_hash</em></a></li>
   </ul>
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
     <li><a href="date_time.html#algorithm">adds <em>algorithm</em></a></li>
-    <li><a href="date_time.html#io">adds <em>io</em></a></li>
     <li><a href="date_time.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
     <li><a href="date_time.html#serialization">adds <em>serialization</em></a></li>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
@@ -1084,7 +1582,6 @@
   <h2><a href="filesystem.html"><em>filesystem</em></a></h2><ul>
     <li><a href="filesystem.html#container_hash">adds <em>container_hash</em></a></li>
     <li><a href="filesystem.html#detail">adds <em>detail</em></a></li>
-    <li><a href="filesystem.html#io">adds <em>io</em></a></li>
   </ul>
   <h2><a href="function_types.html"><em>function_types</em></a></h2><ul>
     <li><a href="function_types.html#detail">adds <em>detail</em></a></li>
@@ -1093,6 +1590,11 @@
     <li><a href="fusion.html#container_hash">adds <em>container_hash</em></a></li>
     <li><a href="fusion.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
+  </ul>
+  <h2><a href="interprocess.html"><em>interprocess</em></a></h2><ul>
+    <li><a href="interprocess.html#(unknown)">adds <em>(unknown)</em></a></li>
+    <li><a href="interprocess.html#integer">adds <em>integer</em></a></li>
+    <li><a href="interprocess.html#unordered">adds <em>unordered</em></a></li>
   </ul>
   <h2><a href="intrusive.html"><em>intrusive</em></a></h2><ul>
     <li><a href="intrusive.html#container_hash">adds <em>container_hash</em></a></li>
@@ -1109,6 +1611,7 @@
   </ul>
   <h2><a href="locale.html"><em>locale</em></a></h2><ul>
     <li><a href="locale.html#function">adds <em>function</em></a></li>
+    <li><a href="locale.html#unordered">adds <em>unordered</em></a></li>
   </ul>
   <h2><a href="optional.html"><em>optional</em></a></h2><ul>
     <li><a href="optional.html#detail">adds <em>detail</em></a></li>
@@ -1129,6 +1632,12 @@
   <h2><a href="proto.html"><em>proto</em></a></h2><ul>
     <li><a href="proto.html#typeof">adds <em>typeof</em></a></li>
   </ul>
+  <h2><a href="random.html"><em>random</em></a></h2><ul>
+    <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
+    <li><a href="random.html#integer">adds <em>integer</em></a></li>
+    <li><a href="random.html#math">adds <em>math</em></a></li>
+    <li><a href="random.html#multiprecision">adds <em>multiprecision</em></a></li>
+  </ul>
   <h2><a href="range.html"><em>range</em></a></h2><ul>
     <li><a href="range.html#concept_check">adds <em>concept_check</em></a></li>
     <li><a href="range.html#container_hash">adds <em>container_hash</em></a></li>
@@ -1148,7 +1657,6 @@
     <li><a href="spirit.html#foreach">adds <em>foreach</em></a></li>
     <li><a href="spirit.html#function">adds <em>function</em></a></li>
     <li><a href="spirit.html#integer">adds <em>integer</em></a></li>
-    <li><a href="spirit.html#io">adds <em>io</em></a></li>
     <li><a href="spirit.html#iostreams">adds <em>iostreams</em></a></li>
     <li><a href="spirit.html#math">adds <em>math</em></a></li>
     <li><a href="spirit.html#pool">adds <em>pool</em></a></li>
@@ -1158,11 +1666,11 @@
   </ul>
   <h2><a href="thread.html"><em>thread</em></a></h2><ul>
     <li><a href="thread.html#(unknown)">adds <em>(unknown)</em></a></li>
+    <li><a href="thread.html#algorithm">adds <em>algorithm</em></a></li>
     <li><a href="thread.html#chrono">adds <em>chrono</em></a></li>
     <li><a href="thread.html#concept_check">adds <em>concept_check</em></a></li>
     <li><a href="thread.html#container_hash">adds <em>container_hash</em></a></li>
     <li><a href="thread.html#function">adds <em>function</em></a></li>
-    <li><a href="thread.html#io">adds <em>io</em></a></li>
     <li><a href="thread.html#tuple">adds <em>tuple</em></a></li>
   </ul>
   <h2><a href="type_index.html"><em>type_index</em></a></h2><ul>
@@ -1170,7 +1678,6 @@
   </ul>
   <h2><a href="utility.html"><em>utility</em></a></h2><ul>
     <li><a href="utility.html#container_hash">adds <em>container_hash</em></a></li>
-    <li><a href="utility.html#io">adds <em>io</em></a></li>
   </ul>
   <h2><a href="xpressive.html"><em>xpressive</em></a></h2><ul>
     <li><a href="xpressive.html#(unknown)">adds <em>(unknown)</em></a></li>
@@ -1182,18 +1689,14 @@
   <h2><a href="chrono.html"><em>chrono</em></a></h2><ul>
     <li><a href="chrono.html#ratio">adds <em>ratio</em></a></li>
   </ul>
-  <h2><a href="iostreams.html"><em>iostreams</em></a></h2><ul>
-    <li><a href="iostreams.html#random">adds <em>random</em></a></li>
+  <h2><a href="coroutine.html"><em>coroutine</em></a></h2><ul>
+    <li><a href="coroutine.html#context">adds <em>context</em></a></li>
   </ul>
   <h2><a href="math.html"><em>math</em></a></h2><ul>
     <li><a href="math.html#lambda">adds <em>lambda</em></a></li>
   </ul>
-  <h2><a href="random.html"><em>random</em></a></h2><ul>
-    <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
-    <li><a href="random.html#multiprecision">adds <em>multiprecision</em></a></li>
-  </ul>
-  <h2><a href="ratio.html"><em>ratio</em></a></h2><ul>
-    <li><a href="ratio.html#rational">adds <em>rational</em></a></li>
+  <h2><a href="multiprecision.html"><em>multiprecision</em></a></h2><ul>
+    <li><a href="multiprecision.html#rational">adds <em>rational</em></a></li>
   </ul>
 
 

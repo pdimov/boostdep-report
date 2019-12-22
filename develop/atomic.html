@@ -12,11 +12,13 @@
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/atomic_flag.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/detail/atomic_template.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/atomic/src/lockpool.cpp&gt;</code></li>
     </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/memory_order.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/atomic/src/lockpool.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/auto_link.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/link.hpp&gt;</code></li>
@@ -82,17 +84,36 @@
       <li>from <code>&lt;boost/log/detail/event.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/async_frontend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/unbounded_fifo_queue.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/object_name.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/atomic/atomic_flag.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/event.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/atomic/capabilities.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/event.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/atomic/fences.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/event.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/memory_order.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/counter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/async_frontend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/unbounded_fifo_queue.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/event.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/object_name.cpp&gt;</code></li>
     </ul>
   <h2 id="reverse-math"><a href="math.html"><em>math</em></a></h2>
     <h3><code>&lt;boost/atomic.hpp&gt;</code></h3><ul>
@@ -122,6 +143,14 @@
       <li>from <code>&lt;boost/thread/executors/detail/scheduled_executor_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/once_atomic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/testable_mutex.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/thread/src/pthread/once_atomic.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/atomic/atomic.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/thread/src/win32/thread_primitives.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/memory_order.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/thread/src/pthread/once_atomic.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/thread/src/win32/thread_primitives.cpp&gt;</code></li>
     </ul>
 <hr />
 <p class="footer"></p>
