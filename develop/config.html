@@ -170,6 +170,7 @@
       <li>from <code>&lt;boost/beast/core/detail/char_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/cpu_info.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/win32_unicode_path.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/detail/basic_parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/version.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/detail/prng.hpp&gt;</code></li>
@@ -2323,6 +2324,7 @@
       <li>from <code>&lt;boost/nowide/cenv.hpp&gt;</code></li>
       <li>from <code>&lt;boost/nowide/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/nowide/cstdio.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/nowide/detail/utf.hpp&gt;</code></li>
       <li>from <code>&lt;boost/nowide/filebuf.hpp&gt;</code></li>
       <li>from <code>&lt;boost/nowide/fstream.hpp&gt;</code></li>
     </ul>
@@ -2335,10 +2337,8 @@
     <h3><code>&lt;boost/config/auto_link.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/nowide/config.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/nowide/fstream.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/nowide/detail/utf.hpp&gt;</code></li>
       <li>from <code>&lt;boost/nowide/utf8_codecvt.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-numeric~conversion"><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2>
@@ -3184,13 +3184,6 @@
     </ul>
     <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/detail/shared_count.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_clang.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_nt.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_pt.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/detail/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_w32.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/enable_shared_from_raw.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/intrusive_ptr.hpp&gt;</code></li>
@@ -3198,6 +3191,11 @@
       <li>from <code>&lt;boost/smart_ptr/scoped_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/shared_array.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/shared_ptr.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_clang.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_nt.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_pt.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-sort"><a href="sort.html"><em>sort</em></a></h2>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
