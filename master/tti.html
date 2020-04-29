@@ -10,27 +10,25 @@
 <h1 id="primary-dependencies">Primary dependencies for <em>tti</em></h1>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/tti/detail/dcomp_mem_fun.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dnullptr.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dptmf.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dstatic_mem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtemplate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtemplate_params.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dtfunction.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dtype.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dvm_template_params.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_class.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_data.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_enum.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_function.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_function_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_member_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_member_function.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_member_function_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_static_member_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_static_member_function.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/has_template.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_static_member_function_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_type.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/member_type.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_union.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/detail/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
@@ -43,11 +41,12 @@
       <li>from <code>&lt;boost/tti/detail/dtfunction.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/function_types/is_function.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/dstatic_function_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dstatic_mem_data.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/function_types/is_member_function_pointer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dmem_fun_template.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/function_types/is_member_object_pointer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
@@ -60,62 +59,94 @@
     </ul>
     <h3><code>&lt;boost/function_types/property_tags.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dmem_fun_template.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dstatic_function_tags.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dstatic_function_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_function.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_function_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_member_function.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_member_function_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_static_member_function.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_static_member_function_template.hpp&gt;</code></li>
     </ul>
   <h2 id="mpl"><a href="mpl.html"><em>mpl</em></a></h2>
     <h3><code>&lt;boost/mpl/and.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/dclass.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/denum.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dfunction.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dfunction_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dmem_fun_template.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dstatic_function_type.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dunion.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/apply.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/dclass.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/denum.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtype.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dunion.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dmem_fun_template.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/at.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dftclass.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/dclass.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dcomp_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dcomp_mem_fun_template.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/denum.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dmem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dstatic_mem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtemplate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtemplate_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtype.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dunion.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/eval_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/dclass.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/denum.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dfunction.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dfunction_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dmem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dstatic_mem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtclass.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtemplate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtemplate_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtype.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dunion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dvm_template_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/member_type.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/has_xxx.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/dclass.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/denum.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmetafunc.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtemplate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtemplate_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtype.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dunion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dvm_template_params.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/identity.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dftclass.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtclass.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dvm_template_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/member_type.hpp&gt;</code></li>
@@ -128,16 +159,20 @@
     </ul>
     <h3><code>&lt;boost/mpl/logical.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dmem_fun_template.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/not.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dplaceholder.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dstatic_function_tags.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/member_type.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/or.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/ddata.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/denclosing_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dfunction.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dfunction_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dlambda.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dstatic_function_tags.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/push_front.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dptmf.hpp&gt;</code></li>
@@ -148,10 +183,14 @@
     </ul>
     <h3><code>&lt;boost/mpl/vector.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dmem_fun_template.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dstatic_function_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_function.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_function_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_member_function.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_member_function_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_static_member_function.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_static_member_function_template.hpp&gt;</code></li>
     </ul>
   <h2 id="preprocessor"><a href="preprocessor.html"><em>preprocessor</em></a></h2>
     <h3><code>&lt;boost/preprocessor/arithmetic/add.hpp&gt;</code></h3><ul>
@@ -165,43 +204,66 @@
       <li>from <code>&lt;boost/tti/detail/dtemplate_params.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/array/enum.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/dcomp_mem_fun_template.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dmem_fun_template.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtemplate_params.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/array/size.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dtemplate_params.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/cat.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/dclass.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dcomp_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dcomp_mem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/ddata.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/denum.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dfunction.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dfunction_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dmem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dstatic_mem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtemplate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtemplate_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtype.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dunion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dvm_template_params.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/gen/has_class_gen.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/gen/has_data_gen.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/gen/has_enum_gen.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/gen/has_function_gen.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/gen/has_function_template_gen.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/gen/has_member_data_gen.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/gen/has_member_function_gen.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/gen/has_member_function_template_gen.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/gen/has_static_member_data_gen.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/gen/has_static_member_function_gen.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/gen/has_static_member_function_template_gen.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/gen/has_template_gen.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/gen/has_type_gen.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/gen/has_union_gen.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/gen/member_type_gen.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_class.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_data.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_enum.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_function.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_function_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_member_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_member_function.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_member_function_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_static_member_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_static_member_function.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_static_member_function_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_type.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/has_union.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/member_type.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/comparison/equal.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/dmacro_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dvm_template_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_template.hpp&gt;</code></li>
     </ul>
@@ -210,6 +272,7 @@
       <li>from <code>&lt;boost/tti/has_template.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/control/iif.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/dmacro_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dvm_template_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_template.hpp&gt;</code></li>
     </ul>
@@ -217,12 +280,16 @@
       <li>from <code>&lt;boost/tti/detail/dtemplate.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/detail/is_binary.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/dmacro_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dvm_template_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_template.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/facilities/is_empty.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dtemplate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dvm_template_params.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/preprocessor/logical/and.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/dmacro_fun_template.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/punctuation/comma_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dtemplate_params.hpp&gt;</code></li>
@@ -240,12 +307,18 @@
       <li>from <code>&lt;boost/tti/detail/dvm_template_params.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/variadic/elem.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/dmacro_fun_template.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dmacro_fve.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dvm_template_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_template.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/variadic/size.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/dmacro_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dvm_template_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_template.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/preprocessor/variadic/to_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/dmacro_fun_template.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/variadic/to_seq.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dvm_template_params.hpp&gt;</code></li>
@@ -253,32 +326,40 @@
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
     <h3><code>&lt;boost/type_traits/detail/yes_no_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dcomp_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dcomp_mem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dmem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dstatic_mem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun_template.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_class.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dmem_type.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dclass.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/denclosing_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dstatic_mem_data.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtclass.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtemplate.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dtemplate_params.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dtype.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dvm_template_params.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_enum.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/denum.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dmem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dplaceholder.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dstatic_function_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/member_type.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_union.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/denclosing_type.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dtemplate.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dunion.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_const.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dcomp_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dcomp_mem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_data.hpp&gt;</code></li>

@@ -326,6 +326,9 @@
       <li>from <code>&lt;boost/assign/list_of.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-atomic"><a href="atomic.html"><em>atomic</em></a></h2>
+    <h3><code>&lt;boost/type_traits/alignment_of.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/atomic/detail/type_traits/alignment_of.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/conditional.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/type_traits/conditional.hpp&gt;</code></li>
     </ul>
@@ -352,6 +355,11 @@
     </ul>
     <h3><code>&lt;boost/type_traits/make_unsigned.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/type_traits/make_unsigned.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/type_with_alignment.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/atomic/detail/atomic_flag.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/atomic_template.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/storage_traits.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-beast"><a href="beast.html"><em>beast</em></a></h2>
     <h3><code>&lt;boost/type_traits.hpp&gt;</code></h3><ul>
@@ -573,6 +581,12 @@
       <li>from <code>&lt;boost/contract/call_if.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-conversion"><a href="conversion.html"><em>conversion</em></a></h2>
+    <h3><code>&lt;boost/type_traits/is_reference.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/polymorphic_cast.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/polymorphic_cast.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/utility/declval.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/polymorphic_pointer_cast.hpp&gt;</code></li>
     </ul>
@@ -775,6 +789,9 @@
       <li>from <code>&lt;boost/dll/detail/demangling/msvc.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-endian"><a href="endian.html"><em>endian</em></a></h2>
+    <h3><code>&lt;boost/type_traits/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/endian/detail/endian_reverse.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/has_trivial_assign.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/endian/detail/is_trivially_copyable.hpp&gt;</code></li>
     </ul>
@@ -786,6 +803,7 @@
     </ul>
     <h3><code>&lt;boost/type_traits/is_class.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/endian/conversion.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/endian/detail/endian_reverse.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_enum.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/endian/detail/endian_load.hpp&gt;</code></li>
@@ -915,6 +933,9 @@
     </ul>
     <h3><code>&lt;boost/type_traits/is_reference.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/function_types/detail/classifier.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/function_types/property_tags.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/function_types/components.hpp&gt;</code></li>
@@ -1195,6 +1216,9 @@
     <h3><code>&lt;boost/type_traits/alignment_of.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/index/detail/varray.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/detail/yes_no_type.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/tupled_output.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/has_trivial_assign.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/index/detail/varray_detail.hpp&gt;</code></li>
     </ul>
@@ -1216,11 +1240,12 @@
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/copy_segments.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/result.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/tupled_output.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/is_areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/reverse_dispatch.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/promote_integral.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/util/tuples.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_arithmetic.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/geometries/adapted/boost_array.hpp&gt;</code></li>
@@ -1236,6 +1261,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/turns.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/single_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sub_range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/tupled_output.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/tag_cast.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_const.hpp&gt;</code></h3><ul>
@@ -1312,12 +1338,12 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/has_spikes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/sectionalize.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/tupled_output.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/multi_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/point_in_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/adapted/boost_fusion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/meta.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/rtree/visitors/insert.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/index/detail/tuples.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/varray_detail.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/indexable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/svg/svg_mapper.hpp&gt;</code></li>
@@ -1339,6 +1365,7 @@
       <li>from <code>&lt;boost/geometry/strategies/spherical/expand_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/spherical/point_order.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/select_sequence_element.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/util/tuples.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_signed.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/srs/projections/str_cast.hpp&gt;</code></li>
@@ -1349,8 +1376,8 @@
       <li>from <code>&lt;boost/geometry/util/promote_integral.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_void.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/tupled_output.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/centroid_bashein_detmer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/distance_projected_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/side_by_triangle.hpp&gt;</code></li>
@@ -1939,11 +1966,24 @@
       <li>from <code>&lt;libs/log/src/thread_id.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/threadsafe_queue.cpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/conditional.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/log/attributes/attribute_set.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/attributes/mutable_constant.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/attributes/named_scope.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/functional/logical.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/add_value.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/setup/settings.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/thread_specific.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/has_left_shift.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/is_ostream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/attachable_sstream_buf.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/functional/in_range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/functional/logical.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/sink_init_helpers.hpp&gt;</code></li>
@@ -1964,6 +2004,7 @@
     </ul>
     <h3><code>&lt;boost/type_traits/is_integral.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/counter.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/functional/in_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/functional/logical.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/thread_specific.cpp&gt;</code></li>
     </ul>
@@ -2241,6 +2282,11 @@
     </ul>
     <h3><code>&lt;boost/type_traits/function_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/is_transparent.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multi_index/detail/allocator_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/auto_space.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/intrinsics.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/is_transparent.hpp&gt;</code></li>
@@ -3114,6 +3160,9 @@
     <h3><code>&lt;boost/aligned_storage.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/serialization/detail/stack_constructor.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/aligned_storage.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/serialization/void_cast.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/has_new_operator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/archive/detail/iserializer.hpp&gt;</code></li>
     </ul>
@@ -3801,32 +3850,40 @@
   <h2 id="reverse-tti"><a href="tti.html"><em>tti</em></a></h2>
     <h3><code>&lt;boost/type_traits/detail/yes_no_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dcomp_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dcomp_mem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dmem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dstatic_mem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun_template.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_class.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dmem_type.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dclass.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/denclosing_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dstatic_mem_data.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtclass.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dtemplate.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dtemplate_params.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dtype.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dvm_template_params.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_enum.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/denum.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dmem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dplaceholder.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/tti/detail/dstatic_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dstatic_function_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/member_type.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_union.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tti/detail/denclosing_type.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dtemplate.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dunion.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_const.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tti/detail/dcomp_mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/tti/detail/dcomp_mem_fun_template.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_data.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/detail/dmem_fun.hpp&gt;</code></li>
       <li>from <code>&lt;boost/tti/has_data.hpp&gt;</code></li>

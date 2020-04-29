@@ -112,6 +112,7 @@ spirit
 stacktrace
 statechart
 static_assert
+static_string
 system
 test
 thread

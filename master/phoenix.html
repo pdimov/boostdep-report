@@ -24,6 +24,9 @@
       <li>from <code>&lt;boost/phoenix/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/core/limits.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/config/header_deprecated.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/phoenix/core/debug.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/detail/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/phoenix/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/core/limits.hpp&gt;</code></li>
@@ -46,9 +49,6 @@
       <li>from <code>&lt;boost/phoenix/bind/detail/cpp03/bind_member_function.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/core/environment.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/visit_each.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/phoenix/core/visit_each.hpp&gt;</code></li>
-    </ul>
   <h2 id="function"><a href="function.html"><em>function</em></a></h2>
     <h3><code>&lt;boost/function.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/phoenix/function/lazy_list.hpp&gt;</code></li>
@@ -57,9 +57,6 @@
   <h2 id="fusion"><a href="fusion.html"><em>fusion</em></a></h2>
     <h3><code>&lt;boost/fusion/adapted/struct/adapt_struct.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/phoenix/support/vector.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/fusion/algorithm/iteration/for_each.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/phoenix/core/visit_each.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/as_vector.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/phoenix/scope/lambda.hpp&gt;</code></li>
@@ -123,8 +120,6 @@
       <li>from <code>&lt;boost/phoenix/stl/container/container.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/phoenix/core/detail/phx2_result.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/phoenix/core/function_equal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/core/is_actor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/core/is_value.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/scope/detail/local_variable.hpp&gt;</code></li>
@@ -143,9 +138,6 @@
       <li>from <code>&lt;boost/phoenix/scope/detail/local_variable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/stl/container/detail/container.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/mpl/has_xxx.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/phoenix/core/detail/phx2_result.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/mpl/identity.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/phoenix/core/actor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/scope/detail/local_variable.hpp&gt;</code></li>
@@ -158,6 +150,7 @@
     <h3><code>&lt;boost/mpl/int.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/phoenix/core/argument.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/core/arity.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/phoenix/core/function_equal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/scope/detail/local_variable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/scope/lambda.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/scope/scoped_environment.hpp&gt;</code></li>
@@ -192,9 +185,6 @@
     <h3><code>&lt;boost/preprocessor/arithmetic/dec.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/phoenix/core/detail/cpp03/function_eval_expr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/core/detail/expression.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/preprocessor/arithmetic/inc.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/phoenix/core/detail/cpp03/function_equal.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/cat.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/phoenix/support/preprocessor/round.hpp&gt;</code></li>
@@ -261,7 +251,6 @@
       <li>from <code>&lt;boost/phoenix/support/detail/iterate_define.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/repetition/repeat_from_to.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/phoenix/core/detail/cpp03/function_equal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/object/construct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/object/new.hpp&gt;</code></li>
     </ul>
@@ -322,7 +311,6 @@
       <li>from <code>&lt;boost/phoenix/statement/try_catch.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/proto/fusion.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/phoenix/operator/comparison.hpp&gt;</code></li>
       <li>from <code>&lt;boost/phoenix/statement/switch.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/proto/generate.hpp&gt;</code></h3><ul>
@@ -353,7 +341,7 @@
       <li>from <code>&lt;boost/phoenix/statement/sequence.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/proto/proto.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/phoenix/core/debug.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/phoenix/debug.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/proto/proto_fwd.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/phoenix/core/call.hpp&gt;</code></li>

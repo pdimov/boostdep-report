@@ -60,6 +60,9 @@
       <li>from <code>&lt;boost/gil/channel.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
+    <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/image.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/concepts/color_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/premultiply.hpp&gt;</code></li>
@@ -97,51 +100,11 @@
     <h3><code>&lt;boost/mp11.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/detail/mp11.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mp11/list.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mp11/mpl.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/detail/mp11.hpp&gt;</code></li>
-    </ul>
-  <h2 id="mpl"><a href="mpl.html"><em>mpl</em></a></h2>
-    <h3><code>&lt;boost/mpl/back.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/begin.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/deref.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/end.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/insert.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/insert_range.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/list.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/logical.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/long.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/next.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/promote_integral.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/range_c.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/transform.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/vector.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/vector_c.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/extension/dynamic_image/reduce.hpp&gt;</code></li>
     </ul>
   <h2 id="numeric~conversion"><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2>
     <h3><code>&lt;boost/numeric/conversion/cast.hpp&gt;</code></h3><ul>
@@ -154,12 +117,10 @@
     <h3><code>&lt;boost/preprocessor/repetition/repeat.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/dynamic_at_c.hpp&gt;</code></li>
     </ul>
-  <h2 id="variant"><a href="variant.html"><em>variant</em></a></h2>
-    <h3><code>&lt;boost/variant.hpp&gt;</code></h3><ul>
+  <h2 id="variant2"><a href="variant2.html"><em>variant2</em></a></h2>
+    <h3><code>&lt;boost/variant2/variant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/any_image.hpp&gt;</code></li>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/any_image_view.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/variant/apply_visitor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/gil/extension/dynamic_image/apply_operation.hpp&gt;</code></li>
     </ul>
 
@@ -188,33 +149,18 @@
     <li><a href="iterator.html#detail">adds <em>detail</em></a></li>
     <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
+    <li><a href="iterator.html#mpl">adds <em>mpl</em></a></li>
     <li><a href="iterator.html#optional">adds <em>optional</em></a></li>
     <li><a href="iterator.html#smart_ptr">adds <em>smart_ptr</em></a></li>
     <li><a href="iterator.html#static_assert">adds <em>static_assert</em></a></li>
     <li><a href="iterator.html#type_traits">adds <em>type_traits</em></a></li>
     <li><a href="iterator.html#utility">adds <em>utility</em></a></li>
   </ul>
-  <h2><a href="mpl.html"><em>mpl</em></a></h2><ul>
-    <li><a href="mpl.html#predef">adds <em>predef</em></a></li>
-    <li><a href="mpl.html#static_assert">adds <em>static_assert</em></a></li>
-    <li><a href="mpl.html#type_traits">adds <em>type_traits</em></a></li>
-    <li><a href="mpl.html#utility">adds <em>utility</em></a></li>
-  </ul>
   <h2><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2><ul>
     <li><a href="numeric~conversion.html#conversion">adds <em>conversion</em></a></li>
+    <li><a href="numeric~conversion.html#mpl">adds <em>mpl</em></a></li>
     <li><a href="numeric~conversion.html#throw_exception">adds <em>throw_exception</em></a></li>
     <li><a href="numeric~conversion.html#type_traits">adds <em>type_traits</em></a></li>
-  </ul>
-  <h2><a href="variant.html"><em>variant</em></a></h2><ul>
-    <li><a href="variant.html#bind">adds <em>bind</em></a></li>
-    <li><a href="variant.html#container_hash">adds <em>container_hash</em></a></li>
-    <li><a href="variant.html#detail">adds <em>detail</em></a></li>
-    <li><a href="variant.html#move">adds <em>move</em></a></li>
-    <li><a href="variant.html#static_assert">adds <em>static_assert</em></a></li>
-    <li><a href="variant.html#throw_exception">adds <em>throw_exception</em></a></li>
-    <li><a href="variant.html#type_index">adds <em>type_index</em></a></li>
-    <li><a href="variant.html#type_traits">adds <em>type_traits</em></a></li>
-    <li><a href="variant.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="conversion.html"><em>conversion</em></a></h2><ul>
     <li><a href="conversion.html#typeof">adds <em>typeof</em></a></li>
@@ -222,6 +168,12 @@
   <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
     <li><a href="fusion.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
+  </ul>
+  <h2><a href="optional.html"><em>optional</em></a></h2><ul>
+    <li><a href="optional.html#move">adds <em>move</em></a></li>
+  </ul>
+  <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
+    <li><a href="smart_ptr.html#move">adds <em>move</em></a></li>
   </ul>
 
 
