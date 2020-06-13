@@ -85,6 +85,53 @@
 
 
 <h1 id="reverse-dependencies">Reverse dependencies for <em>winapi</em></h1>
+  <h2 id="reverse-atomic"><a href="atomic.html"><em>atomic</em></a></h2>
+    <h3><code>&lt;boost/winapi/basic_types.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/atomic/detail/wait_ops_windows.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/atomic/src/wait_ops_windows.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/condition_variable.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/atomic/detail/wait_caps_windows.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/atomic/src/wait_ops_windows.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/critical_section.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/dll.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/atomic/src/wait_ops_windows.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/get_proc_address.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/atomic/src/wait_ops_windows.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/handles.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/semaphore.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/srw_lock.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/thread.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/atomic/detail/lock_pool.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/atomic/src/wait_ops_windows.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/wait.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/wait_constants.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/atomic/detail/wait_ops_windows.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/wait_on_address.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/atomic/src/wait_ops_windows.cpp&gt;</code></li>
+    </ul>
   <h2 id="reverse-beast"><a href="beast.html"><em>beast</em></a></h2>
     <h3><code>&lt;boost/winapi/access_rights.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/impl/file_win32.ipp&gt;</code></li>
@@ -162,24 +209,100 @@
   <h2 id="reverse-filesystem"><a href="filesystem.html"><em>filesystem</em></a></h2>
     <h3><code>&lt;boost/winapi/basic_types.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/error_handling.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/bcrypt.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/directory.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/path.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/windows_file_codecvt.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/crypt.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/dll.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/error_codes.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/error_handling.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/get_last_error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/error_handling.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
     </ul>
   <h2 id="reverse-interprocess"><a href="interprocess.html"><em>interprocess</em></a></h2>
     <h3><code>&lt;boost/detail/interlocked.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/basic_types.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/directory_management.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/dll.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/error_codes.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/error_handling.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/file_management.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/file_mapping.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/get_current_process.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/get_current_process_id.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/get_current_thread_id.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/get_last_error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/get_process_times.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/handles.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/local_memory.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/mutex.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/security.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/semaphore.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/system.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/thread.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/time.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/timers.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/wait.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-log"><a href="log.html"><em>log</em></a></h2>

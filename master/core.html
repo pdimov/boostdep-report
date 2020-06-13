@@ -16,6 +16,7 @@
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/core/addressof.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/allocator_access.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/checked_delete.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/default_allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/demangle.hpp&gt;</code></li>
@@ -29,7 +30,6 @@
       <li>from <code>&lt;boost/core/lightweight_test.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/lightweight_test_trait.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/core/noinit_adaptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/noncopyable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/null_deleter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/nvp.hpp&gt;</code></li>
@@ -44,6 +44,9 @@
       <li>from <code>&lt;boost/get_pointer.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/header_deprecated.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/detail/iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/detail/no_exceptions_support.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/detail/scoped_enum_emulation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/detail/sp_typeinfo.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/no_tr1/memory.hpp&gt;</code></h3><ul>
@@ -166,6 +169,9 @@
       <li>from <code>&lt;boost/beast/core/detail/pcg.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-bimap"><a href="bimap.html"><em>bimap</em></a></h2>
+    <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/bimap/detail/bimap_core.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/bimap/relation/detail/mutant.hpp&gt;</code></li>
     </ul>
@@ -212,6 +218,10 @@
       <li>from <code>&lt;boost/chrono/io_v1/chrono_io.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-circular_buffer"><a href="circular_buffer.html"><em>circular_buffer</em></a></h2>
+    <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/circular_buffer/base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/circular_buffer/details.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/circular_buffer/base.hpp&gt;</code></li>
     </ul>
@@ -352,17 +362,17 @@
       <li>from <code>&lt;boost/dll/detail/windows/shared_library_impl.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-dynamic_bitset"><a href="dynamic_bitset.html"><em>dynamic_bitset</em></a></h2>
+    <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/dynamic_bitset/dynamic_bitset.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/dynamic_bitset/detail/dynamic_bitset.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/dynamic_bitset/dynamic_bitset.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/nvp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/dynamic_bitset/serialization.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/detail/iterator.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dynamic_bitset/dynamic_bitset.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/detail/no_exceptions_support.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dynamic_bitset/dynamic_bitset.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dynamic_bitset/dynamic_bitset.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-endian"><a href="endian.html"><em>endian</em></a></h2>
     <h3><code>&lt;boost/core/scoped_enum.hpp&gt;</code></h3><ul>
@@ -401,7 +411,7 @@
       <li>from <code>&lt;boost/filesystem/operations.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-flyweight"><a href="flyweight.html"><em>flyweight</em></a></h2>
-    <h3><code>&lt;boost/detail/no_exceptions_support.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/flyweight/detail/archive_constructed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/detail/flyweight_core.hpp&gt;</code></li>
     </ul>
@@ -428,6 +438,9 @@
       <li>from <code>&lt;boost/foreach.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-format"><a href="format.html"><em>format</em></a></h2>
+    <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/format/alt_sstream.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/format/internals.hpp&gt;</code></li>
       <li>from <code>&lt;boost/format/parsing.hpp&gt;</code></li>
@@ -680,6 +693,12 @@
   <h2 id="reverse-hana"><a href="hana.html"><em>hana</em></a></h2>
     <h3><code>&lt;boost/core/demangle.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/hana/experimental/printable.hpp&gt;</code></li>
+    </ul>
+  <h2 id="reverse-heap"><a href="heap.html"><em>heap</em></a></h2>
+    <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/heap/detail/heap_node.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/heap/detail/stable_heap.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/heap/detail/tree_iterator.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-histogram"><a href="histogram.html"><em>histogram</em></a></h2>
     <h3><code>&lt;boost/core/alloc_construct.hpp&gt;</code></h3><ul>
@@ -1011,19 +1030,14 @@
     <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/copy_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/index_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/hashed_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/random_access_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/rnk_index_ops.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/detail/iterator.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/safe_mode.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/detail/no_exceptions_support.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/archive_constructed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/copy_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/index_base.hpp&gt;</code></li>
@@ -1034,6 +1048,9 @@
       <li>from <code>&lt;boost/multi_index/random_access_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multi_index/detail/rnk_index_ops.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/archive_constructed.hpp&gt;</code></li>
@@ -1447,6 +1464,10 @@
       <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/allocate_unique.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/allocate_unique.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/default_allocator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/make_local_shared_array.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/make_shared_array.hpp&gt;</code></li>
@@ -1572,6 +1593,9 @@
     <h3><code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/detail/frame_decl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/stacktrace/frame.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/stacktrace/stacktrace.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/stacktrace.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/noncopyable.hpp&gt;</code></h3><ul>
@@ -1764,16 +1788,14 @@
       <li>from <code>&lt;boost/variant/detail/apply_visitor_delayed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/variant/detail/apply_visitor_unary.hpp&gt;</code></li>
       <li>from <code>&lt;boost/variant/detail/multivisitors_cpp11_based.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/variant/variant.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/no_exceptions_support.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/variant/variant.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/variant/get.hpp&gt;</code></li>
       <li>from <code>&lt;boost/variant/polymorphic_get.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/variant/variant.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-wave"><a href="wave.html"><em>wave</em></a></h2>
     <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>

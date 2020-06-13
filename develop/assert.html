@@ -46,6 +46,7 @@
       <li>from <code>&lt;boost/align/detail/aligned_alloc_macos.hpp&gt;</code></li>
       <li>from <code>&lt;boost/align/detail/aligned_alloc_mingw.hpp&gt;</code></li>
       <li>from <code>&lt;boost/align/detail/aligned_alloc_msvc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/align/detail/aligned_alloc_new.hpp&gt;</code></li>
       <li>from <code>&lt;boost/align/detail/aligned_alloc_posix.hpp&gt;</code></li>
       <li>from <code>&lt;boost/align/detail/aligned_alloc_sunos.hpp&gt;</code></li>
       <li>from <code>&lt;boost/align/detail/is_aligned.hpp&gt;</code></li>
@@ -60,9 +61,11 @@
     </ul>
   <h2 id="reverse-atomic"><a href="atomic.html"><em>atomic</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/atomic/detail/atomic_flag.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/atomic/detail/atomic_ref_template.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/atomic/detail/atomic_template.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/atomic_ref.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/atomic_flag_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/atomic_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/atomic_ref_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/ipc_atomic_ref.hpp&gt;</code></li>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
     </ul>
   <h2 id="reverse-beast"><a href="beast.html"><em>beast</em></a></h2>
@@ -76,10 +79,8 @@
       <li>from <code>&lt;boost/beast/core/detail/static_string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/stream_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/variant.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/handler_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/basic_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/flat_buffer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/impl/handler_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/multi_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/read_size.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/saved_handler.hpp&gt;</code></li>
@@ -395,23 +396,6 @@
       <li>from <code>&lt;boost/heap/priority_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/heap/skew_heap.hpp&gt;</code></li>
     </ul>
-  <h2 id="reverse-histogram"><a href="histogram.html"><em>histogram</em></a></h2>
-    <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/accumulators/mean.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/accumulators/weighted_mean.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/algorithm/reduce.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/axis/ostream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/axis/regular.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/axis/variable.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/fill.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/fill_n.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/large_int.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/linearize.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/optional_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/span.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
-    </ul>
   <h2 id="reverse-icl"><a href="icl.html"><em>icl</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/icl/concept/interval.hpp&gt;</code></li>
@@ -422,6 +406,7 @@
   <h2 id="reverse-integer"><a href="integer.html"><em>integer</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/integer/common_factor_rt.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/integer/integer_log2.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-interprocess"><a href="interprocess.html"><em>interprocess</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
@@ -849,6 +834,7 @@
       <li>from <code>&lt;boost/spirit/home/x3/string/detail/tst.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/numeric_utils/extract_int.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/numeric_utils/extract_real.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/support/traits/move_to.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-statechart"><a href="statechart.html"><em>statechart</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
@@ -866,6 +852,10 @@
   <h2 id="reverse-static_string"><a href="static_string.html"><em>static_string</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/static_string/config.hpp&gt;</code></li>
+    </ul>
+  <h2 id="reverse-stl_interfaces"><a href="stl_interfaces.html"><em>stl_interfaces</em></a></h2>
+    <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/stl_interfaces/sequence_container_interface.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-sync"><a href="sync.html"><em>sync</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>

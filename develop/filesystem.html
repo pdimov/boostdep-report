@@ -85,6 +85,7 @@
     <h3><code>&lt;boost/detail/bitmask.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/directory.hpp&gt;</code></li>
       <li>from <code>&lt;boost/filesystem/file_status.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/filesystem/operations.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/detail/utf8_codecvt_facet.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/detail/utf8_codecvt_facet.hpp&gt;</code></li>
@@ -106,11 +107,31 @@
       <li>from <code>&lt;boost/filesystem/path.hpp&gt;</code></li>
     </ul>
   <h2 id="predef"><a href="predef.html"><em>predef</em></a></h2>
+    <h3><code>&lt;boost/predef/library/c/cloudabi.h&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/predef/os/bsd/free.h&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/predef/os/bsd/open.h&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/predef/os/cygwin.h&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/directory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/path.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/windows_file_codecvt.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/predef/os/windows.h&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/directory.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/path.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/windows_file_codecvt.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/predef/platform.h&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
     </ul>
   <h2 id="smart_ptr"><a href="smart_ptr.html"><em>smart_ptr</em></a></h2>
     <h3><code>&lt;boost/scoped_array.hpp&gt;</code></h3><ul>
@@ -127,6 +148,9 @@
       <li>from <code>&lt;boost/filesystem/exception.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/smart_ptr/scoped_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/smart_ptr/scoped_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
     </ul>
   <h2 id="system"><a href="system.html"><em>system</em></a></h2>
@@ -164,21 +188,31 @@
   <h2 id="winapi"><a href="winapi.html"><em>winapi</em></a></h2>
     <h3><code>&lt;boost/winapi/basic_types.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/error_handling.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/bcrypt.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/directory.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/path.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/windows_file_codecvt.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/winapi/crypt.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/dll.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/error_codes.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/error_handling.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/get_last_error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/error_handling.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
     </ul>
 
 
@@ -304,10 +338,6 @@
       <li>from <code>&lt;boost/process/detail/windows/shell_path.hpp&gt;</code></li>
       <li>from <code>&lt;boost/process/environment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/process/start_dir.hpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-spirit"><a href="spirit.html"><em>spirit</em></a></h2>
-    <h3><code>&lt;boost/filesystem/path.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/spirit/home/x3/support/utility/error_reporting.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-wave"><a href="wave.html"><em>wave</em></a></h2>
     <h3><code>&lt;boost/filesystem/fstream.hpp&gt;</code></h3><ul>

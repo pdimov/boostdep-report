@@ -25,12 +25,12 @@
     </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/detail/lightweight_thread.hpp&gt;</code></li>
       <li>from <code>&lt;boost/pointer_cast.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/allocate_unique.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/bad_weak_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/lightweight_mutex.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/lightweight_thread.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/local_counted_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/local_sp_deleter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/quick_allocator.hpp&gt;</code></li>
@@ -73,6 +73,9 @@
       <li>from <code>&lt;boost/smart_ptr/intrusive_ref_counter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/make_local_shared_object.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/make_shared_object.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/owner_equal_to.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/owner_hash.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/owner_less.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/scoped_array.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/scoped_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/shared_array.hpp&gt;</code></li>
@@ -81,9 +84,41 @@
     <h3><code>&lt;boost/config/no_tr1/functional.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/intrusive_ptr.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/config/no_tr1/memory.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/smart_ptr/detail/shared_count.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/shared_ptr.hpp&gt;</code></li>
+    <h3><code>&lt;boost/config/pragma_message.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_gcc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_gcc_x86.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_nt.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_pt.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_solaris.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_spin.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_std_atomic.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_sync.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_win32.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_acc_ia64.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_aix.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_clang.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_cw_ppc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_cw_x86.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_ia64.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_mips.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_ppc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_sparc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_x86.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_nt.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_pt.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_snc_ps3.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_solaris.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_spin.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_std_atomic.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_sync.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_vacpp_ppc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_w32.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/spinlock_gcc_arm.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/spinlock_nt.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/spinlock_pt.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/spinlock_std_atomic.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/spinlock_sync.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/spinlock_w32.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/detail/shared_count.hpp&gt;</code></li>
@@ -96,6 +131,7 @@
       <li>from <code>&lt;boost/smart_ptr/shared_ptr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/detail/shared_count.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_clang.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_nt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_pt.hpp&gt;</code></li>
@@ -114,6 +150,10 @@
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/alloc_construct.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/allocate_unique.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/allocate_unique.hpp&gt;</code></li>
     </ul>

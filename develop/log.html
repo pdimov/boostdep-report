@@ -218,7 +218,10 @@
       <li>from <code>&lt;boost/log/support/spirit_qi.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/exception_handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/formatting_ostream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/optional.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/to_log.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/tuple.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/record_ordering.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/setup/filter_parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/setup/formatter_parser.hpp&gt;</code></li>
@@ -249,6 +252,7 @@
       <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/log/sources/severity_feature.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/uncaught_exceptions.hpp&gt;</code></h3><ul>
@@ -381,6 +385,12 @@
     <h3><code>&lt;boost/fusion/container/set.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/log/src/setup/default_filter_factory.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/setup/matches_relation_factory.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/fusion/include/fold.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/log/utility/manipulators/tuple.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/fusion/include/for_each.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/log/utility/manipulators/tuple.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/sequence/intrinsic/at.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/attr_output_terminal.hpp&gt;</code></li>
@@ -1037,12 +1047,15 @@
     </ul>
     <h3><code>&lt;boost/range/begin.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/expressions/formatters/char_decorator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/range.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/const_iterator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/expressions/formatters/char_decorator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/range.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/end.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/expressions/formatters/char_decorator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/range.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/iterator_range_core.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/date_time_format_parser.hpp&gt;</code></li>
@@ -1333,6 +1346,9 @@
       <li>from <code>&lt;boost/log/attributes/named_scope.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/functional/logical.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/add_value.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/optional.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/tuple.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/setup/settings.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/thread_specific.cpp&gt;</code></li>
@@ -1340,14 +1356,19 @@
     <h3><code>&lt;boost/type_traits/has_left_shift.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/is_ostream.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/has_nothrow_constructor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/log/sources/threading_models.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/attachable_sstream_buf.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/functional/in_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/functional/logical.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/tuple.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/sink_init_helpers.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/optional.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_base_and_derived.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/setup/filter_parser.hpp&gt;</code></li>
@@ -1369,6 +1390,17 @@
       <li>from <code>&lt;boost/log/utility/functional/logical.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/thread_specific.cpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/is_nothrow_move_constructible.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/log/attributes/attribute_value_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/attributes/constant.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/sources/basic_logger.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/sources/channel_feature.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/sources/exception_handler_feature.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/sources/severity_feature.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_nothrow_swappable.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/log/sources/basic_logger.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/is_pod.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/thread_specific.hpp&gt;</code></li>
     </ul>
@@ -1389,6 +1421,9 @@
       <li>from <code>&lt;boost/log/sources/record_ostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/formatting_ostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/add_value.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/optional.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/tuple.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_signed.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/log/src/thread_specific.cpp&gt;</code></li>
@@ -1587,7 +1622,6 @@
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
     <li><a href="date_time.html#algorithm">adds <em>algorithm</em></a></li>
     <li><a href="date_time.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
-    <li><a href="date_time.html#serialization">adds <em>serialization</em></a></li>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
   </ul>
   <h2><a href="exception.html"><em>exception</em></a></h2><ul>
@@ -1670,7 +1704,6 @@
     <li><a href="spirit.html#foreach">adds <em>foreach</em></a></li>
     <li><a href="spirit.html#function">adds <em>function</em></a></li>
     <li><a href="spirit.html#integer">adds <em>integer</em></a></li>
-    <li><a href="spirit.html#iostreams">adds <em>iostreams</em></a></li>
     <li><a href="spirit.html#math">adds <em>math</em></a></li>
     <li><a href="spirit.html#pool">adds <em>pool</em></a></li>
     <li><a href="spirit.html#typeof">adds <em>typeof</em></a></li>

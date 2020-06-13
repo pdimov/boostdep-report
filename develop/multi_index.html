@@ -32,6 +32,7 @@
       <li>from <code>&lt;boost/multi_index/detail/bucket_array.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/cons_stdtuple.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/copy_map.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/define_if_constexpr_macro.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/duplicates_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/has_tag.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/hash_index_args.hpp&gt;</code></li>
@@ -48,6 +49,7 @@
       <li>from <code>&lt;boost/multi_index/detail/is_transparent.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/iter_adaptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/no_duplicate_tags.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/node_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_args.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
@@ -90,6 +92,7 @@
       <li>from <code>&lt;boost/multi_index/detail/base_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/index_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/is_function.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/node_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/promotes_arg.hpp&gt;</code></li>
@@ -116,19 +119,14 @@
     <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/copy_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/index_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/hashed_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/random_access_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/rnk_index_ops.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/detail/iterator.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/safe_mode.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/detail/no_exceptions_support.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/archive_constructed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/copy_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/index_base.hpp&gt;</code></li>
@@ -139,6 +137,9 @@
       <li>from <code>&lt;boost/multi_index/random_access_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multi_index/detail/rnk_index_ops.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/archive_constructed.hpp&gt;</code></li>
@@ -186,7 +187,7 @@
     <h3><code>&lt;boost/move/core.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/allocator_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/copy_map.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/index_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/hashed_index.hpp&gt;</code></li>
@@ -199,7 +200,11 @@
     </ul>
     <h3><code>&lt;boost/move/utility_core.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/allocator_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/copy_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/index_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/hashed_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/random_access_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
@@ -466,11 +471,13 @@
     <h3><code>&lt;boost/type_traits/aligned_storage.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/archive_constructed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/index_node_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/seq_index_ops.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/alignment_of.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/archive_constructed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/index_node_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_node.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/seq_index_ops.hpp&gt;</code></li>
     </ul>
@@ -503,6 +510,9 @@
       <li>from <code>&lt;boost/multi_index/identity.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/mem_fun.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/member.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_empty.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multi_index/detail/allocator_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_final.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/is_transparent.hpp&gt;</code></li>
@@ -611,8 +621,6 @@
   <h2><a href="spirit.html"><em>spirit</em></a></h2><ul>
     <li><a href="spirit.html#(unknown)">adds <em>(unknown)</em></a></li>
     <li><a href="spirit.html#endian">adds <em>endian</em></a></li>
-    <li><a href="spirit.html#filesystem">adds <em>filesystem</em></a></li>
-    <li><a href="spirit.html#iostreams">adds <em>iostreams</em></a></li>
     <li><a href="spirit.html#math">adds <em>math</em></a></li>
     <li><a href="spirit.html#phoenix">adds <em>phoenix</em></a></li>
     <li><a href="spirit.html#pool">adds <em>pool</em></a></li>
@@ -629,13 +637,6 @@
   </ul>
   <h2><a href="container.html"><em>container</em></a></h2><ul>
     <li><a href="container.html#intrusive">adds <em>intrusive</em></a></li>
-  </ul>
-  <h2><a href="filesystem.html"><em>filesystem</em></a></h2><ul>
-    <li><a href="filesystem.html#system">adds <em>system</em></a></li>
-    <li><a href="filesystem.html#winapi">adds <em>winapi</em></a></li>
-  </ul>
-  <h2><a href="iostreams.html"><em>iostreams</em></a></h2><ul>
-    <li><a href="iostreams.html#random">adds <em>random</em></a></li>
   </ul>
   <h2><a href="math.html"><em>math</em></a></h2><ul>
     <li><a href="math.html#algorithm">adds <em>algorithm</em></a></li>
