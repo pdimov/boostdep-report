@@ -9,6 +9,9 @@
 
 <h1 id="primary-dependencies">Primary dependencies for <em>beast</em></h1>
   <h2 id="asio"><a href="asio.html"><em>asio</em></a></h2>
+    <h3><code>&lt;boost/asio/any_io_executor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/_experimental/test/impl/stream.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/associated_allocator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/bind_default_executor.hpp&gt;</code></li>
@@ -108,12 +111,17 @@
       <li>from <code>&lt;boost/beast/websocket/impl/write.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/dispatch.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/_experimental/test/impl/stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/bind_default_executor.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/_experimental/test/stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/stream.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/execution.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/detail/get_io_context.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/work_guard.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/execution_context.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/service_base.hpp&gt;</code></li>
@@ -127,7 +135,7 @@
     </ul>
     <h3><code>&lt;boost/asio/executor_work_guard.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/_experimental/test/stream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/work_guard.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/saved_handler.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/handler_alloc_hook.hpp&gt;</code></h3><ul>
@@ -161,6 +169,7 @@
       <li>from <code>&lt;boost/beast/core/detail/remap_post_to_defer.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/post.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/_experimental/test/impl/stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/_experimental/test/stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.hpp&gt;</code></li>
@@ -350,6 +359,7 @@
       <li>from <code>&lt;boost/beast/core/buffers_adaptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/buffers_suffix.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/buffer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/work_guard.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/string_param.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/basic_dynamic_body.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/basic_file_body.hpp&gt;</code></li>
@@ -557,7 +567,6 @@
   <h2><a href="coroutine.html"><em>coroutine</em></a></h2><ul>
     <li><a href="coroutine.html#context">adds <em>context</em></a></li>
     <li><a href="coroutine.html#exception">adds <em>exception</em></a></li>
-    <li><a href="coroutine.html#range">adds <em>range</em></a></li>
     <li><a href="coroutine.html#thread">adds <em>thread</em></a></li>
   </ul>
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>

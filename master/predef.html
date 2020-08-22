@@ -14,6 +14,13 @@
 
 
 <h1 id="reverse-dependencies">Reverse dependencies for <em>predef</em></h1>
+  <h2 id="reverse-atomic"><a href="atomic.html"><em>atomic</em></a></h2>
+    <h3><code>&lt;boost/predef/os/windows.h&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/predef/platform.h&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
+    </ul>
   <h2 id="reverse-chrono"><a href="chrono.html"><em>chrono</em></a></h2>
     <h3><code>&lt;boost/predef.h&gt;</code></h3><ul>
       <li>from <code>&lt;boost/chrono/config.hpp&gt;</code></li>
@@ -59,11 +66,17 @@
       <li>from <code>&lt;boost/fiber/fiber.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-filesystem"><a href="filesystem.html"><em>filesystem</em></a></h2>
-    <h3><code>&lt;boost/predef/os/windows.h&gt;</code></h3><ul>
-      <li>from <code>&lt;libs/filesystem/src/directory.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/filesystem/src/path.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/filesystem/src/windows_file_codecvt.cpp&gt;</code></li>
+    <h3><code>&lt;boost/predef/library/c/cloudabi.h&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/predef/os/bsd/free.h&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/predef/os/bsd/open.h&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/predef/platform.h&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
     </ul>
   <h2 id="reverse-lockfree"><a href="lockfree.html"><em>lockfree</em></a></h2>
     <h3><code>&lt;boost/predef.h&gt;</code></h3><ul>

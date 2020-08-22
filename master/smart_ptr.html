@@ -39,9 +39,8 @@
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_acc_ia64.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_aix.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_clang.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_cw_ppc.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_cw_x86.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_ia64.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_mips.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_ppc.hpp&gt;</code></li>
@@ -50,7 +49,6 @@
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_nt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_pt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_snc_ps3.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_solaris.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_spin.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_std_atomic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_sync.hpp&gt;</code></li>
@@ -62,6 +60,8 @@
       <li>from <code>&lt;boost/smart_ptr/detail/sp_interlocked.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_noexcept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_nullptr_t.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_thread_sleep.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_thread_yield.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_typeinfo_.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/spinlock.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/spinlock_pool.hpp&gt;</code></li>
@@ -86,19 +86,18 @@
     </ul>
     <h3><code>&lt;boost/config/pragma_message.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_gcc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_gcc_atomic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_gcc_x86.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_nt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_pt.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_solaris.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_spin.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_std_atomic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_sync.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_win32.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_acc_ia64.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_aix.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_clang.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_cw_ppc.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_cw_x86.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_ia64.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_mips.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_ppc.hpp&gt;</code></li>
@@ -107,13 +106,16 @@
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_nt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_pt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_snc_ps3.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_solaris.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_spin.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_std_atomic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_sync.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_vacpp_ppc.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_w32.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_obsolete.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_thread_sleep.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_thread_yield.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/spinlock_gcc_arm.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/spinlock_gcc_atomic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/spinlock_nt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/spinlock_pt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/spinlock_std_atomic.hpp&gt;</code></li>
@@ -131,8 +133,10 @@
       <li>from <code>&lt;boost/smart_ptr/shared_ptr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_gcc_atomic.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_sync.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/shared_count.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_clang.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_nt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_pt.hpp&gt;</code></li>
     </ul>
@@ -257,6 +261,9 @@
     <h3><code>&lt;boost/detail/atomic_count.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/asio/detail/atomic_count.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/make_shared.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/asio/detail/memory.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/shared_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/asio/detail/memory.hpp&gt;</code></li>
     </ul>
@@ -335,6 +342,9 @@
       <li>from <code>&lt;boost/dll/import_mangled.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-exception"><a href="exception.html"><em>exception</em></a></h2>
+    <h3><code>&lt;boost/make_shared.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/exception/detail/exception_ptr.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/shared_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/exception/detail/exception_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/exception/detail/shared_ptr.hpp&gt;</code></li>
@@ -368,6 +378,9 @@
       <li>from <code>&lt;boost/filesystem/exception.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/smart_ptr/scoped_array.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/smart_ptr/scoped_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
     </ul>
   <h2 id="reverse-flyweight"><a href="flyweight.html"><em>flyweight</em></a></h2>
@@ -569,10 +582,6 @@
       <li>from <code>&lt;boost/multiprecision/float128.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/tommath.hpp&gt;</code></li>
     </ul>
-  <h2 id="reverse-nowide"><a href="nowide.html"><em>nowide</em></a></h2>
-    <h3><code>&lt;boost/scoped_ptr.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/nowide/iostream.hpp&gt;</code></li>
-    </ul>
   <h2 id="reverse-numeric~ublas"><a href="numeric~ublas.html"><em>numeric~ublas</em></a></h2>
     <h3><code>&lt;boost/shared_array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/numeric/ublas/storage.hpp&gt;</code></li>
@@ -593,13 +602,15 @@
       <li>from <code>&lt;boost/property_map/parallel/distributed_property_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/property_map/parallel/global_index_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/property_map/parallel/vector_property_map.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/property_map/vector_property_map.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/smart_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/property_map/dynamic_property_map.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/smart_ptr/shared_array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/property_map/shared_array_property_map.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/smart_ptr/shared_ptr.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/property_map/vector_property_map.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/weak_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/property_map/parallel/distributed_property_map.hpp&gt;</code></li>

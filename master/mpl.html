@@ -1907,6 +1907,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/relate_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/single_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sub_range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/tupled_output.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/length.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/interior_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/reverse_dispatch.hpp&gt;</code></li>
@@ -4211,7 +4212,6 @@
     <h3><code>&lt;boost/mpl/eval_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/range/detail/collection_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/range/detail/collection_traits_detail.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/range/detail/remove_extent.hpp&gt;</code></li>
       <li>from <code>&lt;boost/range/has_range_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/range/iterator.hpp&gt;</code></li>
     </ul>
@@ -4226,7 +4226,6 @@
       <li>from <code>&lt;boost/range/atl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/range/detail/collection_traits_detail.hpp&gt;</code></li>
       <li>from <code>&lt;boost/range/detail/microsoft.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/range/detail/remove_extent.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/range/adaptor/formatted.hpp&gt;</code></li>
@@ -4247,9 +4246,6 @@
     <h3><code>&lt;boost/mpl/or.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/range/detail/any_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/range/iterator_range_core.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/transform.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/range/detail/combine_cxx03.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/vector.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/range/detail/collection_traits_detail.hpp&gt;</code></li>
@@ -4670,10 +4666,6 @@
     <h3><code>&lt;boost/mpl/copy.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/repository/home/qi/operator/keywords.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/mpl/copy_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/spirit/home/x3/operator/detail/alternative.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/mpl/count_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/is_substitute.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/qi/operator/keywords.hpp&gt;</code></li>
@@ -4704,8 +4696,6 @@
       <li>from <code>&lt;boost/spirit/home/support/detail/make_cons.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/nonterminal/expand_arg.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/nonterminal/extract_param.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/operator/detail/alternative.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/attribute_category.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/filter_view.hpp&gt;</code></h3><ul>
@@ -4751,7 +4741,6 @@
       <li>from <code>&lt;boost/spirit/home/support/nonterminal/extract_param.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/string_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/utree/utree_traits.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/context.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/attribute_category.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/attribute_of.hpp&gt;</code></li>
@@ -4797,10 +4786,6 @@
       <li>from <code>&lt;boost/spirit/home/lex/lexer/lexertl/position_token.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/lex/lexer/lexertl/token.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/mpl/insert_range.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/spirit/home/x3/operator/detail/alternative.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/mpl/int.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/classic/meta/impl/fundamental.ipp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/karma/generator.hpp&gt;</code></li>
@@ -4836,8 +4821,6 @@
       <li>from <code>&lt;boost/spirit/home/support/handles_container.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/has_semantic_action.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/core/skip_over.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/operator/detail/alternative.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/has_attribute.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/or.hpp&gt;</code></h3><ul>
@@ -4896,8 +4879,6 @@
       <li>from <code>&lt;boost/spirit/home/support/common_terminals.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/as_variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/nonterminal/locals.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/operator/detail/alternative.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/x3/operator/detail/sequence.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/karma/nonterminal/subrule.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/qi/nonterminal/subrule.hpp&gt;</code></li>
     </ul>

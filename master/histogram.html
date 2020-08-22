@@ -8,30 +8,11 @@
 
 
 <h1 id="primary-dependencies">Primary dependencies for <em>histogram</em></h1>
-  <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
-    <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/accumulators/mean.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/accumulators/weighted_mean.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/algorithm/reduce.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/axis/ostream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/axis/regular.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/axis/variable.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/fill.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/fill_n.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/large_int.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/linearize.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/optional_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/span.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
-    </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/linearize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/try_cast.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/indexed.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/detail/fill.hpp&gt;</code></li>
@@ -40,18 +21,12 @@
     <h3><code>&lt;boost/core/alloc_construct.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/core/demangle.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/detail/try_cast.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/axis/metadata_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/mutex_base.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/detail/counting_streambuf.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/histogram/axis/traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/nvp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/accumulators/count.hpp&gt;</code></li>
@@ -60,6 +35,7 @@
       <li>from <code>&lt;boost/histogram/accumulators/thread_safe.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/accumulators/weighted_mean.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/accumulators/weighted_sum.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/axis/boolean.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/axis/category.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/axis/integer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/axis/regular.hpp&gt;</code></li>
@@ -87,11 +63,10 @@
       <li>from <code>&lt;boost/histogram/axis/traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/axis/variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/argument_traits.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/at.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/detect.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/fill.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/fill_n.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/index_translator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/large_int.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/operators.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/variant_proxy.hpp&gt;</code></li>
@@ -106,12 +81,15 @@
       <li>from <code>&lt;boost/histogram/detail/large_int.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/integer_sequence.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/index_translator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/tuple_slice.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/multi_index.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/integral.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/detail/argument_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/detect.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/fill.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/try_cast.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/histogram.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/list.hpp&gt;</code></h3><ul>
@@ -121,6 +99,7 @@
       <li>from <code>&lt;boost/histogram/detail/argument_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/common_type.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/detect.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/large_int.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/operators.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/variant_proxy.hpp&gt;</code></li>
@@ -144,7 +123,6 @@
       <li>from <code>&lt;boost/histogram/detail/array_wrapper.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/common_type.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/detail/detect.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/fill.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/fill_n.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/large_int.hpp&gt;</code></li>
@@ -182,9 +160,11 @@
       <li>from <code>&lt;boost/histogram/axis/variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/axes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/fill_n.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/reduce_command.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/try_cast.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/detail/variant_proxy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/histogram.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/multi_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/storage_adaptor.hpp&gt;</code></li>
     </ul>
   <h2 id="variant2"><a href="variant2.html"><em>variant2</em></a></h2>
@@ -196,8 +176,12 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>histogram</em></h1>
+  <h2><a href="core.html"><em>core</em></a></h2><ul>
+    <li><a href="core.html#assert">adds <em>assert</em></a></li>
+  </ul>
   <h2><a href="serialization.html"><em>serialization</em></a></h2><ul>
     <li><a href="serialization.html#array">adds <em>array</em></a></li>
+    <li><a href="serialization.html#assert">adds <em>assert</em></a></li>
     <li><a href="serialization.html#detail">adds <em>detail</em></a></li>
     <li><a href="serialization.html#function">adds <em>function</em></a></li>
     <li><a href="serialization.html#integer">adds <em>integer</em></a></li>
@@ -216,6 +200,9 @@
     <li><a href="serialization.html#utility">adds <em>utility</em></a></li>
     <li><a href="serialization.html#variant">adds <em>variant</em></a></li>
   </ul>
+  <h2><a href="throw_exception.html"><em>throw_exception</em></a></h2><ul>
+    <li><a href="throw_exception.html#assert">adds <em>assert</em></a></li>
+  </ul>
   <h2><a href="function.html"><em>function</em></a></h2><ul>
     <li><a href="function.html#bind">adds <em>bind</em></a></li>
     <li><a href="function.html#type_index">adds <em>type_index</em></a></li>
@@ -230,11 +217,9 @@
   <h2><a href="spirit.html"><em>spirit</em></a></h2><ul>
     <li><a href="spirit.html#(unknown)">adds <em>(unknown)</em></a></li>
     <li><a href="spirit.html#endian">adds <em>endian</em></a></li>
-    <li><a href="spirit.html#filesystem">adds <em>filesystem</em></a></li>
     <li><a href="spirit.html#foreach">adds <em>foreach</em></a></li>
     <li><a href="spirit.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="spirit.html#fusion">adds <em>fusion</em></a></li>
-    <li><a href="spirit.html#iostreams">adds <em>iostreams</em></a></li>
     <li><a href="spirit.html#math">adds <em>math</em></a></li>
     <li><a href="spirit.html#phoenix">adds <em>phoenix</em></a></li>
     <li><a href="spirit.html#pool">adds <em>pool</em></a></li>
@@ -259,14 +244,6 @@
   </ul>
   <h2><a href="container.html"><em>container</em></a></h2><ul>
     <li><a href="container.html#intrusive">adds <em>intrusive</em></a></li>
-  </ul>
-  <h2><a href="filesystem.html"><em>filesystem</em></a></h2><ul>
-    <li><a href="filesystem.html#system">adds <em>system</em></a></li>
-    <li><a href="filesystem.html#winapi">adds <em>winapi</em></a></li>
-  </ul>
-  <h2><a href="iostreams.html"><em>iostreams</em></a></h2><ul>
-    <li><a href="iostreams.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
-    <li><a href="iostreams.html#random">adds <em>random</em></a></li>
   </ul>
   <h2><a href="math.html"><em>math</em></a></h2><ul>
     <li><a href="math.html#atomic">adds <em>atomic</em></a></li>
@@ -295,13 +272,6 @@
   </ul>
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
-  </ul>
-  <h2><a href="random.html"><em>random</em></a></h2><ul>
-    <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
-    <li><a href="random.html#multiprecision">adds <em>multiprecision</em></a></li>
-  </ul>
-  <h2><a href="multiprecision.html"><em>multiprecision</em></a></h2><ul>
-    <li><a href="multiprecision.html#rational">adds <em>rational</em></a></li>
   </ul>
   <h2><a href="ratio.html"><em>ratio</em></a></h2><ul>
     <li><a href="ratio.html#rational">adds <em>rational</em></a></li>

@@ -20,6 +20,7 @@
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/config.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/header.hpp&gt;</code></li>
       <li>from <code>&lt;boost/memory_order.hpp&gt;</code></li>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
     </ul>
@@ -31,16 +32,22 @@
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/atomic.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/core_arch_ops_gcc_aarch32.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/core_arch_ops_gcc_aarch64.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/core_arch_ops_gcc_arm.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/core_arch_ops_gcc_x86.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/core_arch_ops_msvc_x86.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/extra_ops_gcc_aarch32.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/extra_ops_gcc_aarch64.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/detail/extra_ops_gcc_arm.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/detail/extra_ops_gcc_x86.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/fence_arch_ops_gcc_aarch32.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/fence_arch_ops_gcc_arm.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/fence_arch_ops_msvc_x86.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/fence_ops_windows.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/detail/int_sizes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/detail/intptr.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/atomic/detail/ops_gcc_arm.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/detail/ops_gcc_arm_common.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/atomic/detail/ops_gcc_atomic.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/atomic/detail/ops_gcc_x86.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/atomic/detail/ops_gcc_x86_dcas.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/atomic/detail/ops_msvc_x86.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/detail/storage_traits.hpp&gt;</code></li>
     </ul>
   <h2 id="predef"><a href="predef.html"><em>predef</em></a></h2>
@@ -61,10 +68,10 @@
     <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/atomic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/atomic_ref.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/core_operations_emulated.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/detail/extra_fp_ops_emulated.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/detail/extra_ops_emulated.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/detail/fp_ops_emulated.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/atomic/detail/ops_emulated.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/detail/wait_ops_emulated.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/detail/wait_ops_windows.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/ipc_atomic.hpp&gt;</code></li>
