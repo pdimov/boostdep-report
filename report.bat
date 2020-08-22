@@ -24,4 +24,4 @@ rd /s/q temp
 git add master
 git add develop
 git commit -m "Update report"
-git push
+REM git push
