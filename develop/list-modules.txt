@@ -57,7 +57,9 @@ intrusive
 io
 iostreams
 iterator
+json
 lambda
+leaf
 lexical_cast
 local_function
 locale
@@ -83,6 +85,7 @@ optional
 outcome
 parameter
 parameter_python
+pfr
 phoenix
 poly_collection
 polygon
