@@ -8,6 +8,10 @@
 
 
 <h1 id="primary-dependencies">Primary dependencies for <em>math</em></h1>
+  <h2 id="algorithm"><a href="algorithm.html"><em>algorithm</em></a></h2>
+    <h3><code>&lt;boost/algorithm/string/predicate.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/math/tools/ulps_plot.hpp&gt;</code></li>
+    </ul>
   <h2 id="array"><a href="array.html"><em>array</em></a></h2>
     <h3><code>&lt;boost/array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/special_functions/detail/hypergeometric_1F1_scaled_series.hpp&gt;</code></li>
@@ -192,6 +196,8 @@
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/demangle.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/interpolators/detail/barycentric_rational_detail.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/tools/centered_continued_fraction.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/tools/simple_continued_fraction.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/cstdfloat/cstdfloat_cmath.hpp&gt;</code></li>
@@ -238,7 +244,6 @@
       <li>from <code>&lt;boost/math/bindings/e_float.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/bindings/mpfr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/bindings/mpreal.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/math/constants/constants.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/cstdfloat/cstdfloat_iostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/interpolators/detail/barycentric_rational_detail.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/quadrature/detail/tanh_sinh_constants.hpp&gt;</code></li>
@@ -345,6 +350,10 @@
     <h3><code>&lt;boost/predef/other/endian.h&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/special_functions/detail/fp_traits.hpp&gt;</code></li>
     </ul>
+  <h2 id="random"><a href="random.html"><em>random</em></a></h2>
+    <h3><code>&lt;boost/random/uniform_real_distribution.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/math/tools/ulps_plot.hpp&gt;</code></li>
+    </ul>
   <h2 id="range"><a href="range.html"><em>range</em></a></h2>
     <h3><code>&lt;boost/range/begin.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/distributions/hyperexponential.hpp&gt;</code></li>
@@ -367,6 +376,7 @@
     </ul>
   <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
     <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/math/constants/calculate_constants.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/cstdfloat/cstdfloat_cmath.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/cstdfloat/cstdfloat_iostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/cstdfloat/cstdfloat_types.hpp&gt;</code></li>
@@ -452,6 +462,7 @@
       <li>from <code>&lt;boost/math/distributions/geometric.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/distributions/negative_binomial.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/lambert_w.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/special_functions/next.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/promotion.hpp&gt;</code></li>
     </ul>
@@ -465,6 +476,7 @@
       <li>from <code>&lt;boost/math/distributions/geometric.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/distributions/negative_binomial.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/policies/policy.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/math/special_functions/next.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/tools/promotion.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
@@ -476,6 +488,14 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>math</em></h1>
+  <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
+    <li><a href="algorithm.html#bind">adds <em>bind</em></a></li>
+    <li><a href="algorithm.html#exception">adds <em>exception</em></a></li>
+    <li><a href="algorithm.html#function">adds <em>function</em></a></li>
+    <li><a href="algorithm.html#iterator">adds <em>iterator</em></a></li>
+    <li><a href="algorithm.html#regex">adds <em>regex</em></a></li>
+    <li><a href="algorithm.html#unordered">adds <em>unordered</em></a></li>
+  </ul>
   <h2><a href="atomic.html"><em>atomic</em></a></h2><ul>
     <li><a href="atomic.html#align">adds <em>align</em></a></li>
     <li><a href="atomic.html#preprocessor">adds <em>preprocessor</em></a></li>
@@ -508,6 +528,13 @@
     <li><a href="mpl.html#preprocessor">adds <em>preprocessor</em></a></li>
     <li><a href="mpl.html#utility">adds <em>utility</em></a></li>
   </ul>
+  <h2><a href="random.html"><em>random</em></a></h2><ul>
+    <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
+    <li><a href="random.html#io">adds <em>io</em></a></li>
+    <li><a href="random.html#multiprecision">adds <em>multiprecision</em></a></li>
+    <li><a href="random.html#system">adds <em>system</em></a></li>
+    <li><a href="random.html#utility">adds <em>utility</em></a></li>
+  </ul>
   <h2><a href="range.html"><em>range</em></a></h2><ul>
     <li><a href="range.html#container_hash">adds <em>container_hash</em></a></li>
     <li><a href="range.html#iterator">adds <em>iterator</em></a></li>
@@ -523,14 +550,17 @@
   <h2><a href="container.html"><em>container</em></a></h2><ul>
     <li><a href="container.html#intrusive">adds <em>intrusive</em></a></li>
   </ul>
+  <h2><a href="function.html"><em>function</em></a></h2><ul>
+    <li><a href="function.html#type_index">adds <em>type_index</em></a></li>
+  </ul>
   <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
     <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
   </ul>
+  <h2><a href="multiprecision.html"><em>multiprecision</em></a></h2><ul>
+    <li><a href="multiprecision.html#rational">adds <em>rational</em></a></li>
+  </ul>
   <h2><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2><ul>
     <li><a href="numeric~conversion.html#conversion">adds <em>conversion</em></a></li>
-  </ul>
-  <h2><a href="utility.html"><em>utility</em></a></h2><ul>
-    <li><a href="utility.html#io">adds <em>io</em></a></li>
   </ul>
 
 
