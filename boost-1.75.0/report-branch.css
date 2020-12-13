@@ -1,0 +1,3 @@
+@import '../report.css';
+.report-revision::after { content: 'HEAD-b7b1371'; }
+.report-timestamp::after { content: '13.12.2020 20:10:32.74'; }
