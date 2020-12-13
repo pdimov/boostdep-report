@@ -63,13 +63,10 @@
       <li>from <code>&lt;boost/graph/two_graphs_common_spanning_trees.hpp&gt;</code></li>
     </ul>
   <h2 id="bind"><a href="bind.html"><em>bind</em></a></h2>
-    <h3><code>&lt;boost/bind.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/bipartite.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/graph/detail/sparse_ordering.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/graph/grid_graph.hpp&gt;</code></li>
+    <h3><code>&lt;boost/bind/bind.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/howard_cycle_ratio.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/king_ordering.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/transitive_closure.hpp&gt;</code></li>
-      <li>from <code>&lt;libs/graph/src/read_graphviz_new.cpp&gt;</code></li>
     </ul>
   <h2 id="concept_check"><a href="concept_check.html"><em>concept_check</em></a></h2>
     <h3><code>&lt;boost/concept/assert.hpp&gt;</code></h3><ul>
@@ -267,11 +264,6 @@
     </ul>
     <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/named_function_params.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/detail/iterator.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/detail/algorithm.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/graph/adjacency_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/graph/incremental_components.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/depth_first_search.hpp&gt;</code></li>
@@ -741,7 +733,6 @@
       <li>from <code>&lt;boost/graph/r_c_shortest_paths.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/make_shared.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/incremental_components.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/maximum_weighted_matching.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/mcgregor_common_subgraphs.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/r_c_shortest_paths.hpp&gt;</code></li>
@@ -767,6 +758,9 @@
     <h3><code>&lt;boost/smart_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/dijkstra_shortest_paths.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/isomorphism.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/smart_ptr/make_shared.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/graph/incremental_components.hpp&gt;</code></li>
     </ul>
   <h2 id="spirit"><a href="spirit.html"><em>spirit</em></a></h2>
     <h3><code>&lt;boost/spirit/include/classic_actor.hpp&gt;</code></h3><ul>
@@ -849,8 +843,11 @@
       <li>from <code>&lt;boost/graph/graph_utility.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/graphviz.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/hawick_circuits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/howard_cycle_ratio.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/incremental_components.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/is_kuratowski_subgraph.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/is_straight_line_drawing.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/king_ordering.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/make_biconnected_planar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/make_connected.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/make_maximal_planar.hpp&gt;</code></li>
@@ -1009,6 +1006,9 @@
     <li><a href="math.html#mp11">adds <em>mp11</em></a></li>
     <li><a href="math.html#predef">adds <em>predef</em></a></li>
   </ul>
+  <h2><a href="move.html"><em>move</em></a></h2><ul>
+    <li><a href="move.html#winapi">adds <em>winapi</em></a></li>
+  </ul>
   <h2><a href="mpl.html"><em>mpl</em></a></h2><ul>
     <li><a href="mpl.html#predef">adds <em>predef</em></a></li>
   </ul>
@@ -1030,9 +1030,6 @@
     <li><a href="random.html#io">adds <em>io</em></a></li>
     <li><a href="random.html#multiprecision">adds <em>multiprecision</em></a></li>
     <li><a href="random.html#system">adds <em>system</em></a></li>
-  </ul>
-  <h2><a href="range.html"><em>range</em></a></h2><ul>
-    <li><a href="range.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
   </ul>
   <h2><a href="regex.html"><em>regex</em></a></h2><ul>
     <li><a href="regex.html#predef">adds <em>predef</em></a></li>
@@ -1073,7 +1070,6 @@
   </ul>
   <h2><a href="atomic.html"><em>atomic</em></a></h2><ul>
     <li><a href="atomic.html#align">adds <em>align</em></a></li>
-    <li><a href="atomic.html#winapi">adds <em>winapi</em></a></li>
   </ul>
   <h2><a href="container.html"><em>container</em></a></h2><ul>
     <li><a href="container.html#intrusive">adds <em>intrusive</em></a></li>
@@ -1084,17 +1080,10 @@
   <h2><a href="multiprecision.html"><em>multiprecision</em></a></h2><ul>
     <li><a href="multiprecision.html#rational">adds <em>rational</em></a></li>
   </ul>
-  <h2><a href="pool.html"><em>pool</em></a></h2><ul>
-    <li><a href="pool.html#winapi">adds <em>winapi</em></a></li>
-  </ul>
-  <h2><a href="system.html"><em>system</em></a></h2><ul>
-    <li><a href="system.html#winapi">adds <em>winapi</em></a></li>
-  </ul>
   <h2><a href="thread.html"><em>thread</em></a></h2><ul>
     <li><a href="thread.html#chrono">adds <em>chrono</em></a></li>
     <li><a href="thread.html#date_time">adds <em>date_time</em></a></li>
     <li><a href="thread.html#intrusive">adds <em>intrusive</em></a></li>
-    <li><a href="thread.html#winapi">adds <em>winapi</em></a></li>
   </ul>
   <h2><a href="chrono.html"><em>chrono</em></a></h2><ul>
     <li><a href="chrono.html#ratio">adds <em>ratio</em></a></li>
