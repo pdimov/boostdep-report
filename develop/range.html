@@ -835,6 +835,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/get_piece_turns.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/calculate_sum.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/closest_feature/point_to_range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/convex_hull/graham_andrew.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/counting.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/linear_areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/multipoint_geometry.hpp&gt;</code></li>
@@ -930,7 +931,6 @@
       <li>from <code>&lt;boost/geometry/iterators/segment_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/predicate_based_interrupt_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/strategies/agnostic/hull_graham_andrew.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/simplify_douglas_peucker.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/cartesian/envelope.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/cartesian/envelope_multipoint.hpp&gt;</code></li>
@@ -958,6 +958,7 @@
     </ul>
     <h3><code>&lt;boost/range/empty.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffered_piece_collection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/convex_hull/graham_andrew.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/range_of_boxes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_simple/areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_simple/linear.hpp&gt;</code></li>
@@ -969,7 +970,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/partition.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/point_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/is_empty.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/strategies/agnostic/hull_graham_andrew.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/spherical/envelope_multipoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
     </ul>
@@ -985,6 +985,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/get_piece_turns.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/calculate_sum.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/closest_feature/point_to_range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/convex_hull/graham_andrew.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/counting.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/linear_areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/multipoint_geometry.hpp&gt;</code></li>
@@ -1078,7 +1079,6 @@
       <li>from <code>&lt;boost/geometry/iterators/segment_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/predicate_based_interrupt_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/strategies/agnostic/hull_graham_andrew.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/agnostic/simplify_douglas_peucker.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/cartesian/envelope.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/cartesian/envelope_multipoint.hpp&gt;</code></li>
@@ -1130,6 +1130,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffered_piece_collection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffered_ring.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/closest_feature/point_to_range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/convex_hull/graham_andrew.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/multipoint_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/multipoint_to_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/point_to_geometry.hpp&gt;</code></li>
@@ -1185,7 +1186,6 @@
       <li>from <code>&lt;boost/geometry/iterators/ever_circling_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/disjoint_interrupt_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/strategies/agnostic/hull_graham_andrew.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/spherical/envelope_multipoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
     </ul>
@@ -1379,16 +1379,6 @@
     </ul>
     <h3><code>&lt;boost/range/value_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/expressions/formatters/char_decorator.hpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-math"><a href="math.html"><em>math</em></a></h2>
-    <h3><code>&lt;boost/range/begin.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/math/distributions/hyperexponential.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/range/end.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/math/distributions/hyperexponential.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/range/size.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/math/distributions/hyperexponential.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-numeric~odeint"><a href="numeric~odeint.html"><em>numeric~odeint</em></a></h2>
     <h3><code>&lt;boost/range.hpp&gt;</code></h3><ul>

@@ -90,11 +90,13 @@
     <h3><code>&lt;boost/atomic/atomic.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/counter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/detail/event.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/detail/threadsafe_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/async_frontend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/basic_sink_frontend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/unbounded_fifo_queue.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/threadsafe_queue.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
@@ -121,6 +123,7 @@
       <li>from <code>&lt;boost/log/sinks/unbounded_fifo_queue.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/event.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/threadsafe_queue.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
@@ -1329,8 +1332,10 @@
     </ul>
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
     <h3><code>&lt;boost/aligned_storage.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/log/detail/threadsafe_queue.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/thread_id.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/aligned_storage.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/log/detail/threadsafe_queue.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/alignment_of.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/threadsafe_queue.hpp&gt;</code></li>
@@ -1482,9 +1487,6 @@
       <li>from <code>&lt;boost/log/expressions/predicates/channel_severity_filter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/add_value.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/type_traits/type_with_alignment.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/log/detail/threadsafe_queue.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/utility/declval.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/setup/settings.hpp&gt;</code></li>
     </ul>
@@ -1614,9 +1616,6 @@
     <li><a href="asio.html#coroutine">adds <em>coroutine</em></a></li>
     <li><a href="asio.html#function">adds <em>function</em></a></li>
   </ul>
-  <h2><a href="container.html"><em>container</em></a></h2><ul>
-    <li><a href="container.html#container_hash">adds <em>container_hash</em></a></li>
-  </ul>
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
     <li><a href="date_time.html#algorithm">adds <em>algorithm</em></a></li>
     <li><a href="date_time.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
@@ -1658,9 +1657,6 @@
     <li><a href="locale.html#function">adds <em>function</em></a></li>
     <li><a href="locale.html#unordered">adds <em>unordered</em></a></li>
   </ul>
-  <h2><a href="move.html"><em>move</em></a></h2><ul>
-    <li><a href="move.html#detail">adds <em>detail</em></a></li>
-  </ul>
   <h2><a href="optional.html"><em>optional</em></a></h2><ul>
     <li><a href="optional.html#detail">adds <em>detail</em></a></li>
   </ul>
@@ -1683,8 +1679,6 @@
   <h2><a href="random.html"><em>random</em></a></h2><ul>
     <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
     <li><a href="random.html#integer">adds <em>integer</em></a></li>
-    <li><a href="random.html#math">adds <em>math</em></a></li>
-    <li><a href="random.html#multiprecision">adds <em>multiprecision</em></a></li>
   </ul>
   <h2><a href="range.html"><em>range</em></a></h2><ul>
     <li><a href="range.html#concept_check">adds <em>concept_check</em></a></li>
@@ -1704,7 +1698,6 @@
     <li><a href="spirit.html#foreach">adds <em>foreach</em></a></li>
     <li><a href="spirit.html#function">adds <em>function</em></a></li>
     <li><a href="spirit.html#integer">adds <em>integer</em></a></li>
-    <li><a href="spirit.html#math">adds <em>math</em></a></li>
     <li><a href="spirit.html#pool">adds <em>pool</em></a></li>
     <li><a href="spirit.html#typeof">adds <em>typeof</em></a></li>
     <li><a href="spirit.html#unordered">adds <em>unordered</em></a></li>
@@ -1738,11 +1731,8 @@
   <h2><a href="coroutine.html"><em>coroutine</em></a></h2><ul>
     <li><a href="coroutine.html#context">adds <em>context</em></a></li>
   </ul>
-  <h2><a href="math.html"><em>math</em></a></h2><ul>
-    <li><a href="math.html#lambda">adds <em>lambda</em></a></li>
-  </ul>
-  <h2><a href="multiprecision.html"><em>multiprecision</em></a></h2><ul>
-    <li><a href="multiprecision.html#rational">adds <em>rational</em></a></li>
+  <h2><a href="ratio.html"><em>ratio</em></a></h2><ul>
+    <li><a href="ratio.html#rational">adds <em>rational</em></a></li>
   </ul>
 
 

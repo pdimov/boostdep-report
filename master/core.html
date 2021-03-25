@@ -17,6 +17,7 @@
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/core/addressof.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/allocator_access.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/bit.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/checked_delete.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/default_allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/demangle.hpp&gt;</code></li>
@@ -58,6 +59,14 @@
       <li>from <code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/ref.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/core/bit.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/detail/splitmix64.hpp&gt;</code></li>
+    </ul>
+  <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
+    <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/core/bit.hpp&gt;</code></li>
     </ul>
 
 
@@ -552,7 +561,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffer_inserter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffered_piece_collection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/get_piece_turns.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/line_line_intersection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/turn_in_original_visitor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/check_iterator_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/covered_by/implementation.hpp&gt;</code></li>
@@ -829,6 +837,9 @@
       <li>from <code>&lt;boost/lambda/detail/lambda_functors.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-lexical_cast"><a href="lexical_cast.html"><em>lexical_cast</em></a></h2>
+    <h3><code>&lt;boost/core/cmath.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/lexical_cast/detail/inf_nan.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical_streams.hpp&gt;</code></li>
       <li>from <code>&lt;boost/lexical_cast/detail/lcast_unsigned_converters.hpp&gt;</code></li>
@@ -953,7 +964,6 @@
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/math/quaternion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/math/special_functions/detail/bernoulli_details.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/math/special_functions/math_fwd.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-move"><a href="move.html"><em>move</em></a></h2>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
@@ -1079,11 +1089,11 @@
     <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/cpp_int.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/core/nvp.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multiprecision/detail/number_base.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/detail/default_ops.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multiprecision/detail/functions/pow.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/nvp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/detail/number_base.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-numeric~conversion"><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2>
@@ -1195,7 +1205,7 @@
       <li>from <code>&lt;boost/property_map/dynamic_property_map.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-property_tree"><a href="property_tree.html"><em>property_tree</em></a></h2>
-    <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/property_tree/json_parser/detail/parser.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
@@ -1297,6 +1307,12 @@
       <li>from <code>&lt;boost/python/numpy/ndarray.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-random"><a href="random.html"><em>random</em></a></h2>
+    <h3><code>&lt;boost/core/bit.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/random/detail/gray_coded_qrng.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/cmath.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/random/hyperexponential_distribution.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/random/random_device.hpp&gt;</code></li>
     </ul>
@@ -1485,6 +1501,10 @@
       <li>from <code>&lt;boost/sort/spreadsort/detail/string_sort.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-spirit"><a href="spirit.html"><em>spirit</em></a></h2>
+    <h3><code>&lt;boost/core/cmath.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/karma/numeric/detail/numeric_utils.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/qi/numeric/detail/real_impl.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/auxiliary/attr_cast.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/meta_compiler.hpp&gt;</code></li>
