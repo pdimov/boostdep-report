@@ -1,0 +1,3 @@
+@import '../report.css';
+.report-revision::after { content: 'HEAD-ccb2ab3'; }
+.report-timestamp::after { content: '17/04/2021  5:19:40,50'; }
