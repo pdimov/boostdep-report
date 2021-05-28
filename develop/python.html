@@ -8,6 +8,10 @@
 
 
 <h1 id="primary-dependencies">Primary dependencies for <em>python</em></h1>
+  <h2 id="align"><a href="align.html"><em>align</em></a></h2>
+    <h3><code>&lt;boost/align/align.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/python/converter/rvalue_from_python_data.hpp&gt;</code></li>
+    </ul>
   <h2 id="bind"><a href="bind.html"><em>bind</em></a></h2>
     <h3><code>&lt;boost/bind.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/python/exception_translator.hpp&gt;</code></li>
@@ -45,6 +49,7 @@
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/python/src/numpy/dtype.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/python/src/object/class.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/detail/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/python/class.hpp&gt;</code></li>
@@ -593,6 +598,9 @@
     <h3><code>&lt;boost/type_traits/add_pointer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/python/detail/type_traits.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/aligned_storage.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/python/detail/referent_storage.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/alignment_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/python/detail/type_traits.hpp&gt;</code></li>
     </ul>
@@ -649,6 +657,9 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>python</em></h1>
+  <h2><a href="align.html"><em>align</em></a></h2><ul>
+    <li><a href="align.html#assert">adds <em>assert</em></a></li>
+  </ul>
   <h2><a href="conversion.html"><em>conversion</em></a></h2><ul>
     <li><a href="conversion.html#assert">adds <em>assert</em></a></li>
     <li><a href="conversion.html#throw_exception">adds <em>throw_exception</em></a></li>
@@ -779,9 +790,6 @@
     <li><a href="thread.html#atomic">adds <em>atomic</em></a></li>
     <li><a href="thread.html#chrono">adds <em>chrono</em></a></li>
     <li><a href="thread.html#date_time">adds <em>date_time</em></a></li>
-  </ul>
-  <h2><a href="atomic.html"><em>atomic</em></a></h2><ul>
-    <li><a href="atomic.html#align">adds <em>align</em></a></li>
   </ul>
   <h2><a href="chrono.html"><em>chrono</em></a></h2><ul>
     <li><a href="chrono.html#ratio">adds <em>ratio</em></a></li>

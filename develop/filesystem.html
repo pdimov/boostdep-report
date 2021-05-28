@@ -17,6 +17,14 @@
       <li>from <code>&lt;libs/filesystem/src/directory.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/path.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/path_traits.cpp&gt;</code></li>
+    </ul>
+  <h2 id="atomic"><a href="atomic.html"><em>atomic</em></a></h2>
+    <h3><code>&lt;boost/atomic/atomic.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/atomic.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/memory_order.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/atomic.hpp&gt;</code></li>
     </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
@@ -73,6 +81,9 @@
       <li>from <code>&lt;boost/filesystem/path.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
+    <h3><code>&lt;boost/core/bit.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/path.hpp&gt;</code></li>
       <li>from <code>&lt;boost/filesystem/path_traits.hpp&gt;</code></li>
@@ -123,7 +134,6 @@
   <h2 id="smart_ptr"><a href="smart_ptr.html"><em>smart_ptr</em></a></h2>
     <h3><code>&lt;boost/scoped_array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/path.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/filesystem/src/path_traits.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/smart_ptr/intrusive_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/directory.hpp&gt;</code></li>
@@ -136,6 +146,7 @@
     </ul>
     <h3><code>&lt;boost/smart_ptr/scoped_array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/path_traits.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/smart_ptr/scoped_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
@@ -200,6 +211,11 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>filesystem</em></h1>
+  <h2><a href="atomic.html"><em>atomic</em></a></h2><ul>
+    <li><a href="atomic.html#align">adds <em>align</em></a></li>
+    <li><a href="atomic.html#preprocessor">adds <em>preprocessor</em></a></li>
+    <li><a href="atomic.html#static_assert">adds <em>static_assert</em></a></li>
+  </ul>
   <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
     <li><a href="container_hash.html#integer">adds <em>integer</em></a></li>
     <li><a href="container_hash.html#static_assert">adds <em>static_assert</em></a></li>
