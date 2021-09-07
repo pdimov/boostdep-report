@@ -20,46 +20,23 @@
       <li>from <code>&lt;libs/filesystem/src/path_traits.cpp&gt;</code></li>
     </ul>
   <h2 id="atomic"><a href="atomic.html"><em>atomic</em></a></h2>
-    <h3><code>&lt;boost/atomic/atomic.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;libs/filesystem/src/atomic.hpp&gt;</code></li>
+    <h3><code>&lt;boost/atomic/atomic_ref.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/atomic_ref.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/memory_order.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;libs/filesystem/src/atomic.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/atomic_ref.hpp&gt;</code></li>
     </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/config.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/convenience.hpp&gt;</code></li>
       <li>from <code>&lt;boost/filesystem/detail/macro_value.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/directory.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/exception.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/file_status.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/fstream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/operations.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/path.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/path_traits.hpp&gt;</code></li>
-      <li>from <code>&lt;libs/filesystem/src/path.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/abi_prefix.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/filesystem/convenience.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/directory.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/exception.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/file_status.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/fstream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/operations.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/path.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/path_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/filesystem/detail/header.hpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/exception.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/abi_suffix.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/filesystem/convenience.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/directory.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/exception.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/file_status.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/fstream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/operations.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/path.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/path_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/filesystem/detail/footer.hpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/exception.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/auto_link.hpp&gt;</code></h3><ul>
@@ -67,6 +44,9 @@
     </ul>
     <h3><code>&lt;boost/config/warning_disable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/codecvt_error_category.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/windows_file_codecvt.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/operations.hpp&gt;</code></li>
@@ -155,13 +135,14 @@
     <h3><code>&lt;boost/system/api_config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/config.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/system/error_category.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/filesystem/path_traits.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/convenience.hpp&gt;</code></li>
       <li>from <code>&lt;boost/filesystem/directory.hpp&gt;</code></li>
       <li>from <code>&lt;boost/filesystem/exception.hpp&gt;</code></li>
       <li>from <code>&lt;boost/filesystem/operations.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/path.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/path_traits.hpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/codecvt_error_category.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/directory.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/error_handling.hpp&gt;</code></li>
@@ -174,7 +155,6 @@
     </ul>
     <h3><code>&lt;boost/system/system_error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/exception.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/path.hpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/path_traits.cpp&gt;</code></li>
     </ul>
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>

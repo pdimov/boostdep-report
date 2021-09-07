@@ -111,13 +111,12 @@
       <li>from <code>&lt;boost/interprocess/detail/os_thread_functions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/pointer_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/portable_intermodule_singleton.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/detail/posix_time_types_wrk.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/detail/ptime_wrk.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/robust_emulation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/segment_manager_helper.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/shared_dir_helpers.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/simple_swap.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/std_fwd.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/detail/timed_utils.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/transform_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/type_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/utilities.hpp&gt;</code></li>
@@ -193,10 +192,10 @@
       <li>from <code>&lt;boost/interprocess/sync/posix/named_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/sync/posix/named_semaphore.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/sync/posix/pthread_helpers.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/sync/posix/ptime_to_timespec.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/sync/posix/recursive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/sync/posix/semaphore.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/sync/posix/semaphore_wrapper.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/sync/posix/timepoint_to_timespec.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/sync/scoped_lock.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/sync/sharable_lock.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/sync/shm/named_condition.hpp&gt;</code></li>
@@ -237,6 +236,7 @@
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/detail/atomic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/managed_open_or_create_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/detail/timed_utils.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/utilities.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/windows_intermodule_singleton.hpp&gt;</code></li>
@@ -377,17 +377,6 @@
       <li>from <code>&lt;boost/interprocess/allocators/private_adaptive_pool.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/allocators/private_node_allocator.hpp&gt;</code></li>
     </ul>
-  <h2 id="date_time"><a href="date_time.html"><em>date_time</em></a></h2>
-    <h3><code>&lt;boost/date_time/microsec_time_clock.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/detail/posix_time_types_wrk.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/date_time/posix_time/posix_time_duration.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/detail/posix_time_types_wrk.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/date_time/posix_time/ptime.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/detail/posix_time_types_wrk.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/detail/ptime_wrk.hpp&gt;</code></li>
-    </ul>
   <h2 id="integer"><a href="integer.html"><em>integer</em></a></h2>
     <h3><code>&lt;boost/integer/static_log2.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/detail/intersegment_ptr.hpp&gt;</code></li>
@@ -412,6 +401,9 @@
       <li>from <code>&lt;boost/interprocess/indexes/unordered_map_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/mem_algo/detail/simple_seq_fit_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/segment_manager.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/intrusive/detail/mpl.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/timed_utils.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/intrusive/pointer_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/allocators/adaptive_pool.hpp&gt;</code></li>
@@ -603,6 +595,7 @@
       <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/time.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/detail/timed_utils.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/win32_api.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/timers.hpp&gt;</code></h3><ul>
@@ -614,17 +607,6 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>interprocess</em></h1>
-  <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
-    <li><a href="date_time.html#algorithm">adds <em>algorithm</em></a></li>
-    <li><a href="date_time.html#io">adds <em>io</em></a></li>
-    <li><a href="date_time.html#lexical_cast">adds <em>lexical_cast</em></a></li>
-    <li><a href="date_time.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
-    <li><a href="date_time.html#range">adds <em>range</em></a></li>
-    <li><a href="date_time.html#smart_ptr">adds <em>smart_ptr</em></a></li>
-    <li><a href="date_time.html#throw_exception">adds <em>throw_exception</em></a></li>
-    <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
-    <li><a href="date_time.html#utility">adds <em>utility</em></a></li>
-  </ul>
   <h2><a href="integer.html"><em>integer</em></a></h2><ul>
     <li><a href="integer.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
@@ -642,47 +624,6 @@
   </ul>
   <h2><a href="winapi.html"><em>winapi</em></a></h2><ul>
     <li><a href="winapi.html#predef">adds <em>predef</em></a></li>
-  </ul>
-  <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
-    <li><a href="algorithm.html#array">adds <em>array</em></a></li>
-    <li><a href="algorithm.html#bind">adds <em>bind</em></a></li>
-    <li><a href="algorithm.html#concept_check">adds <em>concept_check</em></a></li>
-    <li><a href="algorithm.html#exception">adds <em>exception</em></a></li>
-    <li><a href="algorithm.html#function">adds <em>function</em></a></li>
-    <li><a href="algorithm.html#iterator">adds <em>iterator</em></a></li>
-    <li><a href="algorithm.html#mpl">adds <em>mpl</em></a></li>
-    <li><a href="algorithm.html#regex">adds <em>regex</em></a></li>
-  </ul>
-  <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
-    <li><a href="lexical_cast.html#array">adds <em>array</em></a></li>
-  </ul>
-  <h2><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2><ul>
-    <li><a href="numeric~conversion.html#conversion">adds <em>conversion</em></a></li>
-    <li><a href="numeric~conversion.html#mpl">adds <em>mpl</em></a></li>
-  </ul>
-  <h2><a href="range.html"><em>range</em></a></h2><ul>
-    <li><a href="range.html#array">adds <em>array</em></a></li>
-    <li><a href="range.html#concept_check">adds <em>concept_check</em></a></li>
-    <li><a href="range.html#conversion">adds <em>conversion</em></a></li>
-    <li><a href="range.html#iterator">adds <em>iterator</em></a></li>
-    <li><a href="range.html#mpl">adds <em>mpl</em></a></li>
-    <li><a href="range.html#optional">adds <em>optional</em></a></li>
-    <li><a href="range.html#regex">adds <em>regex</em></a></li>
-  </ul>
-  <h2><a href="tokenizer.html"><em>tokenizer</em></a></h2><ul>
-    <li><a href="tokenizer.html#iterator">adds <em>iterator</em></a></li>
-    <li><a href="tokenizer.html#mpl">adds <em>mpl</em></a></li>
-  </ul>
-  <h2><a href="conversion.html"><em>conversion</em></a></h2><ul>
-    <li><a href="conversion.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
-  <h2><a href="function.html"><em>function</em></a></h2><ul>
-    <li><a href="function.html#type_index">adds <em>type_index</em></a></li>
-    <li><a href="function.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
-  <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
-    <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
-    <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
   </ul>
 
 

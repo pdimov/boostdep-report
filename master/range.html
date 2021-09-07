@@ -891,6 +891,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/multi_point_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/sectionalize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/turns/print_turns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/visit.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/multi_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/point_in_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/for_each.hpp&gt;</code></li>
@@ -914,15 +915,15 @@
       <li>from <code>&lt;boost/geometry/iterators/segment_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/predicate_based_interrupt_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/strategies/agnostic/simplify_douglas_peucker.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/cartesian/envelope.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/cartesian/envelope_multipoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/spherical/envelope_multipoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/views/detail/normalized_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/views/detail/closed_clockwise_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/identity_view.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/concepts.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/geometries/concepts/geometry_collection_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/concepts/linestring_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/concepts/multi_linestring_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/concepts/multi_point_concept.hpp&gt;</code></li>
@@ -952,6 +953,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/clip_linestring.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/partition.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/point_point.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/is_convex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/is_empty.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/spherical/envelope_multipoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
@@ -1023,6 +1025,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/multi_point_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/sectionalize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/turns/print_turns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/visit.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/multi_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/point_in_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/for_each.hpp&gt;</code></li>
@@ -1045,12 +1048,11 @@
       <li>from <code>&lt;boost/geometry/iterators/segment_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/predicate_based_interrupt_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/strategies/agnostic/simplify_douglas_peucker.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/cartesian/envelope.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/cartesian/envelope_multipoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/spherical/envelope_multipoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/views/detail/normalized_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/views/detail/closed_clockwise_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/identity_view.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/has_range_iterator.hpp&gt;</code></h3><ul>
@@ -1063,7 +1065,10 @@
       <li>from <code>&lt;boost/geometry/iterators/detail/point_iterator/iterator_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/detail/segment_iterator/iterator_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/views/detail/normalized_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/views/detail/closed_clockwise_view.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/range/iterator_range.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/views/identity_view.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/mutable_iterator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/geometries/adapted/boost_polygon/ring_proxy.hpp&gt;</code></li>
@@ -1071,7 +1076,6 @@
     <h3><code>&lt;boost/range/rbegin.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffer_inserter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/has_spikes.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/reference.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/for_each.hpp&gt;</code></li>
@@ -1135,13 +1139,15 @@
       <li>from <code>&lt;boost/geometry/algorithms/transform.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/wkt/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/wkt/write.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/iterators/closing_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/detail/segment_iterator/range_segment_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/iterators/ever_circling_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/disjoint_interrupt_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/spherical/envelope_multipoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/range/size_type.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/core/mutable_range.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/value_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/append.hpp&gt;</code></li>
@@ -1207,11 +1213,13 @@
       <li>from <code>&lt;boost/geometry/algorithms/transform.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/union.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/closure.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/core/geometry_types.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/interior_rings.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/mutable_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/point_order.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/point_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/ring_type.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/core/visit.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/concepts/multi_linestring_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/concepts/multi_point_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/concepts/multi_polygon_concept.hpp&gt;</code></li>
@@ -1228,7 +1236,6 @@
       <li>from <code>&lt;boost/geometry/strategies/geographic/buffer_point_circle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/spherical/envelope_multipoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/views/detail/range_type.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-graph"><a href="graph.html"><em>graph</em></a></h2>
     <h3><code>&lt;boost/range/algorithm/copy.hpp&gt;</code></h3><ul>
@@ -1325,16 +1332,6 @@
     </ul>
     <h3><code>&lt;boost/range/value_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/expressions/formatters/char_decorator.hpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-math"><a href="math.html"><em>math</em></a></h2>
-    <h3><code>&lt;boost/range/begin.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/math/distributions/hyperexponential.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/range/end.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/math/distributions/hyperexponential.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/range/size.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/math/distributions/hyperexponential.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-numeric~odeint"><a href="numeric~odeint.html"><em>numeric~odeint</em></a></h2>
     <h3><code>&lt;boost/range.hpp&gt;</code></h3><ul>
@@ -1460,9 +1457,11 @@
     </ul>
   <h2 id="reverse-spirit"><a href="spirit.html"><em>spirit</em></a></h2>
     <h3><code>&lt;boost/range/begin.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/karma/detail/string_generate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/string/symbols.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/end.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/karma/detail/string_generate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/string/symbols.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/iterator_range_core.hpp&gt;</code></h3><ul>

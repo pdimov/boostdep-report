@@ -301,14 +301,6 @@
     <h3><code>&lt;boost/endian/conversion.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/x3/binary/binary.hpp&gt;</code></li>
     </ul>
-  <h2 id="foreach"><a href="foreach.html"><em>foreach</em></a></h2>
-    <h3><code>&lt;boost/foreach.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/spirit/home/lex/lexer/lexertl/lexer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/qi/string/tst_map.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/support/info.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/support/utf8.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/repository/home/qi/operator/keywords.hpp&gt;</code></li>
-    </ul>
   <h2 id="function"><a href="function.html"><em>function</em></a></h2>
     <h3><code>&lt;boost/function.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/karma/nonterminal/debug_handler.hpp&gt;</code></li>
@@ -350,6 +342,7 @@
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/repository/home/qi/operator/detail/keywords.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/repository/home/qi/operator/keywords.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/as_list.hpp&gt;</code></h3><ul>
@@ -569,9 +562,6 @@
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/algorithm/any_ns_so.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/as_variant.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/fusion/include/nview.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/spirit/repository/home/qi/operator/detail/keywords.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/fusion/include/out.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/karma/nonterminal/debug_handler.hpp&gt;</code></li>
@@ -1039,10 +1029,6 @@
     <h3><code>&lt;boost/mpl/placeholders.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/nonterminal/extract_param.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/traits/is_substitute.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/print.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/spirit/home/karma/detail/pass_container.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/lex/qi/state_switcher.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/push_back.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/karma/auto/meta_create.hpp&gt;</code></li>
@@ -1528,9 +1514,11 @@
     </ul>
   <h2 id="range"><a href="range.html"><em>range</em></a></h2>
     <h3><code>&lt;boost/range/begin.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/karma/detail/string_generate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/string/symbols.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/end.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/karma/detail/string_generate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/string/symbols.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/range/iterator_range_core.hpp&gt;</code></h3><ul>
@@ -1677,9 +1665,6 @@
     </ul>
     <h3><code>&lt;boost/type_traits/extent.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/x3/char/any_char.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/integral_promotion.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/spirit/home/lex/lexer/lexertl/token.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_abstract.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/detail/make_cons.hpp&gt;</code></li>
@@ -1833,6 +1818,7 @@
       <li>from <code>&lt;boost/spirit/home/x3/char/detail/cast_char.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/make_unsigned.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/lex/lexer/lexertl/token.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/char_class.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/char_encoding/standard_wide.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/utf8.hpp&gt;</code></li>
@@ -2047,9 +2033,6 @@
     <li><a href="unordered.html#detail">adds <em>detail</em></a></li>
     <li><a href="unordered.html#predef">adds <em>predef</em></a></li>
     <li><a href="unordered.html#tuple">adds <em>tuple</em></a></li>
-  </ul>
-  <h2><a href="utility.html"><em>utility</em></a></h2><ul>
-    <li><a href="utility.html#container_hash">adds <em>container_hash</em></a></li>
   </ul>
   <h2><a href="variant.html"><em>variant</em></a></h2><ul>
     <li><a href="variant.html#bind">adds <em>bind</em></a></li>
