@@ -8,6 +8,13 @@
 
 
 <h1 id="primary-dependencies">Primary dependencies for <em>system</em></h1>
+  <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
+    <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/system/result.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/assert/source_location.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/system/detail/error_code.hpp&gt;</code></li>
+    </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/system/config.hpp&gt;</code></li>
@@ -24,6 +31,7 @@
       <li>from <code>&lt;boost/system/detail/system_category_condition_win32.hpp&gt;</code></li>
       <li>from <code>&lt;boost/system/detail/system_category_message_win32.hpp&gt;</code></li>
       <li>from <code>&lt;boost/system/errc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/system/result.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/pragma_message.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/system/cygwin_error.hpp&gt;</code></li>
@@ -35,6 +43,14 @@
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/system/detail/error_category.hpp&gt;</code></li>
       <li>from <code>&lt;boost/system/detail/error_code.hpp&gt;</code></li>
+    </ul>
+  <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
+    <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/system/result.hpp&gt;</code></li>
+    </ul>
+  <h2 id="variant2"><a href="variant2.html"><em>variant2</em></a></h2>
+    <h3><code>&lt;boost/variant2/variant.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/system/result.hpp&gt;</code></li>
     </ul>
   <h2 id="winapi"><a href="winapi.html"><em>winapi</em></a></h2>
     <h3><code>&lt;boost/winapi/character_code_conversion.hpp&gt;</code></h3><ul>
@@ -53,6 +69,9 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>system</em></h1>
+  <h2><a href="variant2.html"><em>variant2</em></a></h2><ul>
+    <li><a href="variant2.html#mp11">adds <em>mp11</em></a></li>
+  </ul>
   <h2><a href="winapi.html"><em>winapi</em></a></h2><ul>
     <li><a href="winapi.html#predef">adds <em>predef</em></a></li>
   </ul>
@@ -115,6 +134,11 @@
       <li>from <code>&lt;boost/chrono/detail/inlined/process_cpu_clocks.hpp&gt;</code></li>
       <li>from <code>&lt;boost/chrono/detail/inlined/thread_clock.hpp&gt;</code></li>
     </ul>
+  <h2 id="reverse-context"><a href="context.html"><em>context</em></a></h2>
+    <h3><code>&lt;boost/system/system_error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/context/impl/spawn.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/context/spawn.hpp&gt;</code></li>
+    </ul>
   <h2 id="reverse-coroutine"><a href="coroutine.html"><em>coroutine</em></a></h2>
     <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/coroutine/exceptions.hpp&gt;</code></li>
@@ -124,6 +148,9 @@
     </ul>
   <h2 id="reverse-dll"><a href="dll.html"><em>dll</em></a></h2>
     <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/dll/config.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/system/system_error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/dll/config.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-filesystem"><a href="filesystem.html"><em>filesystem</em></a></h2>

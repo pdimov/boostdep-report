@@ -9,6 +9,12 @@
 
 <h1 id="primary-dependencies">Primary dependencies for <em>core</em></h1>
   <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
+    <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/core/string_view.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/assert/source_location.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/core/string_view.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/current_function.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/core/lightweight_test.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/typeinfo.hpp&gt;</code></li>
@@ -38,7 +44,9 @@
       <li>from <code>&lt;boost/core/quick_exit.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/ref.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/scoped_enum.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/string_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/swap.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/type_name.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/typeinfo.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/uncaught_exceptions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/underlying_type.hpp&gt;</code></li>
@@ -62,11 +70,17 @@
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/core/bit.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/cmath.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/detail/splitmix64.hpp&gt;</code></li>
     </ul>
   <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
     <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/core/bit.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/cmath.hpp&gt;</code></li>
+    </ul>
+  <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
+    <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/core/string_view.hpp&gt;</code></li>
     </ul>
 
 
@@ -1200,6 +1214,7 @@
     </ul>
   <h2 id="reverse-process"><a href="process.html"><em>process</em></a></h2>
     <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/process/detail/posix/file_descriptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/process/detail/windows/file_descriptor.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>

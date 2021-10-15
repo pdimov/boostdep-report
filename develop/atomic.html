@@ -30,6 +30,7 @@
     </ul>
     <h3><code>&lt;boost/config/auto_link.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/link.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/wait_ops_windows.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/helper_macros.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/aligned_variable.hpp&gt;</code></li>
@@ -92,12 +93,12 @@
       <li>from <code>&lt;boost/atomic/detail/extra_fp_ops_emulated.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/detail/extra_ops_emulated.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/detail/fp_ops_emulated.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/wait_on_address.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/detail/wait_ops_emulated.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/atomic/detail/wait_ops_windows.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/ipc_atomic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/atomic/ipc_atomic_ref.hpp&gt;</code></li>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/atomic/src/wait_ops_windows.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/atomic/src/wait_on_address.cpp&gt;</code></li>
     </ul>
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
     <h3><code>&lt;boost/type_traits/alignment_of.hpp&gt;</code></h3><ul>
@@ -106,11 +107,17 @@
     <h3><code>&lt;boost/type_traits/conditional.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/type_traits/conditional.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/has_nothrow_constructor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/atomic/detail/type_traits/is_nothrow_default_constructible.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/has_trivial_constructor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/type_traits/is_trivially_default_constructible.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/type_traits/integral_constant.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_enum.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/atomic/detail/type_traits/is_enum.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_floating_point.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/type_traits/is_floating_point.hpp&gt;</code></li>
@@ -135,9 +142,9 @@
     </ul>
   <h2 id="winapi"><a href="winapi.html"><em>winapi</em></a></h2>
     <h3><code>&lt;boost/winapi/basic_types.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/atomic/detail/wait_ops_windows.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/wait_on_address.hpp&gt;</code></li>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/atomic/src/wait_ops_windows.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/atomic/src/wait_on_address.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/condition_variable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
@@ -145,16 +152,16 @@
     <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/wait_caps_windows.hpp&gt;</code></li>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/atomic/src/wait_ops_windows.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/atomic/src/wait_on_address.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/critical_section.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/dll.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;libs/atomic/src/wait_ops_windows.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/atomic/src/wait_on_address.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/get_proc_address.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;libs/atomic/src/wait_ops_windows.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/atomic/src/wait_on_address.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/handles.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
@@ -168,7 +175,7 @@
     <h3><code>&lt;boost/winapi/thread.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/lock_pool.hpp&gt;</code></li>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/atomic/src/wait_ops_windows.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/atomic/src/wait_on_address.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/wait.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
@@ -178,13 +185,16 @@
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/wait_on_address.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;libs/atomic/src/wait_ops_windows.cpp&gt;</code></li>
+      <li>from <code>&lt;boost/atomic/detail/wait_ops_windows.hpp&gt;</code></li>
     </ul>
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>atomic</em></h1>
   <h2><a href="align.html"><em>align</em></a></h2><ul>
     <li><a href="align.html#core">adds <em>core</em></a></li>
+  </ul>
+  <h2><a href="core.html"><em>core</em></a></h2><ul>
+    <li><a href="core.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
 
 
@@ -213,10 +223,10 @@
       <li>from <code>&lt;boost/log/sinks/basic_sink_frontend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/unbounded_fifo_queue.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/event.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/threadsafe_queue.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
@@ -234,6 +244,10 @@
     <h3><code>&lt;boost/atomic/fences.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/log/src/event.cpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/atomic/ipc_atomic.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/memory_order.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/counter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/async_frontend.hpp&gt;</code></li>
@@ -241,8 +255,10 @@
       <li>from <code>&lt;boost/log/sinks/unbounded_fifo_queue.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/event.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/threadsafe_queue.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/timestamp.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
