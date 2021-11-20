@@ -12,15 +12,6 @@
     <h3><code>&lt;boost/geometry/domains/gis/io/wkt/write.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/io/wkt/detail/wkt_multi.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/geometry/index/rtree/kmeans/split.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/index/detail/rtree/kmeans/kmeans.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/geometry/index/rtree/node/node.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/index/detail/rtree/kmeans/split.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/geometry/index/rtree/visitors/insert.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/index/detail/rtree/kmeans/split.hpp&gt;</code></li>
-    </ul>
   <h2 id="algorithm"><a href="algorithm.html"><em>algorithm</em></a></h2>
     <h3><code>&lt;boost/algorithm/minmax.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/strategies/geographic/distance_cross_track.hpp&gt;</code></li>
@@ -54,7 +45,6 @@
   <h2 id="array"><a href="array.html"><em>array</em></a></h2>
     <h3><code>&lt;boost/array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/piece_border.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/convex_hull/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/copy_segment_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/copy_segments.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/get_turns.hpp&gt;</code></li>
@@ -179,6 +169,7 @@
       <li>from <code>&lt;boost/geometry/core/is_areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/add_const_if_c.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/bare_type.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/util/promote_floating_point.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/pragma_message.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/geometry.hpp&gt;</code></li>
@@ -194,6 +185,7 @@
       <li>from <code>&lt;boost/geometry/strategies/cartesian/expand_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/expand_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/expand_segment.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/cartesian/side_by_triangle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/default_area_result.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/envelope.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/expand.hpp&gt;</code></li>
@@ -222,6 +214,11 @@
       <li>from <code>&lt;boost/geometry/views/reversible_view.hpp&gt;</code></li>
     </ul>
   <h2 id="container"><a href="container.html"><em>container</em></a></h2>
+    <h3><code>&lt;boost/container/allocator_traits.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/node/scoped_deallocator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/node/variant_dynamic.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/node/weak_dynamic.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/container/detail/config_begin.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/index/detail/varray.hpp&gt;</code></li>
     </ul>
@@ -237,6 +234,8 @@
     <h3><code>&lt;boost/container/vector.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/index/detail/rtree/node/node.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/rtree/node/node_elements.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/node/variant_dynamic.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/node/weak_dynamic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/varray_detail.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
@@ -328,6 +327,7 @@
     </ul>
     <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/index/detail/rtree/node/variant_dynamic.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/node/weak_dynamic.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/centroid/translating_transformer.hpp&gt;</code></li>
@@ -547,7 +547,11 @@
       <li>from <code>&lt;boost/geometry/util/compress_variant.hpp&gt;</code></li>
     </ul>
   <h2 id="multiprecision"><a href="multiprecision.html"><em>multiprecision</em></a></h2>
+    <h3><code>&lt;boost/multiprecision/cpp_bin_float.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/core/coordinate_promotion.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/multiprecision/cpp_int.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/core/coordinate_promotion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/promote_integral.hpp&gt;</code></li>
     </ul>
   <h2 id="numeric~conversion"><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2>
@@ -649,13 +653,11 @@
       <li>from <code>&lt;boost/geometry/algorithms/centroid.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/convert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/correct.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/correct_closure.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffer_inserter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffered_piece_collection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/get_piece_turns.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/calculate_sum.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/closest_feature/point_to_range.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/convex_hull/graham_andrew.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/counting.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/linear_areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/multipoint_geometry.hpp&gt;</code></li>
@@ -762,7 +764,6 @@
     </ul>
     <h3><code>&lt;boost/range/empty.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffered_piece_collection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/convex_hull/graham_andrew.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/range_of_boxes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_simple/areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_simple/linear.hpp&gt;</code></li>
@@ -784,13 +785,11 @@
       <li>from <code>&lt;boost/geometry/algorithms/centroid.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/convert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/correct.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/correct_closure.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffer_inserter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffered_piece_collection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/get_piece_turns.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/calculate_sum.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/closest_feature/point_to_range.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/convex_hull/graham_andrew.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/counting.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/linear_areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/multipoint_geometry.hpp&gt;</code></li>
@@ -911,13 +910,11 @@
       <li>from <code>&lt;boost/geometry/algorithms/area.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/centroid.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/convert.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/correct_closure.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/densify.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffer_inserter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffered_piece_collection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffered_ring.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/closest_feature/point_to_range.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/convex_hull/graham_andrew.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/multipoint_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/multipoint_to_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/point_to_geometry.hpp&gt;</code></li>
@@ -975,7 +972,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/convert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/correct.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/correct_closure.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/densify.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffer_inserter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffer_policies.hpp&gt;</code></li>
@@ -1059,6 +1055,7 @@
     </ul>
   <h2 id="rational"><a href="rational.html"><em>rational</em></a></h2>
     <h3><code>&lt;boost/rational.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/core/coordinate_promotion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/robustness/segment_ratio.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/rational.hpp&gt;</code></li>
     </ul>
@@ -1089,7 +1086,6 @@
       <li>from <code>&lt;boost/geometry/core/radius.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/core/static_assert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/point.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/index/detail/rtree/adaptors.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/impl/dms_parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/sphere.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/spheroid.hpp&gt;</code></li>
@@ -1135,9 +1131,11 @@
     </ul>
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
     <h3><code>&lt;boost/type_traits/aligned_storage.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/index/detail/serialization.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/varray.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/alignment_of.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/index/detail/serialization.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/varray.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
@@ -1151,33 +1149,19 @@
     <h3><code>&lt;boost/variant/apply_visitor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/assign.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/buffer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/centroid.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/convert.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/correct.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/correct_closure.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/crosses.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/convex_hull/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/covered_by/interface.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/equals/interface.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/intersection/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_simple/interface.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/touches/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/difference.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/is_convex.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/is_empty.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/num_geometries.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/num_interior_rings.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/num_points.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/num_segments.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/perimeter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/remove_spikes.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/reverse.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/simplify.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/sym_difference.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/transform.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/adapted/boost_variant.hpp&gt;</code></li>
@@ -1190,41 +1174,29 @@
     <h3><code>&lt;boost/variant/static_visitor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/assign.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/buffer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/centroid.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/convert.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/correct.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/correct_closure.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/crosses.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/convex_hull/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/covered_by/interface.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/equals/interface.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/intersection/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_simple/interface.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/touches/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/difference.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/is_convex.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/is_empty.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/line_interpolate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/num_geometries.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/num_interior_rings.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/num_points.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/num_segments.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/perimeter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/remove_spikes.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/reverse.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/simplify.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/sym_difference.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/transform.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/adapted/boost_variant.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/node/variant_dynamic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/svg/write.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/variant/variant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/geometries/adapted/boost_variant.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/node/variant_dynamic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/rtree/node/variant_visitor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/spar.hpp&gt;</code></li>
@@ -1232,34 +1204,20 @@
     <h3><code>&lt;boost/variant/variant_fwd.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/assign.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/buffer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/centroid.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/convert.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/correct.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/correct_closure.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/crosses.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/convex_hull/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/covered_by/interface.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/equals/interface.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/expand/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/intersection/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_simple/interface.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/touches/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/difference.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/is_convex.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/is_empty.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/line_interpolate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/num_geometries.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/num_interior_rings.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/num_points.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/num_segments.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/perimeter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/remove_spikes.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/reverse.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/simplify.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/sym_difference.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/transform.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/svg/write.hpp&gt;</code></li>
@@ -1382,7 +1340,6 @@
   </ul>
   <h2><a href="spirit.html"><em>spirit</em></a></h2><ul>
     <li><a href="spirit.html#endian">adds <em>endian</em></a></li>
-    <li><a href="spirit.html#foreach">adds <em>foreach</em></a></li>
     <li><a href="spirit.html#phoenix">adds <em>phoenix</em></a></li>
     <li><a href="spirit.html#pool">adds <em>pool</em></a></li>
     <li><a href="spirit.html#proto">adds <em>proto</em></a></li>

@@ -10,10 +10,10 @@
 <h1 id="primary-dependencies">Primary dependencies for <em>core</em></h1>
   <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/core/string_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/detail/string_view.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/assert/source_location.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/core/string_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/detail/string_view.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/current_function.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/core/lightweight_test.hpp&gt;</code></li>
@@ -27,6 +27,7 @@
       <li>from <code>&lt;boost/core/checked_delete.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/default_allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/demangle.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/detail/string_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/empty_value.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/enable_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/exchange.hpp&gt;</code></li>
@@ -44,7 +45,6 @@
       <li>from <code>&lt;boost/core/quick_exit.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/ref.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/scoped_enum.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/core/string_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/swap.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/type_name.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/typeinfo.hpp&gt;</code></li>
@@ -80,7 +80,7 @@
     </ul>
   <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
     <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/core/string_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/detail/string_view.hpp&gt;</code></li>
     </ul>
 
 
@@ -785,9 +785,6 @@
       <li>from <code>&lt;boost/integer/extended_euclidean.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-interprocess"><a href="interprocess.html"><em>interprocess</em></a></h2>
-    <h3><code>&lt;boost/checked_delete.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/smart_ptr/detail/shared_count.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/detail/intersegment_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/managed_memory_impl.hpp&gt;</code></li>
