@@ -229,6 +229,7 @@
       <li>from <code>&lt;boost/log/support/spirit_qi.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/exception_handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/formatting_ostream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/invoke.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/optional.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/to_log.hpp&gt;</code></li>
@@ -660,7 +661,6 @@
       <li>from <code>&lt;boost/log/sources/exception_handler_feature.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/static_type_dispatcher.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/value_ref.hpp&gt;</code></li>
-      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/index_of.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/value_ref.hpp&gt;</code></li>
@@ -738,12 +738,14 @@
       <li>from <code>&lt;libs/log/src/setup/filter_parser.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/optional/optional.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/log/sinks/text_file_backend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/setup/settings.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/default_sink.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/named_scope.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/setup/filter_parser.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/setup/formatter_parser.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/text_file_backend.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/event_log_registry.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/optional/optional_fwd.hpp&gt;</code></h3><ul>
@@ -1468,6 +1470,7 @@
       <li>from <code>&lt;boost/log/utility/formatting_ostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/functional/bind.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/add_value.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/invoke.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/attribute_value_impl.hpp&gt;</code></li>
@@ -1486,6 +1489,7 @@
       <li>from <code>&lt;boost/log/expressions/formatters/wrap_formatter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/expressions/predicates/channel_severity_filter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/add_value.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/invoke.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/declval.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/setup/settings.hpp&gt;</code></li>
@@ -1632,6 +1636,7 @@
   </ul>
   <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
     <li><a href="fusion.html#container_hash">adds <em>container_hash</em></a></li>
+    <li><a href="fusion.html#functional">adds <em>functional</em></a></li>
     <li><a href="fusion.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
   </ul>

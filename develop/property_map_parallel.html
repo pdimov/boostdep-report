@@ -15,10 +15,6 @@
       <li>from <code>&lt;boost/property_map/parallel/local_property_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/property_map/parallel/parallel_property_maps.hpp&gt;</code></li>
     </ul>
-  <h2 id="bind"><a href="bind.html"><em>bind</em></a></h2>
-    <h3><code>&lt;boost/bind.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/property_map/parallel/impl/distributed_property_map.ipp&gt;</code></li>
-    </ul>
   <h2 id="concept_check"><a href="concept_check.html"><em>concept_check</em></a></h2>
     <h3><code>&lt;boost/concept_archetype.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/property_map/parallel/parallel_property_maps.hpp&gt;</code></li>
@@ -127,13 +123,11 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>property_map_parallel</em></h1>
-  <h2><a href="bind.html"><em>bind</em></a></h2><ul>
-    <li><a href="bind.html#core">adds <em>core</em></a></li>
-  </ul>
   <h2><a href="concept_check.html"><em>concept_check</em></a></h2><ul>
     <li><a href="concept_check.html#preprocessor">adds <em>preprocessor</em></a></li>
   </ul>
   <h2><a href="function.html"><em>function</em></a></h2><ul>
+    <li><a href="function.html#bind">adds <em>bind</em></a></li>
     <li><a href="function.html#core">adds <em>core</em></a></li>
     <li><a href="function.html#integer">adds <em>integer</em></a></li>
     <li><a href="function.html#preprocessor">adds <em>preprocessor</em></a></li>
@@ -159,6 +153,7 @@
     <li><a href="mpl.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="multi_index.html"><em>multi_index</em></a></h2><ul>
+    <li><a href="multi_index.html#bind">adds <em>bind</em></a></li>
     <li><a href="multi_index.html#container_hash">adds <em>container_hash</em></a></li>
     <li><a href="multi_index.html#core">adds <em>core</em></a></li>
     <li><a href="multi_index.html#foreach">adds <em>foreach</em></a></li>
@@ -261,6 +256,9 @@
   <h2><a href="container.html"><em>container</em></a></h2><ul>
     <li><a href="container.html#intrusive">adds <em>intrusive</em></a></li>
   </ul>
+  <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
+    <li><a href="fusion.html#functional">adds <em>functional</em></a></li>
+  </ul>
   <h2><a href="parameter.html"><em>parameter</em></a></h2><ul>
     <li><a href="parameter.html#mp11">adds <em>mp11</em></a></li>
   </ul>
@@ -331,6 +329,21 @@
       <li>from <code>&lt;boost/graph/distributed/compressed_sparse_row_graph.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/distributed/one_bit_color_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/distributed/two_bit_color_map.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/property_map/parallel/parallel_property_maps.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/graph/distributed/adjacency_list.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/distributed/boman_et_al_graph_coloring.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/distributed/connected_components.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/distributed/connected_components_parallel_search.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/distributed/dehne_gotz_min_spanning_tree.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/distributed/delta_stepping_shortest_paths.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/distributed/depth_first_search.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/distributed/detail/dijkstra_shortest_paths.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/distributed/graphviz.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/distributed/st_connected.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/distributed/strong_components.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/distributed/vertex_list_adaptor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/parallel/detail/property_holders.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/property_map/parallel/process_group.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/distributed/mpi_process_group.hpp&gt;</code></li>

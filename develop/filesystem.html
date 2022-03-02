@@ -42,6 +42,9 @@
     <h3><code>&lt;boost/config/auto_link.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/config.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/config/header_deprecated.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/filesystem/string_file.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/config/warning_disable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/codecvt_error_category.cpp&gt;</code></li>
     </ul>
@@ -50,6 +53,7 @@
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/operations.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/filesystem/string_file.hpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/detail/workaround.hpp&gt;</code></h3><ul>
@@ -137,18 +141,18 @@
     </ul>
     <h3><code>&lt;boost/system/error_category.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/path_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/codecvt_error_category.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/path.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/convenience.hpp&gt;</code></li>
       <li>from <code>&lt;boost/filesystem/directory.hpp&gt;</code></li>
       <li>from <code>&lt;boost/filesystem/exception.hpp&gt;</code></li>
       <li>from <code>&lt;boost/filesystem/operations.hpp&gt;</code></li>
-      <li>from <code>&lt;libs/filesystem/src/codecvt_error_category.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/directory.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/error_handling.hpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/exception.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/filesystem/src/path.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/system/system_category.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/exception.cpp&gt;</code></li>
@@ -156,6 +160,10 @@
     <h3><code>&lt;boost/system/system_error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/exception.hpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/path_traits.cpp&gt;</code></li>
+    </ul>
+  <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
+    <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/directory.cpp&gt;</code></li>
     </ul>
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
     <h3><code>&lt;boost/type_traits/decay.hpp&gt;</code></h3><ul>
@@ -182,8 +190,10 @@
     </ul>
   <h2 id="winapi"><a href="winapi.html"><em>winapi</em></a></h2>
     <h3><code>&lt;boost/winapi/basic_types.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/filesystem/src/directory.cpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/error_handling.hpp&gt;</code></li>
       <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/filesystem/src/windows_tools.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/bcrypt.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/filesystem/src/unique_path.cpp&gt;</code></li>
@@ -219,7 +229,6 @@
   </ul>
   <h2><a href="core.html"><em>core</em></a></h2><ul>
     <li><a href="core.html#static_assert">adds <em>static_assert</em></a></li>
-    <li><a href="core.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
   <h2><a href="detail.html"><em>detail</em></a></h2><ul>
     <li><a href="detail.html#preprocessor">adds <em>preprocessor</em></a></li>
@@ -238,10 +247,8 @@
   <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
     <li><a href="smart_ptr.html#move">adds <em>move</em></a></li>
     <li><a href="smart_ptr.html#static_assert">adds <em>static_assert</em></a></li>
-    <li><a href="smart_ptr.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
   <h2><a href="system.html"><em>system</em></a></h2><ul>
-    <li><a href="system.html#throw_exception">adds <em>throw_exception</em></a></li>
     <li><a href="system.html#variant2">adds <em>variant2</em></a></li>
   </ul>
   <h2><a href="type_traits.html"><em>type_traits</em></a></h2><ul>
@@ -251,11 +258,19 @@
     <li><a href="conversion.html#typeof">adds <em>typeof</em></a></li>
   </ul>
   <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
+    <li><a href="fusion.html#functional">adds <em>functional</em></a></li>
     <li><a href="fusion.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
   </ul>
   <h2><a href="variant2.html"><em>variant2</em></a></h2><ul>
     <li><a href="variant2.html#mp11">adds <em>mp11</em></a></li>
+  </ul>
+  <h2><a href="functional.html"><em>functional</em></a></h2><ul>
+    <li><a href="functional.html#function">adds <em>function</em></a></li>
+  </ul>
+  <h2><a href="function.html"><em>function</em></a></h2><ul>
+    <li><a href="function.html#bind">adds <em>bind</em></a></li>
+    <li><a href="function.html#type_index">adds <em>type_index</em></a></li>
   </ul>
 
 
@@ -282,8 +297,8 @@
       <li>from <code>&lt;libs/fiber/src/numa/linux/topology.cpp&gt;</code></li>
     </ul>
   <h2 id="reverse-gil"><a href="gil.html"><em>gil</em></a></h2>
-    <h3><code>&lt;boost/filesystem/path.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/gil/io/path_spec.hpp&gt;</code></li>
+    <h3><code>&lt;boost/filesystem.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/gil/io/detail/filesystem.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-graph_parallel"><a href="graph_parallel.html"><em>graph_parallel</em></a></h2>
     <h3><code>&lt;boost/filesystem/operations.hpp&gt;</code></h3><ul>

@@ -241,6 +241,7 @@
     <h3><code>&lt;boost/type_traits/decay.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/any/basic_any.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/any/unique_any.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_const.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/any.hpp&gt;</code></li>
@@ -1463,6 +1464,13 @@
       <li>from <code>&lt;boost/icl/detail/mapped_reference.hpp&gt;</code></li>
       <li>from <code>&lt;boost/icl/detail/set_algo.hpp&gt;</code></li>
     </ul>
+  <h2 id="reverse-integer"><a href="integer.html"><em>integer</em></a></h2>
+    <h3><code>&lt;boost/type_traits/is_integral.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/integer/integer_log2.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/make_unsigned.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/integer/integer_log2.hpp&gt;</code></li>
+    </ul>
   <h2 id="reverse-interprocess"><a href="interprocess.html"><em>interprocess</em></a></h2>
     <h3><code>&lt;boost/type_traits/is_constructible.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/offset_ptr.hpp&gt;</code></li>
@@ -1570,6 +1578,10 @@
       <li>from <code>&lt;boost/iterator/indirect_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/iterator_adaptor.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/conditional.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/iterator/counting_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/function_input_iterator.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/function_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/iterator/transform_iterator.hpp&gt;</code></li>
     </ul>
@@ -1586,8 +1598,12 @@
       <li>from <code>&lt;boost/next_prior.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/iterator/counting_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/is_lvalue_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/is_readable_iterator.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_arithmetic.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/iterator/counting_iterator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_base_and_derived.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/iterator/transform_iterator.hpp&gt;</code></li>
@@ -1602,6 +1618,7 @@
       <li>from <code>&lt;boost/iterator/transform_iterator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_convertible.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/iterator/counting_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/detail/config_def.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/detail/facade_iterator_category.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/interoperable.hpp&gt;</code></li>
@@ -1615,6 +1632,7 @@
       <li>from <code>&lt;boost/iterator/transform_iterator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_integral.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/iterator/counting_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/iterator_concepts.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_pod.hpp&gt;</code></h3><ul>
@@ -1654,6 +1672,10 @@
       <li>from <code>&lt;boost/iterator/iterator_facade.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/transform_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/zip_iterator.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/type_identity.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/iterator/counting_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/detail/enable_if.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-lambda"><a href="lambda.html"><em>lambda</em></a></h2>
     <h3><code>&lt;boost/type_traits/add_const.hpp&gt;</code></h3><ul>
@@ -1956,6 +1978,7 @@
       <li>from <code>&lt;boost/log/utility/formatting_ostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/functional/bind.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/add_value.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/invoke.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/attribute_value_impl.hpp&gt;</code></li>
@@ -1974,6 +1997,7 @@
       <li>from <code>&lt;boost/log/expressions/formatters/wrap_formatter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/expressions/predicates/channel_severity_filter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/add_value.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/invoke.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/declval.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/setup/settings.hpp&gt;</code></li>
@@ -3883,6 +3907,9 @@
     <h3><code>&lt;boost/type_traits/is_constructible.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/unordered_map.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/is_convertible.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/is_empty.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
@@ -3896,6 +3923,9 @@
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/make_void.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_const.hpp&gt;</code></h3><ul>

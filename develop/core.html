@@ -50,6 +50,7 @@
       <li>from <code>&lt;boost/core/typeinfo.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/uncaught_exceptions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/underlying_type.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/verbose_terminate_handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/get_pointer.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/header_deprecated.hpp&gt;</code></h3><ul>
@@ -57,6 +58,7 @@
       <li>from <code>&lt;boost/detail/no_exceptions_support.hpp&gt;</code></li>
       <li>from <code>&lt;boost/detail/scoped_enum_emulation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/detail/sp_typeinfo.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/no_tr1/memory.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/get_pointer.hpp&gt;</code></li>
@@ -81,6 +83,7 @@
   <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
     <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/core/detail/string_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/verbose_terminate_handler.hpp&gt;</code></li>
     </ul>
 
 
@@ -126,6 +129,7 @@
     <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/any/basic_any.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/any/unique_any.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/any.hpp&gt;</code></li>
@@ -220,11 +224,11 @@
       <li>from <code>&lt;boost/bind/bind.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-chrono"><a href="chrono.html"><em>chrono</em></a></h2>
-    <h3><code>&lt;boost/detail/no_exceptions_support.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/chrono/io/duration_io.hpp&gt;</code></li>
       <li>from <code>&lt;boost/chrono/io/time_point_io.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/detail/scoped_enum_emulation.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/scoped_enum.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/chrono/io/duration_style.hpp&gt;</code></li>
       <li>from <code>&lt;boost/chrono/io/timezone.hpp&gt;</code></li>
     </ul>
@@ -565,6 +569,7 @@
     <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/piece_border.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/centroid/translating_transformer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/closest_points/segment_to_segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/segment_to_segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/for_each_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/complement_graph.hpp&gt;</code></li>
@@ -582,7 +587,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffered_piece_collection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/get_piece_turns.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/turn_in_original_visitor.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/check_iterator_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/closest_points/point_to_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/covered_by/implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/box_to_box.hpp&gt;</code></li>
@@ -778,9 +782,13 @@
       <li>from <code>&lt;boost/icl/interval_bounds.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-integer"><a href="integer.html"><em>integer</em></a></h2>
+    <h3><code>&lt;boost/core/bit.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/integer/integer_log2.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/integer/common_factor_rt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/integer/extended_euclidean.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/integer/integer_log2.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/integer/extended_euclidean.hpp&gt;</code></li>
@@ -866,6 +874,10 @@
     <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/generator_iterator.hpp&gt;</code></li>
     </ul>
+  <h2 id="reverse-json"><a href="json.html"><em>json</em></a></h2>
+    <h3><code>&lt;boost/core/detail/string_view.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/json/string_view.hpp&gt;</code></li>
+    </ul>
   <h2 id="reverse-lambda"><a href="lambda.html"><em>lambda</em></a></h2>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/lambda/detail/lambda_functors.hpp&gt;</code></li>
@@ -925,6 +937,7 @@
       <li>from <code>&lt;boost/log/support/spirit_qi.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/exception_handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/formatting_ostream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/manipulators/invoke.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/optional.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/to_log.hpp&gt;</code></li>
@@ -1112,6 +1125,7 @@
     </ul>
     <h3><code>&lt;boost/core/nvp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/detail/number_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multiprecision/number.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-numeric~conversion"><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2>
     <h3><code>&lt;boost/type.hpp&gt;</code></h3><ul>
@@ -1800,6 +1814,9 @@
     </ul>
   <h2 id="reverse-unordered"><a href="unordered.html"><em>unordered</em></a></h2>
     <h3><code>&lt;boost/core/allocator_traits.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/bit.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></h3><ul>

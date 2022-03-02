@@ -16,16 +16,16 @@
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/detail/standalone_config.hpp&gt;</code></li>
     </ul>
-  <h2 id="core"><a href="core.html"><em>core</em></a></h2>
-    <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multiprecision/cpp_int.hpp&gt;</code></li>
+    <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multiprecision/detail/standalone_config.hpp&gt;</code></li>
     </ul>
+  <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multiprecision/detail/default_ops.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multiprecision/detail/functions/pow.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multiprecision/detail/no_exceptions_support.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/nvp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/detail/number_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multiprecision/number.hpp&gt;</code></li>
     </ul>
   <h2 id="integer"><a href="integer.html"><em>integer</em></a></h2>
     <h3><code>&lt;boost/integer.hpp&gt;</code></h3><ul>
@@ -33,9 +33,6 @@
     </ul>
     <h3><code>&lt;boost/integer/common_factor_rt.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/cpp_int/misc.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/integer/static_min_max.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multiprecision/cpp_int.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/integer_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/detail/standalone_config.hpp&gt;</code></li>
@@ -47,6 +44,7 @@
   <h2 id="math"><a href="math.html"><em>math</em></a></h2>
     <h3><code>&lt;boost/math/constants/constants.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/mpfi.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multiprecision/mpfr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/math/policies/error_handling.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/detail/default_ops.hpp&gt;</code></li>
@@ -80,26 +78,24 @@
       <li>from <code>&lt;boost/multiprecision/gmp.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/math/special_functions/fpclassify.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multiprecision/concepts/mp_number_archetypes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/detail/default_ops.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multiprecision/gmp.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multiprecision/mpfi.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multiprecision/mpfr.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multiprecision/tommath.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multiprecision/detail/fpclassify.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/math/special_functions/gamma.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/cpp_bin_float.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/cpp_dec_float.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/gmp.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multiprecision/mpfr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/math/special_functions/hypot.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/detail/default_ops.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/math/special_functions/next.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multiprecision/cpp_int/misc.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/detail/default_ops.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/math/special_functions/trunc.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multiprecision/cpp_bin_float.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multiprecision/detail/functions/trunc.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/math/tools/complex.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/detail/number_base.hpp&gt;</code></li>
@@ -110,19 +106,21 @@
     </ul>
   <h2 id="random"><a href="random.html"><em>random</em></a></h2>
     <h3><code>&lt;boost/random.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multiprecision/miller_rabin.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/random.hpp&gt;</code></li>
+    </ul>
+  <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
+    <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multiprecision/detail/no_exceptions_support.hpp&gt;</code></li>
     </ul>
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>multiprecision</em></h1>
   <h2><a href="core.html"><em>core</em></a></h2><ul>
     <li><a href="core.html#static_assert">adds <em>static_assert</em></a></li>
-    <li><a href="core.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
   <h2><a href="integer.html"><em>integer</em></a></h2><ul>
     <li><a href="integer.html#static_assert">adds <em>static_assert</em></a></li>
-    <li><a href="integer.html#throw_exception">adds <em>throw_exception</em></a></li>
+    <li><a href="integer.html#type_traits">adds <em>type_traits</em></a></li>
   </ul>
   <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
     <li><a href="lexical_cast.html#array">adds <em>array</em></a></li>
@@ -130,13 +128,11 @@
     <li><a href="lexical_cast.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
     <li><a href="lexical_cast.html#range">adds <em>range</em></a></li>
     <li><a href="lexical_cast.html#static_assert">adds <em>static_assert</em></a></li>
-    <li><a href="lexical_cast.html#throw_exception">adds <em>throw_exception</em></a></li>
     <li><a href="lexical_cast.html#type_traits">adds <em>type_traits</em></a></li>
   </ul>
   <h2><a href="math.html"><em>math</em></a></h2><ul>
     <li><a href="math.html#concept_check">adds <em>concept_check</em></a></li>
     <li><a href="math.html#static_assert">adds <em>static_assert</em></a></li>
-    <li><a href="math.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
   <h2><a href="random.html"><em>random</em></a></h2><ul>
     <li><a href="random.html#array">adds <em>array</em></a></li>
@@ -145,7 +141,6 @@
     <li><a href="random.html#range">adds <em>range</em></a></li>
     <li><a href="random.html#static_assert">adds <em>static_assert</em></a></li>
     <li><a href="random.html#system">adds <em>system</em></a></li>
-    <li><a href="random.html#throw_exception">adds <em>throw_exception</em></a></li>
     <li><a href="random.html#type_traits">adds <em>type_traits</em></a></li>
     <li><a href="random.html#utility">adds <em>utility</em></a></li>
   </ul>
