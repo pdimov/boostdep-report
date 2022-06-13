@@ -16,14 +16,12 @@
     </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/locale/definitions.hpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/encoding/codepage.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/shared/message.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/std/converter.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/util/default_locale.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/util/gregorian.cpp&gt;</code></li>
+      <li>from <code>&lt;boost/locale/config.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/auto_link.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/locale/config.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/config/pragma_message.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/locale/config.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
@@ -39,10 +37,13 @@
       <li>from <code>&lt;libs/locale/src/icu/formatter.hpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/icu/predefined_formatters.hpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/shared/mo_hash.hpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/std/codecvt.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/version.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/locale/src/shared/message.cpp&gt;</code></li>
+    </ul>
+  <h2 id="core"><a href="core.html"><em>core</em></a></h2>
+    <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/locale/src/shared/ids.cpp&gt;</code></li>
     </ul>
   <h2 id="function"><a href="function.html"><em>function</em></a></h2>
     <h3><code>&lt;boost/function.hpp&gt;</code></h3><ul>
@@ -51,6 +52,12 @@
   <h2 id="iterator"><a href="iterator.html"><em>iterator</em></a></h2>
     <h3><code>&lt;boost/iterator/iterator_facade.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/locale/boundary/index.hpp&gt;</code></li>
+    </ul>
+  <h2 id="predef"><a href="predef.html"><em>predef</em></a></h2>
+    <h3><code>&lt;boost/predef/os.h&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/locale/src/icu/time_zone.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/posix/numeric.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/util/numeric.hpp&gt;</code></li>
     </ul>
   <h2 id="smart_ptr"><a href="smart_ptr.html"><em>smart_ptr</em></a></h2>
     <h3><code>&lt;boost/shared_ptr.hpp&gt;</code></h3><ul>
@@ -63,7 +70,6 @@
       <li>from <code>&lt;libs/locale/src/shared/localization_backend.cpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/shared/message.cpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/shared/mo_lambda.hpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/win32/numeric.cpp&gt;</code></li>
     </ul>
   <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
     <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
@@ -79,6 +85,7 @@
       <li>from <code>&lt;libs/locale/src/shared/date_time.cpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/shared/generator.cpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/shared/localization_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/win32/lcid.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/thread/mutex.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/locale/src/shared/date_time.cpp&gt;</code></li>
@@ -97,9 +104,11 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>locale</em></h1>
+  <h2><a href="core.html"><em>core</em></a></h2><ul>
+    <li><a href="core.html#throw_exception">adds <em>throw_exception</em></a></li>
+  </ul>
   <h2><a href="function.html"><em>function</em></a></h2><ul>
     <li><a href="function.html#bind">adds <em>bind</em></a></li>
-    <li><a href="function.html#core">adds <em>core</em></a></li>
     <li><a href="function.html#integer">adds <em>integer</em></a></li>
     <li><a href="function.html#preprocessor">adds <em>preprocessor</em></a></li>
     <li><a href="function.html#throw_exception">adds <em>throw_exception</em></a></li>
@@ -109,7 +118,6 @@
   <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
     <li><a href="iterator.html#concept_check">adds <em>concept_check</em></a></li>
     <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
-    <li><a href="iterator.html#core">adds <em>core</em></a></li>
     <li><a href="iterator.html#detail">adds <em>detail</em></a></li>
     <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
@@ -118,7 +126,6 @@
     <li><a href="iterator.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
-    <li><a href="smart_ptr.html#core">adds <em>core</em></a></li>
     <li><a href="smart_ptr.html#move">adds <em>move</em></a></li>
     <li><a href="smart_ptr.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
@@ -131,7 +138,6 @@
     <li><a href="thread.html#concept_check">adds <em>concept_check</em></a></li>
     <li><a href="thread.html#container">adds <em>container</em></a></li>
     <li><a href="thread.html#container_hash">adds <em>container_hash</em></a></li>
-    <li><a href="thread.html#core">adds <em>core</em></a></li>
     <li><a href="thread.html#date_time">adds <em>date_time</em></a></li>
     <li><a href="thread.html#exception">adds <em>exception</em></a></li>
     <li><a href="thread.html#intrusive">adds <em>intrusive</em></a></li>
@@ -139,7 +145,6 @@
     <li><a href="thread.html#lexical_cast">adds <em>lexical_cast</em></a></li>
     <li><a href="thread.html#move">adds <em>move</em></a></li>
     <li><a href="thread.html#optional">adds <em>optional</em></a></li>
-    <li><a href="thread.html#predef">adds <em>predef</em></a></li>
     <li><a href="thread.html#preprocessor">adds <em>preprocessor</em></a></li>
     <li><a href="thread.html#system">adds <em>system</em></a></li>
     <li><a href="thread.html#throw_exception">adds <em>throw_exception</em></a></li>
@@ -149,10 +154,8 @@
   </ul>
   <h2><a href="unordered.html"><em>unordered</em></a></h2><ul>
     <li><a href="unordered.html#container_hash">adds <em>container_hash</em></a></li>
-    <li><a href="unordered.html#core">adds <em>core</em></a></li>
-    <li><a href="unordered.html#detail">adds <em>detail</em></a></li>
     <li><a href="unordered.html#move">adds <em>move</em></a></li>
-    <li><a href="unordered.html#predef">adds <em>predef</em></a></li>
+    <li><a href="unordered.html#mp11">adds <em>mp11</em></a></li>
     <li><a href="unordered.html#preprocessor">adds <em>preprocessor</em></a></li>
     <li><a href="unordered.html#throw_exception">adds <em>throw_exception</em></a></li>
     <li><a href="unordered.html#tuple">adds <em>tuple</em></a></li>
@@ -186,9 +189,6 @@
   </ul>
   <h2><a href="ratio.html"><em>ratio</em></a></h2><ul>
     <li><a href="ratio.html#rational">adds <em>rational</em></a></li>
-  </ul>
-  <h2><a href="variant2.html"><em>variant2</em></a></h2><ul>
-    <li><a href="variant2.html#mp11">adds <em>mp11</em></a></li>
   </ul>
 
 

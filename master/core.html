@@ -1092,7 +1092,7 @@
     <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/rnk_index_ops.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
     </ul>
@@ -1430,11 +1430,11 @@
       <li>from <code>&lt;boost/serialization/collections_load_imp.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-signals2"><a href="signals2.html"><em>signals2</em></a></h2>
-    <h3><code>&lt;boost/checked_delete.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/signals2/deconstruct_ptr.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/signals2/detail/auto_buffer.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/checked_delete.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/signals2/deconstruct_ptr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/signals2/deconstruct_ptr.hpp&gt;</code></li>
@@ -1443,19 +1443,19 @@
       <li>from <code>&lt;boost/signals2/last_value.hpp&gt;</code></li>
       <li>from <code>&lt;boost/signals2/optional_last_value.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/signals2/detail/signals_common.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/signals2/detail/tracked_objects_visitor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/signals2/slot.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/signals2/detail/auto_buffer.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/signals2/connection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/signals2/detail/unique_lock.hpp&gt;</code></li>
       <li>from <code>&lt;boost/signals2/signal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/signals2/signal_base.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/signals2/detail/signals_common.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/signals2/detail/tracked_objects_visitor.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/signals2/slot.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/swap.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/signals2/detail/auto_buffer.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/signals2/detail/tracked_objects_visitor.hpp&gt;</code></li>
@@ -1471,14 +1471,6 @@
       <li>from <code>&lt;boost/signals2/slot.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-smart_ptr"><a href="smart_ptr.html"><em>smart_ptr</em></a></h2>
-    <h3><code>&lt;boost/checked_delete.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/smart_ptr/detail/shared_count.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/scoped_array.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/scoped_ptr.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/shared_array.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/shared_ptr.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/detail/shared_count.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_impl.hpp&gt;</code></li>
@@ -1490,6 +1482,14 @@
     <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/allocate_shared_array.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/allocate_unique.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/checked_delete.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/smart_ptr/detail/shared_count.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/scoped_array.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/scoped_ptr.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/shared_array.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/shared_ptr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/default_allocator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/make_local_shared_array.hpp&gt;</code></li>
@@ -1803,7 +1803,7 @@
     <h3><code>&lt;boost/core/noncopyable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/utility.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/swap.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/utility/value_init.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>

@@ -606,17 +606,49 @@
       <li>from <code>&lt;boost/container/devector.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-container_hash"><a href="container_hash.html"><em>container_hash</em></a></h2>
-    <h3><code>&lt;boost/type_traits/is_array.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/container_hash/extensions.hpp&gt;</code></li>
+    <h3><code>&lt;boost/type_traits/conjunction.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/container_hash/hash.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/declval.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/container_hash/detail/is_contiguous_range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container_hash/detail/is_range.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/container_hash/detail/hash_tuple.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container_hash/hash.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/container_hash/detail/is_contiguous_range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container_hash/detail/is_range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container_hash/detail/is_unordered_range.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_enum.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/container_hash/hash.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/type_traits/is_integral.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/type_traits/is_floating_point.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/container_hash/hash.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/type_traits/is_pointer.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/type_traits/is_integral.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/container_hash/detail/is_contiguous_range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container_hash/detail/is_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container_hash/hash.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/container_hash/detail/is_contiguous_range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container_hash/detail/is_range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container_hash/detail/is_unordered_range.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_signed.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/container_hash/hash.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_unsigned.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/container_hash/hash.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/make_unsigned.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/container_hash/hash.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/container_hash/detail/is_range.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-contract"><a href="contract.html"><em>contract</em></a></h2>
     <h3><code>&lt;boost/type_traits/add_pointer.hpp&gt;</code></h3><ul>
@@ -1871,6 +1903,7 @@
       <li>from <code>&lt;boost/log/attributes/attribute_set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/attributes/mutable_constant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/attributes/named_scope.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/sources/exception_handler_feature.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/functional/logical.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/add_value.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/optional.hpp&gt;</code></li>
@@ -1888,9 +1921,12 @@
     </ul>
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/attachable_sstream_buf.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/sinks/basic_sink_frontend.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/sources/threading_models.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/functional/in_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/functional/logical.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/manipulators/tuple.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/utility/strictest_lock.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_array.hpp&gt;</code></h3><ul>
@@ -3495,6 +3531,10 @@
     <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/statechart/state_machine.hpp&gt;</code></li>
     </ul>
+  <h2 id="reverse-stl_interfaces"><a href="stl_interfaces.html"><em>stl_interfaces</em></a></h2>
+    <h3><code>&lt;boost/type_traits/is_detected.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/stl_interfaces/view_adaptor.hpp&gt;</code></li>
+    </ul>
   <h2 id="reverse-test"><a href="test.html"><em>test</em></a></h2>
     <h3><code>&lt;boost/type_traits/add_const.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/test/utils/basic_cstring/bcs_char_traits.hpp&gt;</code></li>
@@ -3676,6 +3716,9 @@
       <li>from <code>&lt;boost/thread/synchronized_value.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-tokenizer"><a href="tokenizer.html"><em>tokenizer</em></a></h2>
+    <h3><code>&lt;boost/type_traits/conditional.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/token_functions.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/is_pointer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/token_functions.hpp&gt;</code></li>
     </ul>
@@ -3916,9 +3959,11 @@
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/aligned_storage.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/alignment_of.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
