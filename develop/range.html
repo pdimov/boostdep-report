@@ -146,7 +146,7 @@
       <li>from <code>&lt;boost/range/detail/any_iterator_wrapper.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
-    <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/noncopyable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/range/detail/any_iterator_buffer.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
@@ -856,6 +856,8 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/range_of_boxes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/extreme_points.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/for_each_range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/gc_group_elements.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/gc_make_rtree.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/has_self_intersections.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_simple/areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_simple/debug_print_boundary_points.hpp&gt;</code></li>
@@ -866,7 +868,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/linear.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/multipolygon.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/polygon.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/make_rtree.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/max_interval_gap.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/multi_modify.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/multi_modify_with_predicate.hpp&gt;</code></li>
@@ -1009,6 +1010,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/envelope/range_of_boxes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/extreme_points.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/for_each_range.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/gc_make_rtree.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/has_self_intersections.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_simple/areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_simple/debug_print_boundary_points.hpp&gt;</code></li>
@@ -1019,7 +1021,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/linear.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/multipolygon.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/polygon.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/make_rtree.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/max_interval_gap.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/multi_modify.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/multi_modify_with_predicate.hpp&gt;</code></li>
@@ -1153,12 +1154,13 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/point_to_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/equals/implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/extreme_points.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/gc_group_elements.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/gc_make_rtree.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_simple/debug_print_boundary_points.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_simple/linear.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/has_duplicates.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/linear.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/multipolygon.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/make_rtree.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/num_distinct_consecutive_points.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/append_no_dups_or_spikes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/copy_segment_point.hpp&gt;</code></li>
@@ -1213,7 +1215,6 @@
     <h3><code>&lt;boost/range/value_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/append.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/area.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/convert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/correct.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/densify.hpp&gt;</code></li>
@@ -1222,6 +1223,7 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffered_piece_collection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/buffered_ring.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/get_piece_turns.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/algorithms/detail/buffer/implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/closest_points/point_to_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/linear_areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/disjoint/multipoint_geometry.hpp&gt;</code></li>
@@ -1303,7 +1305,11 @@
       <li>from <code>&lt;boost/geometry/srs/projections/dpar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/buffer_point_circle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/buffer_point_square.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/geographic/buffer_end_round.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/geographic/buffer_join_miter.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/geographic/buffer_join_round.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/geographic/buffer_point_circle.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/geographic/buffer_side_straight.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategy/spherical/envelope_multipoint.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
     </ul>

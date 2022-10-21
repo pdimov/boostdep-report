@@ -32,6 +32,7 @@
       <li>from <code>&lt;boost/core/enable_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/exchange.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/fclose_deleter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/first_scalar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/ignore_unused.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/is_same.hpp&gt;</code></li>
@@ -151,6 +152,9 @@
       <li>from <code>&lt;boost/assign/list_of.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-beast"><a href="beast.html"><em>beast</em></a></h2>
+    <h3><code>&lt;boost/core/detail/string_view.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/string_type.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/basic_stream.hpp&gt;</code></li>
@@ -187,6 +191,10 @@
       <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/pcg.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/static_string.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/span.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/span.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-bimap"><a href="bimap.html"><em>bimap</em></a></h2>
     <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
@@ -282,6 +290,7 @@
       <li>from <code>&lt;boost/container/detail/allocator_version_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/copy_move_algo.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/dispatch_uses_allocator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container/detail/hash_table.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/node_alloc_holder.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/node_pool_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/tree.hpp&gt;</code></li>
@@ -293,12 +302,6 @@
       <li>from <code>&lt;boost/container/string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/vector.hpp&gt;</code></li>
       <li>from <code>&lt;libs/container/src/global_resource.cpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-container_hash"><a href="container_hash.html"><em>container_hash</em></a></h2>
-    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/container_hash/detail/hash_float.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/container_hash/extensions.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/container_hash/hash.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-context"><a href="context.html"><em>context</em></a></h2>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
@@ -425,29 +428,29 @@
       <li>from <code>&lt;libs/filesystem/src/operations.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/filesystem/detail/path_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/filesystem/path.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/filesystem/path_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/scoped_enum.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/filesystem/directory.hpp&gt;</code></li>
       <li>from <code>&lt;boost/filesystem/operations.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-flyweight"><a href="flyweight.html"><em>flyweight</em></a></h2>
+    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/flyweight/flyweight.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/flyweight/detail/archive_constructed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/detail/flyweight_core.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/flyweight/flyweight.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/flyweight/refcounted.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/flyweight/detail/archive_constructed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/detail/recursive_lw_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/detail/serialization_helper.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/flyweight/flyweight.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/swap.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/flyweight/flyweight.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/flyweight/refcounted.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-foreach"><a href="foreach.html"><em>foreach</em></a></h2>
     <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
@@ -511,12 +514,12 @@
       <li>from <code>&lt;boost/fusion/sequence/intrinsic/swap.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/tuple/tuple.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/get_pointer.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/fusion/functional/invocation/detail/that_ptr.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/support/deduce.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/detail/as_fusion_element.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/get_pointer.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/fusion/functional/invocation/detail/that_ptr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/functional/invocation/detail/that_ptr.hpp&gt;</code></li>
@@ -578,6 +581,7 @@
       <li>from <code>&lt;boost/geometry/index/detail/varray_detail.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/views/detail/boundary_view/implementation.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/views/detail/geometry_collection_view.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/area.hpp&gt;</code></li>
@@ -730,9 +734,9 @@
     </ul>
     <h3><code>&lt;boost/core/nvp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/accumulators/count.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/accumulators/fraction.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/accumulators/mean.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/accumulators/sum.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/histogram/accumulators/thread_safe.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/accumulators/weighted_mean.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/accumulators/weighted_sum.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/axis/boolean.hpp&gt;</code></li>
@@ -844,6 +848,7 @@
       <li>from <code>&lt;boost/iterator/iterator_facade.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/iterator/function_output_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/next_prior.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
@@ -872,9 +877,14 @@
     <h3><code>&lt;boost/core/cmath.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/lexical_cast/detail/inf_nan.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/noncopyable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical_streams.hpp&gt;</code></li>
       <li>from <code>&lt;boost/lexical_cast/detail/lcast_unsigned_converters.hpp&gt;</code></li>
+    </ul>
+  <h2 id="reverse-locale"><a href="locale.html"><em>locale</em></a></h2>
+    <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/locale/src/boost/locale/icu/formatter.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/boost/locale/shared/ids.cpp&gt;</code></li>
     </ul>
   <h2 id="reverse-lockfree"><a href="lockfree.html"><em>lockfree</em></a></h2>
     <h3><code>&lt;boost/checked_delete.hpp&gt;</code></h3><ul>
@@ -1063,6 +1073,15 @@
       <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/is_transparent.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/global_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/identity.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/mem_fun.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/member.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/archive_constructed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/copy_map.hpp&gt;</code></li>
@@ -1095,15 +1114,6 @@
     <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/is_transparent.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/global_fun.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/identity.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/mem_fun.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/member.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-multiprecision"><a href="multiprecision.html"><em>multiprecision</em></a></h2>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
@@ -1208,9 +1218,13 @@
     </ul>
   <h2 id="reverse-process"><a href="process.html"><em>process</em></a></h2>
     <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/process/detail/posix/file_descriptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/process/detail/windows/file_descriptor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/process/v2/process.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/process/detail/posix/executor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/process/detail/posix/start_dir.hpp&gt;</code></li>
       <li>from <code>&lt;boost/process/detail/windows/locale.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-program_options"><a href="program_options.html"><em>program_options</em></a></h2>
@@ -1430,11 +1444,18 @@
       <li>from <code>&lt;boost/serialization/collections_load_imp.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-signals2"><a href="signals2.html"><em>signals2</em></a></h2>
+    <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/signals2/detail/tracked_objects_visitor.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/signals2/detail/auto_buffer.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/checked_delete.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/signals2/deconstruct_ptr.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/signals2/preprocessed_signal.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/signals2/variadic_signal.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/signals2/deconstruct_ptr.hpp&gt;</code></li>
@@ -1443,6 +1464,12 @@
       <li>from <code>&lt;boost/signals2/last_value.hpp&gt;</code></li>
       <li>from <code>&lt;boost/signals2/optional_last_value.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/noncopyable.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/signals2/connection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/signals2/detail/unique_lock.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/signals2/signal.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/signals2/signal_base.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/signals2/detail/signals_common.hpp&gt;</code></li>
       <li>from <code>&lt;boost/signals2/detail/tracked_objects_visitor.hpp&gt;</code></li>
@@ -1450,21 +1477,6 @@
     </ul>
     <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/signals2/detail/auto_buffer.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/signals2/connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/signals2/detail/unique_lock.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/signals2/signal.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/signals2/signal_base.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/signals2/detail/tracked_objects_visitor.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/signals2/preprocessed_signal.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/signals2/variadic_signal.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/swap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/signals2/detail/foreign_ptr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/visit_each.hpp&gt;</code></h3><ul>
@@ -1800,6 +1812,17 @@
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
+  <h2 id="reverse-url"><a href="url.html"><em>url</em></a></h2>
+    <h3><code>&lt;boost/core/bit.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/url/grammar/detail/charset.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/detail/string_view.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/url/string_view.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/url/detail/encode.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/url/detail/impl/remove_dot_segments.ipp&gt;</code></li>
+    </ul>
   <h2 id="reverse-utility"><a href="utility.html"><em>utility</em></a></h2>
     <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/operators.hpp&gt;</code></li>
@@ -1831,7 +1854,7 @@
       <li>from <code>&lt;boost/uuid/detail/random_provider_wincrypt.ipp&gt;</code></li>
     </ul>
   <h2 id="reverse-variant"><a href="variant.html"><em>variant</em></a></h2>
-    <h3><code>&lt;boost/checked_delete.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/checked_delete.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/variant/recursive_wrapper.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>

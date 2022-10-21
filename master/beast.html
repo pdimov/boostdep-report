@@ -31,10 +31,12 @@
       <li>from <code>&lt;boost/beast/_experimental/test/stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/basic_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/buffered_read_stream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/buffers_generator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/is_invocable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detect_ssl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/flat_stream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/buffers_generator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/file_body_win32.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/write.hpp&gt;</code></li>
@@ -92,6 +94,7 @@
       <li>from <code>&lt;boost/beast/websocket/detail/utf8_checker.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/compose.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/impl/buffers_generator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/ssl.hpp&gt;</code></li>
     </ul>
@@ -103,6 +106,7 @@
       <li>from <code>&lt;boost/beast/core/detail/impl/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detect_ssl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/basic_stream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/buffers_generator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/read.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/write.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/websocket/impl/accept.hpp&gt;</code></li>
@@ -207,6 +211,7 @@
       <li>from <code>&lt;boost/beast/http/impl/file_body_win32.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/write.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/impl/buffers_generator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/write.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/yield.hpp&gt;</code></h3><ul>
@@ -294,6 +299,9 @@
       <li>from <code>&lt;boost/beast/_experimental/unit_test/suite_list.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
+    <h3><code>&lt;boost/core/detail/string_view.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/string_type.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/basic_stream.hpp&gt;</code></li>
@@ -330,6 +338,10 @@
       <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/pcg.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/static_string.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/span.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/span.hpp&gt;</code></li>
     </ul>
   <h2 id="endian"><a href="endian.html"><em>endian</em></a></h2>
     <h3><code>&lt;boost/endian/conversion.hpp&gt;</code></h3><ul>
@@ -420,6 +432,9 @@
     <h3><code>&lt;boost/smart_ptr/make_shared_array.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/http/impl/file_body_win32.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/smart_ptr/make_unique.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/http/impl/message_generator.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/smart_ptr/weak_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/_experimental/test/detail/stream_state.hpp&gt;</code></li>
     </ul>
@@ -430,6 +445,10 @@
     <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/varint.hpp&gt;</code></li>
+    </ul>
+  <h2 id="static_string"><a href="static_string.html"><em>static_string</em></a></h2>
+    <h3><code>&lt;boost/static_string/static_string.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/static_string.hpp&gt;</code></li>
     </ul>
   <h2 id="system"><a href="system.html"><em>system</em></a></h2>
     <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
@@ -448,11 +467,11 @@
       <li>from <code>&lt;boost/beast/core/detail/ostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/buffered_read_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/buffers_adaptor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/impl/buffers_generator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/flat_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/flat_static_buffer.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/multi_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/static_buffer.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/impl/static_string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/read_size.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/fields.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/message.hpp&gt;</code></li>
@@ -502,10 +521,6 @@
     <h3><code>&lt;boost/type_traits/type_with_alignment.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/multi_buffer.hpp&gt;</code></li>
     </ul>
-  <h2 id="utility"><a href="utility.html"><em>utility</em></a></h2>
-    <h3><code>&lt;boost/utility/string_view.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/string_type.hpp&gt;</code></li>
-    </ul>
   <h2 id="winapi"><a href="winapi.html"><em>winapi</em></a></h2>
     <h3><code>&lt;boost/winapi/access_rights.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/impl/file_win32.ipp&gt;</code></li>
@@ -543,17 +558,16 @@
     <li><a href="asio.html#align">adds <em>align</em></a></li>
     <li><a href="asio.html#array">adds <em>array</em></a></li>
     <li><a href="asio.html#chrono">adds <em>chrono</em></a></li>
+    <li><a href="asio.html#context">adds <em>context</em></a></li>
     <li><a href="asio.html#coroutine">adds <em>coroutine</em></a></li>
     <li><a href="asio.html#date_time">adds <em>date_time</em></a></li>
+    <li><a href="asio.html#exception">adds <em>exception</em></a></li>
     <li><a href="asio.html#function">adds <em>function</em></a></li>
     <li><a href="asio.html#regex">adds <em>regex</em></a></li>
+    <li><a href="asio.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="container.html"><em>container</em></a></h2><ul>
     <li><a href="container.html#move">adds <em>move</em></a></li>
-  </ul>
-  <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
-    <li><a href="container_hash.html#detail">adds <em>detail</em></a></li>
-    <li><a href="container_hash.html#integer">adds <em>integer</em></a></li>
   </ul>
   <h2><a href="intrusive.html"><em>intrusive</em></a></h2><ul>
     <li><a href="intrusive.html#move">adds <em>move</em></a></li>
@@ -562,9 +576,13 @@
     <li><a href="optional.html#detail">adds <em>detail</em></a></li>
     <li><a href="optional.html#move">adds <em>move</em></a></li>
     <li><a href="optional.html#predef">adds <em>predef</em></a></li>
+    <li><a href="optional.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
     <li><a href="smart_ptr.html#move">adds <em>move</em></a></li>
+  </ul>
+  <h2><a href="static_string.html"><em>static_string</em></a></h2><ul>
+    <li><a href="static_string.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="system.html"><em>system</em></a></h2><ul>
     <li><a href="system.html#variant2">adds <em>variant2</em></a></li>
@@ -572,46 +590,44 @@
   <h2><a href="type_index.html"><em>type_index</em></a></h2><ul>
     <li><a href="type_index.html#preprocessor">adds <em>preprocessor</em></a></li>
   </ul>
-  <h2><a href="utility.html"><em>utility</em></a></h2><ul>
-    <li><a href="utility.html#io">adds <em>io</em></a></li>
-    <li><a href="utility.html#preprocessor">adds <em>preprocessor</em></a></li>
-  </ul>
   <h2><a href="winapi.html"><em>winapi</em></a></h2><ul>
     <li><a href="winapi.html#predef">adds <em>predef</em></a></li>
   </ul>
   <h2><a href="chrono.html"><em>chrono</em></a></h2><ul>
+    <li><a href="chrono.html#integer">adds <em>integer</em></a></li>
     <li><a href="chrono.html#mpl">adds <em>mpl</em></a></li>
     <li><a href="chrono.html#ratio">adds <em>ratio</em></a></li>
     <li><a href="chrono.html#typeof">adds <em>typeof</em></a></li>
   </ul>
-  <h2><a href="coroutine.html"><em>coroutine</em></a></h2><ul>
-    <li><a href="coroutine.html#context">adds <em>context</em></a></li>
-    <li><a href="coroutine.html#exception">adds <em>exception</em></a></li>
+  <h2><a href="context.html"><em>context</em></a></h2><ul>
+    <li><a href="context.html#pool">adds <em>pool</em></a></li>
   </ul>
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
     <li><a href="date_time.html#algorithm">adds <em>algorithm</em></a></li>
+    <li><a href="date_time.html#io">adds <em>io</em></a></li>
     <li><a href="date_time.html#lexical_cast">adds <em>lexical_cast</em></a></li>
     <li><a href="date_time.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
     <li><a href="date_time.html#range">adds <em>range</em></a></li>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
   </ul>
+  <h2><a href="exception.html"><em>exception</em></a></h2><ul>
+    <li><a href="exception.html#tuple">adds <em>tuple</em></a></li>
+  </ul>
   <h2><a href="function.html"><em>function</em></a></h2><ul>
+    <li><a href="function.html#integer">adds <em>integer</em></a></li>
     <li><a href="function.html#typeof">adds <em>typeof</em></a></li>
   </ul>
   <h2><a href="regex.html"><em>regex</em></a></h2><ul>
     <li><a href="regex.html#concept_check">adds <em>concept_check</em></a></li>
+    <li><a href="regex.html#integer">adds <em>integer</em></a></li>
     <li><a href="regex.html#mpl">adds <em>mpl</em></a></li>
+  </ul>
+  <h2><a href="utility.html"><em>utility</em></a></h2><ul>
+    <li><a href="utility.html#io">adds <em>io</em></a></li>
   </ul>
   <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
     <li><a href="algorithm.html#iterator">adds <em>iterator</em></a></li>
-    <li><a href="algorithm.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="algorithm.html#unordered">adds <em>unordered</em></a></li>
-  </ul>
-  <h2><a href="context.html"><em>context</em></a></h2><ul>
-    <li><a href="context.html#pool">adds <em>pool</em></a></li>
-  </ul>
-  <h2><a href="exception.html"><em>exception</em></a></h2><ul>
-    <li><a href="exception.html#tuple">adds <em>tuple</em></a></li>
   </ul>
   <h2><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2><ul>
     <li><a href="numeric~conversion.html#conversion">adds <em>conversion</em></a></li>
@@ -619,7 +635,6 @@
   <h2><a href="range.html"><em>range</em></a></h2><ul>
     <li><a href="range.html#conversion">adds <em>conversion</em></a></li>
     <li><a href="range.html#iterator">adds <em>iterator</em></a></li>
-    <li><a href="range.html#tuple">adds <em>tuple</em></a></li>
   </ul>
   <h2><a href="ratio.html"><em>ratio</em></a></h2><ul>
     <li><a href="ratio.html#rational">adds <em>rational</em></a></li>
@@ -630,6 +645,9 @@
   <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
     <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
+  </ul>
+  <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
+    <li><a href="fusion.html#functional">adds <em>functional</em></a></li>
   </ul>
 
 

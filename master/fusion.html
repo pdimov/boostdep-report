@@ -108,12 +108,12 @@
       <li>from <code>&lt;boost/fusion/sequence/intrinsic/swap.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/tuple/tuple.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/get_pointer.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/fusion/functional/invocation/detail/that_ptr.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/support/deduce.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/detail/as_fusion_element.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/get_pointer.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/fusion/functional/invocation/detail/that_ptr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/functional/invocation/detail/that_ptr.hpp&gt;</code></li>
@@ -182,6 +182,10 @@
     </ul>
     <h3><code>&lt;boost/function_types/result_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/functional/invocation/invoke.hpp&gt;</code></li>
+    </ul>
+  <h2 id="functional"><a href="functional.html"><em>functional</em></a></h2>
+    <h3><code>&lt;boost/functional/identity.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/fusion/view/identity_view/identity_view.hpp&gt;</code></li>
     </ul>
   <h2 id="mpl"><a href="mpl.html"><em>mpl</em></a></h2>
     <h3><code>&lt;boost/mpl/advance.hpp&gt;</code></h3><ul>
@@ -532,6 +536,7 @@
       <li>from <code>&lt;boost/fusion/view/joint_view/joint_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/nview/nview.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/repetitive_view/repetitive_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/deref_data_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/inherit.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/view/filter_view/filter_view.hpp&gt;</code></li>
@@ -1235,6 +1240,7 @@
       <li>from <code>&lt;boost/fusion/view/iterator_range/detail/segmented_iterator_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/nview/nview.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/single_view/detail/equal_to_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/deref_data_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/add_reference.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/adapted/array/at_impl.hpp&gt;</code></li>
@@ -1257,6 +1263,7 @@
       <li>from <code>&lt;boost/fusion/functional/invocation/invoke.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/detail/access.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/nview/nview.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/deref_data_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/declval.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/container/vector/detail/value_at_impl.hpp&gt;</code></li>
@@ -1322,6 +1329,7 @@
       <li>from <code>&lt;boost/fusion/sequence/intrinsic_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/segmented_fold_until.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/tuple/detail/tuple.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/deref_data_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_convertible.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/fusion/adapted/struct/detail/define_struct.hpp&gt;</code></li>
@@ -1348,6 +1356,7 @@
       <li>from <code>&lt;boost/fusion/support/pair.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_reference.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/deref_data_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/at_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/begin_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/end_impl.hpp&gt;</code></li>
@@ -1405,6 +1414,9 @@
       <li>from <code>&lt;boost/fusion/sequence/intrinsic/detail/segmented_begin_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/tag_of.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/tuple/make_tuple.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/deref_data_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/key_of_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/value_of_data_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/deref_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/next_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/prior_impl.hpp&gt;</code></li>
@@ -1444,6 +1456,9 @@
       <li>from <code>&lt;boost/fusion/view/flatten_view/flatten_view_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/iterator_range/detail/segmented_iterator_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/repetitive_view/repetitive_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/deref_data_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/key_of_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/value_of_data_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/advance_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/at_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/zip_view/detail/begin_impl.hpp&gt;</code></li>
@@ -1480,19 +1495,18 @@
       <li>from <code>&lt;boost/fusion/functional/invocation/invoke.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/functional/invocation/invoke_function_object.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/support/detail/segmented_fold_until_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/identity_view/identity_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/transform_view/detail/at_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/deref_data_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/transform_view/detail/deref_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/key_of_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/transform_view/detail/value_at_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/fusion/view/transform_view/detail/value_of_data_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/fusion/view/transform_view/detail/value_of_impl.hpp&gt;</code></li>
     </ul>
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>fusion</em></h1>
-  <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
-    <li><a href="container_hash.html#assert">adds <em>assert</em></a></li>
-    <li><a href="container_hash.html#detail">adds <em>detail</em></a></li>
-    <li><a href="container_hash.html#integer">adds <em>integer</em></a></li>
-  </ul>
   <h2><a href="core.html"><em>core</em></a></h2><ul>
     <li><a href="core.html#assert">adds <em>assert</em></a></li>
     <li><a href="core.html#throw_exception">adds <em>throw_exception</em></a></li>
@@ -1500,12 +1514,21 @@
   <h2><a href="function_types.html"><em>function_types</em></a></h2><ul>
     <li><a href="function_types.html#detail">adds <em>detail</em></a></li>
   </ul>
+  <h2><a href="functional.html"><em>functional</em></a></h2><ul>
+    <li><a href="functional.html#function">adds <em>function</em></a></li>
+  </ul>
   <h2><a href="mpl.html"><em>mpl</em></a></h2><ul>
     <li><a href="mpl.html#predef">adds <em>predef</em></a></li>
   </ul>
   <h2><a href="utility.html"><em>utility</em></a></h2><ul>
+    <li><a href="utility.html#assert">adds <em>assert</em></a></li>
     <li><a href="utility.html#io">adds <em>io</em></a></li>
     <li><a href="utility.html#throw_exception">adds <em>throw_exception</em></a></li>
+  </ul>
+  <h2><a href="function.html"><em>function</em></a></h2><ul>
+    <li><a href="function.html#bind">adds <em>bind</em></a></li>
+    <li><a href="function.html#integer">adds <em>integer</em></a></li>
+    <li><a href="function.html#type_index">adds <em>type_index</em></a></li>
   </ul>
 
 
