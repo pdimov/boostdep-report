@@ -10,14 +10,21 @@
 <h1 id="primary-dependencies">Primary dependencies for <em>unordered</em></h1>
   <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/prime_fmod.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/type_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/unordered_flat_map.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/unordered_flat_map_fwd.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/unordered_flat_set.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/unordered_flat_set_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_map_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_set.hpp&gt;</code></li>
@@ -25,19 +32,28 @@
       <li>from <code>&lt;boost/unordered_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered_set.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/prime_fmod.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/xmx.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/limits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
   <h2 id="container_hash"><a href="container_hash.html"><em>container_hash</em></a></h2>
     <h3><code>&lt;boost/functional/hash.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/unordered_flat_map.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/unordered_flat_set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_set.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/functional/hash_fwd.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/unordered_flat_map_fwd.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/unordered_flat_set_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_map_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_set_fwd.hpp&gt;</code></li>
     </ul>
@@ -47,16 +63,21 @@
     </ul>
     <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/unordered_flat_map.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/unordered_flat_set.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/allocator_traits.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/bit.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/unordered_map.hpp&gt;</code></li>
@@ -64,9 +85,11 @@
     </ul>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/swap.hpp&gt;</code></h3><ul>
@@ -100,6 +123,7 @@
     </ul>
   <h2 id="predef"><a href="predef.html"><em>predef</em></a></h2>
     <h3><code>&lt;boost/predef.h&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/fwd.hpp&gt;</code></li>
     </ul>
   <h2 id="preprocessor"><a href="preprocessor.html"><em>preprocessor</em></a></h2>
@@ -135,6 +159,7 @@
   <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
     <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/unordered_flat_map.hpp&gt;</code></li>
     </ul>
   <h2 id="tuple"><a href="tuple.html"><em>tuple</em></a></h2>
     <h3><code>&lt;boost/tuple/tuple.hpp&gt;</code></h3><ul>
@@ -154,6 +179,8 @@
     </ul>
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/type_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/hash_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_base_of.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
@@ -166,6 +193,7 @@
     </ul>
     <h3><code>&lt;boost/type_traits/is_convertible.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/type_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_empty.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
@@ -177,6 +205,7 @@
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_nothrow_swappable.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
@@ -184,6 +213,8 @@
     </ul>
     <h3><code>&lt;boost/type_traits/make_void.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/type_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/hash_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_const.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
@@ -191,6 +222,9 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>unordered</em></h1>
+  <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
+    <li><a href="container_hash.html#describe">adds <em>describe</em></a></li>
+  </ul>
   <h2><a href="core.html"><em>core</em></a></h2><ul>
     <li><a href="core.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
