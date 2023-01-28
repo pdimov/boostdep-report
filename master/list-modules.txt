@@ -48,6 +48,7 @@ gil
 graph
 graph_parallel
 hana
+headers
 heap
 histogram
 hof
@@ -78,6 +79,7 @@ msm
 multi_array
 multi_index
 multiprecision
+mysql
 nowide
 numeric~conversion
 numeric~interval

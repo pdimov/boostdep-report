@@ -27,6 +27,7 @@
       <li>from <code>&lt;boost/core/checked_delete.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/default_allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/demangle.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/detail/is_same.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/detail/string_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/empty_value.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/enable_if.hpp&gt;</code></li>
@@ -56,6 +57,7 @@
       <li>from <code>&lt;boost/get_pointer.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/header_deprecated.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/core/is_same.hpp&gt;</code></li>
       <li>from <code>&lt;boost/detail/iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/detail/no_exceptions_support.hpp&gt;</code></li>
       <li>from <code>&lt;boost/detail/scoped_enum_emulation.hpp&gt;</code></li>
@@ -217,14 +219,12 @@
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/bind/bind.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/core/is_same.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/bind/bind.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/bind/detail/result_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/get_pointer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/bind/mem_fn.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/bind/bind.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/bind/bind.hpp&gt;</code></li>
@@ -409,12 +409,12 @@
       <li>from <code>&lt;boost/exception/detail/type_info.hpp&gt;</code></li>
       <li>from <code>&lt;boost/exception/diagnostic_information.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/core/typeinfo.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/exception/detail/type_info.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/exception/diagnostic_information.hpp&gt;</code></li>
       <li>from <code>&lt;boost/exception/to_string.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/typeinfo.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/exception/detail/type_info.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-fiber"><a href="fiber.html"><em>fiber</em></a></h2>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
@@ -1130,6 +1130,16 @@
     <h3><code>&lt;boost/core/nvp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multiprecision/detail/number_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multiprecision/number.hpp&gt;</code></li>
+    </ul>
+  <h2 id="reverse-mysql"><a href="mysql.html"><em>mysql</em></a></h2>
+    <h3><code>&lt;boost/core/detail/string_view.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/string_view.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/detail/channel/impl/message_parser.ipp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/span.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/blob_view.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-numeric~conversion"><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2>
     <h3><code>&lt;boost/type.hpp&gt;</code></h3><ul>
