@@ -139,6 +139,12 @@
       <li>from <code>&lt;boost/bimap/relation/support/is_tag_of_member_at.hpp&gt;</code></li>
       <li>from <code>&lt;boost/bimap/relation/support/member_with_tag.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/serialization.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/bimap/bimap.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/bimap/detail/map_view_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/bimap/detail/set_view_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/bimap/relation/mutant_relation.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/bimap/relation/detail/mutant.hpp&gt;</code></li>
     </ul>
@@ -326,17 +332,6 @@
       <li>from <code>&lt;boost/bimap/relation/detail/metadata_access_builder.hpp&gt;</code></li>
       <li>from <code>&lt;boost/bimap/relation/detail/static_access_builder.hpp&gt;</code></li>
     </ul>
-  <h2 id="serialization"><a href="serialization.html"><em>serialization</em></a></h2>
-    <h3><code>&lt;boost/serialization/nvp.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/bimap/bimap.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/bimap/detail/map_view_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/bimap/detail/set_view_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/bimap/relation/mutant_relation.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/serialization/split_member.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/bimap/detail/map_view_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/bimap/detail/set_view_iterator.hpp&gt;</code></li>
-    </ul>
   <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
     <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/bimap/relation/detail/mutant.hpp&gt;</code></li>
@@ -428,23 +423,9 @@
     <li><a href="multi_index.html#foreach">adds <em>foreach</em></a></li>
     <li><a href="multi_index.html#integer">adds <em>integer</em></a></li>
     <li><a href="multi_index.html#move">adds <em>move</em></a></li>
+    <li><a href="multi_index.html#serialization">adds <em>serialization</em></a></li>
     <li><a href="multi_index.html#smart_ptr">adds <em>smart_ptr</em></a></li>
     <li><a href="multi_index.html#tuple">adds <em>tuple</em></a></li>
-  </ul>
-  <h2><a href="serialization.html"><em>serialization</em></a></h2><ul>
-    <li><a href="serialization.html#array">adds <em>array</em></a></li>
-    <li><a href="serialization.html#assert">adds <em>assert</em></a></li>
-    <li><a href="serialization.html#detail">adds <em>detail</em></a></li>
-    <li><a href="serialization.html#function">adds <em>function</em></a></li>
-    <li><a href="serialization.html#integer">adds <em>integer</em></a></li>
-    <li><a href="serialization.html#io">adds <em>io</em></a></li>
-    <li><a href="serialization.html#move">adds <em>move</em></a></li>
-    <li><a href="serialization.html#optional">adds <em>optional</em></a></li>
-    <li><a href="serialization.html#predef">adds <em>predef</em></a></li>
-    <li><a href="serialization.html#smart_ptr">adds <em>smart_ptr</em></a></li>
-    <li><a href="serialization.html#spirit">adds <em>spirit</em></a></li>
-    <li><a href="serialization.html#unordered">adds <em>unordered</em></a></li>
-    <li><a href="serialization.html#variant">adds <em>variant</em></a></li>
   </ul>
   <h2><a href="throw_exception.html"><em>throw_exception</em></a></h2><ul>
     <li><a href="throw_exception.html#assert">adds <em>assert</em></a></li>
@@ -459,12 +440,19 @@
   <h2><a href="foreach.html"><em>foreach</em></a></h2><ul>
     <li><a href="foreach.html#range">adds <em>range</em></a></li>
   </ul>
-  <h2><a href="function.html"><em>function</em></a></h2><ul>
-    <li><a href="function.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
   <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
     <li><a href="fusion.html#functional">adds <em>functional</em></a></li>
     <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
+  </ul>
+  <h2><a href="serialization.html"><em>serialization</em></a></h2><ul>
+    <li><a href="serialization.html#array">adds <em>array</em></a></li>
+    <li><a href="serialization.html#function">adds <em>function</em></a></li>
+    <li><a href="serialization.html#spirit">adds <em>spirit</em></a></li>
+    <li><a href="serialization.html#unordered">adds <em>unordered</em></a></li>
+    <li><a href="serialization.html#variant">adds <em>variant</em></a></li>
+  </ul>
+  <h2><a href="range.html"><em>range</em></a></h2><ul>
+    <li><a href="range.html#regex">adds <em>regex</em></a></li>
   </ul>
   <h2><a href="spirit.html"><em>spirit</em></a></h2><ul>
     <li><a href="spirit.html#(unknown)">adds <em>(unknown)</em></a></li>
@@ -472,10 +460,8 @@
     <li><a href="spirit.html#phoenix">adds <em>phoenix</em></a></li>
     <li><a href="spirit.html#pool">adds <em>pool</em></a></li>
     <li><a href="spirit.html#proto">adds <em>proto</em></a></li>
-    <li><a href="spirit.html#range">adds <em>range</em></a></li>
     <li><a href="spirit.html#regex">adds <em>regex</em></a></li>
     <li><a href="spirit.html#thread">adds <em>thread</em></a></li>
-    <li><a href="spirit.html#typeof">adds <em>typeof</em></a></li>
   </ul>
   <h2><a href="variant.html"><em>variant</em></a></h2><ul>
     <li><a href="variant.html#type_index">adds <em>type_index</em></a></li>

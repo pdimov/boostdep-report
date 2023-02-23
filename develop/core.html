@@ -36,6 +36,7 @@
       <li>from <code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/fclose_deleter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/first_scalar.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/identity.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/ignore_unused.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/is_same.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/lightweight_test.hpp&gt;</code></li>
@@ -215,6 +216,12 @@
       <li>from <code>&lt;boost/bimap/relation/structured_pair.hpp&gt;</code></li>
       <li>from <code>&lt;boost/bimap/relation/support/is_tag_of_member_at.hpp&gt;</code></li>
       <li>from <code>&lt;boost/bimap/relation/support/member_with_tag.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/serialization.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/bimap/bimap.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/bimap/detail/map_view_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/bimap/detail/set_view_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/bimap/relation/mutant_relation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/bimap/relation/detail/mutant.hpp&gt;</code></li>
@@ -424,6 +431,10 @@
       <li>from <code>&lt;boost/flyweight/detail/archive_constructed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/detail/flyweight_core.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/serialization.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/flyweight/detail/archive_constructed.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/flyweight/serialize.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/flyweight/flyweight.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/refcounted.hpp&gt;</code></li>
@@ -468,6 +479,9 @@
   <h2 id="reverse-functional"><a href="functional.html"><em>functional</em></a></h2>
     <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/functional/factory.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/identity.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/functional/identity.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/functional/factory.hpp&gt;</code></li>
@@ -729,6 +743,11 @@
       <li>from <code>&lt;boost/histogram/detail/counting_streambuf.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/make_span.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/detail/array_wrapper.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/fill_n.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/histogram.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/nvp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/accumulators/count.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/accumulators/fraction.hpp&gt;</code></li>
@@ -747,6 +766,10 @@
       <li>from <code>&lt;boost/histogram/detail/variant_proxy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/storage_adaptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/histogram/unlimited_storage.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/span.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/histogram/detail/fill_n.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/histogram/detail/reduce_command.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/typeinfo.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/histogram/detail/type_name.hpp&gt;</code></li>
@@ -782,9 +805,7 @@
     </ul>
   <h2 id="reverse-interprocess"><a href="interprocess.html"><em>interprocess</em></a></h2>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/detail/intersegment_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/managed_memory_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/detail/managed_multi_shared_memory.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/segment_manager_helper.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/workaround.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/ipc/message_queue.hpp&gt;</code></li>
@@ -1294,6 +1315,10 @@
     <h3><code>&lt;boost/checked_delete.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/ptr_container/clone_allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/ptr_container/detail/default_deleter.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/serialization.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/ptr_container/detail/serialize_ptr_map_adapter.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/ptr_container/detail/serialize_reversible_cont.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/swap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/ptr_container/detail/reversible_ptr_container.hpp&gt;</code></li>
@@ -1829,8 +1854,11 @@
     </ul>
     <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/node_handle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_flat_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_flat_set.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/unordered_node_map.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/unordered_node_set.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/allocator_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>

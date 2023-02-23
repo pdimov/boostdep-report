@@ -66,6 +66,10 @@
       <li>from <code>&lt;boost/flyweight/detail/archive_constructed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/detail/flyweight_core.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/serialization.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/flyweight/detail/archive_constructed.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/flyweight/serialize.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/flyweight/flyweight.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/refcounted.hpp&gt;</code></li>
@@ -199,19 +203,6 @@
     <h3><code>&lt;boost/preprocessor/seq/size.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/flyweight/detail/dyn_perfect_fwd.hpp&gt;</code></li>
     </ul>
-  <h2 id="serialization"><a href="serialization.html"><em>serialization</em></a></h2>
-    <h3><code>&lt;boost/serialization/extended_type_info.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/flyweight/detail/serialization_helper.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/serialization/nvp.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/flyweight/serialize.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/serialization/serialization.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/flyweight/detail/archive_constructed.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/serialization/split_free.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/flyweight/serialize.hpp&gt;</code></li>
-    </ul>
   <h2 id="smart_ptr"><a href="smart_ptr.html"><em>smart_ptr</em></a></h2>
     <h3><code>&lt;boost/detail/atomic_count.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/flyweight/refcounted.hpp&gt;</code></li>
@@ -262,9 +253,7 @@
     <li><a href="detail.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
   <h2><a href="interprocess.html"><em>interprocess</em></a></h2><ul>
-    <li><a href="interprocess.html#(unknown)">adds <em>(unknown)</em></a></li>
     <li><a href="interprocess.html#container">adds <em>container</em></a></li>
-    <li><a href="interprocess.html#integer">adds <em>integer</em></a></li>
     <li><a href="interprocess.html#intrusive">adds <em>intrusive</em></a></li>
     <li><a href="interprocess.html#move">adds <em>move</em></a></li>
     <li><a href="interprocess.html#static_assert">adds <em>static_assert</em></a></li>
@@ -282,6 +271,7 @@
     <li><a href="multi_index.html#integer">adds <em>integer</em></a></li>
     <li><a href="multi_index.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="multi_index.html#move">adds <em>move</em></a></li>
+    <li><a href="multi_index.html#serialization">adds <em>serialization</em></a></li>
     <li><a href="multi_index.html#static_assert">adds <em>static_assert</em></a></li>
     <li><a href="multi_index.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="multi_index.html#utility">adds <em>utility</em></a></li>
@@ -292,21 +282,6 @@
     <li><a href="parameter.html#mp11">adds <em>mp11</em></a></li>
     <li><a href="parameter.html#optional">adds <em>optional</em></a></li>
     <li><a href="parameter.html#utility">adds <em>utility</em></a></li>
-  </ul>
-  <h2><a href="serialization.html"><em>serialization</em></a></h2><ul>
-    <li><a href="serialization.html#array">adds <em>array</em></a></li>
-    <li><a href="serialization.html#function">adds <em>function</em></a></li>
-    <li><a href="serialization.html#integer">adds <em>integer</em></a></li>
-    <li><a href="serialization.html#io">adds <em>io</em></a></li>
-    <li><a href="serialization.html#iterator">adds <em>iterator</em></a></li>
-    <li><a href="serialization.html#move">adds <em>move</em></a></li>
-    <li><a href="serialization.html#optional">adds <em>optional</em></a></li>
-    <li><a href="serialization.html#predef">adds <em>predef</em></a></li>
-    <li><a href="serialization.html#spirit">adds <em>spirit</em></a></li>
-    <li><a href="serialization.html#static_assert">adds <em>static_assert</em></a></li>
-    <li><a href="serialization.html#unordered">adds <em>unordered</em></a></li>
-    <li><a href="serialization.html#utility">adds <em>utility</em></a></li>
-    <li><a href="serialization.html#variant">adds <em>variant</em></a></li>
   </ul>
   <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
     <li><a href="smart_ptr.html#move">adds <em>move</em></a></li>
@@ -331,16 +306,26 @@
     <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
     <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
   </ul>
+  <h2><a href="serialization.html"><em>serialization</em></a></h2><ul>
+    <li><a href="serialization.html#array">adds <em>array</em></a></li>
+    <li><a href="serialization.html#io">adds <em>io</em></a></li>
+    <li><a href="serialization.html#spirit">adds <em>spirit</em></a></li>
+    <li><a href="serialization.html#variant">adds <em>variant</em></a></li>
+  </ul>
+  <h2><a href="utility.html"><em>utility</em></a></h2><ul>
+    <li><a href="utility.html#io">adds <em>io</em></a></li>
+  </ul>
+  <h2><a href="range.html"><em>range</em></a></h2><ul>
+    <li><a href="range.html#regex">adds <em>regex</em></a></li>
+  </ul>
   <h2><a href="spirit.html"><em>spirit</em></a></h2><ul>
+    <li><a href="spirit.html#(unknown)">adds <em>(unknown)</em></a></li>
     <li><a href="spirit.html#endian">adds <em>endian</em></a></li>
-    <li><a href="spirit.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="spirit.html#phoenix">adds <em>phoenix</em></a></li>
     <li><a href="spirit.html#pool">adds <em>pool</em></a></li>
     <li><a href="spirit.html#proto">adds <em>proto</em></a></li>
-    <li><a href="spirit.html#range">adds <em>range</em></a></li>
     <li><a href="spirit.html#regex">adds <em>regex</em></a></li>
     <li><a href="spirit.html#thread">adds <em>thread</em></a></li>
-    <li><a href="spirit.html#typeof">adds <em>typeof</em></a></li>
   </ul>
   <h2><a href="variant.html"><em>variant</em></a></h2><ul>
     <li><a href="variant.html#type_index">adds <em>type_index</em></a></li>

@@ -635,6 +635,7 @@
       <li>from <code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/fclose_deleter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/first_scalar.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/identity.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/ignore_unused.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/is_same.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/lightweight_test.hpp&gt;</code></li>
@@ -1087,7 +1088,6 @@
       <li>from <code>&lt;boost/functional.hpp&gt;</code></li>
       <li>from <code>&lt;boost/functional/factory.hpp&gt;</code></li>
       <li>from <code>&lt;boost/functional/forward_adapter.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/functional/identity.hpp&gt;</code></li>
       <li>from <code>&lt;boost/functional/lightweight_forward_adapter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/functional/value_factory.hpp&gt;</code></li>
     </ul>
@@ -1536,10 +1536,8 @@
       <li>from <code>&lt;boost/interprocess/detail/intermodule_singleton.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/intermodule_singleton_common.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/interprocess_tester.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/detail/intersegment_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/managed_global_memory.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/managed_memory_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/detail/managed_multi_shared_memory.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/managed_open_or_create_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/math_functions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/min_max.hpp&gt;</code></li>
@@ -3950,6 +3948,7 @@
       <li>from <code>&lt;boost/type_traits/detail/ice_not.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/detail/ice_or.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/detail/is_mem_fun_pointer_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/type_traits/detail/is_swappable_cxx_11.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/enable_if.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/floating_point_promotion.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/function_traits.hpp&gt;</code></li>
@@ -3972,6 +3971,7 @@
       <li>from <code>&lt;boost/type_traits/is_rvalue_reference.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/is_scalar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/is_stateless.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/type_traits/is_swappable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/make_void.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/nonesuch.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/promote.hpp&gt;</code></li>
@@ -3988,10 +3988,11 @@
     </ul>
     <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/type_traits/detail/config.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/type_traits/detail/is_swappable_cxx_11.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/is_complete.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/is_function.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/is_list_constructible.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/type_traits/is_nothrow_swappable.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/type_traits/is_swappable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_traits/remove_pointer.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/detail/workaround.hpp&gt;</code></h3><ul>
@@ -4055,6 +4056,7 @@
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/node_handle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/narrow_cast.hpp&gt;</code></li>
@@ -4066,6 +4068,10 @@
       <li>from <code>&lt;boost/unordered/unordered_flat_set_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_map_fwd.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/unordered_node_map.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/unordered_node_map_fwd.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/unordered_node_set.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/unordered_node_set_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_set_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered_map.hpp&gt;</code></li>
