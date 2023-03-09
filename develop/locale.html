@@ -9,13 +9,15 @@
 
 <h1 id="primary-dependencies">Primary dependencies for <em>locale</em></h1>
   <h2 id="(unknown)"><a href="(unknown).html"><em>(unknown)</em></a></h2>
+    <h3><code>&lt;boost/locale//util/encoding.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/locale/src/boost/locale/icu/boundary.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/locale/encoding/conv.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/locale/src/boost/locale/encoding/codepage.cpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/boost/locale/encoding/iconv_codepage.ipp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/boost/locale/encoding/uconv_codepage.ipp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/boost/locale/encoding/wconv_codepage.ipp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/boost/locale/icu/codecvt.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/boost/locale/posix/codecvt.cpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/boost/locale/std/std_backend.cpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/boost/locale/util/codecvt_converter.cpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/boost/locale/util/locale_data.cpp&gt;</code></li>
@@ -95,12 +97,12 @@
       <li>from <code>&lt;libs/locale/src/boost/locale/posix/numeric.cpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/boost/locale/posix/posix_backend.cpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/locale/posix/codecvt.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;libs/locale/src/boost/locale/posix/codecvt.cpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/locale/posix/posix_backend.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/locale/src/boost/locale/posix/posix_backend.cpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/boost/locale/shared/localization_backend.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/locale/shared/iconv_codecvt.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/locale/src/boost/locale/posix/codecvt.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/locale/shared/ios_prop.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/locale/src/boost/locale/shared/formatting.cpp&gt;</code></li>
@@ -144,7 +146,7 @@
     </ul>
     <h3><code>&lt;boost/locale/util/iconv.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/locale/src/boost/locale/encoding/iconv_codepage.ipp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/boost/locale/posix/codecvt.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/boost/locale/shared/iconv_codecvt.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/locale/util/numeric.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/locale/src/boost/locale/posix/numeric.cpp&gt;</code></li>
@@ -183,6 +185,7 @@
       <li>from <code>&lt;boost/locale/formatting.hpp&gt;</code></li>
       <li>from <code>&lt;boost/locale/util.hpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/boost/locale/icu/formatters_cache.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/boost/locale/shared/iconv_codecvt.cpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/boost/locale/shared/ios_prop.hpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/boost/locale/util/encoding.cpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/boost/locale/util/gregorian.cpp&gt;</code></li>
@@ -212,6 +215,9 @@
       <li>from <code>&lt;libs/locale/src/boost/locale/shared/message.cpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
+    <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/locale/src/boost/locale/util/iconv.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/locale/src/boost/locale/icu/formatters_cache.cpp&gt;</code></li>
       <li>from <code>&lt;libs/locale/src/boost/locale/shared/ids.cpp&gt;</code></li>

@@ -10,7 +10,8 @@
 <h1 id="primary-dependencies">Primary dependencies for <em>json</em></h1>
   <h2 id="align"><a href="align.html"><em>align</em></a></h2>
     <h3><code>&lt;boost/align/align.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/json/detail/align.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/json/impl/monotonic_resource.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/json/impl/static_resource.ipp&gt;</code></li>
     </ul>
   <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
@@ -36,9 +37,18 @@
     <h3><code>&lt;boost/container/pmr/polymorphic_allocator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/json/memory_resource.hpp&gt;</code></li>
     </ul>
+  <h2 id="container_hash"><a href="container_hash.html"><em>container_hash</em></a></h2>
+    <h3><code>&lt;boost/container_hash/hash.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/json/impl/array.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/json/impl/object.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/json/impl/value.ipp&gt;</code></li>
+    </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/detail/string_view.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/json/string_view.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/max_align.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/json/impl/monotonic_resource.ipp&gt;</code></li>
     </ul>
   <h2 id="describe"><a href="describe.html"><em>describe</em></a></h2>
     <h3><code>&lt;boost/describe/bases.hpp&gt;</code></h3><ul>
@@ -90,6 +100,9 @@
     <li><a href="container.html#move">adds <em>move</em></a></li>
     <li><a href="container.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
+  <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
+    <li><a href="container_hash.html#type_traits">adds <em>type_traits</em></a></li>
+  </ul>
   <h2><a href="core.html"><em>core</em></a></h2><ul>
     <li><a href="core.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
@@ -97,14 +110,8 @@
     <li><a href="system.html#variant2">adds <em>variant2</em></a></li>
     <li><a href="system.html#winapi">adds <em>winapi</em></a></li>
   </ul>
-  <h2><a href="intrusive.html"><em>intrusive</em></a></h2><ul>
-    <li><a href="intrusive.html#container_hash">adds <em>container_hash</em></a></li>
-  </ul>
   <h2><a href="winapi.html"><em>winapi</em></a></h2><ul>
     <li><a href="winapi.html#predef">adds <em>predef</em></a></li>
-  </ul>
-  <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
-    <li><a href="container_hash.html#type_traits">adds <em>type_traits</em></a></li>
   </ul>
 
 
