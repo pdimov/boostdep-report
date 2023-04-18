@@ -15,11 +15,13 @@
       <li>from <code>&lt;boost/mysql/detail/channel/impl/disableable_ssl_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/channel/message_reader.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/channel/message_writer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/network_algorithms/execute_statement.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/network_algorithms/execute_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/network_algorithms/high_level_execution.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/network_algorithms/ping.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/network_algorithms/query.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/network_algorithms/start_query.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/network_algorithms/start_statement_execution.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/network_algorithms/start_execution_impl.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/bind_executor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/high_level_execution.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/buffer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/channel/channel.hpp&gt;</code></li>
@@ -30,9 +32,8 @@
       <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/handshake.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/ping.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/prepare_statement.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/read_all_rows.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/read_resultset_head.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/read_some_rows.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/start_execution_generic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/network_algorithms/ping.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/protocol/deserialization_context.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/protocol/deserialize_row.hpp&gt;</code></li>
@@ -43,14 +44,14 @@
       <li>from <code>&lt;boost/mysql/detail/channel/impl/disableable_ssl_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/channel/impl/message_reader.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/channel/impl/message_writer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/start_statement_execution.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/coroutine.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/channel/impl/disableable_ssl_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/channel/impl/message_reader.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/channel/impl/message_writer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/execute_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/quit_connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/read_all_rows.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/start_execution_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ip/tcp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/tcp.hpp&gt;</code></li>
@@ -63,9 +64,7 @@
     <h3><code>&lt;boost/asio/post.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/channel/impl/message_reader.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/close_connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/read_all_rows.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/read_some_rows.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/start_statement_execution.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ssl/stream.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/auxiliar/rebind_executor.hpp&gt;</code></li>
@@ -116,9 +115,6 @@
     </ul>
     <h3><code>&lt;boost/mp11/algorithm.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/auxiliar/field_type_traits.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mp11/integer_sequence.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/start_statement_execution.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/list.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/auxiliar/field_type_traits.hpp&gt;</code></li>
