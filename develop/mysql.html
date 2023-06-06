@@ -33,10 +33,10 @@
       <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/ping.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/prepare_statement.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/read_resultset_head.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/read_some_rows.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/read_some_rows_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/network_algorithms/ping.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/protocol/deserialization_context.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/protocol/deserialize_row.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/protocol/serialization.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/protocol/serialization_context.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/connection.hpp&gt;</code></li>
     </ul>
@@ -64,7 +64,7 @@
     <h3><code>&lt;boost/asio/post.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/channel/impl/message_reader.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/close_connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/read_some_rows.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/read_some_rows_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ssl/stream.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/auxiliar/rebind_executor.hpp&gt;</code></li>
@@ -78,6 +78,46 @@
       <li>from <code>&lt;boost/mysql/detail/channel/message_writer.hpp&gt;</code></li>
     </ul>
   <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
+    <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/connection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/auth/auth_calculator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/auxiliar/impl/datetime.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/auxiliar/impl/row_impl.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/auxiliar/static_string.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/channel/impl/disableable_ssl_stream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/channel/impl/message_parser.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/channel/impl/message_reader.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/channel/impl/read_buffer.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/execution_processor/execution_processor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/execution_processor/execution_state_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/execution_processor/results_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/execution_processor/static_execution_state_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/execution_processor/static_results_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/network_algorithms/impl/read_resultset_head.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/protocol/deserialization_context.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/protocol/deserialize_errc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/protocol/impl/binary_serialization.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/protocol/impl/deserialize_row.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/protocol/impl/deserialize_text_field.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/protocol/impl/handshake_messages.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/protocol/impl/prepared_statement_messages.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/protocol/impl/serialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/protocol/null_bitmap_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/typing/pos_map.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/typing/row_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/date.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/datetime.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/field_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/rows.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/rows_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/statement.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/results.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/resultset.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/resultset_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/rows_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/statement.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/static_results.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/assert/source_location.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/connection.hpp&gt;</code></li>
     </ul>
@@ -86,6 +126,8 @@
       <li>from <code>&lt;boost/mysql/date.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/datetime.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/auxiliar/datetime.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/config.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/execution_processor/execution_processor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/protocol/impl/deserialize_text_field.ipp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/field_view.hpp&gt;</code></li>
     </ul>
@@ -98,7 +140,14 @@
     </ul>
     <h3><code>&lt;boost/core/span.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/blob_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/auxiliar/row_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/execution_processor/execution_processor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/typing/pos_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/metadata_collection_view.hpp&gt;</code></li>
+    </ul>
+  <h2 id="describe"><a href="describe.html"><em>describe</em></a></h2>
+    <h3><code>&lt;boost/describe/members.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/detail/typing/row_traits.hpp&gt;</code></li>
     </ul>
   <h2 id="endian"><a href="endian.html"><em>endian</em></a></h2>
     <h3><code>&lt;boost/endian/conversion.hpp&gt;</code></h3><ul>
@@ -114,10 +163,18 @@
       <li>from <code>&lt;boost/mysql/detail/auxiliar/field_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/algorithm.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/detail/auxiliar/field_type_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/execution_processor/static_results_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/typing/get_type_index.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/typing/row_traits.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mp11/integer_sequence.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/detail/execution_processor/static_results_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/list.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/detail/auxiliar/field_type_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/typing/get_type_index.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mp11/utility.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/detail/typing/row_traits.hpp&gt;</code></li>
     </ul>
   <h2 id="system"><a href="system.html"><em>system</em></a></h2>
     <h3><code>&lt;boost/system/error_category.hpp&gt;</code></h3><ul>
@@ -134,6 +191,14 @@
   <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
     <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/auxiliar/error_helpers.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/auxiliar/field_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/date.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/datetime.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/field_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/row_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/rows.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/rows_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/results.hpp&gt;</code></li>
     </ul>
   <h2 id="variant2"><a href="variant2.html"><em>variant2</em></a></h2>
     <h3><code>&lt;boost/variant2/variant.hpp&gt;</code></h3><ul>
@@ -241,9 +306,6 @@
   </ul>
   <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
     <li><a href="algorithm.html#unordered">adds <em>unordered</em></a></li>
-  </ul>
-  <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
-    <li><a href="container_hash.html#describe">adds <em>describe</em></a></li>
   </ul>
   <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
     <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
