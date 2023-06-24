@@ -10,14 +10,19 @@
 <h1 id="primary-dependencies">Primary dependencies for <em>unordered</em></h1>
   <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/concurrent_table.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/table.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/concurrent_table.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/ignore_wshadow.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/foa/node_handle.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/table.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/narrow_cast.hpp&gt;</code></li>
@@ -43,11 +48,13 @@
       <li>from <code>&lt;boost/unordered/detail/requires_cxx11.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/table.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/concurrent_table.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/mulx.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/prime_fmod.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/xmx.hpp&gt;</code></li>
@@ -56,6 +63,12 @@
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
   <h2 id="container_hash"><a href="container_hash.html"><em>container_hash</em></a></h2>
+    <h3><code>&lt;boost/container_hash/hash.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/concurrent_flat_map.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/container_hash/hash_fwd.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/concurrent_flat_map_fwd.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/functional/hash.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/unordered_flat_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_flat_set.hpp&gt;</code></li>
@@ -77,38 +90,52 @@
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/concurrent_flat_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/flat_map_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/flat_set_types.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/foa/node_handle.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/node_map_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/node_set_types.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_flat_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_flat_set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_node_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_node_set.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/allocator_traits.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/bit.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/unordered_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/unordered_set.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/foa/concurrent_table.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/concurrent_table.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/node_map_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/node_set_types.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/yield_primitives.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/foa/rw_spinlock.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/swap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
@@ -134,14 +161,23 @@
     </ul>
   <h2 id="mp11"><a href="mp11.html"><em>mp11</em></a></h2>
     <h3><code>&lt;boost/mp11/algorithm.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/concurrent_flat_map.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/tuple_rotate_right.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mp11/integer_sequence.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/foa/tuple_rotate_right.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mp11/list.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/concurrent_flat_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mp11/tuple.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/foa/concurrent_table.hpp&gt;</code></li>
     </ul>
   <h2 id="predef"><a href="predef.html"><em>predef</em></a></h2>
     <h3><code>&lt;boost/predef.h&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/fwd.hpp&gt;</code></li>
     </ul>
   <h2 id="preprocessor"><a href="preprocessor.html"><em>preprocessor</em></a></h2>
@@ -176,6 +212,8 @@
     </ul>
   <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
     <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/foa/concurrent_table.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/narrow_cast.hpp&gt;</code></li>
     </ul>
   <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
@@ -204,8 +242,14 @@
     <h3><code>&lt;boost/type_traits/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/type_traits.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/type_traits/has_trivial_assign.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/has_trivial_constructor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/type_traits/has_trivial_copy.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
@@ -239,7 +283,7 @@
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_nothrow_swappable.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/unordered/detail/foa.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
@@ -258,6 +302,7 @@
       <li>from <code>&lt;boost/unordered/detail/type_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/type_identity.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/concurrent_flat_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/type_traits.hpp&gt;</code></li>
     </ul>
 
