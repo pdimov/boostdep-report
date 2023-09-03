@@ -694,16 +694,6 @@
     <h3><code>&lt;boost/utility/declval.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/contract/call_if.hpp&gt;</code></li>
     </ul>
-  <h2 id="reverse-conversion"><a href="conversion.html"><em>conversion</em></a></h2>
-    <h3><code>&lt;boost/type_traits/is_reference.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/polymorphic_cast.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/polymorphic_cast.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/declval.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/polymorphic_pointer_cast.hpp&gt;</code></li>
-    </ul>
   <h2 id="reverse-convert"><a href="convert.html"><em>convert</em></a></h2>
     <h3><code>&lt;boost/type_traits/detail/yes_no_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/convert/detail/has_member.hpp&gt;</code></li>
@@ -1040,6 +1030,9 @@
       <li>from <code>&lt;boost/function/function_base.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_const.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/function/function_base.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/is_function.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/function/function_base.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_integral.hpp&gt;</code></h3><ul>
@@ -3557,14 +3550,6 @@
       <li>from <code>&lt;boost/spirit/home/x3/core/parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/core/skip_over.hpp&gt;</code></li>
     </ul>
-  <h2 id="reverse-stacktrace"><a href="stacktrace.html"><em>stacktrace</em></a></h2>
-    <h3><code>&lt;boost/type_traits/is_pointer.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/stacktrace/detail/to_hex_array.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/stacktrace/detail/void_ptr_cast.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/make_unsigned.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/stacktrace/detail/to_hex_array.hpp&gt;</code></li>
-    </ul>
   <h2 id="reverse-statechart"><a href="statechart.html"><em>statechart</em></a></h2>
     <h3><code>&lt;boost/type_traits/is_base_of.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/statechart/simple_state.hpp&gt;</code></li>
@@ -3915,53 +3900,6 @@
       <li>from <code>&lt;boost/type_erasure/any.hpp&gt;</code></li>
       <li>from <code>&lt;boost/type_erasure/callable.hpp&gt;</code></li>
     </ul>
-  <h2 id="reverse-type_index"><a href="type_index.html"><em>type_index</em></a></h2>
-    <h3><code>&lt;boost/type_traits/add_reference.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/runtime_cast/reference_cast.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/conditional.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/detail/compile_time_type_info.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/type_index/runtime_cast/detail/runtime_cast_impl.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/is_base_and_derived.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/runtime_cast/boost_shared_ptr_cast.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/type_index/runtime_cast/pointer_cast.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/type_index/runtime_cast/reference_cast.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/type_index/runtime_cast/std_shared_ptr_cast.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/is_const.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/is_reference.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/is_signed.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/is_volatile.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/make_signed.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/ctti_type_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/remove_pointer.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/runtime_cast/pointer_cast.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/ctti_type_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/type_index/runtime_cast/reference_cast.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/type_identity.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
-    </ul>
   <h2 id="reverse-typeof"><a href="typeof.html"><em>typeof</em></a></h2>
     <h3><code>&lt;boost/type_traits/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/typeof/msvc/typeof_impl.hpp&gt;</code></li>
@@ -4007,10 +3945,12 @@
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/aligned_storage.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/archive_constructed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/alignment_of.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/unordered/detail/archive_constructed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
@@ -4028,6 +3968,7 @@
     </ul>
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/serialize_tracked_address.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/type_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/hash_traits.hpp&gt;</code></li>
     </ul>
@@ -4063,6 +4004,7 @@
     </ul>
     <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/serialize_container.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/make_unsigned.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/narrow_cast.hpp&gt;</code></li>
@@ -4074,6 +4016,8 @@
     </ul>
     <h3><code>&lt;boost/type_traits/remove_const.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/serialize_container.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/serialize_tracked_address.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/type_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/type_identity.hpp&gt;</code></h3><ul>

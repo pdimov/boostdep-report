@@ -41,6 +41,7 @@
       <li>from <code>&lt;boost/core/first_scalar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/identity.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/ignore_unused.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/invoke_swap.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/is_same.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/lightweight_test.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/lightweight_test_trait.hpp&gt;</code></li>
@@ -65,11 +66,14 @@
     </ul>
     <h3><code>&lt;boost/config/header_deprecated.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/core/is_same.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/core/swap.hpp&gt;</code></li>
       <li>from <code>&lt;boost/detail/iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/detail/no_exceptions_support.hpp&gt;</code></li>
       <li>from <code>&lt;boost/detail/scoped_enum_emulation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/detail/sp_typeinfo.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/swap.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/utility/swap.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/no_tr1/memory.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/get_pointer.hpp&gt;</code></li>
@@ -312,13 +316,6 @@
       <li>from <code>&lt;boost/contract/detail/condition/cond_inv.hpp&gt;</code></li>
       <li>from <code>&lt;boost/contract/detail/condition/cond_subcontracting.hpp&gt;</code></li>
       <li>from <code>&lt;boost/contract/old.hpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-conversion"><a href="conversion.html"><em>conversion</em></a></h2>
-    <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/polymorphic_cast.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/polymorphic_cast.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-convert"><a href="convert.html"><em>convert</em></a></h2>
     <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
@@ -795,7 +792,7 @@
       <li>from <code>&lt;boost/integer/extended_euclidean.hpp&gt;</code></li>
       <li>from <code>&lt;boost/integer/integer_log2.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/integer/extended_euclidean.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-interprocess"><a href="interprocess.html"><em>interprocess</em></a></h2>
@@ -982,6 +979,10 @@
       <li>from <code>&lt;boost/log/utility/value_ref.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/posix/ipc_sync_wrappers.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/log/sources/severity_feature.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/null_deleter.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/utility/setup/console.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/setup/init_from_settings.cpp&gt;</code></li>
@@ -995,10 +996,6 @@
       <li>from <code>&lt;libs/log/src/setup/default_formatter_factory.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/syslog_backend.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/log/sources/severity_feature.hpp&gt;</code></li>
-      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/uncaught_exceptions.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/format.hpp&gt;</code></li>
@@ -1047,6 +1044,9 @@
       <li>from <code>&lt;boost/mpl/aux_/unwrap.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-msm"><a href="msm.html"><em>msm</em></a></h2>
+    <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/msm/back/state_machine.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/state_machine.hpp&gt;</code></li>
     </ul>
@@ -1700,11 +1700,6 @@
       <li>from <code>&lt;boost/stacktrace/detail/frame_unwind.ipp&gt;</code></li>
       <li>from <code>&lt;boost/stacktrace/detail/libbacktrace_impls.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/stacktrace/detail/frame_decl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/stacktrace/frame.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/stacktrace/stacktrace.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/stacktrace/stacktrace.hpp&gt;</code></li>
     </ul>
@@ -1828,9 +1823,6 @@
       <li>from <code>&lt;boost/type_erasure/param.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-type_index"><a href="type_index.html"><em>type_index</em></a></h2>
-    <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/type_index/runtime_cast/reference_cast.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/core/demangle.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/type_index/stl_type_index.hpp&gt;</code></li>
     </ul>
@@ -1885,6 +1877,8 @@
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/foa/concurrent_table.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/node_map_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/node_set_types.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
@@ -1981,11 +1975,11 @@
       <li>from <code>&lt;boost/utility.hpp&gt;</code></li>
       <li>from <code>&lt;boost/utility/result_of.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/utility/value_init.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/noncopyable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/utility.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/utility/value_init.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/utility/base_from_member.hpp&gt;</code></li>
