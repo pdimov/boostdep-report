@@ -145,17 +145,8 @@
     <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/align/aligned_allocator_adaptor.hpp&gt;</code></li>
     </ul>
-  <h2 id="reverse-any"><a href="any.html"><em>any</em></a></h2>
-    <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/any.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/any/basic_any.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/any.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/any/basic_any.hpp&gt;</code></li>
-    </ul>
   <h2 id="reverse-array"><a href="array.html"><em>array</em></a></h2>
-    <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/array.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-asio"><a href="asio.html"><em>asio</em></a></h2>
@@ -665,6 +656,15 @@
       <li>from <code>&lt;boost/geometry/strategy/spherical/envelope_segment.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/math.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/formulas/karney_inverse.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/node/variant_dynamic.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/node/variant_static.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/node/weak_dynamic.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/rtree/node/weak_static.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/detail/utilities.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/index/rtree.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/index/detail/exception.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/index/detail/varray_detail.hpp&gt;</code></li>
@@ -675,11 +675,6 @@
     </ul>
     <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/centroid/translating_transformer.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/index/detail/rtree/node/weak_dynamic.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/index/detail/utilities.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/index/detail/varray.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/extensions/gis/io/shapelib/shape_creator.hpp&gt;</code></li>
@@ -902,6 +897,9 @@
     <h3><code>&lt;boost/core/cmath.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/lexical_cast/detail/inf_nan.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical_streams.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/noncopyable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical_streams.hpp&gt;</code></li>
       <li>from <code>&lt;boost/lexical_cast/detail/lcast_unsigned_converters.hpp&gt;</code></li>
@@ -942,7 +940,6 @@
     </ul>
   <h2 id="reverse-log"><a href="log.html"><em>log</em></a></h2>
     <h3><code>&lt;boost/checked_delete.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;libs/log/src/severity_level.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_sync_wrappers.hpp&gt;</code></li>
     </ul>
@@ -954,6 +951,12 @@
       <li>from <code>&lt;boost/log/sources/record_ostream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/type_dispatch/static_type_dispatcher.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/utility/value_ref.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/log/detail/allocator_traits.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/allocator_traits.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/log/detail/allocator_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/attribute_set.hpp&gt;</code></li>
@@ -1242,7 +1245,8 @@
     <h3><code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/optional/optional.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/optional/detail/old_optional_implementation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/optional/detail/optional_swap.hpp&gt;</code></li>
       <li>from <code>&lt;boost/optional/optional.hpp&gt;</code></li>
     </ul>
@@ -1452,6 +1456,10 @@
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/rational.hpp&gt;</code></li>
     </ul>
+  <h2 id="reverse-redis"><a href="redis.html"><em>redis</em></a></h2>
+    <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/detail/connection_base.hpp&gt;</code></li>
+    </ul>
   <h2 id="reverse-regex"><a href="regex.html"><em>regex</em></a></h2>
     <h3><code>&lt;boost/core/snprintf.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/regex/src/posix_api.cpp&gt;</code></li>
@@ -1535,6 +1543,10 @@
       <li>from <code>&lt;boost/signals2/preprocessed_signal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/signals2/variadic_signal.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/signals2/detail/auto_buffer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/signals2/detail/foreign_ptr.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/signals2/deconstruct_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/signals2/detail/scope_guard.hpp&gt;</code></li>
@@ -1552,10 +1564,6 @@
       <li>from <code>&lt;boost/signals2/detail/signals_common.hpp&gt;</code></li>
       <li>from <code>&lt;boost/signals2/detail/tracked_objects_visitor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/signals2/slot.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/signals2/detail/auto_buffer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/signals2/detail/foreign_ptr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/visit_each.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/signals2/slot.hpp&gt;</code></li>
@@ -1619,6 +1627,11 @@
       <li>from <code>&lt;boost/spirit/home/qi/numeric/detail/real_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/karma/stream/detail/format_manip_auto.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/karma/stream/stream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/qi/stream/detail/match_manip.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/qi/stream/detail/match_manip_auto.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/attributes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/auxiliary/attr_cast.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/meta_compiler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/support/ast/position_tagged.hpp&gt;</code></li>
@@ -1629,7 +1642,17 @@
       <li>from <code>&lt;boost/spirit/home/x3/core/parser.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/nonterminal/detail/rule.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/support/attributes.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/iterators/detail/buf_id_check_policy.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/iterators/detail/fixed_size_queue_policy.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/iterators/detail/functor_input_policy.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/iterators/detail/split_functor_input_policy.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/iterators/detail/split_std_deque_policy.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/support/iterators/multi_pass.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/scoped_enum.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/spirit/home/karma/stream/detail/format_manip.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/scoped_enum_emulation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/typeinfo.hpp&gt;</code></h3><ul>
@@ -1659,9 +1682,6 @@
       <li>from <code>&lt;boost/spirit/home/qi/reference.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/utree/utree.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/swap.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/spirit/home/support/iterators/multi_pass_fwd.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/x3/nonterminal/detail/rule.hpp&gt;</code></li>
     </ul>
@@ -1678,8 +1698,6 @@
       <li>from <code>&lt;boost/spirit/home/karma/numeric/int.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/karma/numeric/real.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/karma/numeric/uint.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/karma/stream/detail/format_manip_auto.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/karma/stream/stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/karma/string/lit.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/lex/meta_compiler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/auto/meta_create.hpp&gt;</code></li>
@@ -1690,10 +1708,8 @@
       <li>from <code>&lt;boost/spirit/home/qi/directive/skip.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/meta_compiler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/numeric/detail/numeric_utils.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/qi/stream/detail/match_manip_auto.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/qi/string/lit.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/adapt_adt_attributes.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/spirit/home/support/attributes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/attributes_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/detail/make_cons.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/support/sequence_base_id.hpp&gt;</code></li>
@@ -1830,6 +1846,10 @@
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/pthread/mutex.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/thread/externally_locked.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/thread/synchronized_value.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/thread/pthread/once.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/pthread/once_atomic.hpp&gt;</code></li>
@@ -1847,16 +1867,12 @@
       <li>from <code>&lt;boost/thread/futures/future_status.hpp&gt;</code></li>
       <li>from <code>&lt;boost/thread/futures/launch.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/thread/externally_locked.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/thread/synchronized_value.hpp&gt;</code></li>
-    </ul>
   <h2 id="reverse-tuple"><a href="tuple.html"><em>tuple</em></a></h2>
+    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/tuple/detail/tuple_basic.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/tuple/tuple.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/swap.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/tuple/detail/tuple_basic.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-type_erasure"><a href="type_erasure.html"><em>type_erasure</em></a></h2>
     <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
@@ -1886,13 +1902,9 @@
       <li>from <code>&lt;boost/units/quantity.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-unordered"><a href="unordered.html"><em>unordered</em></a></h2>
-    <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/unordered/detail/archive_constructed.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/unordered/detail/serialize_container.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/concurrent_flat_map.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/concurrent_flat_set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/foa/flat_map_types.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/foa/flat_set_types.hpp&gt;</code></li>
@@ -1917,10 +1929,6 @@
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/unordered/unordered_map.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/unordered/unordered_set.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/foa/concurrent_table.hpp&gt;</code></li>
     </ul>
@@ -1942,6 +1950,7 @@
     </ul>
     <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/foa/core.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/detail/foa/element_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/foa/node_map_types.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/foa/node_set_types.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
@@ -1949,6 +1958,7 @@
     </ul>
     <h3><code>&lt;boost/core/serialization.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/concurrent_flat_map.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/unordered/concurrent_flat_set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/archive_constructed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/fca.hpp&gt;</code></li>
       <li>from <code>&lt;boost/unordered/detail/foa/concurrent_table.hpp&gt;</code></li>
@@ -1960,12 +1970,6 @@
     </ul>
     <h3><code>&lt;boost/core/yield_primitives.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/unordered/detail/foa/rw_spinlock.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/unordered/detail/implementation.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-url"><a href="url.html"><em>url</em></a></h2>
     <h3><code>&lt;boost/core/allocator_traits.hpp&gt;</code></h3><ul>

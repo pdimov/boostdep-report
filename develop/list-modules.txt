@@ -110,6 +110,7 @@ random
 range
 ratio
 rational
+redis
 regex
 safe_numerics
 scope_exit
