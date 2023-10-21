@@ -17,9 +17,6 @@
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/dll/config.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/config/pragma_message.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dll/config.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/dll/detail/elf_info.hpp&gt;</code></li>
       <li>from <code>&lt;boost/dll/detail/macho_info.hpp&gt;</code></li>
@@ -43,12 +40,12 @@
     <h3><code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/dll/shared_library.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dll/library_info.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/swap.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/dll/detail/posix/shared_library_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/dll/detail/windows/shared_library_impl.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/dll/library_info.hpp&gt;</code></li>
     </ul>
   <h2 id="filesystem"><a href="filesystem.html"><em>filesystem</em></a></h2>
     <h3><code>&lt;boost/filesystem/operations.hpp&gt;</code></h3><ul>
@@ -102,11 +99,6 @@
   <h2 id="spirit"><a href="spirit.html"><em>spirit</em></a></h2>
     <h3><code>&lt;boost/spirit/home/x3.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/dll/detail/demangling/msvc.hpp&gt;</code></li>
-    </ul>
-  <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
-    <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dll/alias.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/detail/aggressive_ptr_cast.hpp&gt;</code></li>
     </ul>
   <h2 id="system"><a href="system.html"><em>system</em></a></h2>
     <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
@@ -209,6 +201,9 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>dll</em></h1>
+  <h2><a href="core.html"><em>core</em></a></h2><ul>
+    <li><a href="core.html#static_assert">adds <em>static_assert</em></a></li>
+  </ul>
   <h2><a href="filesystem.html"><em>filesystem</em></a></h2><ul>
     <li><a href="filesystem.html#atomic">adds <em>atomic</em></a></li>
     <li><a href="filesystem.html#container_hash">adds <em>container_hash</em></a></li>
@@ -219,6 +214,9 @@
   <h2><a href="function.html"><em>function</em></a></h2><ul>
     <li><a href="function.html#bind">adds <em>bind</em></a></li>
     <li><a href="function.html#preprocessor">adds <em>preprocessor</em></a></li>
+  </ul>
+  <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
+    <li><a href="smart_ptr.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
   <h2><a href="spirit.html"><em>spirit</em></a></h2><ul>
     <li><a href="spirit.html#(unknown)">adds <em>(unknown)</em></a></li>
@@ -237,6 +235,7 @@
     <li><a href="spirit.html#proto">adds <em>proto</em></a></li>
     <li><a href="spirit.html#range">adds <em>range</em></a></li>
     <li><a href="spirit.html#regex">adds <em>regex</em></a></li>
+    <li><a href="spirit.html#static_assert">adds <em>static_assert</em></a></li>
     <li><a href="spirit.html#thread">adds <em>thread</em></a></li>
     <li><a href="spirit.html#typeof">adds <em>typeof</em></a></li>
     <li><a href="spirit.html#unordered">adds <em>unordered</em></a></li>
@@ -248,6 +247,9 @@
   </ul>
   <h2><a href="type_index.html"><em>type_index</em></a></h2><ul>
     <li><a href="type_index.html#container_hash">adds <em>container_hash</em></a></li>
+  </ul>
+  <h2><a href="type_traits.html"><em>type_traits</em></a></h2><ul>
+    <li><a href="type_traits.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
   <h2><a href="atomic.html"><em>atomic</em></a></h2><ul>
     <li><a href="atomic.html#align">adds <em>align</em></a></li>
