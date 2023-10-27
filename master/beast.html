@@ -8,6 +8,17 @@
 
 
 <h1 id="primary-dependencies">Primary dependencies for <em>beast</em></h1>
+  <h2 id="(unknown)"><a href="(unknown).html"><em>(unknown)</em></a></h2>
+    <h3><code>&lt;boost/asio/handler_alloc_hook.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/bind_default_executor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/handler_invoke_hook.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/bind_default_executor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
+    </ul>
   <h2 id="asio"><a href="asio.html"><em>asio</em></a></h2>
     <h3><code>&lt;boost/asio/any_io_executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/_experimental/test/detail/stream_state.hpp&gt;</code></li>
@@ -167,17 +178,7 @@
       <li>from <code>&lt;boost/beast/core/detail/work_guard.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/saved_handler.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/asio/handler_alloc_hook.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/detail/bind_default_executor.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/asio/handler_continuation_hook.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/detail/bind_default_executor.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/asio/handler_invoke_hook.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/bind_default_executor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
@@ -584,15 +585,10 @@
 <h1 id="secondary-dependencies">Secondary dependencies for <em>beast</em></h1>
   <h2><a href="asio.html"><em>asio</em></a></h2><ul>
     <li><a href="asio.html#align">adds <em>align</em></a></li>
-    <li><a href="asio.html#array">adds <em>array</em></a></li>
-    <li><a href="asio.html#chrono">adds <em>chrono</em></a></li>
     <li><a href="asio.html#context">adds <em>context</em></a></li>
     <li><a href="asio.html#coroutine">adds <em>coroutine</em></a></li>
     <li><a href="asio.html#date_time">adds <em>date_time</em></a></li>
-    <li><a href="asio.html#exception">adds <em>exception</em></a></li>
-    <li><a href="asio.html#function">adds <em>function</em></a></li>
     <li><a href="asio.html#regex">adds <em>regex</em></a></li>
-    <li><a href="asio.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="container.html"><em>container</em></a></h2><ul>
     <li><a href="container.html#move">adds <em>move</em></a></li>
@@ -621,14 +617,11 @@
   <h2><a href="winapi.html"><em>winapi</em></a></h2><ul>
     <li><a href="winapi.html#predef">adds <em>predef</em></a></li>
   </ul>
-  <h2><a href="chrono.html"><em>chrono</em></a></h2><ul>
-    <li><a href="chrono.html#integer">adds <em>integer</em></a></li>
-    <li><a href="chrono.html#mpl">adds <em>mpl</em></a></li>
-    <li><a href="chrono.html#ratio">adds <em>ratio</em></a></li>
-    <li><a href="chrono.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
   <h2><a href="context.html"><em>context</em></a></h2><ul>
     <li><a href="context.html#pool">adds <em>pool</em></a></li>
+  </ul>
+  <h2><a href="coroutine.html"><em>coroutine</em></a></h2><ul>
+    <li><a href="coroutine.html#exception">adds <em>exception</em></a></li>
   </ul>
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
     <li><a href="date_time.html#algorithm">adds <em>algorithm</em></a></li>
@@ -637,9 +630,6 @@
     <li><a href="date_time.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
     <li><a href="date_time.html#range">adds <em>range</em></a></li>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
-  </ul>
-  <h2><a href="exception.html"><em>exception</em></a></h2><ul>
-    <li><a href="exception.html#tuple">adds <em>tuple</em></a></li>
   </ul>
   <h2><a href="regex.html"><em>regex</em></a></h2><ul>
     <li><a href="regex.html#concept_check">adds <em>concept_check</em></a></li>
@@ -650,15 +640,23 @@
     <li><a href="utility.html#io">adds <em>io</em></a></li>
   </ul>
   <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
+    <li><a href="algorithm.html#array">adds <em>array</em></a></li>
+    <li><a href="algorithm.html#function">adds <em>function</em></a></li>
     <li><a href="algorithm.html#iterator">adds <em>iterator</em></a></li>
+    <li><a href="algorithm.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="algorithm.html#unordered">adds <em>unordered</em></a></li>
+  </ul>
+  <h2><a href="exception.html"><em>exception</em></a></h2><ul>
+    <li><a href="exception.html#tuple">adds <em>tuple</em></a></li>
   </ul>
   <h2><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2><ul>
     <li><a href="numeric~conversion.html#conversion">adds <em>conversion</em></a></li>
   </ul>
   <h2><a href="range.html"><em>range</em></a></h2><ul>
+    <li><a href="range.html#array">adds <em>array</em></a></li>
     <li><a href="range.html#conversion">adds <em>conversion</em></a></li>
     <li><a href="range.html#iterator">adds <em>iterator</em></a></li>
+    <li><a href="range.html#tuple">adds <em>tuple</em></a></li>
   </ul>
   <h2><a href="tokenizer.html"><em>tokenizer</em></a></h2><ul>
     <li><a href="tokenizer.html#iterator">adds <em>iterator</em></a></li>
@@ -669,6 +667,7 @@
   </ul>
   <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
     <li><a href="fusion.html#functional">adds <em>functional</em></a></li>
+    <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
   </ul>
 
 

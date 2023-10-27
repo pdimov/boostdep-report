@@ -103,7 +103,6 @@
       <li>from <code>&lt;boost/asio/detail/win_iocp_operation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/detail/winrt_utils.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/error.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/execution/receiver.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/experimental/cancellation_condition.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/experimental/channel_error.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/experimental/coro.hpp&gt;</code></li>
@@ -125,6 +124,7 @@
     <h3><code>&lt;boost/system/system_error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/asio/detail/impl/throw_error.ipp&gt;</code></li>
       <li>from <code>&lt;boost/asio/error.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/asio/experimental/impl/promise.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/impl/awaitable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/impl/redirect_error.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/impl/spawn.hpp&gt;</code></li>
@@ -146,6 +146,20 @@
       <li>from <code>&lt;boost/chrono/detail/inlined/chrono.hpp&gt;</code></li>
       <li>from <code>&lt;boost/chrono/detail/inlined/process_cpu_clocks.hpp&gt;</code></li>
       <li>from <code>&lt;boost/chrono/detail/inlined/thread_clock.hpp&gt;</code></li>
+    </ul>
+  <h2 id="reverse-cobalt"><a href="cobalt.html"><em>cobalt</em></a></h2>
+    <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/error.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/system/result.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/detail/gather.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/cobalt/detail/handler.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/cobalt/detail/join.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/cobalt/detail/util.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/cobalt/result.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/system/system_error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/concepts.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-coroutine"><a href="coroutine.html"><em>coroutine</em></a></h2>
     <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
@@ -279,13 +293,6 @@
     </ul>
     <h3><code>&lt;boost/system/system_error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/resp3/serialization.hpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-sync"><a href="sync.html"><em>sync</em></a></h2>
-    <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/sync/detail/system_error.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/system/system_error.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/sync/detail/system_error.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-thread"><a href="thread.html"><em>thread</em></a></h2>
     <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>

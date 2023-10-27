@@ -13,6 +13,7 @@ bind
 callable_traits
 chrono
 circular_buffer
+cobalt
 compat
 compatibility
 compute
@@ -124,7 +125,6 @@ statechart
 static_assert
 static_string
 stl_interfaces
-sync
 system
 test
 thread

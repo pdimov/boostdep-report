@@ -149,13 +149,6 @@
     <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/array.hpp&gt;</code></li>
     </ul>
-  <h2 id="reverse-asio"><a href="asio.html"><em>asio</em></a></h2>
-    <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/asio/detail/memory.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/asio/detail/type_traits.hpp&gt;</code></li>
-    </ul>
   <h2 id="reverse-assign"><a href="assign.html"><em>assign</em></a></h2>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/assign/list_of.hpp&gt;</code></li>
@@ -168,7 +161,6 @@
       <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/basic_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/bind_continuation.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/detail/bind_default_executor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/detail/remap_post_to_defer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/flat_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/saved_handler.hpp&gt;</code></li>
@@ -271,6 +263,22 @@
     </ul>
     <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/circular_buffer/details.hpp&gt;</code></li>
+    </ul>
+  <h2 id="reverse-cobalt"><a href="cobalt.html"><em>cobalt</em></a></h2>
+    <h3><code>&lt;boost/core/demangle.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/detail/race.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/detail/detached.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/cobalt/detail/generator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/cobalt/detail/promise.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/detail/gather.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/cobalt/detail/join.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/span.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/detail/race.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-compute"><a href="compute.html"><em>compute</em></a></h2>
     <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
@@ -1745,39 +1753,6 @@
   <h2 id="reverse-static_string"><a href="static_string.html"><em>static_string</em></a></h2>
     <h3><code>&lt;boost/core/detail/string_view.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/static_string/config.hpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-sync"><a href="sync.html"><em>sync</em></a></h2>
-    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/sync/detail/condition_variables/condition_variable_any_generic.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/condition_variables/condition_variable_any_windows.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/condition_variables/condition_variable_posix.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/condition_variables/condition_variable_windows.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/events/auto_reset_event_emulation.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/events/auto_reset_event_futex.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/events/auto_reset_event_semaphore.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/events/auto_reset_event_windows.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/events/manual_reset_event_emulation.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/events/manual_reset_event_futex.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/events/manual_reset_event_windows.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/mutexes/timed_mutex_posix.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/mutexes/timed_mutex_windows.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/semaphore/semaphore_dispatch.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/semaphore/semaphore_emulation.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/semaphore/semaphore_mach.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/semaphore/semaphore_posix.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/detail/semaphore/semaphore_windows.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/locks/shared_lock.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/locks/unique_lock.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/locks/upgrade_lock.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/sync/locks/shared_lock.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/locks/unique_lock.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/locks/upgrade_lock.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/sync/thread_specific/thread_specific_ptr.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/scoped_enum.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/sync/condition_variables/cv_status.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-test"><a href="test.html"><em>test</em></a></h2>
     <h3><code>&lt;boost/core/demangle.hpp&gt;</code></h3><ul>
