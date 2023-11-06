@@ -159,8 +159,6 @@
       <li>from <code>&lt;boost/serialization/binary_object.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/bitset.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/boost_array.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/serialization/boost_unordered_map.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/serialization/boost_unordered_set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/collection_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/collections_load_imp.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/collections_save_imp.hpp&gt;</code></li>
@@ -275,6 +273,7 @@
       <li>from <code>&lt;boost/archive/basic_text_iprimitive.hpp&gt;</code></li>
       <li>from <code>&lt;boost/archive/basic_text_oarchive.hpp&gt;</code></li>
       <li>from <code>&lt;boost/archive/basic_text_oprimitive.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/archive/detail/interface_oarchive.hpp&gt;</code></li>
       <li>from <code>&lt;boost/archive/detail/iserializer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/archive/detail/oserializer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/archive/impl/basic_binary_iarchive.ipp&gt;</code></li>
@@ -289,6 +288,7 @@
       <li>from <code>&lt;boost/serialization/collections_load_imp.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/detail/shared_ptr_132.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/serialization/extended_type_info_no_rtti.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/level.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/shared_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/type_info_implementation.hpp&gt;</code></li>
@@ -434,6 +434,10 @@
       <li>from <code>&lt;boost/serialization/map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/slist.hpp&gt;</code></li>
+    </ul>
+  <h2 id="mp11"><a href="mp11.html"><em>mp11</em></a></h2>
+    <h3><code>&lt;boost/mp11/list.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/serialization/variant2.hpp&gt;</code></li>
     </ul>
   <h2 id="mpl"><a href="mpl.html"><em>mpl</em></a></h2>
     <h3><code>&lt;boost/mpl/always.hpp&gt;</code></h3><ul>
@@ -666,6 +670,8 @@
       <li>from <code>&lt;boost/archive/iterators/binary_from_base64.hpp&gt;</code></li>
       <li>from <code>&lt;boost/archive/iterators/dataflow.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/base_object.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/serialization/boost_unordered_map.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/serialization/boost_unordered_set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/export.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/extended_type_info_no_rtti.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/extended_type_info_typeid.hpp&gt;</code></li>
@@ -675,6 +681,10 @@
       <li>from <code>&lt;boost/serialization/tracking.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/serialization/type_info_implementation.hpp&gt;</code></li>
+    </ul>
+  <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
+    <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/serialization/throw_exception.hpp&gt;</code></li>
     </ul>
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
     <h3><code>&lt;boost/aligned_storage.hpp&gt;</code></h3><ul>
@@ -787,13 +797,6 @@
     <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/serialization/smart_cast.hpp&gt;</code></li>
     </ul>
-  <h2 id="unordered"><a href="unordered.html"><em>unordered</em></a></h2>
-    <h3><code>&lt;boost/unordered_map.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/serialization/boost_unordered_map.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/unordered_set.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/serialization/boost_unordered_set.hpp&gt;</code></li>
-    </ul>
   <h2 id="utility"><a href="utility.html"><em>utility</em></a></h2>
     <h3><code>&lt;boost/call_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/serialization/state_saver.hpp&gt;</code></li>
@@ -802,36 +805,27 @@
       <li>from <code>&lt;boost/serialization/strong_typedef.hpp&gt;</code></li>
     </ul>
   <h2 id="variant"><a href="variant.html"><em>variant</em></a></h2>
-    <h3><code>&lt;boost/variant.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/variant/get.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/serialization/variant.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/variant/variant.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/serialization/variant.hpp&gt;</code></li>
+    </ul>
+  <h2 id="variant2"><a href="variant2.html"><em>variant2</em></a></h2>
+    <h3><code>&lt;boost/variant2/variant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/serialization/variant.hpp&gt;</code></li>
     </ul>
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>serialization</em></h1>
-  <h2><a href="array.html"><em>array</em></a></h2><ul>
-    <li><a href="array.html#throw_exception">adds <em>throw_exception</em></a></li>
-  </ul>
-  <h2><a href="core.html"><em>core</em></a></h2><ul>
-    <li><a href="core.html#throw_exception">adds <em>throw_exception</em></a></li>
-  </ul>
   <h2><a href="function.html"><em>function</em></a></h2><ul>
     <li><a href="function.html#bind">adds <em>bind</em></a></li>
-    <li><a href="function.html#throw_exception">adds <em>throw_exception</em></a></li>
-  </ul>
-  <h2><a href="integer.html"><em>integer</em></a></h2><ul>
-    <li><a href="integer.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
   <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
     <li><a href="iterator.html#concept_check">adds <em>concept_check</em></a></li>
     <li><a href="iterator.html#conversion">adds <em>conversion</em></a></li>
     <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
-  </ul>
-  <h2><a href="optional.html"><em>optional</em></a></h2><ul>
-    <li><a href="optional.html#throw_exception">adds <em>throw_exception</em></a></li>
-  </ul>
-  <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
-    <li><a href="smart_ptr.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
   <h2><a href="spirit.html"><em>spirit</em></a></h2><ul>
     <li><a href="spirit.html#(unknown)">adds <em>(unknown)</em></a></li>
@@ -844,21 +838,11 @@
     <li><a href="spirit.html#range">adds <em>range</em></a></li>
     <li><a href="spirit.html#regex">adds <em>regex</em></a></li>
     <li><a href="spirit.html#thread">adds <em>thread</em></a></li>
-    <li><a href="spirit.html#throw_exception">adds <em>throw_exception</em></a></li>
     <li><a href="spirit.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
-  <h2><a href="unordered.html"><em>unordered</em></a></h2><ul>
-    <li><a href="unordered.html#container_hash">adds <em>container_hash</em></a></li>
-    <li><a href="unordered.html#mp11">adds <em>mp11</em></a></li>
-    <li><a href="unordered.html#throw_exception">adds <em>throw_exception</em></a></li>
-    <li><a href="unordered.html#tuple">adds <em>tuple</em></a></li>
-  </ul>
-  <h2><a href="utility.html"><em>utility</em></a></h2><ul>
-    <li><a href="utility.html#throw_exception">adds <em>throw_exception</em></a></li>
+    <li><a href="spirit.html#unordered">adds <em>unordered</em></a></li>
   </ul>
   <h2><a href="variant.html"><em>variant</em></a></h2><ul>
     <li><a href="variant.html#container_hash">adds <em>container_hash</em></a></li>
-    <li><a href="variant.html#throw_exception">adds <em>throw_exception</em></a></li>
     <li><a href="variant.html#type_index">adds <em>type_index</em></a></li>
   </ul>
   <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
@@ -866,9 +850,13 @@
   </ul>
   <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
     <li><a href="fusion.html#functional">adds <em>functional</em></a></li>
+    <li><a href="fusion.html#tuple">adds <em>tuple</em></a></li>
   </ul>
   <h2><a href="pool.html"><em>pool</em></a></h2><ul>
     <li><a href="pool.html#winapi">adds <em>winapi</em></a></li>
+  </ul>
+  <h2><a href="range.html"><em>range</em></a></h2><ul>
+    <li><a href="range.html#tuple">adds <em>tuple</em></a></li>
   </ul>
   <h2><a href="thread.html"><em>thread</em></a></h2><ul>
     <li><a href="thread.html#atomic">adds <em>atomic</em></a></li>
@@ -877,6 +865,7 @@
     <li><a href="thread.html#date_time">adds <em>date_time</em></a></li>
     <li><a href="thread.html#exception">adds <em>exception</em></a></li>
     <li><a href="thread.html#system">adds <em>system</em></a></li>
+    <li><a href="thread.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="thread.html#winapi">adds <em>winapi</em></a></li>
   </ul>
   <h2><a href="atomic.html"><em>atomic</em></a></h2><ul>
@@ -893,9 +882,6 @@
     <li><a href="date_time.html#lexical_cast">adds <em>lexical_cast</em></a></li>
     <li><a href="date_time.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
-  </ul>
-  <h2><a href="system.html"><em>system</em></a></h2><ul>
-    <li><a href="system.html#variant2">adds <em>variant2</em></a></li>
   </ul>
 
 
@@ -1132,6 +1118,9 @@
       <li>from <code>&lt;boost/property_tree/ptree_serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/detail/stack_constructor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/property_tree/ptree_serialization.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/serialization/library_version_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/property_tree/ptree_serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/nvp.hpp&gt;</code></h3><ul>

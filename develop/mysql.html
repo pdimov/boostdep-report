@@ -11,22 +11,17 @@
   <h2 id="asio"><a href="asio.html"><em>asio</em></a></h2>
     <h3><code>&lt;boost/asio/any_completion_handler.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/any_stream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/network_algorithms.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/connection_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/run_algo.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/run_algo_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/run_algo.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/any_io_executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/any_stream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/channel/channel.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/async_result.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/impl/internal/channel/channel.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/channel/message_reader.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/channel/write_message.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/close_statement.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/ping.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/read_some_rows.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/read_some_rows_dynamic.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/reset_connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/start_execution.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/run_algo.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/run_algo_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/basic_socket.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/socket_stream.hpp&gt;</code></li>
@@ -36,25 +31,27 @@
     </ul>
     <h3><code>&lt;boost/asio/buffer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/any_stream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/channel/message_reader.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/channel/write_message.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/run_algo_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/compose.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/impl/internal/channel/message_reader.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/channel/write_message.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/run_algo_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/coroutine.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/impl/internal/channel/message_reader.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/channel/write_message.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/connect.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/execute.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/ping.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/quit_connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/read_resultset_head.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/read_some_rows.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/read_some_rows_dynamic.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/reset_connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/start_execution.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/algo_runner.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/close_connection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/close_statement.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/connect.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/connection_state.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/execute.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/handshake.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/message_reader.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/ping.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/prepare_statement.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/quit_connection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/read_resultset_head.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/read_some_rows.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/reset_connection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/start_execution.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ip/tcp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/any_stream_impl.hpp&gt;</code></li>
@@ -66,10 +63,7 @@
       <li>from <code>&lt;boost/mysql/unix_ssl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/post.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/impl/internal/channel/message_reader.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/close_connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/read_some_rows.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/start_execution.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/run_algo_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ssl/stream.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/any_stream_impl.hpp&gt;</code></li>
@@ -82,7 +76,6 @@
       <li>from <code>&lt;boost/mysql/connection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/date.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/datetime.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/channel_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/datetime.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/execution_processor/execution_processor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/execution_processor/execution_state_impl.hpp&gt;</code></li>
@@ -92,13 +85,12 @@
       <li>from <code>&lt;boost/mysql/detail/typing/pos_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/typing/row_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/field_view.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/channel/message_reader.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/channel/read_buffer.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/read_resultset_head.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/deserialize_text_field.ipp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/null_bitmap_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/serialization.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/static_buffer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/message_reader.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/read_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/statement.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/results.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/resultset.hpp&gt;</code></li>
@@ -126,6 +118,7 @@
       <li>from <code>&lt;boost/mysql/string_view.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/detail/any_stream_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/protocol.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/span.hpp&gt;</code></h3><ul>
@@ -135,11 +128,11 @@
       <li>from <code>&lt;boost/mysql/detail/row_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/typing/pos_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/auth/auth.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/channel/read_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/protocol.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/protocol.ipp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/serialization.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/static_buffer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/read_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/metadata_collection_view.hpp&gt;</code></li>
     </ul>
   <h2 id="describe"><a href="describe.html"><em>describe</em></a></h2>
@@ -169,8 +162,8 @@
       <li>from <code>&lt;boost/mysql/detail/typing/row_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/integer_sequence.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/detail/connection_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/execution_processor/static_results_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/network_algorithms.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/list.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/typing/get_type_index.hpp&gt;</code></li>
@@ -205,17 +198,16 @@
     <h3><code>&lt;boost/variant2/variant.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/field_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/field.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/connection_state.hpp&gt;</code></li>
     </ul>
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>mysql</em></h1>
   <h2><a href="asio.html"><em>asio</em></a></h2><ul>
     <li><a href="asio.html#align">adds <em>align</em></a></li>
-    <li><a href="asio.html#bind">adds <em>bind</em></a></li>
     <li><a href="asio.html#context">adds <em>context</em></a></li>
     <li><a href="asio.html#coroutine">adds <em>coroutine</em></a></li>
     <li><a href="asio.html#date_time">adds <em>date_time</em></a></li>
-    <li><a href="asio.html#regex">adds <em>regex</em></a></li>
   </ul>
   <h2><a href="core.html"><em>core</em></a></h2><ul>
     <li><a href="core.html#static_assert">adds <em>static_assert</em></a></li>
@@ -256,31 +248,33 @@
     <li><a href="numeric~conversion.html#mpl">adds <em>mpl</em></a></li>
     <li><a href="numeric~conversion.html#preprocessor">adds <em>preprocessor</em></a></li>
   </ul>
-  <h2><a href="regex.html"><em>regex</em></a></h2><ul>
-    <li><a href="regex.html#concept_check">adds <em>concept_check</em></a></li>
-    <li><a href="regex.html#container_hash">adds <em>container_hash</em></a></li>
-    <li><a href="regex.html#mpl">adds <em>mpl</em></a></li>
-    <li><a href="regex.html#predef">adds <em>predef</em></a></li>
-    <li><a href="regex.html#smart_ptr">adds <em>smart_ptr</em></a></li>
-  </ul>
   <h2><a href="winapi.html"><em>winapi</em></a></h2><ul>
     <li><a href="winapi.html#predef">adds <em>predef</em></a></li>
   </ul>
   <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
     <li><a href="algorithm.html#array">adds <em>array</em></a></li>
+    <li><a href="algorithm.html#bind">adds <em>bind</em></a></li>
+    <li><a href="algorithm.html#concept_check">adds <em>concept_check</em></a></li>
     <li><a href="algorithm.html#function">adds <em>function</em></a></li>
     <li><a href="algorithm.html#iterator">adds <em>iterator</em></a></li>
+    <li><a href="algorithm.html#regex">adds <em>regex</em></a></li>
     <li><a href="algorithm.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="algorithm.html#unordered">adds <em>unordered</em></a></li>
   </ul>
   <h2><a href="exception.html"><em>exception</em></a></h2><ul>
     <li><a href="exception.html#tuple">adds <em>tuple</em></a></li>
   </ul>
+  <h2><a href="intrusive.html"><em>intrusive</em></a></h2><ul>
+    <li><a href="intrusive.html#container_hash">adds <em>container_hash</em></a></li>
+  </ul>
   <h2><a href="range.html"><em>range</em></a></h2><ul>
     <li><a href="range.html#array">adds <em>array</em></a></li>
+    <li><a href="range.html#concept_check">adds <em>concept_check</em></a></li>
+    <li><a href="range.html#container_hash">adds <em>container_hash</em></a></li>
     <li><a href="range.html#detail">adds <em>detail</em></a></li>
     <li><a href="range.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="range.html#optional">adds <em>optional</em></a></li>
+    <li><a href="range.html#regex">adds <em>regex</em></a></li>
     <li><a href="range.html#tuple">adds <em>tuple</em></a></li>
   </ul>
   <h2><a href="tokenizer.html"><em>tokenizer</em></a></h2><ul>

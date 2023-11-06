@@ -34,19 +34,18 @@
       <li>from <code>&lt;boost/property_tree/detail/ptree_utils.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
-    <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/property_tree/json_parser/detail/parser.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/property_tree/ptree.hpp&gt;</code></li>
       <li>from <code>&lt;boost/property_tree/stream_translator.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/utility/swap.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/property_tree/detail/ptree_implementation.hpp&gt;</code></li>
     </ul>
-  <h2 id="format"><a href="format.html"><em>format</em></a></h2>
-    <h3><code>&lt;boost/format.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/property_tree/json_parser/detail/parser.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/type_name.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/property_tree/detail/ptree_implementation.hpp&gt;</code></li>
     </ul>
   <h2 id="iterator"><a href="iterator.html"><em>iterator</em></a></h2>
     <h3><code>&lt;boost/iterator/iterator_adaptor.hpp&gt;</code></h3><ul>
@@ -82,7 +81,8 @@
       <li>from <code>&lt;boost/property_tree/ptree.hpp&gt;</code></li>
     </ul>
   <h2 id="optional"><a href="optional.html"><em>optional</em></a></h2>
-    <h3><code>&lt;boost/optional.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/optional/optional.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/property_tree/detail/xml_parser_write.hpp&gt;</code></li>
       <li>from <code>&lt;boost/property_tree/id_translator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/property_tree/ptree.hpp&gt;</code></li>
       <li>from <code>&lt;boost/property_tree/stream_translator.hpp&gt;</code></li>
@@ -104,6 +104,9 @@
       <li>from <code>&lt;boost/property_tree/ptree_serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/detail/stack_constructor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/property_tree/ptree_serialization.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/serialization/library_version_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/property_tree/ptree_serialization.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/serialization/nvp.hpp&gt;</code></h3><ul>
@@ -146,10 +149,6 @@
 <h1 id="secondary-dependencies">Secondary dependencies for <em>property_tree</em></h1>
   <h2><a href="any.html"><em>any</em></a></h2><ul>
     <li><a href="any.html#type_index">adds <em>type_index</em></a></li>
-  </ul>
-  <h2><a href="format.html"><em>format</em></a></h2><ul>
-    <li><a href="format.html#smart_ptr">adds <em>smart_ptr</em></a></li>
-    <li><a href="format.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
     <li><a href="iterator.html#concept_check">adds <em>concept_check</em></a></li>
@@ -198,17 +197,17 @@
     <li><a href="serialization.html#integer">adds <em>integer</em></a></li>
     <li><a href="serialization.html#io">adds <em>io</em></a></li>
     <li><a href="serialization.html#move">adds <em>move</em></a></li>
+    <li><a href="serialization.html#mp11">adds <em>mp11</em></a></li>
     <li><a href="serialization.html#predef">adds <em>predef</em></a></li>
     <li><a href="serialization.html#preprocessor">adds <em>preprocessor</em></a></li>
     <li><a href="serialization.html#smart_ptr">adds <em>smart_ptr</em></a></li>
     <li><a href="serialization.html#spirit">adds <em>spirit</em></a></li>
-    <li><a href="serialization.html#unordered">adds <em>unordered</em></a></li>
     <li><a href="serialization.html#utility">adds <em>utility</em></a></li>
     <li><a href="serialization.html#variant">adds <em>variant</em></a></li>
+    <li><a href="serialization.html#variant2">adds <em>variant2</em></a></li>
   </ul>
   <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
     <li><a href="container_hash.html#describe">adds <em>describe</em></a></li>
-    <li><a href="container_hash.html#mp11">adds <em>mp11</em></a></li>
   </ul>
   <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
     <li><a href="fusion.html#functional">adds <em>functional</em></a></li>
@@ -222,9 +221,7 @@
     <li><a href="spirit.html#proto">adds <em>proto</em></a></li>
     <li><a href="spirit.html#thread">adds <em>thread</em></a></li>
     <li><a href="spirit.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
-  <h2><a href="unordered.html"><em>unordered</em></a></h2><ul>
-    <li><a href="unordered.html#mp11">adds <em>mp11</em></a></li>
+    <li><a href="spirit.html#unordered">adds <em>unordered</em></a></li>
   </ul>
   <h2><a href="pool.html"><em>pool</em></a></h2><ul>
     <li><a href="pool.html#winapi">adds <em>winapi</em></a></li>
@@ -252,9 +249,6 @@
     <li><a href="date_time.html#lexical_cast">adds <em>lexical_cast</em></a></li>
     <li><a href="date_time.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
-  </ul>
-  <h2><a href="system.html"><em>system</em></a></h2><ul>
-    <li><a href="system.html#variant2">adds <em>variant2</em></a></li>
   </ul>
 
 

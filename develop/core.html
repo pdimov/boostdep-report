@@ -1181,6 +1181,7 @@
       <li>from <code>&lt;boost/mysql/string_view.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/detail/any_stream_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/protocol.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/span.hpp&gt;</code></h3><ul>
@@ -1190,11 +1191,11 @@
       <li>from <code>&lt;boost/mysql/detail/row_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/typing/pos_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/auth/auth.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/channel/read_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/protocol.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/protocol.ipp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/serialization.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/static_buffer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/read_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/metadata_collection_view.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-numeric~conversion"><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2>
@@ -1312,14 +1313,17 @@
       <li>from <code>&lt;boost/property_map/dynamic_property_map.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-property_tree"><a href="property_tree.html"><em>property_tree</em></a></h2>
-    <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/property_tree/json_parser/detail/parser.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/property_tree/ptree.hpp&gt;</code></li>
       <li>from <code>&lt;boost/property_tree/stream_translator.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/utility/swap.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/property_tree/detail/ptree_implementation.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/property_tree/json_parser/detail/parser.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/type_name.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/property_tree/detail/ptree_implementation.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-proto"><a href="proto.html"><em>proto</em></a></h2>
@@ -1366,12 +1370,12 @@
       <li>from <code>&lt;boost/ptr_container/clone_allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/ptr_container/detail/default_deleter.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/ptr_container/detail/reversible_ptr_container.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/serialization.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/ptr_container/detail/serialize_ptr_map_adapter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/ptr_container/detail/serialize_reversible_cont.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/swap.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/ptr_container/detail/reversible_ptr_container.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/ptr_container/detail/is_convertible.hpp&gt;</code></li>
