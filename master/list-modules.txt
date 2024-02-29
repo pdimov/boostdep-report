@@ -11,6 +11,7 @@ beast
 bimap
 bind
 callable_traits
+charconv
 chrono
 circular_buffer
 cobalt
@@ -114,6 +115,7 @@ rational
 redis
 regex
 safe_numerics
+scope
 scope_exit
 serialization
 signals2

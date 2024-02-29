@@ -15,8 +15,6 @@
   <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/url/authority_view.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/detail/move_chars.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/detail/over_allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/detail/params_iter_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/detail/url_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/grammar/detail/ci_string.hpp&gt;</code></li>
@@ -30,7 +28,9 @@
       <li>from <code>&lt;boost/url/impl/segments_encoded_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/url.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/url_view_base.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/detail/move_chars.hpp&gt;</code></li>
       <li>from <code>&lt;libs/url/src/detail/normalize.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/detail/over_allocator.hpp&gt;</code></li>
       <li>from <code>&lt;libs/url/src/detail/params_iter_impl.cpp&gt;</code></li>
       <li>from <code>&lt;libs/url/src/detail/segments_iter_impl.cpp&gt;</code></li>
       <li>from <code>&lt;libs/url/src/detail/url_impl.cpp&gt;</code></li>
@@ -50,7 +50,7 @@
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/url/detail/config.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/detail/over_allocator.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/detail/over_allocator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/auto_link.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/url/detail/config.hpp&gt;</code></li>
@@ -60,7 +60,7 @@
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/allocator_traits.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/url/detail/over_allocator.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/detail/over_allocator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/bit.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/url/grammar/detail/charset.hpp&gt;</code></li>
@@ -68,13 +68,7 @@
     <h3><code>&lt;boost/core/detail/string_view.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/url.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/decode_view.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/detail/decode.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/detail/move_chars.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/detail/normalize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/detail/optional_string.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/detail/path.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/detail/pattern.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/detail/pct_format.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/detail/replacement_field_rule.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/detail/segments_iter_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/detail/string_view.hpp&gt;</code></li>
@@ -97,24 +91,30 @@
       <li>from <code>&lt;boost/url/params_encoded_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/parse_query.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/pct_string_view.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/rfc/detail/ip_literal_rule.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/rfc/detail/ipv6_addrz_rule.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/rfc/detail/ipvfuture_rule.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/rfc/detail/port_rule.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/rfc/detail/scheme_rule.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/scheme.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/segments_encoded_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/segments_view.hpp&gt;</code></li>
       <li>from <code>&lt;libs/url/src/detail/any_params_iter.cpp&gt;</code></li>
       <li>from <code>&lt;libs/url/src/detail/any_segments_iter.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/detail/decode.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/detail/move_chars.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/detail/normalize.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/detail/path.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/detail/pattern.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/detail/pct_format.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/rfc/detail/ip_literal_rule.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/rfc/detail/ipv6_addrz_rule.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/rfc/detail/ipvfuture_rule.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/rfc/detail/port_rule.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/rfc/detail/scheme_rule.hpp&gt;</code></li>
       <li>from <code>&lt;libs/url/src/rfc/detail/userinfo_rule.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/url/detail/over_allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/grammar/detail/tuple.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/grammar/impl/range_rule.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/grammar/optional_rule.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/grammar/tuple_rule.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/detail/over_allocator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/url/detail/encode.hpp&gt;</code></li>
@@ -178,13 +178,13 @@
       <li>from <code>&lt;boost/url/grammar/detail/tuple.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_final.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/url/detail/over_allocator.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/detail/over_allocator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_cv.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/url/grammar/detail/tuple.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/type_with_alignment.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/url/detail/over_allocator.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/detail/over_allocator.hpp&gt;</code></li>
     </ul>
   <h2 id="variant2"><a href="variant2.html"><em>variant2</em></a></h2>
     <h3><code>&lt;boost/variant2/variant.hpp&gt;</code></h3><ul>
@@ -195,16 +195,12 @@
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>url</em></h1>
   <h2><a href="optional.html"><em>optional</em></a></h2><ul>
-    <li><a href="optional.html#detail">adds <em>detail</em></a></li>
     <li><a href="optional.html#move">adds <em>move</em></a></li>
     <li><a href="optional.html#predef">adds <em>predef</em></a></li>
     <li><a href="optional.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="system.html"><em>system</em></a></h2><ul>
     <li><a href="system.html#winapi">adds <em>winapi</em></a></li>
-  </ul>
-  <h2><a href="detail.html"><em>detail</em></a></h2><ul>
-    <li><a href="detail.html#preprocessor">adds <em>preprocessor</em></a></li>
   </ul>
   <h2><a href="utility.html"><em>utility</em></a></h2><ul>
     <li><a href="utility.html#io">adds <em>io</em></a></li>

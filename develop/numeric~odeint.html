@@ -29,10 +29,6 @@
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/numeric/odeint/tools/assert.hpp&gt;</code></li>
     </ul>
-  <h2 id="bind"><a href="bind.html"><em>bind</em></a></h2>
-    <h3><code>&lt;boost/bind.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/numeric/odeint/util/bind.hpp&gt;</code></li>
-    </ul>
   <h2 id="compute"><a href="compute.html"><em>compute</em></a></h2>
     <h3><code>&lt;boost/compute.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/numeric/odeint/external/compute/compute_algebra.hpp&gt;</code></li>
@@ -71,11 +67,6 @@
       <li>from <code>&lt;boost/numeric/odeint/util/copy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/numeric/odeint/util/resize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/numeric/odeint/util/same_size.hpp&gt;</code></li>
-    </ul>
-  <h2 id="function"><a href="function.html"><em>function</em></a></h2>
-    <h3><code>&lt;boost/function.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/numeric/odeint/integrate/observer_collection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/numeric/odeint/iterator/integrate/observer_collection.hpp&gt;</code></li>
     </ul>
   <h2 id="fusion"><a href="fusion.html"><em>fusion</em></a></h2>
     <h3><code>&lt;boost/fusion/algorithm.hpp&gt;</code></h3><ul>
@@ -332,6 +323,7 @@
     <li><a href="compute.html#atomic">adds <em>atomic</em></a></li>
     <li><a href="compute.html#chrono">adds <em>chrono</em></a></li>
     <li><a href="compute.html#filesystem">adds <em>filesystem</em></a></li>
+    <li><a href="compute.html#function">adds <em>function</em></a></li>
     <li><a href="compute.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="compute.html#lexical_cast">adds <em>lexical_cast</em></a></li>
     <li><a href="compute.html#optional">adds <em>optional</em></a></li>
@@ -366,6 +358,7 @@
   </ul>
   <h2><a href="mpi.html"><em>mpi</em></a></h2><ul>
     <li><a href="mpi.html#foreach">adds <em>foreach</em></a></li>
+    <li><a href="mpi.html#function">adds <em>function</em></a></li>
     <li><a href="mpi.html#graph">adds <em>graph</em></a></li>
     <li><a href="mpi.html#integer">adds <em>integer</em></a></li>
     <li><a href="mpi.html#lexical_cast">adds <em>lexical_cast</em></a></li>
@@ -409,6 +402,7 @@
     <li><a href="utility.html#io">adds <em>io</em></a></li>
   </ul>
   <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
+    <li><a href="algorithm.html#bind">adds <em>bind</em></a></li>
     <li><a href="algorithm.html#exception">adds <em>exception</em></a></li>
     <li><a href="algorithm.html#unordered">adds <em>unordered</em></a></li>
   </ul>
@@ -427,12 +421,17 @@
     <li><a href="container_hash.html#mp11">adds <em>mp11</em></a></li>
   </ul>
   <h2><a href="filesystem.html"><em>filesystem</em></a></h2><ul>
+    <li><a href="filesystem.html#scope">adds <em>scope</em></a></li>
     <li><a href="filesystem.html#system">adds <em>system</em></a></li>
     <li><a href="filesystem.html#winapi">adds <em>winapi</em></a></li>
+  </ul>
+  <h2><a href="function.html"><em>function</em></a></h2><ul>
+    <li><a href="function.html#bind">adds <em>bind</em></a></li>
   </ul>
   <h2><a href="graph.html"><em>graph</em></a></h2><ul>
     <li><a href="graph.html#any">adds <em>any</em></a></li>
     <li><a href="graph.html#bimap">adds <em>bimap</em></a></li>
+    <li><a href="graph.html#bind">adds <em>bind</em></a></li>
     <li><a href="graph.html#move">adds <em>move</em></a></li>
     <li><a href="graph.html#multi_index">adds <em>multi_index</em></a></li>
     <li><a href="graph.html#parameter">adds <em>parameter</em></a></li>
@@ -442,9 +441,11 @@
     <li><a href="graph.html#unordered">adds <em>unordered</em></a></li>
     <li><a href="graph.html#xpressive">adds <em>xpressive</em></a></li>
   </ul>
+  <h2><a href="lambda.html"><em>lambda</em></a></h2><ul>
+    <li><a href="lambda.html#bind">adds <em>bind</em></a></li>
+  </ul>
   <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
     <li><a href="lexical_cast.html#container">adds <em>container</em></a></li>
-    <li><a href="lexical_cast.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
   </ul>
   <h2><a href="numeric~interval.html"><em>numeric~interval</em></a></h2><ul>
     <li><a href="numeric~interval.html#logic">adds <em>logic</em></a></li>
@@ -454,10 +455,12 @@
   </ul>
   <h2><a href="property_tree.html"><em>property_tree</em></a></h2><ul>
     <li><a href="property_tree.html#any">adds <em>any</em></a></li>
+    <li><a href="property_tree.html#bind">adds <em>bind</em></a></li>
     <li><a href="property_tree.html#multi_index">adds <em>multi_index</em></a></li>
   </ul>
   <h2><a href="python.html"><em>python</em></a></h2><ul>
     <li><a href="python.html#align">adds <em>align</em></a></li>
+    <li><a href="python.html#bind">adds <em>bind</em></a></li>
     <li><a href="python.html#numeric~conversion">adds <em>numeric~conversion</em></a></li>
     <li><a href="python.html#property_map">adds <em>property_map</em></a></li>
   </ul>
@@ -476,6 +479,7 @@
     <li><a href="smart_ptr.html#move">adds <em>move</em></a></li>
   </ul>
   <h2><a href="thread.html"><em>thread</em></a></h2><ul>
+    <li><a href="thread.html#bind">adds <em>bind</em></a></li>
     <li><a href="thread.html#container">adds <em>container</em></a></li>
     <li><a href="thread.html#date_time">adds <em>date_time</em></a></li>
     <li><a href="thread.html#exception">adds <em>exception</em></a></li>

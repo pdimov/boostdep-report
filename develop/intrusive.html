@@ -33,6 +33,7 @@
       <li>from <code>&lt;boost/intrusive/detail/get_value_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/intrusive/detail/has_member_function_callable_with.hpp&gt;</code></li>
       <li>from <code>&lt;boost/intrusive/detail/hash_combine.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/intrusive/detail/hash_integral.hpp&gt;</code></li>
       <li>from <code>&lt;boost/intrusive/detail/hashtable_node.hpp&gt;</code></li>
       <li>from <code>&lt;boost/intrusive/detail/hook_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/intrusive/detail/iiterator.hpp&gt;</code></li>
@@ -67,13 +68,11 @@
       <li>from <code>&lt;boost/intrusive/pointer_rebind.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/cstdint.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/intrusive/detail/hash.hpp&gt;</code></li>
       <li>from <code>&lt;boost/intrusive/detail/hash_combine.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/intrusive/detail/hash_mix.hpp&gt;</code></li>
       <li>from <code>&lt;boost/intrusive/hashtable.hpp&gt;</code></li>
       <li>from <code>&lt;boost/intrusive/intrusive_fwd.hpp&gt;</code></li>
-    </ul>
-  <h2 id="container_hash"><a href="container_hash.html"><em>container_hash</em></a></h2>
-    <h3><code>&lt;boost/container_hash/hash.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/intrusive/hashtable.hpp&gt;</code></li>
     </ul>
   <h2 id="move"><a href="move.html"><em>move</em></a></h2>
     <h3><code>&lt;boost/move/adl_move_swap.hpp&gt;</code></h3><ul>
@@ -99,6 +98,7 @@
     </ul>
     <h3><code>&lt;boost/move/detail/meta_utils_core.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/intrusive/detail/iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/intrusive/hashtable.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/move/detail/placement_new.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/intrusive/detail/array_initializer.hpp&gt;</code></li>
@@ -144,35 +144,9 @@
       <li>from <code>&lt;boost/intrusive/treap_set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/intrusive/unordered_set.hpp&gt;</code></li>
     </ul>
-  <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
-    <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/intrusive/avl_set.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/avltree.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/bs_set.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/bstree.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/detail/generic_hook.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/detail/parent_from_member.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/detail/slist_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/hashtable.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/list.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/rbtree.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/set.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/sg_set.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/sgtree.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/slist.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/splay_set.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/splaytree.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/treap.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/treap_set.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/intrusive/unordered_set.hpp&gt;</code></li>
-    </ul>
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>intrusive</em></h1>
-  <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
-    <li><a href="container_hash.html#describe">adds <em>describe</em></a></li>
-    <li><a href="container_hash.html#mp11">adds <em>mp11</em></a></li>
-  </ul>
 
 
 <h1 id="reverse-dependencies">Reverse dependencies for <em>intrusive</em></h1>
@@ -325,12 +299,14 @@
       <li>from <code>&lt;boost/heap/detail/heap_node.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-interprocess"><a href="interprocess.html"><em>interprocess</em></a></h2>
+    <h3><code>&lt;boost/intrusive/detail/hash.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/indexes/iunordered_set_index.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/intrusive/detail/minimal_less_equal_header.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/indexes/flat_map_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/indexes/iset_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/indexes/iunordered_set_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/indexes/map_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/indexes/unordered_map_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/smart_ptr/detail/shared_count.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/smart_ptr/intrusive_ptr.hpp&gt;</code></li>
     </ul>
@@ -340,7 +316,6 @@
       <li>from <code>&lt;boost/interprocess/indexes/iset_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/indexes/iunordered_set_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/indexes/map_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/indexes/unordered_map_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/mem_algo/detail/simple_seq_fit_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/segment_manager.hpp&gt;</code></li>
     </ul>
