@@ -11,17 +11,15 @@
   <h2 id="asio"><a href="asio.html"><em>asio</em></a></h2>
     <h3><code>&lt;boost/asio/any_completion_handler.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/connection_pool.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/any_stream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/connection_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/run_algo.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/engine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/run_algo_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/run_algo.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/any_io_executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/any_connection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/connection_pool.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/any_stream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/engine.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/engine_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/engine_stream_adaptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_node.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/run_with_timeout.hpp&gt;</code></li>
@@ -35,8 +33,6 @@
     </ul>
     <h3><code>&lt;boost/asio/async_result.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/connection_pool.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/run_algo.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/run_algo_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/basic_socket.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/socket_stream.hpp&gt;</code></li>
@@ -50,42 +46,18 @@
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/wait_group.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/buffer.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/detail/any_stream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/run_algo_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/engine_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/cancellation_signal.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/run_with_timeout.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/compose.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/detail/engine_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_node.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/run_algo_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/connect.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/asio/consign.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/any_connection.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/asio/coroutine.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/algo_runner.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/close_connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/close_statement.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/connect.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/connection_state.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/execute.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/handshake.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/message_reader.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/ping.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/prepare_statement.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/quit_connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/read_resultset_head.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/read_some_rows.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/reset_connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/set_character_set.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/sansio/start_execution.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/deferred.hpp&gt;</code></h3><ul>
@@ -99,11 +71,8 @@
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/asio/execution_context.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/any_connection.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/asio/ip/tcp.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/detail/any_stream_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/engine_stream_adaptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/tcp.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/tcp_ssl.hpp&gt;</code></li>
@@ -114,19 +83,18 @@
       <li>from <code>&lt;boost/mysql/unix_ssl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/post.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/detail/engine_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/network_algorithms/run_algo_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ssl/context.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/any_connection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/internal_pool_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/ssl_context_with_default.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/pool_params.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ssl/stream.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/detail/any_stream_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/engine_stream_adaptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/rebind_executor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/tcp_ssl.hpp&gt;</code></li>
@@ -146,25 +114,33 @@
       <li>from <code>&lt;boost/mysql/date.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/datetime.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/datetime.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/engine_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/execution_processor/execution_processor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/execution_processor/execution_state_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/execution_processor/results_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/execution_processor/static_execution_state_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/execution_processor/static_results_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/next_action.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/typing/pos_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/typing/row_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/character_set.ipp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/field_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/field_view.ipp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/call_next_char.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/sansio_connection_node.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/dt_to_string.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/protocol/deserialize_text_field.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/protocol/null_bitmap_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/frame_header.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/deserialization_context.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/null_bitmap.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/serialization_context.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/text_protocol.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/serialization.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/static_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/message_reader.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/read_buffer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/run_pipeline.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/statement.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/pipeline.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/results.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/resultset.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/resultset_view.hpp&gt;</code></li>
@@ -178,7 +154,7 @@
   <h2 id="charconv"><a href="charconv.html"><em>charconv</em></a></h2>
     <h3><code>&lt;boost/charconv/from_chars.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/format_sql.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/protocol/deserialize_text_field.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/text_protocol.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/charconv/to_chars.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/format_sql.ipp&gt;</code></li>
@@ -186,46 +162,74 @@
     </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/buffer_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/constant_string_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/date.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/datetime.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/any_stream_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/defaults.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/datetime.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/engine_stream_adaptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/escape_string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/execution_processor/execution_processor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/flags.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/typing/pos_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/escape_string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/field_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/format_sql.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/protocol/protocol.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/auth/auth.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/byte_to_hex.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/error/server_error_to_string.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/capabilities.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/deserialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/frame_header.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/null_bitmap.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/message_reader.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/read_buffer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/pfr.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/mariadb_collations.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/mariadb_server_errc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/mysql_collations.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/mysql_server_errc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/time.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/detail/string_view.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/format_sql.ipp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/string_view.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/detail/any_stream_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/connection_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/engine_stream_adaptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/protocol/protocol.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/deserialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/serialization_context.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/span.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/blob_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/character_set.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/algo_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/any_execution_request.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/character_set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/execution_processor/execution_processor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/next_action.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/row_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/typing/pos_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/format_sql.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/auth/auth.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/dt_to_string.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/protocol/protocol.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/protocol/protocol.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/protocol/serialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/deserialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/frame_header.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/deserialization_context.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/null_bitmap.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/span_string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/static_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/read_buffer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/run_pipeline.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/top_level_algo.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/pipeline.ipp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/metadata_collection_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/pipeline.hpp&gt;</code></li>
     </ul>
   <h2 id="describe"><a href="describe.html"><em>describe</em></a></h2>
     <h3><code>&lt;boost/describe/members.hpp&gt;</code></h3><ul>
@@ -233,14 +237,10 @@
     </ul>
   <h2 id="endian"><a href="endian.html"><em>endian</em></a></h2>
     <h3><code>&lt;boost/endian/conversion.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/impl/internal/protocol/bit_deserialization.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/protocol/serialization.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/endian/detail/endian_load.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/impl/internal/protocol/serialization.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/endian/detail/endian_store.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/impl/internal/protocol/serialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/frame_header.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/bit_deserialization.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/protocol_types.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/serialization_context.hpp&gt;</code></li>
     </ul>
   <h2 id="intrusive"><a href="intrusive.html"><em>intrusive</em></a></h2>
     <h3><code>&lt;boost/intrusive/list.hpp&gt;</code></h3><ul>
@@ -255,7 +255,7 @@
     <h3><code>&lt;boost/mp11/algorithm.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/execution_processor/static_results_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/field_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/detail/typing/get_type_index.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/typing/readable_field_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/typing/row_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/integer_sequence.hpp&gt;</code></h3><ul>
@@ -263,9 +263,10 @@
       <li>from <code>&lt;boost/mysql/detail/execution_processor/static_results_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/list.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/detail/typing/get_type_index.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/typing/row_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/utility.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/detail/typing/readable_field_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/typing/row_traits.hpp&gt;</code></li>
     </ul>
   <h2 id="optional"><a href="optional.html"><em>optional</em></a></h2>
@@ -273,6 +274,19 @@
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/internal_pool_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/pool_params.hpp&gt;</code></li>
+    </ul>
+  <h2 id="pfr"><a href="pfr.html"><em>pfr</em></a></h2>
+    <h3><code>&lt;boost/pfr/config.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/pfr.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/pfr/core.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/pfr.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/pfr/core_name.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/pfr.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/pfr/traits.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/pfr.hpp&gt;</code></li>
     </ul>
   <h2 id="system"><a href="system.html"><em>system</em></a></h2>
     <h3><code>&lt;boost/system/error_category.hpp&gt;</code></h3><ul>
@@ -287,7 +301,6 @@
       <li>from <code>&lt;boost/mysql/any_connection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/connection_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/format_sql.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/connection_impl.ipp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/format_sql.ipp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/set_character_set.hpp&gt;</code></li>
     </ul>
@@ -300,9 +313,11 @@
       <li>from <code>&lt;boost/mysql/date.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/datetime.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/field_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/connection_impl.ipp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/field_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/format_sql.ipp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/internal_pool_params.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/pipeline.ipp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/results.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/row_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/rows.hpp&gt;</code></li>
@@ -310,12 +325,12 @@
     </ul>
   <h2 id="variant2"><a href="variant2.html"><em>variant2</em></a></h2>
     <h3><code>&lt;boost/variant2/variant.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/any_connection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/field_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/field.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/connection_state.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/ssl_context_with_default.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/pipeline.hpp&gt;</code></li>
     </ul>
 
 

@@ -9,6 +9,13 @@
 
 <h1 id="primary-dependencies">Primary dependencies for <em>geometry</em></h1>
   <h2 id="(unknown)"><a href="(unknown).html"><em>(unknown)</em></a></h2>
+    <h3><code>&lt;boost/geometry/policies/robustness/no_rescale_policy.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/extensions/algorithms/offset.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/geometry/policies/robustness/segment_ratio_type.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/geometry/extensions/algorithms/detail/overlay/dissolver.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/extensions/algorithms/dissolve.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/geometry/strategies/agnostic/buffer_end_skip.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/extensions/algorithms/offset.hpp&gt;</code></li>
     </ul>
@@ -65,7 +72,6 @@
     <h3><code>&lt;boost/concept/requires.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/geometry/algorithms/detail/assign_values.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/for_each_range.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/recalculate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/sectionalize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/arithmetic/arithmetic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/arithmetic/dot_product.hpp&gt;</code></li>
@@ -80,7 +86,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/closest_points/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/distance/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/get_turns.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/recalculate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/within/interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/extensions/algebra/geometries/concepts/matrix_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/extensions/algebra/geometries/concepts/quaternion_concept.hpp&gt;</code></li>
@@ -148,9 +153,7 @@
       <li>from <code>&lt;boost/geometry/index/detail/varray_detail.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/svg/svg_mapper.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/svg/write.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/policies/robustness/robust_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/robustness/segment_ratio.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/policies/robustness/segment_ratio_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/impl/projects.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/aeqd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/gnom.hpp&gt;</code></li>
@@ -177,7 +180,6 @@
       <li>from <code>&lt;boost/geometry/util/promote_floating_point.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/pragma_message.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/core/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/multi/algorithms/append.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/multi/algorithms/area.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/multi/algorithms/centroid.hpp&gt;</code></li>
@@ -788,7 +790,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/traversal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/partition.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/point_on_border.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/recalculate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/multi_point_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/sectionalize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/turns/print_turns.hpp&gt;</code></li>
@@ -944,7 +945,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/traversal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/partition.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/point_on_border.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/recalculate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/multi_point_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/sectionalize.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/turns/print_turns.hpp&gt;</code></li>
@@ -1082,7 +1082,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/traversal_ring_creator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/traverse.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/partition.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/recalculate.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/boundary_checker.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/follow_helpers.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/linear_areal.hpp&gt;</code></li>
