@@ -17,9 +17,11 @@
     <h3><code>&lt;boost/asio/any_io_executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/any_connection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/connection_pool.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/connection_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/engine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/engine_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/engine_stream_adaptor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/initiation_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_node.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/run_with_timeout.hpp&gt;</code></li>
@@ -30,9 +32,18 @@
     </ul>
     <h3><code>&lt;boost/asio/associated_allocator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/run_with_timeout.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/with_diagnostics.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/associated_immediate_executor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/associator.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/detail/initiation_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/intermediate_handler.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/async_result.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/connection_pool.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/with_diagnostics.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/basic_socket.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/socket_stream.hpp&gt;</code></li>
@@ -61,14 +72,20 @@
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/deferred.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/any_connection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/initiation_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_node.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/dispatch.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/generic/stream_protocol.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ip/tcp.hpp&gt;</code></h3><ul>
@@ -85,7 +102,6 @@
     <h3><code>&lt;boost/asio/post.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/engine_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ssl/context.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/internal_pool_params.hpp&gt;</code></li>
@@ -199,11 +215,12 @@
       <li>from <code>&lt;boost/mysql/string_view.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/detail/connection_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/engine_stream_adaptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/deserialization.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/serialization_context.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/statement.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/with_params.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/span.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/blob_view.hpp&gt;</code></li>
@@ -222,12 +239,16 @@
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/frame_header.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/deserialization_context.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/null_bitmap.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/serialization_context.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/span_string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/static_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/read_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/run_pipeline.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/start_execution.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/top_level_algo.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/pipeline.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/with_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/metadata_collection_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/pipeline.hpp&gt;</code></li>
     </ul>
@@ -257,13 +278,15 @@
       <li>from <code>&lt;boost/mysql/detail/field_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/typing/readable_field_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/typing/row_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/with_diagnostics.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/integer_sequence.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/detail/connection_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/execution_processor/static_results_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/with_params.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/list.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/typing/row_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/with_diagnostics.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/utility.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/typing/readable_field_traits.hpp&gt;</code></li>
@@ -329,7 +352,6 @@
       <li>from <code>&lt;boost/mysql/field.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/connection_state.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/ssl_context_with_default.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/pipeline.hpp&gt;</code></li>
     </ul>
 
@@ -352,7 +374,6 @@
     <li><a href="optional.html#predef">adds <em>predef</em></a></li>
     <li><a href="optional.html#static_assert">adds <em>static_assert</em></a></li>
     <li><a href="optional.html#type_traits">adds <em>type_traits</em></a></li>
-    <li><a href="optional.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="system.html"><em>system</em></a></h2><ul>
     <li><a href="system.html#winapi">adds <em>winapi</em></a></li>
@@ -363,6 +384,7 @@
   </ul>
   <h2><a href="coroutine.html"><em>coroutine</em></a></h2><ul>
     <li><a href="coroutine.html#exception">adds <em>exception</em></a></li>
+    <li><a href="coroutine.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
     <li><a href="date_time.html#algorithm">adds <em>algorithm</em></a></li>
@@ -372,10 +394,7 @@
     <li><a href="date_time.html#range">adds <em>range</em></a></li>
     <li><a href="date_time.html#smart_ptr">adds <em>smart_ptr</em></a></li>
     <li><a href="date_time.html#tokenizer">adds <em>tokenizer</em></a></li>
-  </ul>
-  <h2><a href="utility.html"><em>utility</em></a></h2><ul>
-    <li><a href="utility.html#io">adds <em>io</em></a></li>
-    <li><a href="utility.html#preprocessor">adds <em>preprocessor</em></a></li>
+    <li><a href="date_time.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
     <li><a href="algorithm.html#array">adds <em>array</em></a></li>
@@ -393,11 +412,11 @@
   </ul>
   <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
     <li><a href="lexical_cast.html#container">adds <em>container</em></a></li>
-    <li><a href="lexical_cast.html#integer">adds <em>integer</em></a></li>
   </ul>
   <h2><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2><ul>
     <li><a href="numeric~conversion.html#conversion">adds <em>conversion</em></a></li>
     <li><a href="numeric~conversion.html#mpl">adds <em>mpl</em></a></li>
+    <li><a href="numeric~conversion.html#preprocessor">adds <em>preprocessor</em></a></li>
   </ul>
   <h2><a href="pool.html"><em>pool</em></a></h2><ul>
     <li><a href="pool.html#integer">adds <em>integer</em></a></li>
@@ -410,11 +429,15 @@
     <li><a href="range.html#detail">adds <em>detail</em></a></li>
     <li><a href="range.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="range.html#mpl">adds <em>mpl</em></a></li>
+    <li><a href="range.html#preprocessor">adds <em>preprocessor</em></a></li>
     <li><a href="range.html#regex">adds <em>regex</em></a></li>
     <li><a href="range.html#tuple">adds <em>tuple</em></a></li>
   </ul>
   <h2><a href="tokenizer.html"><em>tokenizer</em></a></h2><ul>
     <li><a href="tokenizer.html#iterator">adds <em>iterator</em></a></li>
+  </ul>
+  <h2><a href="utility.html"><em>utility</em></a></h2><ul>
+    <li><a href="utility.html#preprocessor">adds <em>preprocessor</em></a></li>
   </ul>
   <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
     <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
