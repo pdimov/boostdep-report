@@ -34,7 +34,6 @@
       <li>from <code>&lt;boost/smart_ptr/detail/local_counted_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/local_sp_deleter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/quick_allocator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/requires_cxx11.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/shared_count.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_convertible.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base.hpp&gt;</code></li>
@@ -57,10 +56,8 @@
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_w32.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_disable_deprecated.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_forward.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_interlocked.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_noexcept.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_nullptr_t.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_typeinfo_.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/spinlock.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/spinlock_pool.hpp&gt;</code></li>
@@ -80,12 +77,13 @@
       <li>from <code>&lt;boost/smart_ptr/shared_ptr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/header_deprecated.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/detail/atomic_count.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/detail/lightweight_mutex.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/detail/lightweight_thread.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/detail/quick_allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_thread_pause.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_thread_sleep.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_thread_yield.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/config/no_tr1/functional.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/smart_ptr/intrusive_ptr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/pragma_message.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_gcc.hpp&gt;</code></li>
@@ -97,7 +95,6 @@
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_std_atomic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_sync.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_win32.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/requires_cxx11.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_acc_ia64.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_aix.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_cw_ppc.hpp&gt;</code></li>
@@ -189,17 +186,6 @@
       <li>from <code>&lt;boost/smart_ptr/detail/sp_thread_yield.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/yield_k.hpp&gt;</code></li>
     </ul>
-  <h2 id="move"><a href="move.html"><em>move</em></a></h2>
-    <h3><code>&lt;boost/move/core.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/smart_ptr/make_shared_object.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/move/utility_core.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/smart_ptr/make_shared_object.hpp&gt;</code></li>
-    </ul>
-  <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
-    <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/pointer_cast.hpp&gt;</code></li>
-    </ul>
   <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
     <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/smart_ptr/detail/shared_count.hpp&gt;</code></li>
@@ -262,6 +248,12 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>smart_ptr</em></h1>
+  <h2><a href="core.html"><em>core</em></a></h2><ul>
+    <li><a href="core.html#static_assert">adds <em>static_assert</em></a></li>
+  </ul>
+  <h2><a href="type_traits.html"><em>type_traits</em></a></h2><ul>
+    <li><a href="type_traits.html#static_assert">adds <em>static_assert</em></a></li>
+  </ul>
 
 
 <h1 id="reverse-dependencies">Reverse dependencies for <em>smart_ptr</em></h1>
@@ -386,7 +378,7 @@
       <li>from <code>&lt;boost/filesystem/exception.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-flyweight"><a href="flyweight.html"><em>flyweight</em></a></h2>
-    <h3><code>&lt;boost/detail/atomic_count.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/smart_ptr/detail/atomic_count.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/flyweight/refcounted.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/smart_ptr/detail/lightweight_mutex.hpp&gt;</code></h3><ul>
@@ -778,10 +770,6 @@
       <li>from <code>&lt;boost/wave/util/symbol_table.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-xpressive"><a href="xpressive.html"><em>xpressive</em></a></h2>
-    <h3><code>&lt;boost/detail/atomic_count.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/xpressive/detail/utility/counted_base.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/xpressive/detail/utility/tracking_ptr.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/intrusive_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/xpressive/detail/core/adaptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/xpressive/detail/core/optimize.hpp&gt;</code></li>
@@ -800,6 +788,10 @@
       <li>from <code>&lt;boost/xpressive/detail/static/placeholders.hpp&gt;</code></li>
       <li>from <code>&lt;boost/xpressive/detail/static/visitor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/xpressive/detail/utility/symbols.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/xpressive/detail/utility/tracking_ptr.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/smart_ptr/detail/atomic_count.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/xpressive/detail/utility/counted_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/xpressive/detail/utility/tracking_ptr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/weak_ptr.hpp&gt;</code></h3><ul>

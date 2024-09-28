@@ -326,6 +326,7 @@
       <li>from <code>&lt;boost/beast/websocket/impl/teardown.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/_experimental/test/detail/stream_state.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/_experimental/test/stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/saved_handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/read.hpp&gt;</code></li>
@@ -561,7 +562,6 @@
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_node.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/run_with_timeout.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/timer_list.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/wait_group.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/pool_params.hpp&gt;</code></li>
@@ -569,6 +569,9 @@
     <h3><code>&lt;boost/asio/associated_allocator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/run_with_timeout.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/with_diagnostics.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/associated_cancellation_slot.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/associated_immediate_executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
@@ -587,6 +590,13 @@
     <h3><code>&lt;boost/asio/basic_stream_socket.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/socket_stream.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/basic_waitable_timer.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_node.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/bind_cancellation_slot.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/bind_executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/run_with_timeout.hpp&gt;</code></li>
@@ -596,7 +606,11 @@
       <li>from <code>&lt;boost/mysql/detail/engine_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/cancellation_signal.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/run_with_timeout.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/cancellation_type.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/compose.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/engine_impl.hpp&gt;</code></li>
@@ -618,11 +632,17 @@
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_node.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/run_with_timeout.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/sansio_connection_node.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/generic/stream_protocol.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/immediate.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ip/tcp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/engine_stream_adaptor.hpp&gt;</code></li>
@@ -657,6 +677,7 @@
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/wait_group.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/strand.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/pool_params.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-process"><a href="process.html"><em>process</em></a></h2>

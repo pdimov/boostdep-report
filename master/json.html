@@ -10,6 +10,7 @@
 <h1 id="primary-dependencies">Primary dependencies for <em>json</em></h1>
   <h2 id="align"><a href="align.html"><em>align</em></a></h2>
     <h3><code>&lt;boost/align/align.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/json/detail/impl/stack.hpp&gt;</code></li>
       <li>from <code>&lt;boost/json/impl/monotonic_resource.ipp&gt;</code></li>
       <li>from <code>&lt;boost/json/impl/static_resource.ipp&gt;</code></li>
     </ul>
@@ -19,7 +20,6 @@
     </ul>
     <h3><code>&lt;boost/assert/source_location.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/json/result_for.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/json/system_error.hpp&gt;</code></li>
     </ul>
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
@@ -39,14 +39,13 @@
     </ul>
   <h2 id="container"><a href="container.html"><em>container</em></a></h2>
     <h3><code>&lt;boost/container/pmr/memory_resource.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/json/detail/default_resource.hpp&gt;</code></li>
       <li>from <code>&lt;boost/json/detail/shared_resource.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/json/memory_resource.hpp&gt;</code></li>
       <li>from <code>&lt;boost/json/monotonic_resource.hpp&gt;</code></li>
       <li>from <code>&lt;boost/json/null_resource.hpp&gt;</code></li>
       <li>from <code>&lt;boost/json/static_resource.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/container/pmr/polymorphic_allocator.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/json/memory_resource.hpp&gt;</code></li>
       <li>from <code>&lt;boost/json/storage_ptr.hpp&gt;</code></li>
     </ul>
   <h2 id="container_hash"><a href="container_hash.html"><em>container_hash</em></a></h2>
@@ -75,6 +74,7 @@
     </ul>
     <h3><code>&lt;boost/describe/enum_to_string.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/json/detail/value_from.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/json/impl/serializer.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/describe/enumerators.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/json/impl/conversion.hpp&gt;</code></li>
@@ -95,6 +95,8 @@
     </ul>
     <h3><code>&lt;boost/mp11/integral.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/json/basic_parser_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/json/detail/literals.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/json/detail/stack.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mp11/utility.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/json/impl/conversion.hpp&gt;</code></li>
@@ -102,13 +104,11 @@
   <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
     <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/json/detail/config.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/json/detail/impl/stack.hpp&gt;</code></li>
     </ul>
   <h2 id="system"><a href="system.html"><em>system</em></a></h2>
     <h3><code>&lt;boost/system/error_category.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/json/impl/error.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/json/system_error.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/system/result.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/json/array.hpp&gt;</code></li>
@@ -116,10 +116,7 @@
       <li>from <code>&lt;boost/json/object.hpp&gt;</code></li>
       <li>from <code>&lt;boost/json/parse_into.hpp&gt;</code></li>
       <li>from <code>&lt;boost/json/result_for.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/json/system_error.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/system/system_error.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/json/system_error.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/json/string.hpp&gt;</code></li>
     </ul>
   <h2 id="throw_exception"><a href="throw_exception.html"><em>throw_exception</em></a></h2>
     <h3><code>&lt;boost/throw_exception.hpp&gt;</code></h3><ul>
