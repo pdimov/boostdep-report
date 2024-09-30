@@ -85,7 +85,6 @@
       <li>from <code>&lt;boost/interprocess/detail/config_external_begin.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/file_locking_helpers.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/file_wrapper.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/detail/in_place_interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/intermodule_singleton.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/intermodule_singleton_common.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/interprocess_tester.hpp&gt;</code></li>
@@ -155,6 +154,7 @@
       <li>from <code>&lt;boost/interprocess/smart_ptr/weak_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/streams/bufferstream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/streams/vectorstream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/sync/cv_status.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/sync/detail/common_algorithms.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/sync/detail/condition_algorithm_8a.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/sync/detail/condition_any_algorithm.hpp&gt;</code></li>
@@ -262,6 +262,14 @@
     <h3><code>&lt;boost/container/detail/adaptive_node_pool_impl.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/allocators/detail/adaptive_node_pool.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/container/detail/addressof.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/allocators/adaptive_pool.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/allocators/allocator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/allocators/detail/allocator_common.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/allocators/node_allocator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/allocators/private_adaptive_pool.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/allocators/private_node_allocator.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/container/detail/allocation_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/containers/allocation_type.hpp&gt;</code></li>
     </ul>
@@ -292,6 +300,7 @@
       <li>from <code>&lt;boost/interprocess/allocators/allocator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/allocators/detail/allocator_common.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/named_proxy.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/detail/segment_manager_helper.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/indexes/iunordered_set_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/mem_algo/detail/mem_algo_common.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/mem_algo/rbtree_best_fit.hpp&gt;</code></li>
@@ -303,10 +312,10 @@
       <li>from <code>&lt;boost/interprocess/detail/transform_iterator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/container/detail/type_traits.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/detail/in_place_interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/intermodule_singleton_common.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/managed_open_or_create_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/segment_manager_helper.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/detail/utilities.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/offset_ptr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/container/detail/variadic_templates_tools.hpp&gt;</code></h3><ul>
@@ -317,6 +326,7 @@
     </ul>
     <h3><code>&lt;boost/container/flat_map.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/containers/flat_map.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/indexes/flat_map_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/sync/windows/sync_utils.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/container/flat_set.hpp&gt;</code></h3><ul>
@@ -328,6 +338,7 @@
     <h3><code>&lt;boost/container/map.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/containers/map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/windows_intermodule_singleton.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/indexes/map_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/sync/windows/sync_utils.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/container/set.hpp&gt;</code></h3><ul>
@@ -345,28 +356,7 @@
     </ul>
     <h3><code>&lt;boost/container/vector.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/containers/vector.hpp&gt;</code></li>
-    </ul>
-  <h2 id="core"><a href="core.html"><em>core</em></a></h2>
-    <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/detail/managed_memory_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/detail/segment_manager_helper.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/detail/workaround.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/ipc/message_queue.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/managed_heap_memory.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/segment_manager.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/smart_ptr/detail/shared_count.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/smart_ptr/weak_ptr.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/scoped_enum.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/sync/cv_status.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/allocators/adaptive_pool.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/allocators/allocator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/allocators/detail/allocator_common.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/allocators/node_allocator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/allocators/private_adaptive_pool.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/allocators/private_node_allocator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/indexes/iunordered_set_index.hpp&gt;</code></li>
     </ul>
   <h2 id="intrusive"><a href="intrusive.html"><em>intrusive</em></a></h2>
     <h3><code>&lt;boost/intrusive/detail/hash.hpp&gt;</code></h3><ul>
@@ -463,6 +453,7 @@
       <li>from <code>&lt;boost/interprocess/ipc/message_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/mem_algo/detail/simple_seq_fit_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/mem_algo/rbtree_best_fit.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/offset_ptr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/move/move.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/anonymous_shared_memory.hpp&gt;</code></li>
@@ -494,35 +485,6 @@
       <li>from <code>&lt;boost/interprocess/sync/upgradable_lock.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/xsi_key.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/xsi_shared_memory.hpp&gt;</code></li>
-    </ul>
-  <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
-    <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/allocators/adaptive_pool.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/allocators/node_allocator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/allocators/private_adaptive_pool.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/allocators/private_node_allocator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/detail/math_functions.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/detail/os_file_functions.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/detail/utilities.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/mem_algo/detail/mem_algo_common.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/mem_algo/rbtree_best_fit.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/offset_ptr.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/smart_ptr/shared_ptr.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/sync/shm/named_condition.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/sync/shm/named_condition_any.hpp&gt;</code></li>
-    </ul>
-  <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
-    <h3><code>&lt;boost/type_traits/is_constructible.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/offset_ptr.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/is_convertible.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/offset_ptr.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/is_integral.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/offset_ptr.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/type_traits/is_unsigned.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/offset_ptr.hpp&gt;</code></li>
     </ul>
   <h2 id="winapi"><a href="winapi.html"><em>winapi</em></a></h2>
     <h3><code>&lt;boost/detail/interlocked.hpp&gt;</code></h3><ul>
@@ -599,9 +561,6 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>interprocess</em></h1>
-  <h2><a href="core.html"><em>core</em></a></h2><ul>
-    <li><a href="core.html#throw_exception">adds <em>throw_exception</em></a></li>
-  </ul>
   <h2><a href="winapi.html"><em>winapi</em></a></h2><ul>
     <li><a href="winapi.html#predef">adds <em>predef</em></a></li>
   </ul>
