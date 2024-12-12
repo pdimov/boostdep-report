@@ -1177,9 +1177,7 @@
       <li>from <code>&lt;boost/geometry/index/detail/varray_detail.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/svg/svg_mapper.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/io/svg/write.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/policies/robustness/robust_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/policies/robustness/segment_ratio.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/policies/robustness/segment_ratio_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/impl/projects.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/aeqd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/srs/projections/proj/gnom.hpp&gt;</code></li>
@@ -1206,7 +1204,6 @@
       <li>from <code>&lt;boost/geometry/util/promote_floating_point.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/pragma_message.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/geometry/core/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/multi/algorithms/append.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/multi/algorithms/area.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/multi/algorithms/centroid.hpp&gt;</code></li>
@@ -1273,6 +1270,7 @@
       <li>from <code>&lt;boost/geometry/strategies/area_result.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/area.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/area_surveyor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/strategies/cartesian/distance_projected_point_ax.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/envelope.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/envelope_box.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/strategies/cartesian/envelope_multipoint.hpp&gt;</code></li>
@@ -2499,6 +2497,9 @@
       <li>from <code>&lt;boost/optional/detail/optional_hash.hpp&gt;</code></li>
       <li>from <code>&lt;boost/optional/optional_fwd.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/config/pragma_message.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/none_t.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/optional/detail/optional_config.hpp&gt;</code></li>
     </ul>
@@ -3228,7 +3229,6 @@
     </ul>
   <h2 id="reverse-smart_ptr"><a href="smart_ptr.html"><em>smart_ptr</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/pointer_cast.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/allocate_unique.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/bad_weak_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count.hpp&gt;</code></li>
@@ -3260,20 +3260,13 @@
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_disable_deprecated.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_interlocked.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/sp_noexcept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_typeinfo_.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/spinlock.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/spinlock_pool.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/detail/spinlock_std_atomic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/enable_shared_from_raw.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/enable_shared_from_this.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/intrusive_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/intrusive_ref_counter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/make_local_shared_object.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/make_shared_object.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/owner_equal_to.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/owner_hash.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/owner_less.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/scoped_array.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/scoped_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/shared_array.hpp&gt;</code></li>
@@ -3298,6 +3291,7 @@
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_std_atomic.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_sync.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/atomic_count_win32.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/smart_ptr/detail/deprecated_macros.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_acc_ia64.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_aix.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_cw_ppc.hpp&gt;</code></li>
@@ -3328,7 +3322,6 @@
       <li>from <code>&lt;boost/smart_ptr/detail/shared_count.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/detail/sp_counted_base_w32.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/enable_shared_from_raw.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/smart_ptr/intrusive_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/scoped_array.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/scoped_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/smart_ptr/shared_array.hpp&gt;</code></li>
@@ -3567,6 +3560,7 @@
     </ul>
   <h2 id="reverse-stl_interfaces"><a href="stl_interfaces.html"><em>stl_interfaces</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/stl_interfaces/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/stl_interfaces/sequence_container_interface.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-system"><a href="system.html"><em>system</em></a></h2>

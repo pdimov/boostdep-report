@@ -27,10 +27,6 @@
     <h3><code>&lt;boost/context/fiber.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/asio/impl/spawn.hpp&gt;</code></li>
     </ul>
-  <h2 id="coroutine"><a href="coroutine.html"><em>coroutine</em></a></h2>
-    <h3><code>&lt;boost/coroutine/all.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/asio/spawn.hpp&gt;</code></li>
-    </ul>
   <h2 id="date_time"><a href="date_time.html"><em>date_time</em></a></h2>
     <h3><code>&lt;boost/date_time/posix_time/posix_time_types.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/asio/deadline_timer.hpp&gt;</code></li>
@@ -51,12 +47,11 @@
       <li>from <code>&lt;boost/asio/detail/throw_error.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/detail/win_iocp_operation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/detail/winrt_utils.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/asio/disposition.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/error.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/experimental/cancellation_condition.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/experimental/channel_error.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/experimental/coro.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/experimental/detail/channel_send_functions.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/asio/impl/use_future.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/io_context.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/ip/address.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/ip/address_v4.hpp&gt;</code></li>
@@ -71,6 +66,7 @@
     </ul>
     <h3><code>&lt;boost/system/system_error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/asio/detail/impl/throw_error.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/asio/disposition.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/error.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/experimental/impl/promise.hpp&gt;</code></li>
       <li>from <code>&lt;boost/asio/impl/awaitable.hpp&gt;</code></li>
@@ -97,13 +93,6 @@
     <li><a href="context.html#predef">adds <em>predef</em></a></li>
     <li><a href="context.html#smart_ptr">adds <em>smart_ptr</em></a></li>
   </ul>
-  <h2><a href="coroutine.html"><em>coroutine</em></a></h2><ul>
-    <li><a href="coroutine.html#core">adds <em>core</em></a></li>
-    <li><a href="coroutine.html#exception">adds <em>exception</em></a></li>
-    <li><a href="coroutine.html#move">adds <em>move</em></a></li>
-    <li><a href="coroutine.html#type_traits">adds <em>type_traits</em></a></li>
-    <li><a href="coroutine.html#utility">adds <em>utility</em></a></li>
-  </ul>
   <h2><a href="date_time.html"><em>date_time</em></a></h2><ul>
     <li><a href="date_time.html#algorithm">adds <em>algorithm</em></a></li>
     <li><a href="date_time.html#core">adds <em>core</em></a></li>
@@ -126,15 +115,13 @@
     <li><a href="algorithm.html#array">adds <em>array</em></a></li>
     <li><a href="algorithm.html#bind">adds <em>bind</em></a></li>
     <li><a href="algorithm.html#concept_check">adds <em>concept_check</em></a></li>
+    <li><a href="algorithm.html#exception">adds <em>exception</em></a></li>
     <li><a href="algorithm.html#function">adds <em>function</em></a></li>
     <li><a href="algorithm.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="algorithm.html#mpl">adds <em>mpl</em></a></li>
     <li><a href="algorithm.html#regex">adds <em>regex</em></a></li>
     <li><a href="algorithm.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="algorithm.html#unordered">adds <em>unordered</em></a></li>
-  </ul>
-  <h2><a href="exception.html"><em>exception</em></a></h2><ul>
-    <li><a href="exception.html#tuple">adds <em>tuple</em></a></li>
   </ul>
   <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
     <li><a href="lexical_cast.html#container">adds <em>container</em></a></li>
@@ -168,6 +155,7 @@
   </ul>
   <h2><a href="container.html"><em>container</em></a></h2><ul>
     <li><a href="container.html#intrusive">adds <em>intrusive</em></a></li>
+    <li><a href="container.html#move">adds <em>move</em></a></li>
   </ul>
   <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
     <li><a href="container_hash.html#describe">adds <em>describe</em></a></li>
@@ -326,6 +314,7 @@
       <li>from <code>&lt;boost/beast/websocket/impl/teardown.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/beast/_experimental/test/detail/stream_state.ipp&gt;</code></li>
       <li>from <code>&lt;boost/beast/_experimental/test/stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/saved_handler.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/http/impl/read.hpp&gt;</code></li>
@@ -553,22 +542,33 @@
     <h3><code>&lt;boost/asio/any_io_executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/any_connection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/connection_pool.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/connection_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/engine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/engine_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/engine_stream_adaptor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/initiation_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/connection_pool.ipp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_node.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/run_with_timeout.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/timer_list.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/wait_group.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/pool_params.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/associated_allocator.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/run_with_timeout.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/with_diagnostics.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/associated_cancellation_slot.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/associated_immediate_executor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/associator.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/detail/initiation_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/intermediate_handler.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/async_result.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/connection_pool.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/with_diagnostics.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/basic_socket.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/socket_stream.hpp&gt;</code></li>
@@ -576,16 +576,27 @@
     <h3><code>&lt;boost/asio/basic_stream_socket.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/socket_stream.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/basic_waitable_timer.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_node.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/bind_cancellation_slot.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/bind_executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/run_with_timeout.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/wait_group.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/buffer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/engine_impl.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/cancel_after.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_node.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/cancellation_signal.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/run_with_timeout.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/cancellation_type.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/compose.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/engine_impl.hpp&gt;</code></li>
@@ -597,15 +608,29 @@
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/deferred.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/any_connection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/detail/initiation_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_node.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/detached.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/dispatch.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_node.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/sansio_connection_node.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/generic/stream_protocol.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/immediate.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/detail/engine_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ip/tcp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/engine_stream_adaptor.hpp&gt;</code></li>
@@ -621,7 +646,6 @@
     <h3><code>&lt;boost/asio/post.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/engine_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ssl/context.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/internal_pool_params.hpp&gt;</code></li>
@@ -636,12 +660,8 @@
       <li>from <code>&lt;boost/mysql/tcp_ssl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/unix_ssl.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/asio/steady_timer.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_node.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/wait_group.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/asio/strand.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/mysql/pool_params.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/connection_pool/connection_pool_impl.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-process"><a href="process.html"><em>process</em></a></h2>
     <h3><code>&lt;boost/asio/any_io_executor.hpp&gt;</code></h3><ul>
@@ -798,6 +818,10 @@
     <h3><code>&lt;boost/asio/buffer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/detail/connection_base.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/cancel_after.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/detail/connector.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/resolver.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/cancellation_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/detail/helper.hpp&gt;</code></li>
     </ul>
@@ -811,7 +835,6 @@
     <h3><code>&lt;boost/asio/connect.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/detail/connector.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/handshaker.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/consign.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/detail/health_checker.hpp&gt;</code></li>
@@ -829,10 +852,8 @@
     </ul>
     <h3><code>&lt;boost/asio/experimental/parallel_group.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/detail/connection_base.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/connector.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/handshaker.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/health_checker.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/resolver.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/io_context.hpp&gt;</code></h3><ul>
@@ -849,6 +870,9 @@
     <h3><code>&lt;boost/asio/post.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/detail/health_checker.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/prepend.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/read_until.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/detail/connection_base.hpp&gt;</code></li>
     </ul>
@@ -861,10 +885,8 @@
     <h3><code>&lt;boost/asio/steady_timer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/connection_base.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/connector.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/handshaker.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/health_checker.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/resolver.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/write.hpp&gt;</code></h3><ul>
