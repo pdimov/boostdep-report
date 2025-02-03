@@ -367,18 +367,13 @@
       <li>from <code>&lt;boost/detail/identifier.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-dll"><a href="dll.html"><em>dll</em></a></h2>
-    <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dll/detail/aggressive_ptr_cast.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/import.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/import_mangled.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/core/demangle.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/dll/detail/demangling/demangle_symbol.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/detail/string_view.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/dll/detail/demangling/msvc.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dll/detail/aggressive_ptr_cast.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/import.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/import_mangled.hpp&gt;</code></li>
       <li>from <code>&lt;boost/dll/shared_library.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></h3><ul>
@@ -839,13 +834,6 @@
       <li>from <code>&lt;boost/iostreams/detail/enable_if_stream.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-iterator"><a href="iterator.html"><em>iterator</em></a></h2>
-    <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/function_input_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/iterator_facade.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/function_output_iterator.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/pending/iterator_tests.hpp&gt;</code></li>
     </ul>
@@ -855,6 +843,7 @@
     </ul>
     <h3><code>&lt;boost/core/use_default.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/iterator/detail/facade_iterator_category.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/filter_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/iterator_adaptor.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
@@ -890,16 +879,23 @@
       <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical_streams.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-locale"><a href="locale.html"><em>locale</em></a></h2>
+    <h3><code>&lt;boost/core/detail/string_view.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/locale/detail/any_string.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/locale/detail/encoding.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/shared/message.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/util/encoding.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/util/numeric_conversion.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/locale/hold_ptr.hpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/boost/locale/icu/uconv.hpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/boost/locale/shared/date_time.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/boost/locale/util/iconv.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/icu/uconv.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/shared/date_time.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/util/iconv.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;libs/locale/src/boost/locale/icu/formatters_cache.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/boost/locale/shared/ids.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/boost/locale/std/std_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/icu/formatters_cache.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/shared/ids.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/std/std_backend.cpp&gt;</code></li>
     </ul>
   <h2 id="reverse-lockfree"><a href="lockfree.html"><em>lockfree</em></a></h2>
     <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
@@ -1282,8 +1278,9 @@
     <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/poly_collection/detail/any_model.hpp&gt;</code></li>
       <li>from <code>&lt;boost/poly_collection/detail/base_model.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/poly_collection/detail/fixed_variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/poly_collection/detail/function_model.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/poly_collection/detail/value_holder.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/poly_collection/detail/variant_model.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-process"><a href="process.html"><em>process</em></a></h2>
     <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>

@@ -10,6 +10,7 @@
 <h1 id="primary-dependencies">Primary dependencies for <em>core</em></h1>
   <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/core/detail/assert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/detail/string_view.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/assert/source_location.hpp&gt;</code></h3><ul>
@@ -147,10 +148,6 @@
   <h2 id="reverse-align"><a href="align.html"><em>align</em></a></h2>
     <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/align/aligned_allocator_adaptor.hpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-array"><a href="array.html"><em>array</em></a></h2>
-    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/array.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-assign"><a href="assign.html"><em>assign</em></a></h2>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
@@ -320,6 +317,7 @@
     </ul>
   <h2 id="reverse-context"><a href="context.html"><em>context</em></a></h2>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/context/fiber_fcontext.hpp&gt;</code></li>
       <li>from <code>&lt;boost/context/posix/protected_fixedsize_stack.hpp&gt;</code></li>
       <li>from <code>&lt;boost/context/windows/protected_fixedsize_stack.hpp&gt;</code></li>
     </ul>
@@ -367,18 +365,13 @@
       <li>from <code>&lt;boost/detail/identifier.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-dll"><a href="dll.html"><em>dll</em></a></h2>
-    <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dll/detail/aggressive_ptr_cast.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/import.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/import_mangled.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/core/demangle.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/dll/detail/demangling/demangle_symbol.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/detail/string_view.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/dll/detail/demangling/msvc.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/dll/detail/aggressive_ptr_cast.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/import.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/dll/import_mangled.hpp&gt;</code></li>
       <li>from <code>&lt;boost/dll/shared_library.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/explicit_operator_bool.hpp&gt;</code></h3><ul>
@@ -854,13 +847,6 @@
       <li>from <code>&lt;boost/iostreams/detail/enable_if_stream.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-iterator"><a href="iterator.html"><em>iterator</em></a></h2>
-    <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/function_input_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/iterator_facade.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/function_output_iterator.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/pending/iterator_tests.hpp&gt;</code></li>
     </ul>
@@ -870,6 +856,7 @@
     </ul>
     <h3><code>&lt;boost/core/use_default.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/iterator/detail/facade_iterator_category.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/filter_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/iterator_adaptor.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
@@ -905,16 +892,23 @@
       <li>from <code>&lt;boost/lexical_cast/detail/converter_lexical_streams.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-locale"><a href="locale.html"><em>locale</em></a></h2>
+    <h3><code>&lt;boost/core/detail/string_view.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/locale/detail/any_string.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/locale/detail/encoding.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/shared/message.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/util/encoding.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/util/numeric_conversion.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/locale/hold_ptr.hpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/boost/locale/icu/uconv.hpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/boost/locale/shared/date_time.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/boost/locale/util/iconv.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/icu/uconv.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/shared/date_time.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/util/iconv.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;libs/locale/src/boost/locale/icu/formatters_cache.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/boost/locale/shared/ids.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/locale/src/boost/locale/std/std_backend.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/icu/formatters_cache.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/shared/ids.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/locale/src/std/std_backend.cpp&gt;</code></li>
     </ul>
   <h2 id="reverse-lockfree"><a href="lockfree.html"><em>lockfree</em></a></h2>
     <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
@@ -1297,8 +1291,9 @@
     <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/poly_collection/detail/any_model.hpp&gt;</code></li>
       <li>from <code>&lt;boost/poly_collection/detail/base_model.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/poly_collection/detail/fixed_variant.hpp&gt;</code></li>
       <li>from <code>&lt;boost/poly_collection/detail/function_model.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/poly_collection/detail/value_holder.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/poly_collection/detail/variant_model.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-process"><a href="process.html"><em>process</em></a></h2>
     <h3><code>&lt;boost/core/exchange.hpp&gt;</code></h3><ul>
@@ -1432,6 +1427,7 @@
   <h2 id="reverse-random"><a href="random.html"><em>random</em></a></h2>
     <h3><code>&lt;boost/core/bit.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/random/detail/gray_coded_qrng.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/random/xoshiro.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/cmath.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/random/hyperexponential_distribution.hpp&gt;</code></li>
@@ -1467,7 +1463,7 @@
     </ul>
   <h2 id="reverse-redis"><a href="redis.html"><em>redis</em></a></h2>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/redis/detail/connection_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-regex"><a href="regex.html"><em>regex</em></a></h2>
     <h3><code>&lt;boost/core/snprintf.hpp&gt;</code></h3><ul>
