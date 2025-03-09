@@ -10,6 +10,7 @@
 <h1 id="primary-dependencies">Primary dependencies for <em>core</em></h1>
   <h2 id="assert"><a href="assert.html"><em>assert</em></a></h2>
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/core/detail/assert.hpp&gt;</code></li>
       <li>from <code>&lt;boost/core/detail/string_view.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/assert/source_location.hpp&gt;</code></h3><ul>
@@ -147,10 +148,6 @@
   <h2 id="reverse-align"><a href="align.html"><em>align</em></a></h2>
     <h3><code>&lt;boost/core/pointer_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/align/aligned_allocator_adaptor.hpp&gt;</code></li>
-    </ul>
-  <h2 id="reverse-array"><a href="array.html"><em>array</em></a></h2>
-    <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/array.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-assign"><a href="assign.html"><em>assign</em></a></h2>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
@@ -834,6 +831,10 @@
       <li>from <code>&lt;boost/iostreams/detail/enable_if_stream.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-iterator"><a href="iterator.html"><em>iterator</em></a></h2>
+    <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/iterator/filter_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/transform_iterator.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/pending/iterator_tests.hpp&gt;</code></li>
     </ul>
@@ -842,12 +843,14 @@
       <li>from <code>&lt;boost/pending/iterator_tests.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/use_default.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/detail/facade_iterator_category.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/counting_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/detail/eval_if_default.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/detail/if_default.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/filter_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/indirect_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/iterator_adaptor.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/generator_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/permutation_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/transform_iterator.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-json"><a href="json.html"><em>json</em></a></h2>
     <h3><code>&lt;boost/core/bit.hpp&gt;</code></h3><ul>
@@ -1034,6 +1037,10 @@
     </ul>
     <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mpl/aux_/unwrap.hpp&gt;</code></li>
+    </ul>
+  <h2 id="reverse-mqtt5"><a href="mqtt5.html"><em>mqtt5</em></a></h2>
+    <h3><code>&lt;boost/core/identity.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mqtt5/impl/codecs/base_encoders.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-msm"><a href="msm.html"><em>msm</em></a></h2>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
@@ -1414,6 +1421,7 @@
   <h2 id="reverse-random"><a href="random.html"><em>random</em></a></h2>
     <h3><code>&lt;boost/core/bit.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/random/detail/gray_coded_qrng.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/random/xoshiro.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/cmath.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/random/hyperexponential_distribution.hpp&gt;</code></li>
@@ -1425,17 +1433,11 @@
       <li>from <code>&lt;boost/random/detail/seed.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-range"><a href="range.html"><em>range</em></a></h2>
-    <h3><code>&lt;boost/core/noncopyable.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/range/detail/any_iterator_buffer.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/range/algorithm/for_each.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/addressof.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/addressof.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/range/detail/microsoft.hpp&gt;</code></li>
       <li>from <code>&lt;boost/range/mfc.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/core/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/range/algorithm/for_each.hpp&gt;</code></li>
       <li>from <code>&lt;boost/range/detail/any_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/range/detail/microsoft.hpp&gt;</code></li>
@@ -1443,13 +1445,19 @@
       <li>from <code>&lt;boost/range/iterator_range_core.hpp&gt;</code></li>
       <li>from <code>&lt;boost/range/size_type.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/noncopyable.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/range/detail/any_iterator_buffer.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/ref.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/range/algorithm/for_each.hpp&gt;</code></li>
+    </ul>
   <h2 id="reverse-rational"><a href="rational.html"><em>rational</em></a></h2>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/rational.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-redis"><a href="redis.html"><em>redis</em></a></h2>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/redis/detail/connection_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
     </ul>
   <h2 id="reverse-regex"><a href="regex.html"><em>regex</em></a></h2>
     <h3><code>&lt;boost/core/snprintf.hpp&gt;</code></h3><ul>
@@ -1642,7 +1650,9 @@
       <li>from <code>&lt;boost/spirit/home/classic/core/composite/actions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/classic/dynamic/impl/switch.ipp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/core/parser.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/core/skip_over.hpp&gt;</code></li>
       <li>from <code>&lt;boost/spirit/home/x3/nonterminal/detail/rule.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/spirit/home/x3/support/expectation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/invoke_swap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/spirit/home/support/attributes.hpp&gt;</code></li>

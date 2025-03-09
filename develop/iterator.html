@@ -31,32 +31,27 @@
       <li>from <code>&lt;boost/iterator/detail/type_traits/conjunction.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/detail/type_traits/disjunction.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/detail/type_traits/negation.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/detail/type_traits/type_identity.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/distance.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/function_input_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/function_output_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/is_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/iterator_concepts.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/iterator_facade.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/transform_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/next_prior.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/header_deprecated.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/function_output_iterator.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/transform_iterator.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/detail/workaround.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/advance.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/counting_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/detail/config_def.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/is_lvalue_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/iterator_traits.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/limits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/iterator/iterator_concepts.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
+    <h3><code>&lt;boost/core/empty_value.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/iterator/filter_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/transform_iterator.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/pending/iterator_tests.hpp&gt;</code></li>
     </ul>
@@ -65,18 +60,16 @@
       <li>from <code>&lt;boost/pending/iterator_tests.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/use_default.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/detail/facade_iterator_category.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/counting_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/detail/eval_if_default.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/detail/if_default.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/filter_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/indirect_iterator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/iterator_adaptor.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/generator_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/permutation_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/transform_iterator.hpp&gt;</code></li>
     </ul>
   <h2 id="detail"><a href="detail.html"><em>detail</em></a></h2>
-    <h3><code>&lt;boost/detail/indirect_traits.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/detail/facade_iterator_category.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/indirect_iterator.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/detail/is_incrementable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/indirect_reference.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/new_iterator_tests.hpp&gt;</code></li>
@@ -84,13 +77,6 @@
     </ul>
     <h3><code>&lt;boost/detail/numeric_traits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/iterator/counting_iterator.hpp&gt;</code></li>
-    </ul>
-  <h2 id="function_types"><a href="function_types.html"><em>function_types</em></a></h2>
-    <h3><code>&lt;boost/function_types/is_function_pointer.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/function_input_iterator.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/function_types/result_type.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/function_input_iterator.hpp&gt;</code></li>
     </ul>
   <h2 id="fusion"><a href="fusion.html"><em>fusion</em></a></h2>
     <h3><code>&lt;boost/fusion/adapted/boost_tuple.hpp&gt;</code></h3><ul>
@@ -114,74 +100,25 @@
     <h3><code>&lt;boost/fusion/support/tag_of_fwd.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/iterator/zip_iterator.hpp&gt;</code></li>
     </ul>
+  <h2 id="mp11"><a href="mp11.html"><em>mp11</em></a></h2>
+    <h3><code>&lt;boost/mp11/list.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/iterator/zip_iterator.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mp11/utility.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/iterator/detail/facade_iterator_category.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/iterator_archetypes.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/iterator_categories.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/iterator_facade.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/zip_iterator.hpp&gt;</code></li>
+    </ul>
   <h2 id="mpl"><a href="mpl.html"><em>mpl</em></a></h2>
-    <h3><code>&lt;boost/mpl/always.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/iterator_facade.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/apply.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/iterator_facade.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/at.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/zip_iterator.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/aux_/lambda_support.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/is_lvalue_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/is_readable_iterator.hpp&gt;</code></li>
+    <h3><code>&lt;boost/mpl/arg_fwd.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/iterator/iterator_categories.hpp&gt;</code></li>
       <li>from <code>&lt;boost/iterator/minimum_category.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/bitand.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/iterator_archetypes.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/equal_to.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/iterator_archetypes.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/eval_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/indirect_reference.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/detail/facade_iterator_category.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/indirect_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/iterator_archetypes.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/iterator_categories.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/iterator_facade.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/pointee.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/fold.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/zip_iterator.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/has_xxx.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/indirect_iterator.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/identity.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/detail/facade_iterator_category.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/indirect_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/iterator_archetypes.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/iterator_categories.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/iterator_facade.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/iterator_facade.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/int.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/iterator_archetypes.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/placeholders.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/iterator_categories.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/minimum_category.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/zip_iterator.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/transform.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/zip_iterator.hpp&gt;</code></li>
     </ul>
   <h2 id="optional"><a href="optional.html"><em>optional</em></a></h2>
-    <h3><code>&lt;boost/none.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/function_input_iterator.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/optional/optional.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/iterator/function_input_iterator.hpp&gt;</code></li>
-    </ul>
-  <h2 id="smart_ptr"><a href="smart_ptr.html"><em>smart_ptr</em></a></h2>
-    <h3><code>&lt;boost/shared_ptr.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/shared_container_iterator.hpp&gt;</code></li>
     </ul>
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
     <h3><code>&lt;boost/type_traits/conjunction.hpp&gt;</code></h3><ul>
@@ -209,16 +146,12 @@
       <li>from <code>&lt;boost/iterator/detail/type_traits/negation.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/type_identity.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/counting_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/iterator/detail/type_traits/type_identity.hpp&gt;</code></li>
     </ul>
   <h2 id="utility"><a href="utility.html"><em>utility</em></a></h2>
     <h3><code>&lt;boost/operators.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/iterator/iterator_archetypes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/pending/detail/int_iterator.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/utility/result_of.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/iterator/function_input_iterator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/iterator/transform_iterator.hpp&gt;</code></li>
     </ul>
 
 
@@ -236,11 +169,9 @@
     <li><a href="detail.html#preprocessor">adds <em>preprocessor</em></a></li>
     <li><a href="detail.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
-  <h2><a href="function_types.html"><em>function_types</em></a></h2><ul>
-    <li><a href="function_types.html#preprocessor">adds <em>preprocessor</em></a></li>
-  </ul>
   <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
     <li><a href="fusion.html#container_hash">adds <em>container_hash</em></a></li>
+    <li><a href="fusion.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="fusion.html#functional">adds <em>functional</em></a></li>
     <li><a href="fusion.html#preprocessor">adds <em>preprocessor</em></a></li>
     <li><a href="fusion.html#static_assert">adds <em>static_assert</em></a></li>
@@ -256,10 +187,6 @@
     <li><a href="optional.html#assert">adds <em>assert</em></a></li>
     <li><a href="optional.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
-  <h2><a href="smart_ptr.html"><em>smart_ptr</em></a></h2><ul>
-    <li><a href="smart_ptr.html#assert">adds <em>assert</em></a></li>
-    <li><a href="smart_ptr.html#throw_exception">adds <em>throw_exception</em></a></li>
-  </ul>
   <h2><a href="type_traits.html"><em>type_traits</em></a></h2><ul>
     <li><a href="type_traits.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
@@ -271,7 +198,6 @@
   </ul>
   <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
     <li><a href="container_hash.html#describe">adds <em>describe</em></a></li>
-    <li><a href="container_hash.html#mp11">adds <em>mp11</em></a></li>
   </ul>
   <h2><a href="functional.html"><em>functional</em></a></h2><ul>
     <li><a href="functional.html#function">adds <em>function</em></a></li>
@@ -636,6 +562,9 @@
     </ul>
     <h3><code>&lt;boost/iterator/distance.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/range/distance.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/iterator/enable_if_convertible.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/range/adaptor/strided.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/iterator/filter_iterator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/range/adaptor/filtered.hpp&gt;</code></li>

@@ -48,6 +48,7 @@
       <li>from <code>&lt;boost/graph/isomorphism.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/loop_erased_random_walk.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/max_cardinality_matching.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/maximum_weighted_matching.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/mesh_graph_generator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/minimum_degree_ordering.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/one_bit_color_map.hpp&gt;</code></li>
@@ -65,12 +66,6 @@
   <h2 id="bimap"><a href="bimap.html"><em>bimap</em></a></h2>
     <h3><code>&lt;boost/bimap.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/two_graphs_common_spanning_trees.hpp&gt;</code></li>
-    </ul>
-  <h2 id="bind"><a href="bind.html"><em>bind</em></a></h2>
-    <h3><code>&lt;boost/bind/bind.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/howard_cycle_ratio.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/graph/king_ordering.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/graph/transitive_closure.hpp&gt;</code></li>
     </ul>
   <h2 id="concept_check"><a href="concept_check.html"><em>concept_check</em></a></h2>
     <h3><code>&lt;boost/concept/assert.hpp&gt;</code></h3><ul>
@@ -520,6 +515,7 @@
     <h3><code>&lt;boost/optional.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/depth_first_search.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/detail/adj_list_edge_iterator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/maximum_weighted_matching.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/named_graph.hpp&gt;</code></li>
       <li>from <code>&lt;boost/pending/relaxed_heap.hpp&gt;</code></li>
       <li>from <code>&lt;libs/graph/src/graphml.cpp&gt;</code></li>
@@ -594,6 +590,7 @@
       <li>from <code>&lt;boost/graph/make_connected.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/make_maximal_planar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/max_cardinality_matching.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/graph/maximum_weighted_matching.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/minimum_degree_ordering.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/named_function_params.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/one_bit_color_map.hpp&gt;</code></li>
@@ -730,6 +727,9 @@
     <h3><code>&lt;boost/range/iterator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/hawick_circuits.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/range/iterator_range_core.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/graph/maximum_weighted_matching.hpp&gt;</code></li>
+    </ul>
   <h2 id="regex"><a href="regex.html"><em>regex</em></a></h2>
     <h3><code>&lt;boost/regex.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/graph/src/read_graphviz_new.cpp&gt;</code></li>
@@ -758,7 +758,6 @@
       <li>from <code>&lt;boost/graph/r_c_shortest_paths.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/make_shared.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/graph/maximum_weighted_matching.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/mcgregor_common_subgraphs.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/r_c_shortest_paths.hpp&gt;</code></li>
     </ul>
@@ -773,7 +772,6 @@
     <h3><code>&lt;boost/shared_ptr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/graph/erdos_renyi_generator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/gursoy_atun_layout.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/graph/maximum_weighted_matching.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/metric_tsp_approx.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/planar_detail/boyer_myrvold_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/graph/planar_detail/face_handles.hpp&gt;</code></li>
@@ -1013,6 +1011,7 @@
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>graph</em></h1>
   <h2><a href="algorithm.html"><em>algorithm</em></a></h2><ul>
+    <li><a href="algorithm.html#bind">adds <em>bind</em></a></li>
     <li><a href="algorithm.html#exception">adds <em>exception</em></a></li>
   </ul>
   <h2><a href="any.html"><em>any</em></a></h2><ul>
@@ -1024,6 +1023,9 @@
   <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
     <li><a href="container_hash.html#describe">adds <em>describe</em></a></li>
     <li><a href="container_hash.html#mp11">adds <em>mp11</em></a></li>
+  </ul>
+  <h2><a href="function.html"><em>function</em></a></h2><ul>
+    <li><a href="function.html#bind">adds <em>bind</em></a></li>
   </ul>
   <h2><a href="geometry.html"><em>geometry</em></a></h2><ul>
     <li><a href="geometry.html#(unknown)">adds <em>(unknown)</em></a></li>
@@ -1042,8 +1044,8 @@
     <li><a href="geometry.html#variant2">adds <em>variant2</em></a></li>
   </ul>
   <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
-    <li><a href="iterator.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
+    <li><a href="iterator.html#mp11">adds <em>mp11</em></a></li>
   </ul>
   <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
     <li><a href="lexical_cast.html#container">adds <em>container</em></a></li>
@@ -1054,12 +1056,18 @@
   <h2><a href="mpl.html"><em>mpl</em></a></h2><ul>
     <li><a href="mpl.html#predef">adds <em>predef</em></a></li>
   </ul>
+  <h2><a href="multi_index.html"><em>multi_index</em></a></h2><ul>
+    <li><a href="multi_index.html#bind">adds <em>bind</em></a></li>
+  </ul>
   <h2><a href="parameter.html"><em>parameter</em></a></h2><ul>
     <li><a href="parameter.html#fusion">adds <em>fusion</em></a></li>
     <li><a href="parameter.html#mp11">adds <em>mp11</em></a></li>
   </ul>
   <h2><a href="property_map.html"><em>property_map</em></a></h2><ul>
     <li><a href="property_map.html#type_index">adds <em>type_index</em></a></li>
+  </ul>
+  <h2><a href="property_tree.html"><em>property_tree</em></a></h2><ul>
+    <li><a href="property_tree.html#bind">adds <em>bind</em></a></li>
   </ul>
   <h2><a href="random.html"><em>random</em></a></h2><ul>
     <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>

@@ -50,6 +50,7 @@ gil
 graph
 graph_parallel
 hana
+hash2
 headers
 heap
 histogram
@@ -77,6 +78,7 @@ move
 mp11
 mpi
 mpl
+mqtt5
 msm
 multi_array
 multi_index
