@@ -1,0 +1,3 @@
+@import '../report.css';
+.report-revision::after { content: 'HEAD-ef7fea3'; }
+.report-timestamp::after { content: '15/08/2025  1:07:05,38'; }
