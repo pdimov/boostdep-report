@@ -205,6 +205,7 @@
     </ul>
     <h3><code>&lt;boost/asio/associated_immediate_executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/detail/async_base.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/associator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/bind_handler.hpp&gt;</code></li>
@@ -325,7 +326,6 @@
     </ul>
     <h3><code>&lt;boost/asio/execution.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/core/detail/get_io_context.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/detail/work_guard.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/execution_context.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/beast/_experimental/test/immediate_executor.hpp&gt;</code></li>
@@ -338,8 +338,8 @@
       <li>from <code>&lt;boost/beast/core/tcp_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/executor_work_guard.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/beast/_experimental/test/stream.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/beast/core/detail/work_guard.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/_experimental/test/impl/stream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/beast/core/async_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/beast/core/impl/saved_handler.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/handler_continuation_hook.hpp&gt;</code></h3><ul>
@@ -420,6 +420,47 @@
     <h3><code>&lt;boost/asio/associator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/cobalt/unique_handle.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/basic_datagram_socket.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/datagram_socket.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/basic_file.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/file.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/basic_random_access_file.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/random_access_file.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/basic_readable_pipe.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/pipe.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/basic_seq_packet_socket.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/seq_packet_socket.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/basic_serial_port.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/serial_port.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/basic_signal_set.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/signal_set.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/basic_socket.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/socket.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/basic_socket_acceptor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/acceptor.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/basic_stream_file.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/stream_file.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/basic_stream_socket.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/ssl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/cobalt/io/stream_socket.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/basic_waitable_timer.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/steady_timer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/cobalt/io/system_timer.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/basic_writable_pipe.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/pipe.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/bind_allocator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/cobalt/detail/detached.hpp&gt;</code></li>
       <li>from <code>&lt;boost/cobalt/detail/generator.hpp&gt;</code></li>
@@ -438,6 +479,9 @@
       <li>from <code>&lt;boost/cobalt/detail/race.hpp&gt;</code></li>
       <li>from <code>&lt;boost/cobalt/detail/wrapper.hpp&gt;</code></li>
       <li>from <code>&lt;libs/cobalt/src/thread.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/buffer.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/buffer.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/cancellation_signal.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/cobalt/channel.hpp&gt;</code></li>
@@ -458,6 +502,12 @@
     <h3><code>&lt;boost/asio/cancellation_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/cobalt/channel.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/connect.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/cobalt/src/io/socket.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/connect_pipe.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/cobalt/src/io/pipe.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/consign.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/cobalt/detail/wrapper.hpp&gt;</code></li>
     </ul>
@@ -467,6 +517,10 @@
     <h3><code>&lt;boost/asio/deferred.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/cobalt/op.hpp&gt;</code></li>
       <li>from <code>&lt;boost/cobalt/task.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/cobalt/src/io/resolver.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/detail/socket_types.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/endpoint.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/dispatch.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/cobalt/detail/forward_cancellation.hpp&gt;</code></li>
@@ -483,14 +537,36 @@
       <li>from <code>&lt;libs/cobalt/src/detail/exception.cpp&gt;</code></li>
       <li>from <code>&lt;libs/cobalt/src/this_thread.cpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/generic/datagram_protocol.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/datagram_socket.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/cobalt/io/seq_packet_socket.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/cobalt/io/ssl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/cobalt/io/stream_socket.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/io_context.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/cobalt/config.hpp&gt;</code></li>
       <li>from <code>&lt;boost/cobalt/main.hpp&gt;</code></li>
       <li>from <code>&lt;boost/cobalt/this_thread.hpp&gt;</code></li>
       <li>from <code>&lt;libs/cobalt/src/main.cpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/ip/address.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/cobalt/src/io/endpoint.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/ip/tcp.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/resolver.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/cobalt/src/io/socket.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/is_executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/cobalt/concepts.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/local/connect_pair.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/cobalt/src/io/socket.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/local/stream_protocol.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/cobalt/src/io/socket.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/posix/basic_stream_descriptor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/file.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/post.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/cobalt/detail/handler.hpp&gt;</code></li>
@@ -499,11 +575,23 @@
       <li>from <code>&lt;libs/cobalt/src/detail/util.cpp&gt;</code></li>
       <li>from <code>&lt;libs/cobalt/src/main.cpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/read_at.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;libs/cobalt/src/io/read.cpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/registered_buffer.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/buffer.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/signal_set.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/cobalt/src/main.cpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/socket_base.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/socket.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/spawn.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/cobalt/experimental/yield_context.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/ssl/stream.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/cobalt/io/ssl.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/this_coro.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/cobalt/this_coro.hpp&gt;</code></li>
@@ -896,6 +984,9 @@
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/pool_params.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/ssl/error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/caching_sha2_password.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/ssl/stream.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/engine_stream_adaptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/rebind_executor.hpp&gt;</code></li>
@@ -916,6 +1007,12 @@
     </ul>
     <h3><code>&lt;boost/asio/append.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/process/v1/detail/posix/sigchld_service.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/process/v2/detail/process_handle_fd_or_signal.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/process/v2/detail/process_handle_signal.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/associated_immediate_executor.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/process/v2/detail/process_handle_fd_or_signal.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/process/v2/detail/process_handle_signal.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/associator.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/process/v2/exit_code.hpp&gt;</code></li>
@@ -950,6 +1047,7 @@
       <li>from <code>&lt;boost/process/v1/detail/posix/sigchld_service.hpp&gt;</code></li>
       <li>from <code>&lt;boost/process/v2/detail/process_handle_fd_or_signal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/process/v2/detail/process_handle_signal.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/process/v2/process.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/execution.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/process/v1/detail/posix/on_exit.hpp&gt;</code></li>
@@ -1052,11 +1150,11 @@
     <h3><code>&lt;boost/asio/any_io_executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/asio/associated_immediate_executor.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/asio/basic_stream_socket.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/basic_waitable_timer.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/bind_executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
@@ -1066,74 +1164,83 @@
     </ul>
     <h3><code>&lt;boost/asio/cancel_after.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/connector.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/resolver.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/cancellation_type.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/detail/exec_fsm.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/helper.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/reader_fsm.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/compose.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/redis/detail/connector.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/health_checker.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/resolver.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/resp3_handshaker.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/connect.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/redis/detail/connector.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/consign.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/detail/health_checker.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/coroutine.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/connector.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/health_checker.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/resolver.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/resp3_handshaker.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/deferred.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/impl/exec_fsm.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/experimental/channel.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/experimental/parallel_group.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/immediate.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/io_context.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/ip/basic_resolver.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/ip/tcp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/connector.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/resolver.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/logger.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/connection_logger.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/impl/connection_logger.ipp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/local/stream_protocol.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/post.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/detail/health_checker.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/prepend.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/read_until.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/asio/ssl.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
+    <h3><code>&lt;boost/asio/ssl/context.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ssl/stream.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/ssl/stream_base.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/steady_timer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/health_checker.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/write.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>

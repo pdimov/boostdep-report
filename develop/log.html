@@ -84,6 +84,7 @@
     <h3><code>&lt;boost/atomic/atomic.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/counter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/core/record_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/detail/adaptive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/detail/event.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/detail/threadsafe_queue.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/async_frontend.hpp&gt;</code></li>
@@ -104,6 +105,7 @@
       <li>from <code>&lt;boost/log/detail/event.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/atomic/capabilities.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/log/detail/adaptive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/detail/event.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
@@ -115,9 +117,15 @@
       <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/atomic/thread_pause.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/log/detail/adaptive_mutex.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/posix/ipc_reliable_message_queue.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/memory_order.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/counter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/core/record_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/detail/adaptive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/async_frontend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/basic_sink_frontend.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/sinks/unbounded_fifo_queue.hpp&gt;</code></li>
@@ -175,6 +183,7 @@
       <li>from <code>&lt;libs/log/src/timer.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/mapped_shared_memory.cpp&gt;</code></li>
+      <li>from <code>&lt;libs/log/src/xorshift.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/limits.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/sinks/text_file_backend.hpp&gt;</code></li>
@@ -538,9 +547,6 @@
     <h3><code>&lt;boost/move/detail/std_ns_end.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/detail/locks.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/move/unique_ptr.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;libs/log/src/unique_ptr.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/move/utility_core.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/attributes/attribute_value_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/attributes/constant.hpp&gt;</code></li>
@@ -811,6 +817,7 @@
       <li>from <code>&lt;boost/log/expressions/predicates/has_attr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/expressions/predicates/is_in_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/log/expressions/predicates/matches.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/log/expressions/predicates/wrap_filter.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/phoenix/core/argument.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/expressions/formatters/stream.hpp&gt;</code></li>
@@ -1020,10 +1027,6 @@
     </ul>
     <h3><code>&lt;boost/proto/make_expr.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/log/expressions/keyword.hpp&gt;</code></li>
-    </ul>
-  <h2 id="random"><a href="random.html"><em>random</em></a></h2>
-    <h3><code>&lt;boost/random/taus88.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;libs/log/src/core.cpp&gt;</code></li>
     </ul>
   <h2 id="range"><a href="range.html"><em>range</em></a></h2>
     <h3><code>&lt;boost/range/as_literal.hpp&gt;</code></h3><ul>
@@ -1428,7 +1431,6 @@
     </ul>
   <h2 id="winapi"><a href="winapi.html"><em>winapi</em></a></h2>
     <h3><code>&lt;boost/detail/interlocked.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/log/detail/adaptive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/access_rights.hpp&gt;</code></h3><ul>
@@ -1494,7 +1496,6 @@
       <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/thread.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/log/detail/adaptive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/thread_pool.hpp&gt;</code></h3><ul>
@@ -1589,11 +1590,6 @@
   <h2><a href="proto.html"><em>proto</em></a></h2><ul>
     <li><a href="proto.html#static_assert">adds <em>static_assert</em></a></li>
     <li><a href="proto.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
-  <h2><a href="random.html"><em>random</em></a></h2><ul>
-    <li><a href="random.html#dynamic_bitset">adds <em>dynamic_bitset</em></a></li>
-    <li><a href="random.html#integer">adds <em>integer</em></a></li>
-    <li><a href="random.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
   <h2><a href="range.html"><em>range</em></a></h2><ul>
     <li><a href="range.html#array">adds <em>array</em></a></li>

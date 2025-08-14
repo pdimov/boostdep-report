@@ -87,9 +87,7 @@
 <h1 id="reverse-dependencies">Reverse dependencies for <em>winapi</em></h1>
   <h2 id="reverse-atomic"><a href="atomic.html"><em>atomic</em></a></h2>
     <h3><code>&lt;boost/winapi/basic_types.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/atomic/detail/wait_on_address.hpp&gt;</code></li>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/atomic/src/wait_on_address.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/condition_variable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
@@ -97,21 +95,11 @@
     <h3><code>&lt;boost/winapi/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/wait_caps_windows.hpp&gt;</code></li>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/atomic/src/wait_on_address.cpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/winapi/critical_section.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/error_codes.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/winapi/dll.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;libs/atomic/src/wait_on_address.cpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/winapi/get_proc_address.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;libs/atomic/src/wait_on_address.cpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/winapi/handles.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/winapi/semaphore.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/winapi/get_last_error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/srw_lock.hpp&gt;</code></h3><ul>
@@ -119,10 +107,6 @@
     </ul>
     <h3><code>&lt;boost/winapi/thread.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/atomic/detail/lock_pool.hpp&gt;</code></li>
-      <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
-      <li>from <code>&lt;libs/atomic/src/wait_on_address.cpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/winapi/wait.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;libs/atomic/src/lock_pool.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/wait_constants.hpp&gt;</code></h3><ul>
@@ -307,7 +291,6 @@
     </ul>
   <h2 id="reverse-log"><a href="log.html"><em>log</em></a></h2>
     <h3><code>&lt;boost/detail/interlocked.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/log/detail/adaptive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/access_rights.hpp&gt;</code></h3><ul>
@@ -373,7 +356,6 @@
       <li>from <code>&lt;libs/log/src/once_block.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/thread.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/log/detail/adaptive_mutex.hpp&gt;</code></li>
       <li>from <code>&lt;libs/log/src/windows/ipc_reliable_message_queue.cpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/winapi/thread_pool.hpp&gt;</code></h3><ul>

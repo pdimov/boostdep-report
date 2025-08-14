@@ -131,6 +131,9 @@
       <li>from <code>&lt;boost/mysql/impl/internal/variant_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/pool_params.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/ssl/error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/caching_sha2_password.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/ssl/stream.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/engine_stream_adaptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/rebind_executor.hpp&gt;</code></li>
@@ -185,6 +188,7 @@
     </ul>
     <h3><code>&lt;boost/assert/source_location.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/detail/throw_on_error_loc.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/csha2p_encrypt_password.hpp&gt;</code></li>
     </ul>
   <h2 id="charconv"><a href="charconv.html"><em>charconv</em></a></h2>
     <h3><code>&lt;boost/charconv/from_chars.hpp&gt;</code></h3><ul>
@@ -220,14 +224,14 @@
       <li>from <code>&lt;boost/mysql/field.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/field_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/format_sql.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/auth/auth.ipp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/byte_to_hex.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/error/server_error_to_string.ipp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/protocol/capabilities.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/deserialization.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/frame_header.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/null_bitmap.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/auth_plugin_common.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/message_reader.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/mysql_native_password.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/read_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/pfr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/mariadb_collations.hpp&gt;</code></li>
@@ -235,6 +239,11 @@
       <li>from <code>&lt;boost/mysql/mysql_collations.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/mysql_server_errc.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/time.hpp&gt;</code></li>
+    </ul>
+  <h2 id="container"><a href="container.html"><em>container</em></a></h2>
+    <h3><code>&lt;boost/container/small_vector.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/caching_sha2_password.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/csha2p_encrypt_password.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/detail/string_view.hpp&gt;</code></h3><ul>
@@ -259,7 +268,6 @@
       <li>from <code>&lt;boost/mysql/detail/row_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/detail/typing/pos_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/format_sql.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/mysql/impl/internal/auth/auth.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/dt_to_string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/deserialization.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/frame_header.hpp&gt;</code></li>
@@ -268,6 +276,10 @@
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/serialization_context.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/impl/span_string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/protocol/static_buffer.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/caching_sha2_password.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/csha2p_encrypt_password.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/handshake.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/mysql_native_password.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/read_buffer.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/run_pipeline.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/start_execution.hpp&gt;</code></li>
@@ -342,6 +354,7 @@
       <li>from <code>&lt;boost/mysql/client_errc.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/common_server_errc.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/error_categories.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/csha2p_encrypt_password.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/error_code.hpp&gt;</code></li>
@@ -351,7 +364,14 @@
       <li>from <code>&lt;boost/mysql/detail/connection_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/format_sql.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/format_sql.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/caching_sha2_password.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/handshake.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/mysql_native_password.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/set_character_set.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/system/system_category.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/caching_sha2_password.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/csha2p_encrypt_password.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/system/system_error.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/mysql/error_with_diagnostics.hpp&gt;</code></li>
@@ -377,6 +397,7 @@
       <li>from <code>&lt;boost/mysql/detail/field_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/field.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/sansio/connection_state.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/mysql/impl/internal/sansio/handshake.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/impl/internal/ssl_context_with_default.hpp&gt;</code></li>
       <li>from <code>&lt;boost/mysql/pipeline.hpp&gt;</code></li>
     </ul>
@@ -387,6 +408,9 @@
     <li><a href="asio.html#align">adds <em>align</em></a></li>
     <li><a href="asio.html#context">adds <em>context</em></a></li>
     <li><a href="asio.html#date_time">adds <em>date_time</em></a></li>
+  </ul>
+  <h2><a href="container.html"><em>container</em></a></h2><ul>
+    <li><a href="container.html#move">adds <em>move</em></a></li>
   </ul>
   <h2><a href="core.html"><em>core</em></a></h2><ul>
     <li><a href="core.html#static_assert">adds <em>static_assert</em></a></li>
@@ -429,9 +453,6 @@
     <li><a href="algorithm.html#regex">adds <em>regex</em></a></li>
     <li><a href="algorithm.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="algorithm.html#unordered">adds <em>unordered</em></a></li>
-  </ul>
-  <h2><a href="lexical_cast.html"><em>lexical_cast</em></a></h2><ul>
-    <li><a href="lexical_cast.html#container">adds <em>container</em></a></li>
   </ul>
   <h2><a href="numeric~conversion.html"><em>numeric~conversion</em></a></h2><ul>
     <li><a href="numeric~conversion.html#conversion">adds <em>conversion</em></a></li>

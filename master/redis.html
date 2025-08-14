@@ -15,11 +15,11 @@
     <h3><code>&lt;boost/asio/any_io_executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/asio/associated_immediate_executor.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/asio/basic_stream_socket.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/basic_waitable_timer.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/bind_executor.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
@@ -29,74 +29,84 @@
     </ul>
     <h3><code>&lt;boost/asio/cancel_after.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/connector.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/resolver.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/cancellation_type.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/detail/exec_fsm.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/helper.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/reader_fsm.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/compose.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/redis/detail/connector.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/health_checker.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/resolver.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/resp3_handshaker.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/connect.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/redis/detail/connector.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/consign.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/detail/health_checker.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/coroutine.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/connector.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/health_checker.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/resolver.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/resp3_handshaker.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/deferred.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/error.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/impl/exec_fsm.ipp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/experimental/channel.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/multiplexer.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/experimental/parallel_group.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/immediate.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/io_context.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/asio/ip/basic_resolver.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/asio/ip/tcp.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/connector.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/resolver.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/logger.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/connection_logger.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/impl/connection_logger.ipp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/local/stream_protocol.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/post.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/detail/health_checker.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/prepend.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/read_until.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/asio/ssl.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
+    <h3><code>&lt;boost/asio/ssl/context.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/ssl/stream.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/asio/ssl/stream_base.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/steady_timer.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/detail/health_checker.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/detail/runner.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/asio/write.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
@@ -107,10 +117,15 @@
       <li>from <code>&lt;boost/redis/adapter/detail/adapters.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/impl/error.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/impl/exec_fsm.ipp&gt;</code></li>
       <li>from <code>&lt;boost/redis/impl/response.ipp&gt;</code></li>
       <li>from <code>&lt;boost/redis/resp3/impl/parser.ipp&gt;</code></li>
       <li>from <code>&lt;boost/redis/resp3/impl/type.ipp&gt;</code></li>
       <li>from <code>&lt;boost/redis/resp3/type.hpp&gt;</code></li>
+    </ul>
+  <h2 id="config"><a href="config.html"><em>config</em></a></h2>
+    <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/redis/connection.hpp&gt;</code></li>
     </ul>
   <h2 id="core"><a href="core.html"><em>core</em></a></h2>
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
@@ -118,21 +133,23 @@
     </ul>
   <h2 id="mp11"><a href="mp11.html"><em>mp11</em></a></h2>
     <h3><code>&lt;boost/mp11.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/redis/adapter/adapt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/adapter/detail/response_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/adapter/detail/result_traits.hpp&gt;</code></li>
     </ul>
   <h2 id="system"><a href="system.html"><em>system</em></a></h2>
     <h3><code>&lt;boost/system.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/redis/adapter/adapt.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/adapter/detail/response_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/response.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/redis/adapter/any_adapter.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/adapter/ignore.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/connection_logger.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/exec_fsm.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/reader_fsm.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/detail/redis_stream.hpp&gt;</code></li>
       <li>from <code>&lt;boost/redis/error.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/redis/impl/logger.ipp&gt;</code></li>
+      <li>from <code>&lt;boost/redis/impl/connection_logger.ipp&gt;</code></li>
       <li>from <code>&lt;boost/redis/resp3/parser.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/system/result.hpp&gt;</code></h3><ul>
@@ -151,24 +168,15 @@
 <h1 id="secondary-dependencies">Secondary dependencies for <em>redis</em></h1>
   <h2><a href="asio.html"><em>asio</em></a></h2><ul>
     <li><a href="asio.html#align">adds <em>align</em></a></li>
-    <li><a href="asio.html#config">adds <em>config</em></a></li>
     <li><a href="asio.html#context">adds <em>context</em></a></li>
     <li><a href="asio.html#date_time">adds <em>date_time</em></a></li>
   </ul>
-  <h2><a href="assert.html"><em>assert</em></a></h2><ul>
-    <li><a href="assert.html#config">adds <em>config</em></a></li>
-  </ul>
   <h2><a href="core.html"><em>core</em></a></h2><ul>
-    <li><a href="core.html#config">adds <em>config</em></a></li>
     <li><a href="core.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
   <h2><a href="system.html"><em>system</em></a></h2><ul>
-    <li><a href="system.html#config">adds <em>config</em></a></li>
     <li><a href="system.html#variant2">adds <em>variant2</em></a></li>
     <li><a href="system.html#winapi">adds <em>winapi</em></a></li>
-  </ul>
-  <h2><a href="throw_exception.html"><em>throw_exception</em></a></h2><ul>
-    <li><a href="throw_exception.html#config">adds <em>config</em></a></li>
   </ul>
   <h2><a href="context.html"><em>context</em></a></h2><ul>
     <li><a href="context.html#pool">adds <em>pool</em></a></li>
@@ -240,6 +248,9 @@
   </ul>
   <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
     <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
+  </ul>
+  <h2><a href="regex.html"><em>regex</em></a></h2><ul>
+    <li><a href="regex.html#(unknown)">adds <em>(unknown)</em></a></li>
   </ul>
   <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
     <li><a href="fusion.html#function_types">adds <em>function_types</em></a></li>

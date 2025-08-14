@@ -405,6 +405,7 @@
     </ul>
   <h2 id="type_traits"><a href="type_traits.html"><em>type_traits</em></a></h2>
     <h3><code>&lt;boost/type_traits/add_const.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/range/detail/any_iterator_interface.hpp&gt;</code></li>
       <li>from <code>&lt;boost/range/detail/join_iterator.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/add_reference.hpp&gt;</code></h3><ul>
@@ -888,7 +889,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/add_rings.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/append_no_dups_or_spikes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/assign_parents.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/backtrack_check_si.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/check_enrich.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/clip_linestring.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/copy_segment_point.hpp&gt;</code></li>
@@ -907,7 +907,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/pointlike_linear.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/pointlike_pointlike.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/select_rings.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/traversal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/partition.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/point_on_border.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/multi_point_geometry.hpp&gt;</code></li>
@@ -972,6 +971,7 @@
       <li>from <code>&lt;boost/geometry/geometries/concepts/multi_point_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/concepts/multi_polygon_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/concepts/polygon_concept.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/geometry/geometries/concepts/polyhedral_surface_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/geometries/concepts/ring_concept.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/util/range.hpp&gt;</code></li>
     </ul>
@@ -1044,7 +1044,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/add_rings.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/append_no_dups_or_spikes.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/assign_parents.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/backtrack_check_si.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/check_enrich.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/clip_linestring.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/copy_segment_point.hpp&gt;</code></li>
@@ -1062,7 +1061,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/pointlike_linear.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/pointlike_pointlike.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/select_rings.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/traversal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/partition.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/point_on_border.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/multi_point_geometry.hpp&gt;</code></li>
@@ -1199,7 +1197,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/pointlike_areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/pointlike_pointlike.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/select_rings.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/traversal_ring_creator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/traverse.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/partition.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/boundary_checker.hpp&gt;</code></li>
@@ -1276,7 +1273,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/is_valid/multipolygon.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/max_interval_gap.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/add_rings.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/backtrack_check_si.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/check_enrich.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/copy_segment_point.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/enrich_intersection_points.hpp&gt;</code></li>
@@ -1293,9 +1289,6 @@
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/pointlike_areal.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/pointlike_linear.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/pointlike_pointlike.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/traversal.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/traversal_ring_creator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/geometry/algorithms/detail/overlay/traversal_switch_detector.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/relate/multi_point_geometry.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/range_by_section.hpp&gt;</code></li>
       <li>from <code>&lt;boost/geometry/algorithms/detail/sections/sectionalize.hpp&gt;</code></li>
