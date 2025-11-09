@@ -90,6 +90,7 @@ numeric~conversion
 numeric~interval
 numeric~odeint
 numeric~ublas
+openmethod
 optional
 outcome
 parameter

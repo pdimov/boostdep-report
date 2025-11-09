@@ -16,6 +16,7 @@
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/url/authority_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/detail/params_iter_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/url/detail/segments_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/detail/url_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/grammar/detail/ci_string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/grammar/impl/range_rule.hpp&gt;</code></li>
@@ -65,12 +66,28 @@
     <h3><code>&lt;boost/core/bit.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/url/grammar/detail/charset.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/core/detail/static_assert.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/url/detail/any_params_iter.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/url/detail/any_segments_iter.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/url/grammar/charset.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/url/grammar/impl/range_rule.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/url/grammar/impl/variant_rule.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/url/grammar/optional_rule.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/url/grammar/range_rule.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/url/grammar/tuple_rule.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/url/grammar/unsigned_rule.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/url/impl/decode_view.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/url/impl/encode.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/url/static_url.hpp&gt;</code></li>
+      <li>from <code>&lt;libs/url/src/rfc/detail/port_rule.cpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/core/detail/string_view.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/url.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/decode_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/detail/optional_string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/detail/replacement_field_rule.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/detail/segments_iter_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/url/detail/segments_range.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/detail/string_view.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/detail/url_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/url/detail/vformat.hpp&gt;</code></li>
@@ -145,21 +162,6 @@
     <h3><code>&lt;boost/optional.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/url/optional.hpp&gt;</code></li>
     </ul>
-  <h2 id="static_assert"><a href="static_assert.html"><em>static_assert</em></a></h2>
-    <h3><code>&lt;boost/static_assert.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/url/detail/any_params_iter.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/detail/any_segments_iter.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/grammar/charset.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/grammar/impl/range_rule.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/grammar/impl/variant_rule.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/grammar/range_rule.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/grammar/tuple_rule.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/grammar/unsigned_rule.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/impl/decode_view.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/impl/encode.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/url/static_url.hpp&gt;</code></li>
-      <li>from <code>&lt;libs/url/src/rfc/detail/port_rule.cpp&gt;</code></li>
-    </ul>
   <h2 id="system"><a href="system.html"><em>system</em></a></h2>
     <h3><code>&lt;boost/system/error_code.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/url/error_types.hpp&gt;</code></li>
@@ -196,8 +198,14 @@
 
 
 <h1 id="secondary-dependencies">Secondary dependencies for <em>url</em></h1>
+  <h2><a href="align.html"><em>align</em></a></h2><ul>
+    <li><a href="align.html#static_assert">adds <em>static_assert</em></a></li>
+  </ul>
   <h2><a href="system.html"><em>system</em></a></h2><ul>
     <li><a href="system.html#winapi">adds <em>winapi</em></a></li>
+  </ul>
+  <h2><a href="type_traits.html"><em>type_traits</em></a></h2><ul>
+    <li><a href="type_traits.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
   <h2><a href="winapi.html"><em>winapi</em></a></h2><ul>
     <li><a href="winapi.html#predef">adds <em>predef</em></a></li>

@@ -52,7 +52,6 @@
     <h3><code>&lt;boost/config/workaround.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/flyweight/detail/default_value_policy.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/detail/flyweight_core.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/flyweight/detail/not_placeholder_expr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/flyweight.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/flyweight_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/key_value.hpp&gt;</code></li>
@@ -111,6 +110,9 @@
       <li>from <code>&lt;boost/flyweight/flyweight.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/key_value.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mpl/aux_/lambda_arity_param.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/flyweight/detail/not_placeholder_expr.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mpl/aux_/lambda_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/flyweight/assoc_container_factory.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/detail/is_placeholder_expr.hpp&gt;</code></li>
@@ -124,6 +126,9 @@
       <li>from <code>&lt;boost/flyweight/hashed_factory_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/set_factory_fwd.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/flyweight/detail/not_placeholder_expr.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/flyweight/assoc_container_factory.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/detail/nested_xxx_if_not_ph.hpp&gt;</code></li>
@@ -131,7 +136,7 @@
       <li>from <code>&lt;boost/flyweight/hashed_factory.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/set_factory.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/mpl/limits/arity.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/mpl/lambda_fwd.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/flyweight/detail/not_placeholder_expr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/not.hpp&gt;</code></h3><ul>
@@ -179,7 +184,6 @@
     </ul>
     <h3><code>&lt;boost/preprocessor/facilities/intercept.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/flyweight/detail/is_placeholder_expr.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/flyweight/detail/not_placeholder_expr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/punctuation/comma.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/flyweight/flyweight_fwd.hpp&gt;</code></li>
@@ -192,9 +196,6 @@
       <li>from <code>&lt;boost/flyweight/detail/dyn_perfect_fwd.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/detail/is_placeholder_expr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/flyweight/detail/perfect_fwd.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/preprocessor/repetition/enum_trailing_params.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/flyweight/detail/not_placeholder_expr.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/repetition/repeat.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/flyweight/detail/dyn_perfect_fwd.hpp&gt;</code></li>
@@ -266,9 +267,6 @@
     <li><a href="container_hash.html#describe">adds <em>describe</em></a></li>
     <li><a href="container_hash.html#mp11">adds <em>mp11</em></a></li>
   </ul>
-  <h2><a href="core.html"><em>core</em></a></h2><ul>
-    <li><a href="core.html#static_assert">adds <em>static_assert</em></a></li>
-  </ul>
   <h2><a href="detail.html"><em>detail</em></a></h2><ul>
     <li><a href="detail.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
@@ -286,8 +284,7 @@
   <h2><a href="multi_index.html"><em>multi_index</em></a></h2><ul>
     <li><a href="multi_index.html#bind">adds <em>bind</em></a></li>
     <li><a href="multi_index.html#integer">adds <em>integer</em></a></li>
-    <li><a href="multi_index.html#iterator">adds <em>iterator</em></a></li>
-    <li><a href="multi_index.html#move">adds <em>move</em></a></li>
+    <li><a href="multi_index.html#mp11">adds <em>mp11</em></a></li>
     <li><a href="multi_index.html#static_assert">adds <em>static_assert</em></a></li>
     <li><a href="multi_index.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="multi_index.html#utility">adds <em>utility</em></a></li>
@@ -310,9 +307,6 @@
     <li><a href="fusion.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="fusion.html#functional">adds <em>functional</em></a></li>
     <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
-  <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
-    <li><a href="iterator.html#concept_check">adds <em>concept_check</em></a></li>
   </ul>
   <h2><a href="utility.html"><em>utility</em></a></h2><ul>
     <li><a href="utility.html#io">adds <em>io</em></a></li>

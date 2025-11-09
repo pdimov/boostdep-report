@@ -22,10 +22,9 @@
   <h2 id="config"><a href="config.html"><em>config</em></a></h2>
     <h3><code>&lt;boost/config.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/access_specifier.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/adl_swap.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/allocator_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/archive_constructed.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/augmented_stdtuple.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/auto_space.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/bad_archive_exception.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/base_type.hpp&gt;</code></li>
@@ -49,7 +48,9 @@
       <li>from <code>&lt;boost/multi_index/detail/is_index_list.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/is_transparent.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/iter_adaptor.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/mpl_to_mp11_list.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/no_duplicate_tags.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/no_duplicate_tags_in_index_list.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/node_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_args.hpp&gt;</code></li>
@@ -71,7 +72,6 @@
       <li>from <code>&lt;boost/multi_index/detail/uintptr_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/unbounded.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/value_compare.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/global_fun.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/hashed_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/identity.hpp&gt;</code></li>
@@ -88,21 +88,11 @@
       <li>from <code>&lt;boost/multi_index_container_fwd.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/detail/workaround.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/access_specifier.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/allocator_traits.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/base_type.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/index_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/is_function.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/node_type.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/promotes_arg.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/unbounded.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/global_fun.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/hashed_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/identity.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/random_access_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/limits.hpp&gt;</code></h3><ul>
@@ -123,6 +113,24 @@
       <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/safe_mode.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/hashed_index.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/random_access_index.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/core/allocator_access.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multi_index/detail/auto_space.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/bucket_array.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/copy_map.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/hash_index_node.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/index_base.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/ord_index_node.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/rnd_index_loader.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/rnd_index_node.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/rnd_index_ptr_array.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/seq_index_node.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/hashed_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/random_access_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
@@ -188,105 +196,50 @@
     <h3><code>&lt;boost/integer/common_factor_rt.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/rnd_index_node.hpp&gt;</code></li>
     </ul>
-  <h2 id="iterator"><a href="iterator.html"><em>iterator</em></a></h2>
-    <h3><code>&lt;boost/iterator/reverse_iterator.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/random_access_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
-    </ul>
-  <h2 id="move"><a href="move.html"><em>move</em></a></h2>
-    <h3><code>&lt;boost/move/core.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/allocator_traits.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/copy_map.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/hashed_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/random_access_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
+  <h2 id="mp11"><a href="mp11.html"><em>mp11</em></a></h2>
+    <h3><code>&lt;boost/mp11/algorithm.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/augmented_stdtuple.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/has_tag.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/no_duplicate_tags.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/no_duplicate_tags_in_index_list.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/node_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/move/utility.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/move/utility_core.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/allocator_traits.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/copy_map.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/index_base.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/hashed_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/random_access_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
-    </ul>
-  <h2 id="mpl"><a href="mpl.html"><em>mpl</em></a></h2>
-    <h3><code>&lt;boost/mpl/and.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/is_transparent.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/ord_index_node.hpp&gt;</code></li>
+    <h3><code>&lt;boost/mp11/function.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multi_index/detail/augmented_stdtuple.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_ops.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/promotes_arg.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/rnk_index_ops.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/apply.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/base_type.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/iter_adaptor.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/at.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/base_type.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/aux_/na.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/hash_index_args.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/ord_index_args.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/bind.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/node_type.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/bool.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/is_transparent.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/promotes_arg.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/raw_ptr.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/uintptr_type.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/hashed_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/random_access_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/mpl/contains.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/has_tag.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/deref.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/node_type.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/empty.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/is_index_list.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/eval_if.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/mp11/integer_sequence.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/hash_index_args.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/ord_index_args.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/augmented_stdtuple.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/mpl/find_if.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/mp11/integral.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multi_index/detail/augmented_stdtuple.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/base_type.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/uintptr_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/mpl/fold.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/no_duplicate_tags.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/identity.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/mp11/list.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/hash_index_args.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/ord_index_args.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/tag.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/augmented_stdtuple.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/base_type.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/index_access_sequence.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/mpl_to_mp11_list.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/no_duplicate_tags_in_index_list.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/type_list.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
+    <h3><code>&lt;boost/mp11/utility.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/base_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/cons_stdtuple.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/hash_index_args.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/index_access_sequence.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/iter_adaptor.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_args.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_node.hpp&gt;</code></li>
@@ -294,112 +247,38 @@
       <li>from <code>&lt;boost/multi_index/global_fun.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/hashed_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/identity.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/mem_fun.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/member.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/int.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/multi_index/ranked_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/is_sequence.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/is_index_list.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/not.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/is_transparent.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/promotes_arg.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/random_access_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/or.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/is_transparent.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/push_front.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/hashed_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/random_access_index.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/reverse_iter_fold.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/node_type.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/set/set0.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/no_duplicate_tags.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/size.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/base_type.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/index_access_sequence.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/transform.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/tag.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/mpl/vector.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/index_base.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/indexed_by.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/tag.hpp&gt;</code></li>
     </ul>
   <h2 id="preprocessor"><a href="preprocessor.html"><em>preprocessor</em></a></h2>
-    <h3><code>&lt;boost/preprocessor/arithmetic/add.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/preprocessor/arithmetic/sub.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/preprocessor/cat.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/indexed_by.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/control/expr_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/indexed_by.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/preprocessor/control/if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/preprocessor/facilities/empty.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/key.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/facilities/intercept.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/tag.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/preprocessor/list/at.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/preprocessor/logical/and.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/preprocessor/punctuation/comma.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
-    </ul>
-    <h3><code>&lt;boost/preprocessor/punctuation/comma_if.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/preprocessor/repetition/enum.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/indexed_by.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/repetition/enum_binary_params.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/tag.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/repetition/enum_params.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/indexed_by.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/tag.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/repetition/repeat.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/bucket_array.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/preprocessor/repetition/repeat_from_to.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/preprocessor/seq/elem.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/bucket_array.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/vartempl_support.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/preprocessor/seq/enum.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/bucket_array.hpp&gt;</code></li>
@@ -433,6 +312,7 @@
   <h2 id="tuple"><a href="tuple.html"><em>tuple</em></a></h2>
     <h3><code>&lt;boost/tuple/tuple.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/composite_key.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/multi_index/detail/augmented_stdtuple.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/cons_stdtuple.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/index_base.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
@@ -463,7 +343,6 @@
       <li>from <code>&lt;boost/multi_index/detail/is_transparent.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/integral_constant.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/allocator_traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/auto_space.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
     </ul>
@@ -494,9 +373,6 @@
       <li>from <code>&lt;boost/multi_index/random_access_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/sequenced_index.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/type_traits/is_empty.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/multi_index/detail/allocator_traits.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/type_traits/is_final.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/multi_index/detail/is_transparent.hpp&gt;</code></li>
     </ul>
@@ -516,10 +392,8 @@
       <li>from <code>&lt;boost/multi_index/detail/hash_index_args.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/is_transparent.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/node_handle.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/ord_index_args.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_impl.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/ord_index_node.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/multi_index/detail/raw_ptr.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/detail/safe_mode.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index/hashed_index.hpp&gt;</code></li>
       <li>from <code>&lt;boost/multi_index_container.hpp&gt;</code></li>
@@ -557,28 +431,9 @@
 <h1 id="secondary-dependencies">Secondary dependencies for <em>multi_index</em></h1>
   <h2><a href="container_hash.html"><em>container_hash</em></a></h2><ul>
     <li><a href="container_hash.html#describe">adds <em>describe</em></a></li>
-    <li><a href="container_hash.html#mp11">adds <em>mp11</em></a></li>
-  </ul>
-  <h2><a href="iterator.html"><em>iterator</em></a></h2><ul>
-    <li><a href="iterator.html#concept_check">adds <em>concept_check</em></a></li>
-    <li><a href="iterator.html#detail">adds <em>detail</em></a></li>
-    <li><a href="iterator.html#fusion">adds <em>fusion</em></a></li>
-    <li><a href="iterator.html#mp11">adds <em>mp11</em></a></li>
-    <li><a href="iterator.html#optional">adds <em>optional</em></a></li>
-  </ul>
-  <h2><a href="mpl.html"><em>mpl</em></a></h2><ul>
-    <li><a href="mpl.html#predef">adds <em>predef</em></a></li>
   </ul>
   <h2><a href="utility.html"><em>utility</em></a></h2><ul>
     <li><a href="utility.html#io">adds <em>io</em></a></li>
-  </ul>
-  <h2><a href="fusion.html"><em>fusion</em></a></h2><ul>
-    <li><a href="fusion.html#function_types">adds <em>function_types</em></a></li>
-    <li><a href="fusion.html#functional">adds <em>functional</em></a></li>
-    <li><a href="fusion.html#typeof">adds <em>typeof</em></a></li>
-  </ul>
-  <h2><a href="functional.html"><em>functional</em></a></h2><ul>
-    <li><a href="functional.html#function">adds <em>function</em></a></li>
   </ul>
 
 

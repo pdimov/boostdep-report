@@ -20,6 +20,7 @@
     <h3><code>&lt;boost/assert.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/state_machine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/state_machine.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/state_machine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/state_machine_def.hpp&gt;</code></li>
     </ul>
   <h2 id="bind"><a href="bind.html"><em>bind</em></a></h2>
@@ -39,10 +40,12 @@
     <h3><code>&lt;boost/core/ignore_unused.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/state_machine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/state_machine.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/state_machine.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/core/no_exceptions_support.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/state_machine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/state_machine.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/state_machine.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/noncopyable.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/copy_policies.hpp&gt;</code></li>
@@ -50,12 +53,15 @@
     <h3><code>&lt;boost/ref.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/state_machine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/state_machine.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/state_machine.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/utility/enable_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back/state_machine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/state_machine.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/detail/metafunctions.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/state_machine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/euml/common.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/euml/container.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/euml/operator.hpp&gt;</code></li>
@@ -206,12 +212,24 @@
     <h3><code>&lt;boost/fusion/sequence/intrinsic/at_key.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/state_machine.hpp&gt;</code></li>
     </ul>
+  <h2 id="mp11"><a href="mp11.html"><em>mp11</em></a></h2>
+    <h3><code>&lt;boost/mp11.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/msm/backmp11/detail/dispatch_table.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/detail/history_impl.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/detail/metafunctions.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/state_machine.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mp11/mpl_list.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/msm/backmp11/detail/metafunctions.hpp&gt;</code></li>
+    </ul>
   <h2 id="mpl"><a href="mpl.html"><em>mpl</em></a></h2>
     <h3><code>&lt;boost/mpl/advance.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/dispatch_table.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/dispatch_table.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/detail/favor_runtime_speed.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/and.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/msm/backmp11/state_machine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/mpl_graph/mpl_utils.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/assert.hpp&gt;</code></h3><ul>
@@ -238,6 +256,9 @@
       <li>from <code>&lt;boost/msm/mpl_graph/detail/incidence_list_graph.ipp&gt;</code></li>
       <li>from <code>&lt;boost/msm/mpl_graph/mpl_graph.hpp&gt;</code></li>
     </ul>
+    <h3><code>&lt;boost/mpl/begin.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/msm/backmp11/detail/favor_runtime_speed.hpp&gt;</code></li>
+    </ul>
     <h3><code>&lt;boost/mpl/begin_end.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/metafunctions.hpp&gt;</code></li>
@@ -247,11 +268,13 @@
       <li>from <code>&lt;boost/msm/back/favor_compile_time.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/metafunctions.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/msm/event_traits.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/detail/favor_runtime_speed.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/state_machine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/detail/row2_helper.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/internal_row.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/row2.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/states.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/kleene_event.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/contains.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/history_policies.hpp&gt;</code></li>
@@ -259,6 +282,7 @@
       <li>from <code>&lt;boost/msm/back11/state_machine.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/copy.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/msm/backmp11/detail/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/mpl_graph/detail/adjacency_list_graph.ipp&gt;</code></li>
       <li>from <code>&lt;boost/msm/mpl_graph/detail/incidence_list_graph.ipp&gt;</code></li>
     </ul>
@@ -279,10 +303,14 @@
     <h3><code>&lt;boost/mpl/empty.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/metafunctions.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/detail/favor_runtime_speed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/mpl_graph/breadth_first_search.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/equal.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/mpl_graph/detail/incidence_list_graph.ipp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/mpl/erase.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/msm/backmp11/detail/favor_runtime_speed.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/erase_key.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/mpl_graph/detail/incidence_list_graph.ipp&gt;</code></li>
@@ -290,6 +318,8 @@
     <h3><code>&lt;boost/mpl/eval_if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/metafunctions.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/detail/favor_runtime_speed.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/state_machine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/euml/operator.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/euml/state_grammar.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/euml/stt_grammar.hpp&gt;</code></li>
@@ -321,6 +351,8 @@
     <h3><code>&lt;boost/mpl/front.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/metafunctions.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/detail/favor_runtime_speed.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/detail/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/mpl_graph/detail/incidence_list_graph.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/greater.hpp&gt;</code></h3><ul>
@@ -340,12 +372,15 @@
     </ul>
     <h3><code>&lt;boost/mpl/has_xxx.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/metafunctions.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/back/traits.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/functor_row.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/identity.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/metafunctions.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/detail/favor_runtime_speed.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/state_machine.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/if.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/metafunctions.hpp&gt;</code></li>
@@ -373,6 +408,7 @@
     <h3><code>&lt;boost/mpl/int.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/metafunctions.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/detail/favor_runtime_speed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/common_states.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/detail/common_states.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/euml/common.hpp&gt;</code></li>
@@ -380,6 +416,8 @@
     <h3><code>&lt;boost/mpl/is_sequence.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/metafunctions.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/detail/metafunctions.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/state_machine.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/less_equal.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/front/euml/common.hpp&gt;</code></li>
@@ -410,6 +448,7 @@
     <h3><code>&lt;boost/mpl/pair.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/metafunctions.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/detail/favor_runtime_speed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/mpl_graph/breadth_first_search.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/mpl_graph/depth_first_search.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/mpl_graph/detail/adjacency_list_graph.ipp&gt;</code></li>
@@ -424,6 +463,7 @@
     <h3><code>&lt;boost/mpl/pop_front.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/dispatch_table.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/dispatch_table.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/detail/favor_runtime_speed.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/mpl_graph/breadth_first_search.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/mpl/push_back.hpp&gt;</code></h3><ul>
@@ -449,7 +489,6 @@
       <li>from <code>&lt;boost/msm/front/euml/common.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/euml/container.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/euml/operator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/msm/front/functor_row.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/mpl_graph/detail/incidence_list_graph.ipp&gt;</code></li>
       <li>from <code>&lt;boost/msm/mpl_graph/mpl_utils.hpp&gt;</code></li>
     </ul>
@@ -558,10 +597,6 @@
       <li>from <code>&lt;boost/msm/back/state_machine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/state_machine.hpp&gt;</code></li>
     </ul>
-  <h2 id="tuple"><a href="tuple.html"><em>tuple</em></a></h2>
-    <h3><code>&lt;boost/tuple/tuple.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/msm/back/common_types.hpp&gt;</code></li>
-    </ul>
   <h2 id="type_index"><a href="type_index.html"><em>type_index</em></a></h2>
     <h3><code>&lt;boost/type_index.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back11/state_machine.hpp&gt;</code></li>
@@ -572,12 +607,14 @@
       <li>from <code>&lt;boost/msm/back11/state_machine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/euml/container.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/euml/operator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/msm/mpl_graph/detail/incidence_list_graph.ipp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/add_const.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/front/common_states.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/detail/common_states.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/euml/common.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/add_reference.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/msm/backmp11/state_machine.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_base_of.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/dispatch_table.hpp&gt;</code></li>
@@ -588,13 +625,18 @@
     <h3><code>&lt;boost/type_traits/is_convertible.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/state_machine.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/state_machine.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/state_machine.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/is_same.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/back/dispatch_table.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/dispatch_table.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/back11/metafunctions.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/msm/backmp11/detail/metafunctions.hpp&gt;</code></li>
       <li>from <code>&lt;boost/msm/front/euml/common.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/type_traits/remove_pointer.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/msm/backmp11/state_machine.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/type_traits/remove_reference.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/msm/front/euml/common.hpp&gt;</code></li>
@@ -618,7 +660,6 @@
     <li><a href="circular_buffer.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
   <h2><a href="core.html"><em>core</em></a></h2><ul>
-    <li><a href="core.html#static_assert">adds <em>static_assert</em></a></li>
     <li><a href="core.html#throw_exception">adds <em>throw_exception</em></a></li>
   </ul>
   <h2><a href="function.html"><em>function</em></a></h2><ul>
@@ -629,6 +670,7 @@
     <li><a href="fusion.html#function_types">adds <em>function_types</em></a></li>
     <li><a href="fusion.html#functional">adds <em>functional</em></a></li>
     <li><a href="fusion.html#static_assert">adds <em>static_assert</em></a></li>
+    <li><a href="fusion.html#tuple">adds <em>tuple</em></a></li>
     <li><a href="fusion.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="mpl.html"><em>mpl</em></a></h2><ul>
@@ -637,7 +679,6 @@
     <li><a href="mpl.html#utility">adds <em>utility</em></a></li>
   </ul>
   <h2><a href="parameter.html"><em>parameter</em></a></h2><ul>
-    <li><a href="parameter.html#mp11">adds <em>mp11</em></a></li>
     <li><a href="parameter.html#optional">adds <em>optional</em></a></li>
     <li><a href="parameter.html#utility">adds <em>utility</em></a></li>
   </ul>
@@ -659,7 +700,6 @@
     <li><a href="serialization.html#io">adds <em>io</em></a></li>
     <li><a href="serialization.html#iterator">adds <em>iterator</em></a></li>
     <li><a href="serialization.html#move">adds <em>move</em></a></li>
-    <li><a href="serialization.html#mp11">adds <em>mp11</em></a></li>
     <li><a href="serialization.html#optional">adds <em>optional</em></a></li>
     <li><a href="serialization.html#predef">adds <em>predef</em></a></li>
     <li><a href="serialization.html#smart_ptr">adds <em>smart_ptr</em></a></li>
@@ -669,9 +709,6 @@
     <li><a href="serialization.html#utility">adds <em>utility</em></a></li>
     <li><a href="serialization.html#variant">adds <em>variant</em></a></li>
     <li><a href="serialization.html#variant2">adds <em>variant2</em></a></li>
-  </ul>
-  <h2><a href="tuple.html"><em>tuple</em></a></h2><ul>
-    <li><a href="tuple.html#static_assert">adds <em>static_assert</em></a></li>
   </ul>
   <h2><a href="type_index.html"><em>type_index</em></a></h2><ul>
     <li><a href="type_index.html#container_hash">adds <em>container_hash</em></a></li>
