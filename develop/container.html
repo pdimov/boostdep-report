@@ -41,6 +41,7 @@
       <li>from <code>&lt;boost/container/detail/addressof.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/advanced_insert_int.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/algorithm.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container/detail/aligned_allocation.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/alloc_helpers.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/allocation_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/allocator_version_traits.hpp&gt;</code></li>
@@ -91,6 +92,7 @@
       <li>from <code>&lt;boost/container/detail/variadic_templates_tools.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/version_type.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/detail/workaround.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container/devector.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/flat_map.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/flat_set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/list.hpp&gt;</code></li>
@@ -108,6 +110,7 @@
       <li>from <code>&lt;boost/container/static_vector.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/throw_exception.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container/uses_allocator_construction.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/vector.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/config/auto_link.hpp&gt;</code></h3><ul>
@@ -302,6 +305,7 @@
       <li>from <code>&lt;boost/container/set.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/slist.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/small_vector.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container/uses_allocator_construction.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/vector.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/move/detail/iterator_to_raw_pointer.hpp&gt;</code></h3><ul>
@@ -430,6 +434,7 @@
       <li>from <code>&lt;boost/container/slist.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/stable_vector.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/string.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/container/uses_allocator_construction.hpp&gt;</code></li>
       <li>from <code>&lt;boost/container/vector.hpp&gt;</code></li>
     </ul>
 
@@ -523,16 +528,6 @@
     <h3><code>&lt;boost/container/detail/allocation_type.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/containers/allocation_type.hpp&gt;</code></li>
     </ul>
-    <h3><code>&lt;boost/container/detail/dispatch_uses_allocator.hpp&gt;</code></h3><ul>
-      <li>from <code>&lt;boost/interprocess/allocators/adaptive_pool.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/allocators/allocator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/allocators/cached_node_allocator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/allocators/detail/allocator_common.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/allocators/node_allocator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/allocators/private_adaptive_pool.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/allocators/private_node_allocator.hpp&gt;</code></li>
-      <li>from <code>&lt;boost/interprocess/detail/named_proxy.hpp&gt;</code></li>
-    </ul>
     <h3><code>&lt;boost/container/detail/minimal_char_traits_header.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/detail/segment_manager_helper.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/indexes/iset_index.hpp&gt;</code></li>
@@ -552,6 +547,9 @@
     </ul>
     <h3><code>&lt;boost/container/detail/node_pool_impl.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/allocators/detail/node_pool.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/container/detail/operator_new_helpers.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/managed_heap_memory.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/container/detail/pair.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/containers/pair.hpp&gt;</code></li>
@@ -613,6 +611,16 @@
     <h3><code>&lt;boost/container/string.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/containers/string.hpp&gt;</code></li>
       <li>from <code>&lt;boost/interprocess/detail/windows_intermodule_singleton.hpp&gt;</code></li>
+    </ul>
+    <h3><code>&lt;boost/container/uses_allocator_construction.hpp&gt;</code></h3><ul>
+      <li>from <code>&lt;boost/interprocess/allocators/adaptive_pool.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/allocators/allocator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/allocators/cached_node_allocator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/allocators/detail/allocator_common.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/allocators/node_allocator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/allocators/private_adaptive_pool.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/allocators/private_node_allocator.hpp&gt;</code></li>
+      <li>from <code>&lt;boost/interprocess/detail/named_proxy.hpp&gt;</code></li>
     </ul>
     <h3><code>&lt;boost/container/vector.hpp&gt;</code></h3><ul>
       <li>from <code>&lt;boost/interprocess/containers/vector.hpp&gt;</code></li>
